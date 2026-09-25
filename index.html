@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dosyalar</title>
+<style>
+:root{--bg:linear-gradient(135deg,#6366f1 0%,#a855f7 100%);--card:rgba(255,255,255,0.95);--primary:#6366f1;--danger:#f43f5e;--warning:#f59e0b;--success:#10b981;--info:#0ea5e9;--text:#0f172a;--border:#e2e8f0}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,sans-serif}
+body{background:var(--bg);color:var(--text);min-height:100vh;padding:20px 16px 24px 78px;display:flex;flex-direction:column;align-items:center}
+.wrapper{width:100%;max-width:1500px}
+header h1{text-align:center;color:white;margin-bottom:18px;font-size:1.55rem;font-weight:700}
+.layout{display:block}
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:58px;z-index:500;transition:width .22s ease;cursor:default}
+.sidebar:hover,.sidebar:focus-within{width:260px}
+.sidebar.open{width:min(285px,85vw) !important;box-shadow:100vw 0 0 rgba(0,0,0,0.45)}
+.sidebar .card{border-radius:0;min-height:100%;margin:0;padding:8px 6px;overflow-y:auto;overflow-x:hidden;box-shadow:0 10px 25px rgba(0,0,0,.12);background:#fff}
+.sidebar .card:first-child{min-height:auto;border-radius:0 0 12px 0}
+.menu-btn{background:#f1f5f9;border:1.5px solid var(--border);color:var(--text);border-radius:10px;padding:0;text-align:left;font-size:0.88rem;font-weight:600;cursor:pointer;transition:0.2s;margin-bottom:6px;display:flex;align-items:center;min-height:40px;height:40px;width:100%;overflow:hidden;text-decoration:none}
+.menu-btn:hover{background:#e2e8f0;border-color:var(--primary);color:var(--primary)}
+.menu-btn.active{background:var(--primary);color:white;border-color:var(--primary)}
+.btn-icon{min-width:44px;width:44px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex-shrink:0}
+.btn-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:8px;opacity:0;transition:opacity 0.15s}
+.sidebar:hover .btn-text,.sidebar:focus-within .btn-text,.sidebar.open .btn-text{opacity:1}
+.menu-logout{background:#fff1f2;color:#be123c;border-color:#fecdd3}
+.menu-refresh{background:#ecfeff;color:#0e7490;border-color:#a5f3fc}
+.menu-inspect{background:#e0f2fe;color:#0284c7;border-color:#bae6fd}
+.menu-index{background:#eef2ff;color:#4338ca;border-color:#c7d2fe}
+.content{width:100%}
+@media(max-width:768px){body{padding:12px 8px 20px 64px !important}
+.sidebar{width:58px !important}
+.sidebar:hover,.sidebar:focus-within{width:58px !important}
+.sidebar:hover .btn-text,.sidebar:focus-within .btn-text{opacity:0}
+.sidebar.open .btn-text{opacity:1 !important}
+.sort-buttons{width:100%}
+.sort-btn{flex:1 1 0}
+}
+.card{background:var(--card);backdrop-filter:blur(12px);border-radius:16px;padding:16px;box-shadow:0 10px 25px rgba(0,0,0,0.1);margin-bottom:16px;border:1px solid rgba(255,255,255,0.4)}
+input,button{width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:10px;font-size:0.9rem;outline:none}
+button{background:var(--primary);color:white;border:none;font-weight:600;cursor:pointer;transition:0.2s}
+button:hover{opacity:0.9}
+.row{display:flex;gap:8px}
+.toast{font-size:0.8rem;padding:6px;border-radius:6px;margin-top:8px;display:none;text-align:center;font-weight:500}
+.list{list-style:none;width:100%}
+#fullscreen-preview{position:fixed;inset:0;background:white;z-index:100005;display:none}
+#fullscreen-preview iframe{width:100%;height:100%;border:none}
+#draggable-close-btn{position:fixed;top:20px;right:20px;background:var(--danger);color:white;border:none;width:45px;height:45px;border-radius:50%;font-size:1.2rem;font-weight:bold;cursor:grab;z-index:100006;box-shadow:0 4px 12px rgba(244,63,94,0.4);display:flex;align-items:center;justify-content:center;user-select:none;touch-action:none}
+.list-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 8px;flex-wrap:wrap}
+.tab-title{font-weight:700;font-size:1.1rem;color:#fff}
+.sort-buttons{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-left:auto}
+.sort-btn{width:auto;min-width:72px;height:30px;padding:4px 9px;border:1px solid rgba(255,255,255,.65);border-radius:7px;background:rgba(255,255,255,.88);color:var(--text);font-size:.78rem;font-weight:700;cursor:pointer}
+.sort-btn:hover{background:#fff;border-color:var(--primary)}
+.sort-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.sort-arrow{display:inline-block;min-width:10px;margin-left:2px}
+.file-columns,.item{display:block;width:100%}
+.file-columns{display:none}
+.item{padding:6px 10px;background:rgba(248,250,252,.94);border-bottom:1px solid rgba(226,232,240,.9);margin-bottom:2px;min-height:48px}
+.name-cell{position:relative;min-width:0;display:flex;align-items:center;justify-content:space-between;gap:6px;overflow:visible}
+.file-title-wrap{display:flex;flex-direction:column;min-width:0;flex:1 1 auto;justify-content:center;align-items:flex-start}
+.file-title-wrap>a{color:var(--text);text-decoration:none;font-weight:600;font-size:0.88rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;max-width:100%;width:fit-content}
+.file-title-wrap>a:hover{color:var(--primary);text-decoration:underline}
+.file-sub-meta{font-size:0.65rem;color:#64748b;font-weight:500;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;gap:6px;align-items:center}
+.file-sub-size{background:#e2e8f0;color:#475569;padding:1px 5px;border-radius:3px;font-weight:700}
+.name-cell .actions{position:relative;flex:0 0 20px;display:flex;align-items:center;justify-content:center}
+.name-cell .more-btn{background:transparent;border:none;color:var(--primary);font-size:20px;font-weight:800;cursor:pointer;padding:0 4px;line-height:1}
+.name-cell .actions-menu{position:absolute;top:28px;left:auto;right:0;width:155px;padding:6px;background:white;border:1px solid #e2e8f0;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,0.15);z-index:10000;display:flex;flex-direction:column;gap:4px;opacity:0;visibility:hidden;pointer-events:none;transition:0.15s ease}
+.name-cell .actions-menu.open{opacity:1;visibility:visible;pointer-events:auto}
+.name-cell .action-menu-item{width:100%;padding:8px;display:flex;align-items:center;gap:8px;background:transparent;color:var(--text);border:none;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;text-align:left}
+.name-cell .action-menu-item:hover{background:#f1f5f9;color:var(--primary)}
+@media(max-width:768px){.file-title-wrap>a{font-size:0.82rem !important}
+.file-sub-meta{font-size:0.60rem !important}
+}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,0.5);align-items:flex-start;justify-content:center;padding-top:20px;z-index:2000;display:none;overflow-y:auto}
+.modal-box{background:white;padding:20px;border-radius:16px;width:90%;max-width:360px;margin-bottom:20px}
+.code-editor-wrap{position:relative;width:100%;margin-bottom:10px;border-radius:10px;overflow:hidden;background:#ffffff;border:1.5px solid #cbd5e1}
+.editor-container{position:relative;width:100%;height:320px;background:#ffffff}
+#html-code-input{width:100%;height:100%;padding:44px 12px 28px 12px;margin:0;border:none;outline:none;resize:none;font-family:Consolas,monospace;font-size:13px;line-height:20px;color:#0f172a;background:#ffffff;tab-size:4;white-space:pre;overflow:auto}
+.editor-top-bar{position:absolute;top:6px;left:6px;right:6px;display:flex;align-items:center;justify-content:space-between;gap:6px;z-index:20;pointer-events:none}
+.editor-left-tools{display:flex;align-items:center;gap:5px;pointer-events:auto;flex:1 1 auto;min-width:0;overflow-x:auto;scrollbar-width:none}
+.editor-left-tools::-webkit-scrollbar{display:none}
+.editor-tool-btn{padding:4px 8px;font-size:0.72rem;font-weight:600;color:#475569;background:rgba(248,250,252,0.95);border:1px solid #cbd5e1;border-radius:6px;cursor:pointer;white-space:nowrap}
+.editor-search-box{display:flex;align-items:center;gap:2px;background:rgba(248,250,252,0.95);border:1px solid #cbd5e1;border-radius:6px;padding:1px 4px}
+.editor-search-box input{width:65px;padding:2px 4px;font-size:0.72rem;border:none;background:transparent;outline:none}
+.search-nav-btn{background:transparent;border:none;color:#64748b;font-size:0.7rem;cursor:pointer;padding:2px}
+.fs-filename-badge{font-size:0.72rem;font-weight:700;color:#0284c7;background:#e0f2fe;padding:3px 8px;border-radius:6px;border:1px solid #bae6fd;max-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:none;flex-shrink:0;align-items:center;gap:4px}
+.btn-expand-code{pointer-events:auto;background:#eef2ff;color:#4338ca;border-color:#c7d2fe;width:auto}
+.editor-statusbar{position:absolute;bottom:0;left:0;right:0;height:22px;background:#f8fafc;border-top:1px solid #e2e8f0;color:#64748b;font-size:0.72rem;font-weight:600;display:flex;align-items:center;justify-content:flex-end;padding:0 10px;gap:12px;pointer-events:none}
+.code-editor-wrap.fullscreen-editor{position:fixed;inset:0;z-index:100000 !important;background:#fff;margin:0;border-radius:0;border:none}
+.code-editor-wrap.fullscreen-editor .editor-container{width:100vw;height:100vh}
+.code-editor-wrap.fullscreen-editor #html-code-input{padding:48px 16px 30px 16px}
+.code-editor-wrap.fullscreen-editor .fs-filename-badge{display:inline-flex !important;max-width:250px}
+.code-modal-actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.hidden{display:none !important}
+#binary-modal-box{background:#18181b;color:#f4f4f5;border-radius:16px;width:95%;max-width:920px;padding:20px;margin-bottom:20px}
+#binary-modal-box.fullscreen-active{position:fixed;inset:0;width:100vw;max-width:100vw;height:100vh;border-radius:0;margin:0;z-index:100005;overflow-y:auto}
+.bin-header-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.bin-sec{background:#27272a;border:1px solid #3f3f46;padding:12px;border-radius:8px;margin-bottom:12px}
+.bin-sec table{width:100%;border-collapse:collapse;margin-top:6px}
+.bin-sec th,.bin-sec td{border:1px solid #3f3f46;padding:6px 10px;text-align:left;font-size:12px}
+.bin-sec th{background:#3f3f46;color:#38bdf8}
+.bin-pre{background:#09090b;padding:10px;max-height:220px;overflow-y:auto;font-size:11px;color:#4ade80;white-space:pre-wrap;word-break:break-all;font-family:monospace;border-radius:6px}
+.bin-ctrl{margin-top:8px;display:flex;flex-direction:column;gap:6px}
+.bin-nav{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.bin-btn{background:#3f3f46;color:#fff;border:1px solid #52525b;padding:4px 8px;cursor:pointer;border-radius:4px;font-size:11px;width:auto;font-weight:600}
+.bin-slider{flex-grow:1;accent-color:#38bdf8;cursor:pointer;height:6px}
+.bin-input{width:60px;background:#09090b;border:1px solid #52525b;color:#fff;padding:3px;text-align:center;border-radius:4px;font-size:11px}
+.bin-sec-fullscreen{position:fixed !important;inset:0 !important;width:100vw !important;height:100vh !important;z-index:100006 !important;background:#18181b !important;padding:16px !important;margin:0 !important;border-radius:0 !important;display:flex !important;flex-direction:column !important}
+.bin-sec-fullscreen .bin-pre{flex:1 1 auto !important;max-height:none !important}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="layout">
+<div class="sidebar" id="app-sidebar">
+<div class="card" onclick="event.stopPropagation()">
+<div id="auth-box">
+<div class="row"><input type="password" id="token" placeholder="Şifre"><button id="login-btn" onclick="auth(true)" style="min-width:55px;">Giriş</button>
+</div>
+</div>
+<div id="logout-box" class="hidden"><button class="menu-btn menu-logout" onclick="logout()"><span class="btn-icon">🚪</span><span class="btn-text">Çıkış</span></button><button class="menu-btn menu-refresh" onclick="location.reload()"><span class="btn-icon">🔄</span><span class="btn-text">Yenile</span></button>
+</div>
+<div id="auth-toast" class="toast">
+</div>
+<div id="secure-sidebar" class="hidden" style="margin-top: 10px;"><button class="menu-btn active" id="tab-files-btn" onclick="switchTab('files')"><span class="btn-icon">📄</span><span class="btn-text">Dosyalarım</span></button><button class="menu-btn" id="tab-archive-btn" onclick="switchTab('archive')"><span class="btn-icon">📦</span><span class="btn-text">Arşiv</span></button><hr style="margin: 8px 0; border: none; border-top: 1px dashed var(--border);"><input type="file" id="file" class="hidden" onchange="upload()"><button class="menu-btn" onclick="el('file').click()"><span class="btn-icon">📁</span><span class="btn-text">Dosya Yükle</span></button><button class="menu-btn" onclick="openCodeModal()"><span class="btn-icon">&lt;/&gt;</span><span class="btn-text">HTML Yükle</span></button><input type="file" id="local-inspect-file" class="hidden" onchange="inspectLocalFile(this)"><button class="menu-btn menu-inspect" onclick="el('local-inspect-file').click()"><span class="btn-icon">🔍</span><span class="btn-text">Dosya İncele</span></button><button class="menu-btn menu-index" onclick="openTargetFile('index.html')"><span class="btn-icon">⚙️</span><span class="btn-text">index.html</span></button>
+<div id="upload-toast" class="toast">
+</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div id="secure-content" class="hidden">
+<div class="list-toolbar">
+<div id="view-title" class="tab-title">📄 Dosyalarım (0)
+</div>
+<div class="sort-buttons"><button type="button" class="sort-btn" data-sort="name" onclick="setSort('name')">Ad <span class="sort-arrow"></span></button><button type="button" class="sort-btn active" data-sort="date" onclick="setSort('date')">Tarih <span class="sort-arrow">↓</span></button><button type="button" class="sort-btn" data-sort="size" onclick="setSort('size')">Boyut <span class="sort-arrow"></span></button>
+</div>
+</div>
+<div class="list-wrap"><ul id="file-list" class="list"><li style="text-align:center; color:white; padding:20px;">Yükleniyor...</li></ul>
+</div>
+<div id="list-toast" class="toast">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="code-modal" class="modal">
+<div class="modal-box" style="max-width: 540px;"><h4 id="code-modal-title" style="margin-bottom:10px; font-size:0.95rem;">Dosya Kodu İşlemleri</h4><input type="text" id="html-file-name" placeholder="Dosya adı" autocomplete="off" style="margin-bottom:10px;" oninput="updateFsFileNameBadge()">
+<div class="code-editor-wrap" id="editor-wrap">
+<div class="editor-top-bar">
+<div class="editor-left-tools"><span id="fs-file-badge" class="fs-filename-badge"></span><button class="editor-tool-btn" onclick="copyCodeToClipboard()" type="button">kopyala</button><button class="editor-tool-btn" onclick="pasteFromClipboard()" type="button">yapıştır</button><button class="editor-tool-btn" onclick="runHtmlCode()" type="button">çalıştır</button><button class="editor-tool-btn" onclick="clearCodeInput()" type="button">temizle</button><button class="editor-tool-btn hidden" id="fs-save-btn" onclick="uploadHtmlCode()" type="button" style="color:#16a34a;">kaydet</button>
+<div class="editor-search-box"><input type="text" id="code-search-input" placeholder="Bul..." oninput="searchInCode(true)" onkeydown="handleSearchKeydown(event)"><button class="search-nav-btn" type="button" onclick="searchInCode(true)">↓</button><button class="search-nav-btn" type="button" onclick="searchInCode(false)">↑</button>
+</div>
+</div><button class="editor-tool-btn btn-expand-code" id="toggle-fullscreen-btn" onclick="toggleCodeFullscreen()" type="button">tam ekran</button>
+</div>
+<div class="editor-container"><textarea id="html-code-input" spellcheck="false" autocomplete="off" oninput="updateStatus()"></textarea>
+</div>
+<div class="editor-statusbar"><span id="editor-char-count">0 karakter</span><span id="editor-size-count">0 B</span>
+</div>
+</div>
+<div class="code-modal-actions"><button style="background:#cbd5e1; color:#334155;" onclick="closeCodeModal()">İptal</button><button onclick="downloadHtmlFile()" style="background: var(--info);">İndir</button><button id="code-save-btn" onclick="uploadHtmlCode()">Kaydet</button>
+</div>
+</div>
+</div>
+<div id="binary-modal" class="modal">
+<div id="binary-modal-box">
+<div class="bin-header-bar"><h4 id="bin-modal-title" style="font-size:1.05rem; color:#38bdf8;">Dosya İnceleme & Analiz</h4>
+<div style="display:flex; gap:8px;"><button class="bin-btn" id="bin-fs-btn" onclick="toggleBinaryFullscreen()">⛶ Tam Ekran</button><button class="bin-btn" style="background:#e11d48;" onclick="closeBinaryModal()">✕ Kapat</button>
+</div>
+</div>
+<div class="bin-sec"><h5 style="margin-bottom:6px; color:#94a3b8;">Format, Bütünlük ve Başlık Bilgileri</h5>
+<table id="bin-meta-table">
+</table>
+</div>
+<div class="bin-sec" id="bin-details-box" style="display:none;"><h5 style="margin-bottom:6px; color:#94a3b8;">Türe Özgü İçerik Analizi</h5>
+<div id="bin-details-content">
+</div>
+</div>
+<div class="bin-sec" id="bin-hex-sec">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;"><h5 style="color:#94a3b8; margin:0;">Hex Dökümü <span id="bin-hex-counter" style="color:#38bdf8;"></span></h5><button class="bin-btn" id="bin-hex-expand-btn" onclick="toggleSectionFullscreen('bin-hex-sec', 'bin-hex-expand-btn')">⛶ Tam Ekran</button>
+</div><pre class="bin-pre" id="bin-hex-output"></pre>
+<div class="bin-ctrl">
+<div class="bin-nav"><input type="range" class="bin-slider" id="bin-hex-slider" min="0" value="0">
+</div>
+<div class="bin-nav"><button class="bin-btn" onclick="jumpHex(-100)">-100</button><button class="bin-btn" onclick="jumpHex(-10)">-10</button><button class="bin-btn" id="bin-hex-prev">Önceki</button><span style="font-size:11px;">Sayfa: <input type="number" id="bin-hex-page-input" class="bin-input" min="1"> / <span id="bin-hex-total-pages">1</span></span><button class="bin-btn" id="bin-hex-next">Sonraki</button><button class="bin-btn" onclick="jumpHex(10)">+10</button><button class="bin-btn" onclick="jumpHex(100)">+100</button>
+</div>
+</div>
+</div>
+<div class="bin-sec" id="bin-str-sec">
+<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;"><h5 style="color:#94a3b8; margin:0;">Sınırsız Metinler (Strings) <span id="bin-str-counter" style="color:#38bdf8;"></span></h5><button class="bin-btn" id="bin-str-expand-btn" onclick="toggleSectionFullscreen('bin-str-sec', 'bin-str-expand-btn')">⛶ Tam Ekran</button>
+</div><pre class="bin-pre" id="bin-str-output"></pre>
+<div class="bin-ctrl">
+<div class="bin-nav"><input type="range" class="bin-slider" id="bin-str-slider" min="0" value="0">
+</div>
+<div class="bin-nav"><button class="bin-btn" onclick="jumpStr(-100)">-100</button><button class="bin-btn" onclick="jumpStr(-10)">-10</button><button class="bin-btn" id="bin-str-prev">Önceki</button><span style="font-size:11px;">Sayfa: <input type="number" id="bin-str-page-input" class="bin-input" min="1"> / <span id="bin-str-total-pages">1</span></span><button class="bin-btn" id="bin-str-next">Sonraki</button><button class="bin-btn" onclick="jumpStr(10)">+10</button><button class="bin-btn" onclick="jumpStr(100)">+100</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="fullscreen-preview"><button id="draggable-close-btn" title="Kapat">✕</button><iframe id="preview-iframe"></iframe>
+</div>
+<script>const el=id=>document.getElementById(id);const u='drsait',r='Deneme',api=`https://api.github.com/repos/${u}/${r}/contents`;let activeFileData={},editingFileName=null,currentTab='files',authTimer=null;let sortKey='date',sortAsc=false,currentFiles=[],currentCommitDates={};const b64Dec=str=>decodeURIComponent(escape(atob(str)));const b64Enc=str=>btoa(unescape(encodeURIComponent(str)));const isEditableTextFile=name=>/\.(html?|txt|js|css|json|md|xml|svg|csv|py|php)$/i.test(name);const sbEl=el('app-sidebar');sbEl.addEventListener('click',e=>{if(window.innerWidth<=768){sbEl.classList.add('open');}});document.addEventListener('click',e=>{const sb=el('app-sidebar');if(sb&&sb.classList.contains('open')&&!sb.contains(e.target)){sb.classList.remove('open');}});function updateFsFileNameBadge(){const val=el('html-file-name').value.trim();const badge=el('fs-file-badge');badge.textContent=val?`📄 ${val}`:'';badge.title=val;}const formatFileSize=bytes=>{if(!bytes||isNaN(bytes))return'0 B';if(bytes<1024)return bytes+' B';if(bytes<1048576)return(bytes/1024).toFixed(1)+' KB';return(bytes/1048576).toFixed(1)+' MB';};function getCode(){return el('html-code-input').value;}function setCode(code){el('html-code-input').value=code||'';updateStatus();}function updateStatus(){const text=getCode();el('editor-char-count').textContent=`${text.length.toLocaleString()} karakter`;el('editor-size-count').textContent=formatFileSize(new Blob([text]).size);}function handleSearchKeydown(e){if(e.key==='Enter'){e.preventDefault();searchInCode(!e.shiftKey);}}function searchInCode(forward=true){const ta=el('html-code-input'),query=el('code-search-input').value;if(!query)return;const text=ta.value,qLower=query.toLowerCase(),tLower=text.toLowerCase();let pos=forward?tLower.indexOf(qLower,ta.selectionEnd):tLower.lastIndexOf(qLower,Math.max(0,ta.selectionStart-1));if(pos===-1)pos=forward?tLower.indexOf(qLower,0):tLower.lastIndexOf(qLower);if(pos!==-1){ta.setSelectionRange(pos,pos+query.length);const linesBefore=text.substring(0,pos).split('\n').length;ta.scrollTop=Math.max(0,(linesBefore-4)*20);}}window.onload=()=>{updateSortButtons();const tokenInput=el('token');tokenInput.addEventListener('input',()=>{clearTimeout(authTimer);if(tokenInput.value.trim().length>=10)authTimer=setTimeout(()=>auth(false),300);});tokenInput.addEventListener('paste',()=>setTimeout(()=>auth(false),50));tokenInput.addEventListener('keypress',e=>e.key==='Enter'&&auth(true));const t=localStorage.getItem('gt');if(t){tokenInput.value=t;auth(false);}};const toast=(id,msg,err)=>{const target=el(id);target.textContent=msg;target.style.display='block';target.style.background=err?'#fef2f2':'#ecfdf5';target.style.color=err?'#991b1b':'#065f46';target.style.border=`1px solid ${err ? '#f43f5e' : '#10b981'}`;setTimeout(()=>target.style.display='none',4000);};const req=(path,method='GET',body=null)=>fetch(api+(path?'/'+path:''),{method,headers:{'Authorization':`token ${localStorage.getItem('gt')}`,'Content-Type':'application/json'},body:body?JSON.stringify(body):null});const getGitHubArchiveData=async()=>{try{const res=await req('archive.json');if(res.ok){const data=await res.json();return{list:JSON.parse(b64Dec(data.content)),sha:data.sha};}}catch{}return{list:[],sha:null};};const saveGitHubArchiveData=async(newList,sha=null)=>{const payload={message:'Arşiv listesi güncellendi',content:b64Enc(JSON.stringify(newList,null,2))};if(sha)payload.sha=sha;await req('archive.json','PUT',payload);};const unlockUI=()=>{el('auth-box').classList.add('hidden');['logout-box','secure-sidebar','secure-content'].forEach(id=>el(id).classList.remove('hidden'));};const auth=showAlert=>{const t=el('token').value.trim();if(!t)return showAlert&&toast('auth-toast','Şifre girin',true);fetch(api,{headers:{'Authorization':`token ${t}`}}).then(res=>{if(res.ok){localStorage.setItem('gt',t);if(showAlert)toast('auth-toast','Giriş yapıldı');unlockUI();load();}else{localStorage.removeItem('gt');if(showAlert)toast('auth-toast','Geçersiz şifre',true);}}).catch(()=>showAlert&&toast('auth-toast','Bağlantı hatası',true));};const logout=()=>{localStorage.removeItem('gt');location.reload();};const switchTab=tab=>{currentTab=tab;el('tab-files-btn').classList.toggle('active',tab==='files');el('tab-archive-btn').classList.toggle('active',tab==='archive');load();};const toggleArchive=async fileName=>{toast('list-toast','Arşiv durumu güncelleniyor...');const{list:archivedList,sha}=await getGitHubArchiveData();const exists=archivedList.includes(fileName);const updatedList=exists?archivedList.filter(n=>n!==fileName):[...archivedList,fileName];toast('list-toast',`${fileName} ${exists ? 'arşivden çıkarıldı' : 'arşive kaldırıldı'}`);await saveGitHubArchiveData(updatedList,sha);load();};const formatDate=dateStr=>{if(!dateStr)return'';const d=new Date(dateStr);if(isNaN(d))return'';const pad=n=>String(n).padStart(2,'0');return`${pad(d.getDate())}.${pad(d.getMonth()+1)}.${d.getFullYear()} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;};const updateSortButtons=()=>{document.querySelectorAll('.sort-btn').forEach(btn=>{const active=btn.dataset.sort===sortKey;btn.classList.toggle('active',active);const arrow=btn.querySelector('.sort-arrow');if(arrow)arrow.textContent=active?(sortAsc?'↑':'↓'):'';});};const setSort=key=>{if(sortKey===key)sortAsc=!sortAsc;else{sortKey=key;sortAsc=(key==='date'?false:true);}updateSortButtons();renderFileList();};const renderFileList=()=>{const list=el('file-list');const count=currentFiles.length;const titleText=currentTab==='files'?`📄 Dosyalarım (${count})`:`📦 Arşivdeki Dosyalar (${count})`;el('view-title').textContent=titleText;if(!count){list.innerHTML=`<li style="text-align:center; color:#64748b; padding:20px;">${currentTab === 'files' ? 'Depo boş' : 'Arşivde dosya yok'}</li>`;return;}const files=[...currentFiles].sort((a,b)=>{let av,bv;if(sortKey==='size'){av=Number(a.size||0);bv=Number(b.size||0);}else if(sortKey==='date'){av=new Date(currentCommitDates[a.name]||0).getTime();bv=new Date(currentCommitDates[b.name]||0).getTime();}else{av=a.name.toLocaleLowerCase('tr');bv=b.name.toLocaleLowerCase('tr');}if(av<bv)return sortAsc?-1:1;if(av>bv)return sortAsc?1:-1;return 0;});updateSortButtons();list.innerHTML='';files.forEach(f=>{const isArchived=currentTab==='archive';const li=document.createElement('li');li.className='item';const nameCell=document.createElement('div');nameCell.className='name-cell';const titleWrap=document.createElement('div');titleWrap.className='file-title-wrap';const link=document.createElement('a');link.href=`https://${u}.github.io/${r}/${encodeURIComponent(f.name)}`;link.target='_blank';link.title=f.name;link.textContent=`📄 ${f.name}`;const subMeta=document.createElement('div');subMeta.className='file-sub-meta';const sizeSpan=document.createElement('span');sizeSpan.className='file-sub-size';sizeSpan.textContent=f.size!==undefined?formatFileSize(f.size):'-';const dateSpan=document.createElement('span');dateSpan.textContent=formatDate(currentCommitDates[f.name]);subMeta.append(sizeSpan,dateSpan);titleWrap.append(link,subMeta);const actions=document.createElement('div');actions.className='actions';const more=document.createElement('button');more.type='button';more.className='more-btn';more.title='İşlemler';more.textContent='⋮';const menu=document.createElement('div');menu.className='actions-menu';const codeBtn=document.createElement('button');codeBtn.type='button';codeBtn.className='action-menu-item';codeBtn.innerHTML=`<span>${isEditableTextFile(f.name) ? '✎' : '🔍'}</span><span>${isEditableTextFile(f.name) ? 'Kodu Düzenle' : 'İkili Analiz'}</span>`;const archiveBtn=document.createElement('button');archiveBtn.type='button';archiveBtn.className='action-menu-item';archiveBtn.innerHTML=`<span>${isArchived ? '↩️' : '📦'}</span><span>${isArchived ? 'Arşivden Çıkar' : 'Arşive Gizle'}</span>`;const deleteBtn=document.createElement('button');deleteBtn.type='button';deleteBtn.className='action-menu-item';deleteBtn.style.color='var(--danger)';deleteBtn.innerHTML='<span>🗑️</span><span>Sil</span>';menu.append(codeBtn,archiveBtn,deleteBtn);actions.append(more,menu);nameCell.append(titleWrap,actions);li.append(nameCell);list.appendChild(li);more.onclick=e=>{e.stopPropagation();document.querySelectorAll('.actions-menu.open').forEach(m=>{if(m!==menu)m.classList.remove('open');});menu.classList.toggle('open');};codeBtn.onclick=e=>{e.stopPropagation();menu.classList.remove('open');openTargetFile(f.name);};archiveBtn.onclick=e=>{e.stopPropagation();menu.classList.remove('open');toggleArchive(f.name);};deleteBtn.onclick=e=>{e.stopPropagation();menu.classList.remove('open');del(f.name,f.sha);};});};document.addEventListener('click',e=>{if(!e.target.closest('.actions')){document.querySelectorAll('.actions-menu.open').forEach(m=>m.classList.remove('open'));}});const load=async()=>{const list=el('file-list');list.innerHTML='<li style="text-align:center; color:#64748b; padding:20px;">Yükleniyor...</li>';try{const res=await req();if(!res.ok)throw new Error();const data=await res.json();if(!Array.isArray(data))return list.innerHTML='<li style="color:red; text-align:center;">Hata</li>';const{list:archivedFiles}=await getGitHubArchiveData();let files=data.filter(f=>!['index.html','archive.json'].includes(f.name.toLowerCase()));files=files.filter(f=>currentTab==='files'?!archivedFiles.includes(f.name):archivedFiles.includes(f.name));currentFiles=files;if(!files.length){renderFileList();return;}const commitDates={};await Promise.all(files.map(async f=>{try{const cRes=await fetch(`https://api.github.com/repos/${u}/${r}/commits?path=${encodeURIComponent(f.name)}&per_page=1`,{headers:{'Authorization':`token ${localStorage.getItem('gt')}`}});if(cRes.ok){const arr=await cRes.json();if(Array.isArray(arr)&&arr[0]){commitDates[f.name]=arr[0].commit?.committer?.date||arr[0].commit?.author?.date||'';}}}catch{}}));currentCommitDates=commitDates;renderFileList();}catch{list.innerHTML='<li style="text-align:center; color:red">Yüklenirken hata oluştu</li>';}};const openTargetFile=name=>isEditableTextFile(name)?editHtmlContent(name):openBinaryAnalysis(name);const upload=()=>{const file=el('file').files[0];if(!file)return;toast('upload-toast',`${file.name} yükleniyor...`);const reader=new FileReader();reader.readAsDataURL(file);reader.onload=()=>{req(encodeURIComponent(file.name),'PUT',{message:`Yüklendi: ${file.name}`,content:reader.result.split(',')[1]}).then(res=>{if(res.ok){toast('upload-toast',`${file.name} yüklendi`);load();}else throw new Error();}).catch(()=>toast('upload-toast','Yüklenemedi',true));};};const createDefaultHtmlFileName=()=>{const pad=n=>String(n).padStart(2,'0'),now=new Date();return`${now.getFullYear()}${pad(now.getMonth()+1)}${pad(now.getDate())}_${pad(now.getHours())}${pad(now.getMinutes())}${pad(now.getSeconds())}.html`;};const normalizeHtmlFileName=name=>(name=name.trim())?(name.includes('.')?name:`${name}.html`):'';const clearCodeInput=()=>{setCode('');el('html-code-input').focus();};const copyCodeToClipboard=async()=>{try{await navigator.clipboard.writeText(getCode());}catch{const ta=document.createElement('textarea');ta.value=getCode();document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);}toast('list-toast','Kod kopyalandı');};const toggleCodeFullscreen=()=>{const isFull=el('editor-wrap').classList.toggle('fullscreen-editor');el('toggle-fullscreen-btn').textContent=isFull?'küçült':'tam ekran';el('fs-save-btn').classList.toggle('hidden',!isFull);updateFsFileNameBadge();el('html-code-input').focus();};const closeCodeModal=()=>{el('editor-wrap').classList.remove('fullscreen-editor');el('toggle-fullscreen-btn').textContent='tam ekran';el('fs-save-btn').classList.add('hidden');el('fs-file-badge').style.display='none';el('code-search-input').value='';el('code-modal').style.display='none';};const openCodeModal=()=>{editingFileName=null;el('code-modal-title').textContent='Dosya Kodu İşlemleri';el('code-save-btn').textContent='Kaydet';el('html-file-name').value=createDefaultHtmlFileName();el('code-search-input').value='';updateFsFileNameBadge();setCode('');el('code-modal').style.display='flex';el('html-code-input').focus();};const pasteFromClipboard=async()=>{try{const clip=await navigator.clipboard.readText();if(clip)setCode(clip);}catch{}el('html-code-input').focus();};const runHtmlCode=()=>{const code=getCode().trim();if(!code)return;el('preview-iframe').srcdoc=code;el('fullscreen-preview').style.display='block';};const downloadHtmlFile=()=>{const code=getCode();if(!code.trim())return;const fileName=normalizeHtmlFileName(el('html-file-name').value)||createDefaultHtmlFileName();const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([code],{type:'text/plain;charset=utf-8'}));a.download=fileName;a.click();};const editHtmlContent=async name=>{editingFileName=name;el('code-modal-title').textContent=`Düzenle: ${name}`;el('code-save-btn').textContent='Kaydet';el('html-file-name').value=name;el('code-search-input').value='';updateFsFileNameBadge();setCode('Yükleniyor...');el('code-modal').style.display='flex';el('html-code-input').focus();try{const res=await req(encodeURIComponent(name));if(!res.ok)throw new Error();const data=await res.json();activeFileData[name]=data.sha;setCode(b64Dec(data.content));el('html-code-input').focus();}catch{setCode('İçerik alınamadı.');}};const uploadHtmlCode=async()=>{const code=getCode();const fileName=normalizeHtmlFileName(el('html-file-name').value);const oldFileName=editingFileName;if(!code.trim()||!fileName)return toast('list-toast','Dosya adı veya içerik boş olamaz',true);const isUpdating=!!oldFileName,isRenaming=isUpdating&&fileName!==oldFileName;closeCodeModal();toast('list-toast',`${fileName} kaydediliyor...`);try{let oldData=null;if(isUpdating){const getRes=await req(encodeURIComponent(oldFileName));if(!getRes.ok)throw new Error();oldData=await getRes.json();}const payload={message:isUpdating?(isRenaming?`Ad Değişimi: ${oldFileName} -> ${fileName}`:`Güncellendi: ${fileName}`):`Dosya Eklendi: ${fileName}`,content:b64Enc(code)};if(isUpdating&&!isRenaming)payload.sha=oldData.sha;const putRes=await req(encodeURIComponent(fileName),'PUT',payload);if(!putRes.ok)throw new Error();if(isRenaming)await req(encodeURIComponent(oldFileName),'DELETE',{message:`Silindi: ${oldFileName}`,sha:oldData.sha});editingFileName=null;toast('list-toast',`${fileName} kaydedildi`);load();}catch(e){toast('list-toast',e.message||'Kaydetme başarısız',true);}};const del=async(name,sha)=>{if(!confirm(`${name} silinsin mi?`))return;toast('list-toast',`${name} siliniyor...`);try{const getRes=await req(encodeURIComponent(name));const data=await getRes.json();const res=await req(encodeURIComponent(name),'DELETE',{message:`Silindi: ${name}`,sha:data.sha||sha});if(!res.ok)throw new Error();toast('list-toast',`${name} silindi`);load();}catch{toast('list-toast','Silme başarısız',true);}};let binBuf=null,binView=null,binAllStrings=[];let binHexPage=0,binStrPage=0,binTotalHexPages=1,binTotalStrPages=1;const BIN_H_PAGE=512,BIN_S_PAGE=200;const toggleSectionFullscreen=(secId,btnId)=>{const isFull=el(secId).classList.toggle('bin-sec-fullscreen');el(btnId).textContent=isFull?'🗗 Küçült':'⛶ Tam Ekran';};function calculateEntropy(data){if(!data.length)return 0;const freq=new Array(256).fill(0);for(let i=0;i<data.length;i++)freq[data[i]]++;let entropy=0;for(let i=0;i<256;i++){if(freq[i]>0){const p=freq[i]/data.length;entropy-=p*Math.log2(p);}}return entropy.toFixed(4);}async function calculateSHA256(buf){try{const hash=await crypto.subtle.digest('SHA-256',buf);return Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,'0')).join('');}catch{return'Hesaplanamadı';}}const initBinaryView=async(name,buf,extraMeta='')=>{binBuf=new Uint8Array(buf);binView=new DataView(buf);binAllStrings=[];binHexPage=0;binStrPage=0;el('bin-modal-title').textContent=`Analiz: ${name}`;binTotalHexPages=Math.ceil(binBuf.length/BIN_H_PAGE)||1;el('bin-hex-slider').max=binTotalHexPages-1;el('bin-hex-total-pages').textContent=binTotalHexPages;const sha=await calculateSHA256(buf),entropy=calculateEntropy(binBuf);runBinaryFormatAnalysis(name,binBuf.length,extraMeta+`
+<tr><td><b>SHA-256 Özeti</b></td><td style="word-break:break-all; font-family:monospace; color:#38bdf8;">${sha}</td>
+</tr>
+<tr><td><b>Entropi</b></td><td>${entropy} / 8.0000 ${entropy > 7.2 ? '(Sıkıştırılmış/Şifreli)' : '(Normal)'}</td>
+</tr>`);runBinaryExtractStrings();binTotalStrPages=Math.ceil(binAllStrings.length/BIN_S_PAGE)||1;el('bin-str-slider').max=binTotalStrPages-1;el('bin-str-total-pages').textContent=binTotalStrPages;renderBinHex();renderBinStrings();el('binary-modal').style.display='flex';};const inspectLocalFile=input=>{const file=input.files[0];if(!file)return;toast('list-toast',`${file.name} analiz ediliyor...`);const reader=new FileReader();reader.onload=()=>{const modDate=file.lastModified?formatDate(new Date(file.lastModified)):'Bilinmiyor';initBinaryView(file.name,reader.result,`
+<tr><td><b>MIME Türü</b></td><td>${file.type || 'Belirtilmemiş'}</td>
+</tr>
+<tr><td><b>Son Değiştirilme</b></td><td>${modDate}</td>
+</tr>`);input.value='';};reader.readAsArrayBuffer(file);};const openBinaryAnalysis=async name=>{toast('list-toast',`${name} yükleniyor...`);try{const res=await req(encodeURIComponent(name));if(!res.ok)throw new Error();const data=await res.json(),bStr=atob(data.content),len=bStr.length;const bytes=new Uint8Array(len);for(let i=0;i<len;i++)bytes[i]=bStr.charCodeAt(i);initBinaryView(name,bytes.buffer,`
+<tr><td><b>GitHub SHA</b></td><td style="word-break:break-all; font-family:monospace; color:#f59e0b;">${data.sha}</td>
+</tr>`);}catch{toast('list-toast','Veri çözümlenemedi',true);}};const closeBinaryModal=()=>{const box=el('binary-modal-box');box.classList.remove('fullscreen-active');el('bin-fs-btn').textContent='⛶ Tam Ekran';['bin-hex-sec','bin-str-sec'].forEach(id=>el(id).classList.remove('bin-sec-fullscreen'));el('binary-modal').style.display='none';binBuf=binView=null;binAllStrings=[];};const toggleBinaryFullscreen=()=>{const isFull=el('binary-modal-box').classList.toggle('fullscreen-active');el('bin-fs-btn').textContent=isFull?'🗗 Pencere':'⛶ Tam Ekran';};function runBinaryFormatAnalysis(fileName,fileSize,extraMeta=''){let meta=`
+<tr><td><b>Dosya / Boyut</b></td><td>${fileName} (${formatFileSize(fileSize)} - ${fileSize.toLocaleString()} B)</td>
+</tr>`+extraMeta;const dBox=el('bin-details-box'),dContent=el('bin-details-content');dBox.style.display='none';if(binBuf[0]===0x4D&&binBuf[1]===0x5A&&binBuf.length>0x40){const peOffset=binView.getUint32(0x3C,true);if(peOffset<binBuf.length-4&&binBuf[peOffset]===0x50&&binBuf[peOffset+1]===0x45){const machine=binView.getUint16(peOffset+4,true);const sections=binView.getUint16(peOffset+6,true);const time=new Date(binView.getUint32(peOffset+8,true)*1000).toUTCString();const arch=machine===0x8664?"64-bit (x64)":(machine===0x14C?"32-bit (x86)":"ARM/Diğer");meta+=`
+<tr><td><b>Format</b></td><td>Windows PE (EXE/DLL)</td>
+</tr>
+<tr><td><b>Mimari / Tarih</b></td><td>${arch} | ${time}</td>
+</tr>
+<tr><td><b>Bölüm Sayısı</b></td><td>${sections}</td>
+</tr>`;dBox.style.display='none';el('bin-meta-table').innerHTML=meta;return;}}meta+=`
+<tr><td><b>Format</b></td><td>Genel İkili / Veri Dosyası</td>
+</tr>`;el('bin-meta-table').innerHTML=meta;}function runBinaryExtractStrings(){let cur='';for(let i=0;i<binBuf.length;i++){const c=binBuf[i];if(c>=32&&c<=126)cur+=String.fromCharCode(c);else{if(cur.length>=4)binAllStrings.push(cur);cur='';}}if(cur.length>=4)binAllStrings.push(cur);}function renderBinHex(){const start=binHexPage*BIN_H_PAGE,end=Math.min(start+BIN_H_PAGE,binBuf.length);let out='';for(let i=start;i<end;i+=16){const chunk=binBuf.subarray(i,Math.min(i+16,end));const hex=Array.from(chunk).map(b=>b.toString(16).padStart(2,'0').toUpperCase()).join(' ');const ascii=Array.from(chunk).map(b=>(b>=32&&b<=126?String.fromCharCode(b):'.')).join('');out+=i.toString(16).padStart(8,'0').toUpperCase()+'  '+hex.padEnd(48,' ')+'  |'+ascii+'|\n';}el('bin-hex-output').textContent=out;el('bin-hex-counter').textContent=`(${start.toLocaleString()} - ${end.toLocaleString()} / ${binBuf.length.toLocaleString()} B)`;el('bin-hex-prev').disabled=(binHexPage===0);el('bin-hex-next').disabled=(end>=binBuf.length);el('bin-hex-slider').value=binHexPage;el('bin-hex-page-input').value=binHexPage+1;}function renderBinStrings(){const start=binStrPage*BIN_S_PAGE,end=Math.min(start+BIN_S_PAGE,binAllStrings.length);el('bin-str-output').textContent=binAllStrings.slice(start,end).join('\n');el('bin-str-counter').textContent=`(${start.toLocaleString()} - ${end.toLocaleString()} / ${binAllStrings.length.toLocaleString()} adet)`;el('bin-str-prev').disabled=(binStrPage===0);el('bin-str-next').disabled=(end>=binAllStrings.length);el('bin-str-slider').value=binStrPage;el('bin-str-page-input').value=binStrPage+1;}const jumpHex=d=>{binHexPage=Math.max(0,Math.min(binTotalHexPages-1,binHexPage+d));renderBinHex();};const jumpStr=d=>{binStrPage=Math.max(0,Math.min(binTotalStrPages-1,binStrPage+d));renderBinStrings();};el('bin-hex-slider').oninput=e=>{binHexPage=+e.target.value;renderBinHex();};el('bin-str-slider').oninput=e=>{binStrPage=+e.target.value;renderBinStrings();};el('bin-hex-page-input').onchange=e=>{const v=+e.target.value-1;if(!isNaN(v)){binHexPage=Math.max(0,Math.min(binTotalHexPages-1,v));renderBinHex();}};el('bin-str-page-input').onchange=e=>{const v=+e.target.value-1;if(!isNaN(v)){binStrPage=Math.max(0,Math.min(binTotalStrPages-1,v));renderBinStrings();}};el('bin-hex-prev').onclick=()=>jumpHex(-1);el('bin-hex-next').onclick=()=>jumpHex(1);el('bin-str-prev').onclick=()=>jumpStr(-1);el('bin-str-next').onclick=()=>jumpStr(1);const closeBtn=el('draggable-close-btn');let isDragging=false,currentX=0,currentY=0,initialX,initialY,xOffset=0,yOffset=0;const dragStart=e=>{const p=e.touches?e.touches[0]:e;initialX=p.clientX-xOffset;initialY=p.clientY-yOffset;if(e.target===closeBtn)isDragging=true;};const dragEnd=()=>{initialX=currentX;initialY=currentY;isDragging=false;};const drag=e=>{if(!isDragging)return;e.preventDefault();const p=e.touches?e.touches[0]:e;currentX=p.clientX-initialX;currentY=p.clientY-initialY;xOffset=currentX;yOffset=currentY;closeBtn.style.transform=`translate3d(${currentX}px, ${currentY}px, 0)`;};closeBtn.addEventListener('touchstart',dragStart,{passive:false});document.addEventListener('touchend',dragEnd);document.addEventListener('touchmove',drag,{passive:false});closeBtn.addEventListener('mousedown',dragStart);document.addEventListener('mouseup',dragEnd);document.addEventListener('mousemove',drag);closeBtn.onclick=()=>{if(!isDragging){el('fullscreen-preview').style.display='none';el('preview-iframe').srcdoc='';el('html-code-input').focus();}};
+</script>
+</body>
+</html>
