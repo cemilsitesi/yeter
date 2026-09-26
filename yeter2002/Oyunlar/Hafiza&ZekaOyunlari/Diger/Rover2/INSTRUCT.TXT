@@ -1,0 +1,211 @@
+^C^I*                       About Rescue Rover 2                       *
+
+RESCUE ROVER 2 is part of the 10-game "lost collection" written by ID Software exclusively for Softdisk Publishing. 
+     
+RESCUE ROVER 2 is the second episode of a whimsical arcade/puzzle game that pits you against evil Robots while you try to rescue your dog Rover from their clutches.     
+     
+Go fetch!  Good boy!  REAL GOOD!
+
+^C^I*                         Getting started                          *
+
+For most players, starting this game is as simple as typing the following at the DOS prompt:
+
+^CSTART followed by the [ENTER] key.
+
+However, if you encounter a problem with your SVGA graphics display (if you have one), then type the following at the DOS prompt:
+
+^CSTART /COMP followed by the [ENTER] key.
+
+^CIf you need further help,
+^Ccall our Technical Support group at 1-318-221-8311.
+
+
+^C^I*                   The Story of RESCUE ROVER 2                    *
+
+You are Roger, and your faithful dog Rover has once again been dognapped by the evil Robots! They're back, and they mean business! 
+
+Luckily, you're much smarter than they are. Walk through new traps and evade brand new robots in these all-new, challenging Robot Rooms! 
+
+
+^C^I*                  About the Game Control Panel                    *
+
+^C^1CONTROL PANEL SECTIONS
+
+There are five sections to choose in the Control Panel. They are: Game, Help, Disk, Controls, and Sound Effects. You can choose these sections by selecting the buttons on the left side of the screen. With the keyboard, use the arrows to move the arrow cursor to the button you want, then press ENTER. The joystick or mouse can also move the cursor, and pushing the button  will select the item the arrow is on.
+
+^1GAME SECTION
+
+You can choose to start a new game in easy, normal, or hard modes. These determine how fast the robots move.
+
+You can start at Robot Room 1, or resume play if you entered the Control Panel in the middle of a current game.
+
+^1HELP SECTION
+
+This topic is "Help me, I'm lost!"  The others are about the game controls, and the story of RESCUE ROVER 2.
+
+^1DISK SECTION
+
+You can save your current game or load a previously saved game here. You can name your saved game so you'll remember where you saved it.  Loading a game will replace your current game (make sure you saved it). Saving over an old game will replace that game forever.
+
+You can also "Exit to DOS," which will quit the game.
+
+^1CONTROLS SECTION
+
+You can control the game by keyboard or joystick.  If you choose keyboard, you can redefine which keys you wish to use to control Roger.  In the Control Panel, you will always use the arrow keys and ENTER.
+
+^1SOUND EFFECTS SECTION
+
+If you have an AdLib, Sound Blaster, or Sound Source, you can choose to have the sound effects play on them. If you don't have any of these boards, you'll have to choose "No Sound Effects" or "PC Speaker."
+
+^C^I*              OTHER NEAT-O COMMAND LINE PARAMETERS                *
+
+When some documentation tells you to type more that just the name of the program you want to run, those extra bits are called "command line parameters."  This is a fancy term for extra information you can give the program when you run it. Normally, you will never need to type these.  If the program is having trouble with your hardware, try the appropriate parameter. 
+
+Here are some command line parameters that you might need to use.
+
+  START /COMP        (To clear up any display abnormalities)
+  START /NODR        (Type this if the program hangs a lot with the 
+                      disk drive light staying on.)
+  START /NOAL        (Don't detect AdLib or Sound Blaster.)
+  START /NOSB        (Don't detect Sound Blaster.)
+  START /NOSS        (Don't detect Sound Source.)
+  START /SST         (Put Sound Source in Tandy mode for Tandy
+                      computers with the special Sound Source adapter.)
+  START /SS1         (Set Sound Source to LPT1.  /SS2 will set it to
+                      LPT2,and /SS3, LPT3.)
+  START /NOJOYS      (Tell program to ignore joystick.)
+  START /NOMOUSE     (Tell program to ignore mouse.)
+  START /HIDDENCARD  (Overrides video card detection if the program
+                      seems to be detecting your video card 
+                      incorrectly and not letting you play.)
+
+^CYOU CAN IGNORE ALL OF THIS
+^Cif you do not have any problems playing this game!
+
+^C^I*           Keyboard Controls for Playing RESCUE ROVER 2           *
+
+ARROW keys 
+or joystick             Move Roger around
+
+SPACE key               Display game status
+ESC key                 Go back to the Control Panel
+
+F1                      Get Help information
+F2                      Turn sounds on/off
+F3                      Define Keyboard controls
+F4                      Calibrate Joystick
+F5                      Start New Game
+F6                      Load or Save Game
+F8                      Restart current Robot Room
+
+^C^I*                        The Basics of Play                        *
+
+Once you've selected a New Game, you will be placed in Robot Room #1.  You can move Roger around using the arrow keys, the numeric keypad, or whatever movement keys you define in the Controls section of the Control Panel.
+
+Walk around and explore.  You'll find you can push crates, reflective mirrors, and more.  You can get Cards which open the force doors.  Find out what the objects do, and watch the robots to see how they act.
+
+Your goal in each level is to use Roger to find and rescue Rover by solving interesting logic puzzles involving the placement of objects and the avoidance of danger from troublesome robots.
+
+^C^I*                  Solving the First Robot Room                    *
+
+^CSkip this section if you want to try
+^Csolving the first level by yourself.
+
+Get the Energy Card that is located near you.
+
+Walk into the Force Door and the Card will turn it off.  You will see in the adjoining room a Robot Guard, a Laser Beam, and Rover standing in the corner scratching himself.
+
+Push the Crate in front of the Robot Guard so it can't shoot you.
+
+Push the Reflective Mirror into the Laser Beam so that it deflects toward the Robot Guard and destroys it.
+
+Push the crate into the water to form a floating walkway.  Go get Rover and lead him down the ladder to the next Robot Room!
+
+Piece of cake, right?  Now try the next Robot Room on your own!
+
+^C^I*                      The Cast of Characters                      *
+
+^CHere are some of the things you'll find in the Robot Rooms!
+
+ROGER          Our hero.
+
+ROVER          Our blitheringly unaware friend and goal.
+
+GUARDS         These robots sit and shoot anything in front of them.
+
+FLOATERS       They live in water & smash anything in their way.
+
+ZAPPERS        They electrify metal grating, so watch out!
+
+TROOPERS       They run and are deadly to the touch.
+
+PATROL         They roll about and shoot on sight!
+
+CRATES         Push 'em around.
+
+LASER TURRETS  They fire a constant, deadly beam.
+
+MIRROR BLOCKS  These reflect lasers.
+
+FORCE DOORS    Block entrance to a room.
+
+ENERGY CARDS   Open force doors.
+
+SPIKE FLOORS   Don't be on these when the spikes are out!
+
+STAR PEARLS    Big blue spheres that roll rather well.
+
+BUMPERS        Star pearls bounce off of these, back at you!
+
+BUMP'N'TURNS   Star pearls bounce off these at a 90 degree angle, 
+               then the bumper turns.
+
+TELEPORTERS    Walk on to these and zap!  You're elsewhere 
+               in the Robot Room!
+
+ANTIGRAV CARTS Float over any surface.
+
+GRATED FLOORS  Robots can't walk on these.
+
+GLOWING FLOORS Roger and Rover can't walk on these.
+
+POOLS, STREAMS, WHIRLPOOLS
+               Water can hinder or help you.
+
+DISAPPEARING FLOORS  
+               Walk along these quickly.
+
+SHATTERBLOCKS  Strange, diamond-shaped blocks.
+
+
+^C^I*                      Final Hints and Tips                        *
+
+*  Figure out what you need to do, and what absolutely has to be where.  Move things around to get you there.
+
+*  If you're really stuck, try to go about it a completely different way.
+
+*  Rover can be helpful, too . . . .
+
+*  Each level is completely solvable.  Remember, if you get stumped, you can save the game, press F8 to restart the level, and then go about it with a fresh view of things.
+
+
+^CENJOY!
+
+
+^C^I*                 THE RESCUE ROVER THEME SONG!                     *
+
+      Now the time has come
+      You've got to Rescue Rover, boom boom
+      The Robots took him to their
+      Robot Rooms, and they are
+      All a'guarding him with
+      Guns and lasers, and you
+      Gotta get him back
+      Because he is your dog.
+
+      Yes, they're back again
+      To steal your doggie friend
+      So you gotta Rescue . . .
+      Rover . . . 
+      Now!
+      Woof woof!
