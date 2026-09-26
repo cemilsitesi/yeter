@@ -1,0 +1,10 @@
+[K-Chess Game]
+[Moves]
+COMMENT Sicilian Defence.
+  1   e2-e4   c7-c5
+  2  Ng1-f3  Nb8-c6
+  3   d2-d4   c5xd4
+  4  Nf3xd4   e7-e5
+  5  Nd4-f5  Ng8-e7
+  6  Nf5-d6*
+[EndGame]
