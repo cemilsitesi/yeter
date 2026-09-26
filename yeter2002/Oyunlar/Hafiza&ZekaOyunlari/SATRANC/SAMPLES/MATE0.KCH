@@ -1,0 +1,15 @@
+[K-Chess Game]
+[Board]
+WK F3
+BP D4
+WP E4
+WN C5
+BK E5
+WR D7
+BP E7
+BN C8
+WQ D8
+BN E8
+[Moves]
+COMMENT White to play and mate in two moves.
+[EndGame]
