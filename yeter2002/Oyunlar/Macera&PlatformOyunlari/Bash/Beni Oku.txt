@@ -1,0 +1,13 @@
+
+ Bash1 Oyunun Oynanisi
+
+Bu Oyunda hucrelere tikali kopek ve kedileri kurtarmaya calisiyorsunuz.
+
+Oyuna girmek icin `Begin` (Basla) secenegi `B` tusuyla isaretlecek.
+
+Oyunda `Ctrl` ziplama ve `Alt` tusu ates amaciyla kullanilmaktadir.
+
+Cikis icin `Quit` (Cikis) isaretlenecek. 
+Ardindan `Dos` (Ms Dos tabanindan cikis) icin `D` ve `Yes` (Evet) `Y` isaretlecek.
+
+					Hazirlayan: Hasan Serhat YETER 
