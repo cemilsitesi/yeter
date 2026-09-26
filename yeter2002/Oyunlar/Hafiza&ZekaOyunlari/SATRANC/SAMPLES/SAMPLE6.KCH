@@ -1,0 +1,30 @@
+[K-Chess Game]
+[Moves]
+COMMENT This game begins with an opening set of moves called the Sicilian Defence.
+  1   e2-e4   c7-c5
+  2  Ng1-f3   e7-e6
+  3  Nb1-c3   d7-d6
+  4   d2-d4   c5xd4
+  5  Nf3xd4  Ng8-f6
+  6   g2-g4
+COMMENT White is initiating the potentially devastating Keres Attack.
+  6          Nb8-c6
+  7   g4-g5  Nf6-d7
+  8  Bc1-e3  Bf8-e7
+  9   h2-h4     o-o
+ 10  Qd1-h5   a7-a6
+ 11   o-o-o  Nc6xd4
+ 12  Be3xd4   b7-b5
+ 13  Bf1-d3   b5-b4
+COMMENT A fatal mistake by Black. Nc6-e5 was required.
+ 14  Bd4xg7  Nd7-c5
+COMMENT Black has no opportunity to take White's pieces.
+ 15  Qh5-h6  Rf8-e8
+COMMENT This was the only move left for Black, but it still leaves White in a commanding position with an extra pawn.
+ 16  Nc3-e2   e6-e5
+ 17  Ne2-g3  Bc8-g4
+ 18  Bd3-c4  Nc5-e6
+COMMENT Black has no chance to take White's rook.
+ 19  Bc4xe6   f7xe6
+ 20   g5-g6  Resigns
+[EndGame]
