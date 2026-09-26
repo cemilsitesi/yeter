@@ -1,0 +1,20 @@
+[K-Chess Game]
+[Board]
+WK E1
+BN H1
+WP D2
+WB E3
+BK E4
+BP G4
+WP H4
+WN E5
+BP F5
+BP H5
+WQ E6
+BP H6
+BP B7
+BP E7
+BN G8
+[Moves]
+COMMENT White to play and win.
+[EndGame]
