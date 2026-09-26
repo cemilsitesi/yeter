@@ -1,0 +1,49 @@
+[Params]
+        WndTitle     = Welcome to the Lotus Installation Program
+        WndMess1     = Please wait while the install program copies its files to your hard disk.
+        WndMess2     = Please wait while the install program searches your hard disk for previous versions of Lotus applications.
+        TmpDirSize   = 1500
+        WinDirSize   = 10000
+        LotusAppSize   = 9000
+        TmpDirName   = lotustmp
+        CmdLine      = lsirun.exe start /S %s %s
+        DrvModName   = lsirun
+        ArchiveName  = install.dsk
+        ShowVersion  = No
+
+[Files]
+        cinstall.ini  = cinstall.ini
+        ivcw.dll     = ivcw.dll
+        unarjw.dll   = unarjw.dll
+
+[ArchiveFiles]
+        ORG.inf      = ORG.inf
+        ORGnode.inf  = ORGnode.inf
+        ORGdist.inf  = ORGdist.inf
+        inst.lso     = inst.lso
+        lic.lso      = lic.lso
+        ORG.lso      = ORG.lso
+        start.lss    = start.lss
+        main.lso     = main.lso
+        resource.lso = resource.lso
+        globals.lso  = globals.lso
+        setupapi.lso = setupapi.lso
+        share.lso    = share.lso
+        callback.lso = callback.lso
+        toolkit.lso  = toolkit.lso
+        install.hlp  = install.hlp
+        shared.ini   = shared.ini
+        lsirun.exe   = lsirun.exe
+        ltssiw21.dll = ltssiw21.dll
+        ltsssw21.dll = ltsssw21.dll
+        lcomstf.dll  = lcomstf.dll
+        mscomstf.dll = mscomstf.dll
+        mscuistf.dll = mscuistf.dll
+        msdetstf.dll = msdetstf.dll
+        msinsstf.dll = msinsstf.dll
+        msshlstf.dll = msshlstf.dll
+        msuilstf.dll = msuilstf.dll
+        ver.dll      = ver.dll
+        ltsdlg02.dll = ltsdlg02.dll
+		bcfmod.dll   = bcfmod.dll
+
