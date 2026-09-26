@@ -1,0 +1,1081 @@
+[Introduction]
+
+Status= This language has been translated by Alexandre Viola. If you would like to make a comment about this Portugese translation, please contact Rob McDonell at arkangles@arkangles.com or Alexandre Viola at aviola@terra.com.br.
+
+[Objects]
+
+AboutDlg= Sobre O KChess Elite
+
+AboutDlg.RegoLabel= Registando você terá acesso a todas as funções da versão mais recente do programa. Não haverá mensagem lhe importunando ou limite de tempo para o uso. Você terá o direito a atualizações futuras com preços reduzidos ou sem custo.
+
+AboutDlg.ClickLabel= Clique a tecla da ajuda para mais informação sobre este programa e como registar. Clique sobre a tecla de registro quando você estiver pronto para requisitar o programa. Se você já tiver registrado o programa em outra ocasião clique sobre a tecla destravar para incorporar seus dados do registro.
+
+AboutDlg.OkBtn= Ok
+
+AboutDlg.RegoBtn= Registrar
+
+AboutDlg.UnlockBtn= Destravar
+
+AboutDlg.HelpBtn= Ajuda
+
+BoardSetDlg= Configurações Iniciais do Tabuleiro
+
+BoardSetDlg.Heading= Entre com as coordenadas iniciais do tabuleiro:
+
+BoardSetDlg.EnPassantLabel= Alvo do "En passant":
+
+BoardSetDlg.FirstMoveLabel= Número do primeiro movimento:
+
+BoardSetDlg.FiftyMoveLabel= Movimentos desde a captura ou movimento do peão:
+
+BoardSetDlg.CastleGroup= Roque Permitido
+
+BoardSetDlg.BlackQueenBox= Lado da rainha preta
+
+BoardSetDlg.BlackKingBox= Lado do rei
+
+BoardSetDlg.WhiteQueenBox= Lado da rainha branca
+
+BoardSetDlg.WhiteKingBox= Lado do rei
+
+BoardSetDlg.FirstGroup= Primeiro Jogador
+
+BoardSetDlg.StatusGroup= Situação Do Jogo | Normal | Empate | Desistência
+
+BoardSetDlg.OkBtn= Ok
+
+BoardSetDlg.CancelBtn= Cancelar
+
+BoardSetDlg.HelpBtn= Ajuda
+
+ChessForm.FreezePanel= Jogo Congelado
+
+ChessForm.FileMenu1= &Arquivo
+
+ChessForm.FileNew1= Novo | Ctrl+N
+
+ChessForm.FileOpen1= Abrir... | Ctrl+O
+
+ChessForm.FileReopen1= Reabrir | Ctrl+R
+
+ChessForm.FileSave1= Salvar | Ctrl+S
+
+ChessForm.FileSaveAs1= Salvar Como... | Ctrl+A
+
+ChessForm.PrintMoves1= Imprimir Movimentos... | Ctrl+P
+
+ChessForm.BoardPrint1= Imprimir Tabuleiro... | Ctrl+B
+
+ChessForm.PrintSetup1= Imprimir Configurações...
+
+ChessForm.FileExit1= Sair
+
+ChessForm.PlayMenu1= &Jogo
+
+ChessForm.BoardSetup1= Modo De Configuração Do Tabuleiro
+
+ChessForm.Clear1= Limpar Tabuleiro
+
+ChessForm.EnterPosition1= Entre com a posição...
+
+ChessForm.SetBoardState1= Configurações do Tabuleiro...
+
+ChessForm.Opening1= Abertura... | Ctrl+G
+
+ChessForm.AutoPlay1= Jogo Automático | Alt+A
+
+ChessForm.PlayWhite1= Vez das Brancas | Alt+W
+
+ChessForm.PlayBlack1= Vez das Pretas | Alt+B
+
+ChessForm.TwoPlayer1= Dois Jogadores | Alt+T
+
+ChessForm.Analyse1= Analisar Jogada
+
+ChessForm.Rotate1= Virar o Tabuleiro | Alt+Q
+
+ChessForm.Speak1= Falar
+
+ChessForm.SpeakMove1= &Mover | Alt+0
+
+ChessForm.SpeakRank11= Posição &1 | Alt+1
+
+ChessForm.SpeakRank21= Posição &2 | Alt+2
+
+ChessForm.SpeakRank31= Posição &3 | Alt+3
+
+ChessForm.SpeakRank41= Posição &4 | Alt+4
+
+ChessForm.SpeakRank51= Posição &5 | Alt+5
+
+ChessForm.SpeakRank61= Posição &6 | Alt+6
+
+ChessForm.SpeakRank71= Posição &7 | Alt+7
+
+ChessForm.SpeakRank81= Posição &8 | Alt+8
+
+ChessForm.SpeakFilea1= Fila &a | Ctrl+1
+
+ChessForm.SpeakFileb1= Fila &b | Ctrl+2
+
+ChessForm.SpeakFilec1= Fila &c | Ctrl+3
+
+ChessForm.SpeakFiled1= Fila &d | Ctrl+4
+
+ChessForm.SpeakFilee1= Fila &e | Ctrl+5
+
+ChessForm.SpeakFilef1= Fila &f | Ctrl+6
+
+ChessForm.SpeakFileg1= Fila &g | Ctrl+7
+
+ChessForm.SpeakFileh1= Fila &h | Ctrl+8
+
+ChessForm.SpeakStatus1= &Status | Alt+9
+
+ChessForm.CopyGame1= Copiar o Jogo | Ctrl+C
+
+ChessForm.PasteGame1= Colar o Jogo | Ctrl+V
+
+ChessForm.Variation1= Variação | Alt+V
+
+ChessForm.Freeze1= Jogo Congelado | Alt+Z
+
+ChessForm.GameInfo1= &Informações do Jogo... | Alt+G
+
+ChessForm.Options1= Opções... | Alt+O
+
+ChessForm.MoveMenu1= &Movimento
+
+ChessForm.Undo1= Desfazer | Alt+U
+
+ChessForm.Redo1= Refazer | Alt+R
+
+ChessForm.UndoAll1= Desfazer Todos | Alt+D
+
+ChessForm.RedoAll1= Refazer Todos | Alt+L
+
+ChessForm.Hint1= Dica Rápida | Alt+I
+
+ChessForm.EnterMove1= Entre com o Movimento... | Enter
+
+ChessForm.ComputerMove1= Movimento Do Computador | Alt+C
+
+ChessForm.Stop1= Parar de pensar | Alt+S
+
+ChessForm.Replay1= Re-jogar | Alt+Y
+
+ChessForm.Resign1= Desistir | Alt+N
+
+ChessForm.OfferDraw1= Oferecer o Empate
+
+ChessForm.Comment1= Comentário | Alt+E
+
+ChessForm.HelpMenu1= &Ajuda
+
+ChessForm.HelpHelp1= Ajuda
+
+ChessForm.HelpUsing1= Usando A Ajuda
+
+ChessForm.HelpIndex1= Índice da Ajuda
+
+ChessForm.SearchHelpFor1= Procurar na ajuda...
+
+ChessForm.BeginnersInfo1= Informações para Novatos 
+
+ChessForm.Rules1= Regras do xadrez
+
+ChessForm.TipoftheDay1= Dica do dia...
+
+ChessForm.KChessWebSite1= Web site do KChess
+
+ChessForm.HelpAbout1= Sobre o KChess...
+
+ChessForm.NewButton= Jogo novo
+
+ChessForm.OpenButton= Abrir jogo
+
+ChessForm.SaveButton= Salvar o jogo
+
+ChessForm.PrintButton= Imprimir jogo 
+
+ChessForm.SetupButton= Configurações do tabuleiro
+
+ChessForm.AutoplayButton= Jogo Automático
+
+ChessForm.PlayWhiteButton= Jogar com as Brancas
+
+ChessForm.PlayBlackButton= Jogar com as Pretas
+
+ChessForm.TwoPlayerButton= Dois Jogadores
+
+ChessForm.AnalyseButton= Analisar a posição
+
+ChessForm.RotateButton= Girar o Tabuleiro
+
+ChessForm.CopyButton= Copiar o Jogo
+
+ChessForm.PasteButton= Colar o Jogo
+
+ChessForm.VariationButton= Variação
+
+ChessForm.FreezeButton= Congelar o Jogo
+
+ChessForm.OptionsButton= Opções
+
+ChessForm.UndoAllButton= Desfazer tudo
+
+ChessForm.UndoButton= Desfazer o movimento
+
+ChessForm.RedoButton= Refazer o movimento
+
+ChessForm.RedoAllButton= Refazer tudo
+
+ChessForm.HintButton= Dica Rápida
+
+ChessForm.ComputerButton= Movimento do computador
+
+ChessForm.StopButton= Parar de Pensar
+
+ChessForm.ReplayButton= Repetir o movimento
+
+ChessForm.HelpButton= Ajuda
+
+EnterMoveDlg.OkBtn= Ok
+
+EnterMoveDlg.CancelBtn= Cancelar
+
+EnterMoveDlg.HelpBtn= Ajuda
+
+InfoDlg= Informação do jogo e do jogador
+
+InfoDlg.Heading= Digite alguma informação relevante sobre este jogo e seus jogadores:
+
+InfoDlg.EventLabel= Nome Evento:
+
+InfoDlg.SiteLabel= Localização:
+
+InfoDlg.DateLabel= Data do jogo (yyyy.mm.dd):
+
+InfoDlg.TimeLabel= Tempo (hh:mm:ss):
+
+InfoDlg.RoundLabel= Rodada:
+
+InfoDlg.WhiteLabel= Brancas:
+
+InfoDlg.BlackLabel= Pretas:
+
+InfoDlg.EventDateLabel= Data evento (yyyy.mm.dd):
+
+InfoDlg.OpeningLabel= Abertura:
+
+InfoDlg.TitleLabel= Título:
+
+InfoDlg.PlayerLabel= Nome:
+
+InfoDlg.CtryLabel= País:
+
+InfoDlg.AnnotatorLabel= Anotador:
+
+InfoDlg.OkBtn= Ok
+
+InfoDlg.CancelBtn= Cancelar
+
+InfoDlg.HelpBtn= Ajuda
+
+OpeningsDlg= Enciclopédia de aberturas do xadrez
+
+OpeningsDlg.Heading= Selecionar a abertura que você deseja jogar:
+
+OpeningsDlg.ColumnHeader= Código | Nome | Movimentos
+
+OpeningsDlg.OkBtn= Ok
+
+OpeningsDlg.CancelBtn= Cancelar
+
+OpeningsDlg.SortBtn= Sortear
+
+OpeningsDlg.HelpBtn= Ajuda
+
+OptionsDlg= Opções
+
+OptionsDlg.OptionsTab= Força | Vídeo | Peças | Tabuleiro | Texto | Áudio | Impressão
+
+OptionsDlg.LimitTypeGroup= Tipo de limite de tempo | Nenhum limite de tempo | Limite de tempo por jogador | Limite de tempo por rodada | Ajustar movimentos por hora | Tempo do computador | Temporizador do Relógio
+
+OptionsDlg.LengthGroup= Valor Do Limite De Tempo
+
+OptionsDlg.UserLimitGroup= Espaço limite do usuário | Não aplicado ao usuário | O computador joga pelo usuário | O usuário perde o jogo
+
+OptionsDlg.MiscGroup= Opções de Jogo
+
+OptionsDlg.ThinkAheadBox= Computador pensa adiante
+
+OptionsDlg.FreezeCoversBox= Congelar cobre o tabuleiro
+
+OptionsDlg.OpeningLibBox= Usar o Livro de aberturas
+
+OptionsDlg.ResignBox= Permitir desistência do computador
+
+OptionsDlg.DrawBox= Empate por falta de forças
+
+OptionsDlg.PromoteBox= Sempre promover à rainha
+
+OptionsDlg.PressBox= Pressionar relógio automaticamente
+
+OptionsDlg.FreezeMinimizeBox= Congelar ao minimizar
+
+OptionsDlg.ValidateBoardBox= Validar tabuleiro na configuração
+
+OptionsDlg.SearchGroup= Profundidade Da Busca
+
+OptionsDlg.WeakestLabel= Mais fraco
+
+OptionsDlg.StrongestLabel= Mais forte
+
+OptionsDlg.NoviceBtn= Novato | Ajuste opções ao nível mais simples
+
+OptionsDlg.AverageBtn= Média | Ajuste opções ao nível intermediário
+
+OptionsDlg.ExpertBtn= Experiente | Ajuste opções ao nível mais difícil
+
+OptionsDlg.ButtonsGroup= Barra de Botões | Nenhum | Esquerda | Topo
+
+OptionsDlg.TakenGroup= Peças roubadas
+
+OptionsDlg.ShowTakenBox= Mostrar as Peças Roubadas
+
+OptionsDlg.SortTakenBox= Mostrar peças pelo valor
+
+OptionsDlg.EdgeGroup= Borda do tabuleiro
+
+OptionsDlg.LabelsBox= Mostrar a borda dos quadrados
+
+OptionsDlg.PlayersBox= Mostrar Nomes dos jogadores 
+
+OptionsDlg.EdgeSizeGroup= Tamanho Da Borda do tabuleiro
+
+OptionsDlg.NarrowestLabel= Mais estreito
+
+OptionsDlg.WidestLabel= Mais largo
+
+OptionsDlg.StatusGroup= Painel De Status
+
+OptionsDlg.CommentBox= Mostrar comentários
+
+OptionsDlg.WorkingBox= Mostrar computador pensando
+
+OptionsDlg.ShowStatusBox= Mostrar o painel de status
+
+OptionsDlg.AnalogueBox= Mostrar relógios analógicos
+
+OptionsDlg.DigitalBox= Mostrar relógios digitais
+
+OptionsDlg.HundredthsBox= Mostrar centésimos de segundos
+
+OptionsDlg.NarrationBox= Mostrar Narração
+
+OptionsDlg.EcoBox= Mostrar nomes ECO
+
+OptionsDlg.RefreshGroup= Reiniciar Freqüência
+
+OptionsDlg.HighestLabel= mais alto
+
+OptionsDlg.LowestLabel= mais baixo
+
+OptionsDlg.PiecesGroup= Peças
+
+OptionsDlg.DisplayGroup= Opções Do mostrador das peças
+
+OptionsDlg.ScaleBox= Escala das peças para tabuleiro
+
+OptionsDlg.CaptionsBox= Mostrar captação das peças
+
+OptionsDlg.SpeedGroup= Velocidade de movimento das peças
+
+OptionsDlg.FastestLabel= mais rápido
+
+OptionsDlg.SlowestLabel= mais lento
+
+OptionsDlg.MovingGroup= Opções de movimento das peças
+
+OptionsDlg.FastOpenBox= abertura rápida de arquivo
+
+OptionsDlg.FastUndoBox= Movimento rápido de desfazer
+
+OptionsDlg.FastRedoBox= Movimento rápido de refazer
+
+OptionsDlg.OpenToEndBox= Arquivos abertos até o fim
+
+OptionsDlg.DragPiecesBox= Arrastar mover peças
+
+OptionsDlg.TwoClickBox= Dois cliques para movimento
+
+OptionsDlg.MoveCursorBox= Permitir movimentos barra de espaço
+
+OptionsDlg.ReduceFlickerBox= Reduzir diferença ao redesenhar
+
+OptionsDlg.DelayGroup= Demora Entre Movimentos
+
+OptionsDlg.ShortestLabel= mais rápido
+
+OptionsDlg.LongestLabel= mais longo
+
+OptionsDlg.HintsGroup= Sugestões de tabuleiro
+
+OptionsDlg.AttacksBox= Mostrar ataques
+
+OptionsDlg.JeopardiesBox= Mostrar peças ameaçadas
+
+OptionsDlg.PieceHintsBox= Mostrar Sugestões
+
+OptionsDlg.SquareHintsBox= Mostrar quadrados da Dica
+
+OptionsDlg.MoveMarkerBox= Mostrar quadrado do movimento 
+
+OptionsDlg.SquareSizeGroup= Tamanho do Tabuleiro
+
+OptionsDlg.SmallestLabel= menor
+
+OptionsDlg.LargestLabel= maior
+
+OptionsDlg.BorderSizeGroup= Tam. do Quadrado Ataque/Ameaça
+
+OptionsDlg.ThinnestLabel= mais fino
+
+OptionsDlg.ThickestLabel= mais denso
+
+OptionsDlg.TextureGroup= Textura do Tabuleiro
+
+OptionsDlg.ColourGroup= Cores
+
+OptionsDlg.WhiteSquareBtn= Quadrados brancos
+
+OptionsDlg.BlackSquareBtn= Quadrados pretos
+
+OptionsDlg.AttackBtn= Ataque
+
+OptionsDlg.JeopardyBtn= Ameaça
+
+OptionsDlg.MoveMarkerBtn= Marcador Movimento
+
+OptionsDlg.FontGroup= Fonte
+
+OptionsDlg.FontLabel= Amostra do tipo de Fonte
+
+OptionsDlg.FixedLabel= Amostra do tipo de Fonte 
+
+OptionsDlg.FixedBox= Largura Fixa das Fontes 
+
+OptionsDlg.NotationGroup= Notação | Algébrico padrão (ex.: Be3) | Algébrico longo (ex.: Bc1-e3) | Computador (por exemplo c1e3)
+
+OptionsDlg.LanguageGroup= Língua
+
+OptionsDlg.TextTypeGroup= Letras das peças | Inglês Padrão | Customizar Língua
+
+OptionsDlg.CustomTextGroup= Customizar Texto
+
+OptionsDlg.AudioGroup= Áudio | Nenhum | Somente efeitos sonoros | Som e status narrado | Som e movimento cheio narrado
+
+OptionsDlg.WhiteVoiceGroup= Voz das brancas | Masculino | Feminino
+
+OptionsDlg.BlackVoiceGroup= Voz das pretas | Masculino | Feminino 
+
+OptionsDlg.PrintGroup= Fonte para impressão
+
+OptionsDlg.PrintLabel= Amostra da Fonte
+
+OptionsDlg.PrintBoldBox= Negrito
+
+OptionsDlg.PrintItalicBox= Itálico
+
+OptionsDlg.PrintFixedBox= Fontes com largura Fixa para a lista de movimentos no formato de coluna
+
+OptionsDlg.FigureGroup= Figura da Fonte
+
+OptionsDlg.FigureCharLabel= Figura dos caracteres
+
+OptionsDlg.PrintSetupBtn= Configuração de Impressão
+
+OptionsDlg.OkBtn= Ok
+
+OptionsDlg.CancelBtn= Cancelar
+
+OptionsDlg.PreviewBtn= Preview
+
+OptionsDlg.DefaultsBtn= Padrão
+
+OptionsDlg.HelpBtn= Ajuda
+
+OrderDlg= Formulário De Registro/Requisição
+
+OrderDlg.Heading= Entre seu nome, endereço e forma de pagamento, e envie-nos como segue:
+
+OrderDlg.NameLabel= Nome:
+
+OrderDlg.CompanyLabel= Empresa:
+
+OrderDlg.AddressLabel= Endereço:
+
+OrderDlg.CountryLabel= País:
+
+OrderDlg.PhoneLabel= Telefone:
+
+OrderDlg.FaxLabel= Fax:
+
+OrderDlg.EmailLabel= Email:
+
+OrderDlg.SourceLabel= Onde o software foi visto ou obtido:
+
+OrderDlg.ProductLabel= Produto:
+
+OrderDlg.AmountLabel= Moeda corrente e quantidade paga:
+
+OrderDlg.CommentLabel= Comentário:
+
+OrderDlg.PaymentGroup= Tipo De Pagamento:
+
+OrderDlg.CardLabel= No. Do Cartão:
+
+OrderDlg.ExpiryLabel= Validade:
+
+OrderDlg.HolderLabel= Nome da Empresa do Cartão:
+
+OrderDlg.CloseBtn= Fechar
+
+OrderDlg.PrintBtn= Imprimir
+
+OrderDlg.FileBtn= Arquivo
+
+OrderDlg.CopyBtn= Copiar
+
+OrderDlg.EmailBtn= Email
+
+OrderDlg.HelpBtn= Ajuda
+
+PromoteDlg= Promoção
+
+PromoteDlg.QueenBtn= Rainha
+
+PromoteDlg.RookBtn= Torre
+
+PromoteDlg.BishopBtn= Bispo
+
+PromoteDlg.KnightBtn= Cavalo
+
+PromoteDlg.HelpBtn= Ajuda
+
+SelectDlg= Selecionar Jogo
+
+SelectDlg.Heading= Este arquivo é uma biblioteca de jogos. Selecione o jogo que você deseja abrir:
+
+SelectDlg.KeepBox= Manter a Biblioteca na memória
+
+SelectDlg.OkBtn= Ok
+
+SelectDlg.CancelBtn= Cancelar
+
+SelectDlg.HelpBtn= Ajuda
+
+TipsDlg= Dica do Dia
+
+TipsDlg.TipLabel= Você Sabia...
+
+TipsDlg.ShowTipsBox= Mostrar dicas ao iniciar
+
+TipsDlg.TipTypesGroup= Mostrar tipos de dicas | Programa KChess | Jogando Xadrez | Xadrez trivial | Todos as dicas
+
+TipsDlg.PrevBtn= <Dica anterior
+
+TipsDlg.NextBtn= Próxima dica> 
+
+TipsDlg.CloseBtn= Fechar
+
+UnlockDlg= Destravar o Programa
+
+UnlockDlg.Heading= Entre com os seus dados do registo abaixo para acessar todas as funções deste programa:
+
+UnlockDlg.NameLabel= Seu nome:
+
+UnlockDlg.SerialLabel= Número De série:
+
+UnlockDlg.UnlockLabel= Código:
+
+UnlockDlg.OkBtn= Ok
+
+UnlockDlg.CancelBtn= Cancelar
+
+UnlockDlg.HelpBtn= Ajuda
+
+[Messages]
+
+1000= Mensagem de erro %d não encontrada.
+
+1001= Disposição inválida de tabuleiro.
+
+1002= Quadrado de en passant inválido.
+
+1003= Número inválido dos movimentos desde a última captura ou movimento de peão.
+
+1004= Um erro de processamento interno foi detectado. Tente fechar outros programas que possam estar funcionando, como um antivírus. Se o problema persistir faça uma anotação das mensagens de erro e contate ARK ANGLES em arkangles@arkangles.com.
+
+1005= Formato desconhecido da arquivo.
+
+1006= Dados Inválidos.
+
+1007= Movimento ilegal no arquivo do jogo.
+
+1008= O painel de status é muito pequeno para mostrar comentários. Para entra com um comentário você deve primeiro aumentar o tamanho do tabuleiro ou não exibir os relógios.
+
+1009= Nome, número de série ou código inválido.
+
+1011= Incapaz de retrair o movimento %s.
+
+1012= Não pode mover a peça em %s.
+
+1013= %s é um movimento ilegal.
+
+1014= %s não é um movimento válido.
+
+1015= Incapaz de executar o movimento, %s não é válido.
+
+1016= O Arquivo %s está faltando ou está corrompido. Reinstale o KChess Elite.
+
+1017= O Arquivo %s não existe.
+
+1018= O Arquivo %s já existe. Você gostaria de substituí-lo?
+
+1019= O Arquivo %s já existe. Você gostaria de adicionar-lhe ou de substituí-lo?
+
+1020= Parar o jogo em andamento sem salvar?
+
+1021= Você tem somente um minuto neste programa.
+
+1022= Seu tempo para usar este programa expirou.
+
+1023= Você não pode salvar jogos nesta versão da avaliação. Registe por favor para começar o programa completo - veja a função "Sobre" no menu de ajuda.
+
+1024= A oferta de empate foi negada.
+
+1025= Incapaz de ler o Arquivo %s. (o KChess Elite 16 não pode ler mais do que 32K linhas, use por favor o KChess Elite 32).
+
+1026= Esta versão de teste não pode ser destravada, você necessita da última versão de avaliação ou da versão registada.
+
+1027= Algumas opções foram mudados quando o jogo atual foi carregado. Você quer restaurar as opções precedentes?
+
+1031= Entre com o Movimento
+
+1032= Entre com o movimento de forma não ambígua (tal como e2e4 ou Pe4 ou somente e4):
+
+1033= Entrar Posição
+
+1034= Entrar uma posição de configuração no formato FEN padrão:
+
+1035= Guardar configurações com jogos salvados
+
+1041= minutes per player
+
+1042= seconds per turn
+
+1043= moves per hour
+
+1045= seconds in sandclock
+
+1051= ply
+
+1052= steps
+
+1053= pixels
+
+1054= segundos
+
+1101= Versão De Teste
+
+1102= Versão não registrada De Avaliação
+
+1103= Versão Registada
+
+1104= Você já usou %d dias de seu período de avaliação.
+
+1105= Seu período de avaliação de 30 dias expirou agora.
+
+1106= Registado para %0:s ao número de série %1:s.
+
+1107= Você pode usar este programa por até 30 dias. Após este tempo você deve registar o produto e obter suas vantagens ou parar de usar esta cópia. 
+
+1108= Esta versão é licenciada para o uso de uma pessoa ou em uma máquina.
+
+1109= Esta versão é licenciada para o uso em qualquer número de máquinas em uma sala de aula ou escritório.
+
+2001= Brancas
+
+2002= Pretas
+
+2003= Vazio
+
+2004= Rei
+
+2005= Rainha
+
+2006= Torre
+
+2007= Bispo
+
+2008= Cavalo
+
+2009= Peão
+
+2011= En passant.
+
+2012= Roque no lado do Rei.
+
+2013= Roque no lado da Rainha.
+
+2014= Promoção de peão a %s.
+
+2015= sob ataque
+
+2016= ameaçado
+
+2017= Roubada
+
+2018= Desiste
+
+2019= Empate
+
+2021= Comentário
+
+2022= Variação
+
+2031= Xeque!
+
+2032= Xeque mate! Vitória das %s.
+
+2033= Empate! %s não é xeque mas não pode mover-se.
+
+2034= %0:s desistem! Vitória das %1:s.
+
+2035= Empate! Nenhuma captura ocorreu nos últimos 50 movimentos.
+
+2036= Empate! A mesma disposição do tabuleiro foi repetida 3 vezes.
+
+2037= Empate! Nenhum resultado pode ser forçado com estas peças.
+
+2038= Ambos os jogadores concordam com o Empate.
+
+2039= Mate encontrado em %d movimentos.
+
+2041= Limite de tempo do jogo excedido. Vitória das %s.
+
+2042= Limite de tempo da rodada excedido. Vitória das %s.
+
+2043= Movimentos por a hora não alcançados. Vitória das %s.
+
+2044= Tempo do Relógio de areia acabou. Vitória das %s.
+
+2052= Mate
+
+2053= Empate
+
+2054= Desiste
+
+2055= Empate (50 movimentos) 
+
+2056= Empate (3 repetições) 
+
+2057= Empate (forças) 
+
+2058= Empate (concordam) 
+
+2059= Fim do tempo
+
+2061= Carregando...
+
+2062= Funcionando...
+
+2063= Jogando...
+
+2064= Modo de configuração do tabuleiro
+
+2065= Prontos
+
+2066= Analisando...
+
+2067= Fim de Jogo
+
+2071= Programa Pesquisando
+
+2072= Computador Pensando Adiante
+
+2073= Programa esperando
+
+2074= Pensando...
+
+2075= Esperando...
+
+2076= Rodada %d
+
+2077= Movimento das %s 
+
+2081= Modo de Jogo automático
+
+2082= Jogar com as Brancas
+
+2083= Jogar com as Pretas
+
+2084= Dois Jogadores
+
+2091= Valor: %d
+
+2092= Nós: %dK
+
+2093= Melhor Linha: %s
+
+2094= Disposição do tabuleiro do FEN: %s
+
+2095= Intitulado
+
+2096= Desconhecido
+
+2101= um peão
+
+2102= dois peões
+
+2103= uma peça menor, ou três peões 
+
+2104= uma peça menor e um peão
+
+2105= uma torre, ou uma peça menor e dois peões
+
+2106= uma torre e um peão, ou duas peças menores 
+
+2107= uma torre e dois peões, ou duas peças menores e um peão
+
+2108= uma torre e uma peça menor, ou duas peças menores e dois peões
+
+2109= uma rainha, ou uma torre e uma peça menor e um peão
+
+2110= uma rainha e um peão, ou duas torres
+
+2111= uma rainha e dois penhores, ou duas torres e um penhor
+
+2112= uma rainha e uma parte menor, ou duas torres e dois penhores
+
+2113= uma rainha e uma parte menor e um penhor, ou duas torres e uma parte menor
+
+2114= uma rainha e uma torre, ou duas torres e uma parte menor e um penhor
+
+2115= uma rainha e uma torre e um penhor, ou duas torres e uma parte menor e um penhor
+
+2116= uma rainha e uma torre e dois penhores, ou duas torres e duas partes menores
+
+2117= uma rainha e uma torre e uma parte menor, ou duas torres e duas partes menores e um peão
+
+2118= uma rainha e uma torre e uma peça menor e um peão, ou duas torres e duas peças menores e dois peões
+
+2119= uma rainha e duas torres, ou duas torres e três peças menores
+
+2120= uma rainha, duas torres e um peão
+
+2121= uma rainha, duas torres e dois peões
+
+2122= uma rainha, duas torres e uma peça menor
+
+2123= uma rainha, duas torres, uma peça menor e um peão 
+
+2124= uma rainha, duas torres, uma peça menor e dois peões 
+
+2125= uma rainha, duas torres e duas peças menores
+
+2126= uma rainha, duas torres, duas peças menores e um peão
+
+2127= uma rainha, duas torres, duas peças menores e dois peões 
+
+2128= uma rainha, duas torres e três peças menores
+
+2129= uma rainha, duas torres, três peças menores e um peão
+
+2130= uma rainha, duas torres, três peças menores e dois peões 
+
+2131= uma rainha, duas torres e quatro peças menores
+
+2132= uma rainha, duas torres, quatro peças menores e um peão
+
+2133= uma rainha, duas torres, quatro peças menores e dois peões 
+
+2134= uma rainha, duas torres, quatro peças menores e três peões 
+
+2135= uma rainha, duas torres, quatro peças menores e quatro peões 
+
+2136= uma rainha, duas torres, quatro peças menores e cinco peões 
+
+2137= uma rainha, duas torres, quatro peças menores e seis peões 
+
+2138= uma rainha, duas torres, quatro peças menores e sete peões 
+
+2139= uma rainha, duas torres, quatro peças menores e oito peões 
+
+2140= mais do que um jogo completo de peças
+
+2201= O tabuleiro está na posição normal para começar.
+
+2202= O jogo acabou.
+
+2203= Ambos os jogadores têm forças equivalentes, com %d pontos.
+
+2204= Contagem de pontos para %0:s é %1:d mais alto do que para as %2:s, tendo uma vantagem de %3:s pontos.
+
+2205= Ambos os jogadores têm equivalente mobilidade no tabuleiro, cada um tem um número similar de movimentos disponíveis (%0:s pode fazer %1:d movimentos, %2:s pode fazer %3:d).
+
+2206= %0:s têm uma maior mobilidade no tabuleiro, tendo %1:d movimentos disponíveis enquanto %2:s tem somente %3:d.
+
+2207= Ambos os jogadores têm equivalente cobertura do tabuleiro, atacando um número similar de casas (%0:s ataca %1:d casas, %3:d ataca %2:s).
+
+2208= %0:s têm mais cobertura do tabuleiro, atacando %1:d casas enquanto %2:s ataca somente %3:d.
+
+2209= Ambos os jogadores têm igual comando do centro do tabuleiro.
+
+2210= %s têm um comando mais forte do centro do tabuleiro.
+
+2211= %s pode rocar em ambos os lados.
+
+2212= %s podem rocar no lado do rei.
+
+2213= %s podem rocar no lado da rainha.
+
+2214= %0:s podem capturar en passant em %1:s.
+
+2301= Evento
+
+2302= Local
+
+2303= Rodada
+
+2304= Data
+
+2305= Tempo
+
+2306= Abertura
+
+2307= Título
+
+2308= País
+
+2309= Anotador
+
+[Program Tips]
+
+1= Bem vindo ao KChess Elite. Se você necessitar alguma ajuda ou quiser alguma informação sobre algum defeitos, clique sobre a ajuda no menu de ajuda.
+
+2= Você pode escolher jogar com as pretas ou brancas selecionando a modalidade apropriada no menu jogo.
+
+3= Se você fizer um erro ao jogar podes escolher refazer o movimento no menu de jogo para desfazer o seu último movimento.
+
+4= Se você estiver trancado durante o jogo você podem escolher uma dica rápida no menu de movimento para receber uma sugestão em o que fazer.
+
+5= Se você estiver achando seus jogos muito fáceis ou difíceis então vá à configuração de força nas opções que podem ser encontradas no menu jogo. Clique sobre as teclas de novato, de médio ou de perito.
+
+6= Em qualquer parte do jogo você pode girar o tabuleiro clicando sobre girar o tabuleiro no menu jogo.
+
+7= Atalhos a muitos comandos comuns podem ser encontrados na barra de ferramentas.
+
+8= Para mudar a aparência das cores, da textura e das peças do tabuleiro vá à página do tabuleiro nas opções que podem ser encontradas no menu jogo.
+
+9= Se você quiser relaxar e prestar atenção ao jogo automático do KChess Elite, escolha então o jogo automático no menu jogo.
+
+10= Se você jogou o bastante mas você querer continuar seu jogo mais tarde então salve seu jogo escolhendo salvar no menu jogo.
+
+11= Você pode carregar jogos previamente salvos (os que você salvou, assim como aqueles jogos de amostra que vieram com o programa) escolhendo abrir no menu do jogo, e selecionando o nome do jogo para carregar.
+
+12= Se você segurar a tecla esquerda do mouse em uma peça, todos os quadrados que ela pode ser movida serão destacados destacados.
+
+13= Se você segurar a tecla direita do mouse sobre uma peça ou quadrado, todas as peças que atacam esta peça ou quadrado serão destacados.
+
+14= Você pode usar vários formatos padrões de xadrez. Ao salvar ou ao abrir jogos, escolha o formato do arquivo da lista de tipos de arquivo.
+
+15= Se você quiser praticar alguns movimentos ou analisar uma posição, crie um outro tabuleiro com a mesma configuração escolhendo variação no menu jogo.
+
+[Game Tips]
+
+1= Um bom movimento de abertura é avançar um de seus peões do centro por duas casas. Isto ocupa o centro da placa, e abre uma avenida para mover algumas de suas outras peças.
+
+2= No início do jogo, você deve concentrar-se em movimentar suas peças o mais rápido possível.
+
+3= Se você puder avançar um peão à extremidade oposta do tabuleiro, este será promovido a sua escolha a uma rainha, torre, bispo ou cavalo.
+
+4= É melhor evitar de mover qualquer peça mais de uma vez no início do jogo, pois isto atrasará o movimento de outras peças.
+
+5= É útil atribuir um valor relativo a cada peça: 1 para peões, 3 para cavalos e bispos, 5 para os torres, e 9 para rainhas.
+
+6= Um peão pode fazer eliminar um peão inimigo que avance 2 quadrados em seu primeiro movimento como se tinha avançado somente uma casa. Este movimento especial é chamado "en passant".
+
+7= Você pode ajudar a proteger seu rei deixando peões na frente dele, ao menos no início do jogo.
+
+8= É melhor não trazer para fora sua rainha logo no início do jogo.
+
+9= Você deve sempre supor que seu oponente fará o melhor movimento. Nunca suponha que ele não sabe o que você está fazendo com seus movimentos.
+
+10= Os 4 quadrados do centro são os mais importantes do tabuleiro. Tente colocar suas próprias peças neles.
+
+11= Se nem seu rei nem uma de suas torres forem movidos, e os quadrados entre eles estão vagos, você pode mover seu rei por duas casa e saltar a torre sobre ele. Isto é chamado "roque".
+
+12= As peças têm mais mobilidade quando estão no centro do tabuleiro, controlando mais casas.
+
+13= Quando você tem mais força do que seu oponente, é uma boa idéia trocar peças. Isto aumentará sua força relativa.
+
+14= Você deve usar as peças menos valiosas para proteger outras peças. Tente não usar peças mais valiosas do que as que estão sendo protegidas.
+
+[Chess Trivia]
+
+1= Sabe-se que o Xadrez originou-se na Índia em torno de 550-600 a.C. Espalhando-se rapidamente através da Ásia, até os territórios árabes e eventualmente a Europa.
+
+2= O jogo o mais longo de xadrez de todos os tempos jogados por jogadores top do ranking teve 269 movimentos de Ivan Nikolic e Goran Arsovic em Belgrado em 1989. Durou mais de 20 horas, e resultou em um empate.
+
+3= Diz-se que há mais literatura devotada ao Xadrez do que para todos os outros jogos restantes juntos.
+
+4= Existem 318.979.564.000 maneiras diferentes de jogar os primeiros quatro movimentos por cada jogador em um jogo de Xadrez.
+
+5= A palavra "Xeque-mate" vêm da frase persa "Shah Mat", que significa "o rei está morto".
+
+6= O primeiro tabuleiro de Xadrez de quadrados claros e escuros alternados apareceu na Europa em 1090.
+
+7= Em 1851 o campeão do mundo de Xadrez era A. Anderssen, enquanto ao mesmo tempo o campeão do mundo de damas era A. Anderson.
+
+8= Niaz Murshed de Bangladesh é a pessoa mais nova a ganhar um campeonato nacional em todos os tempos, ganhando o campeonato de Bangladesh com 12 anos, e transformando-se mais tarde o primeiro (e único) grande mestre vindo de Bangladesh, aos 20 anos.
+
+9= Na série "Star Trek (Jornada nas Estrelas)", capitão Kirk e Sr. Spock jogaram o Xadrez três vezes. Kirk ganhou todos os jogos.
+
+10= O primeiro jogo de bolso de Xadrez foi criado em 1845 por Peter Mark Roget, autor da enciclopédia Roget.
+
+11= Em 1939 Weaver Adams escreveu um livro intitulado "White to play and Win"(Jogando com as brancas e ganhando). Em seus torneios seguintes perdeu todos seus jogos com as brancas e ganhou todos seus jogos com as pretas.
+
+12= Os principais mestres britânicos do Xadrez da 2ª guerra mundial transformaram-se os principais decifradores de códigos da inteligência britânica.
+
+13= Existem 200 milhão de habitantes na China que são jogadores afiados de Xadrez.
+
+14= Existem 169.518.829.100.544.000.000.000.000.000 maneiras diferentes de jogar os primeiros dez movimentos por cada jogador em um jogo de Xadrez.
+
+15= O primeiro jogo de Xadrez jogado pelo telefone foi jogados por dois homens em Derbyshire, Inglaterra em 1878.
+
+16= O primeiro programa de computador para jogar Xadrez apropriadamente foi escritos no MIT por Alex Bernstein em 1958-59.
+
+17= O primeiro Campeonato de Xadrez registrado aconteceu em Madrid em 1575. Giulio Polerio e Giovanni Ruy derrotaram Leonardo Lopez e Alfonso Ceron em uma série de jogos organizados pelo rei Filipe II.
+
+18= O ex-campeão do mundo Jose Capablanca começou a jogar Xadrez com 4 anos, e ganhou de seu pai seu primeiro jogo também com 4 anos.
+
+19= O movimento mais lento registrado foi de Francisco R. Torres Trois, levou 2 horas e 20 minutos para fazer um movimento em um jogo contra Luis M.C.P. Santos, em Vigo, Espanha em 1980. Trois tinha somente dois movimentos possíveis a considerar.
+
+20= "Os jogadores de Xadrez", pintado em 1490, foi a primeira pintura que se tem registro com o tema Xadrez.
+
+21= A campeã mais nova do mundo de todos os tempos foi Maya Chiburdanidze da antiga URSS. Ela tinha 17 anos quando ganhou o título das mulheres em 1978.
+
+22= Garry Kasparov da antiga URSS tinha 22 anos quando bateu Anatoly Karpov no campeonato do mundo de Xadrez em 1985, fazendo lhe o campeão dos homens mais novo da história.
+
+23= Autômatos são as máquinas que dão a impressão de jogar o Xadrez. O primeiro autômato era o "Turk" em 1769, seguido por "Ajeeb" em 1868, e "Mephisto" em 1878.
+
+24= "Draughts" é um jogo mais velho do que o xadrez.
+
+25= Judit Polgar de Hungria foi a mulher mais jovem a ganhar o status de mestre internacional em 1989 quando tinha 12, e a mulher mais jovem a ganhar o status internacional de Grande mestre em 1991 na idade 15.
+
+26= A primeira aparição do xadrez em um filme foi em " The Wishing Ring " em 1914.
+
+27= Em 1974, Estocolmo hospedou o primeiro campeonato de xadrez de computadores do mundo, ganho pelo programa soviético "Kaissa".
