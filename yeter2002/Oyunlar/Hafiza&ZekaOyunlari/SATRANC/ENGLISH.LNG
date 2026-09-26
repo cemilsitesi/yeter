@@ -1,0 +1,1097 @@
+[Introduction]
+
+1= This file contains all the words, phrases and sentences used in KChess Elite 3.5.0.8. This introduction contains information necessary to successfully translate this file into other languages.
+
+2= Each entry in the file is made up of two parts, the entry key and the entry text. The two parts are separated by an equals sign "=". The key must not be changed, only the text following the equals sign is to be translated.
+
+3= In some entries the text is divided into multiple items. Items are separated by a vertical bar "|". Each item should be translated separately.
+
+4= In some entries the last item is a keyboard shortcut, such as "Alt+I", "Ctrl+1", or "Enter". These items are not translated, but they may be changed to more appropriate shortcuts to match the translated entry.
+
+5= In some entries one or more items may contain an ampersand "&" which preceeds the letter to be used as a shortcut character. Where possible, ampersands should be retained in an appropriate position in the translated item.
+
+6= Some entries contain one or more variables, indicated by the symbols starting with a percent sign "%", such as "%s" or "%1:d". These are placeholders which the program substitutes for other words, phrases or numbers. These must all be kept in the translated text.
+
+7= Some entries are long and may wrap around several lines. Care should be taken to ensure no line breaks or carriage returns are inserted within these entries.
+
+8= Entries are grouped into sections, indicated by names in square brackets "[" and "]". The section names should not be translated.
+
+9= None of the entries in this Introduction section need to be translated.
+
+[Objects]
+
+AboutDlg= About KChess Elite
+
+AboutDlg.RegoLabel= By registering you gain access to all the functions of the latest version of the program. There are no more reminder messages or time limits. You are also eligible for updates to future versions at reduced prices or for free.
+
+AboutDlg.ClickLabel= Click on the Help button for more information about this program and how to register. Click on the Register button when you are ready to order. If you have already registered click on the Unlock button to enter your registration data.
+
+AboutDlg.OkBtn= &OK
+
+AboutDlg.RegoBtn= &Register
+
+AboutDlg.UnlockBtn= &Unlock
+
+AboutDlg.HelpBtn= &Help
+
+BoardSetDlg= Initial Board Settings
+
+BoardSetDlg.Heading= Enter the initial state of the board:
+
+BoardSetDlg.EnPassantLabel= En passant target:
+
+BoardSetDlg.FirstMoveLabel= First Move number:
+
+BoardSetDlg.FiftyMoveLabel= Moves since capture or pawn move:
+
+BoardSetDlg.CastleGroup= Castling Allowed
+
+BoardSetDlg.BlackQueenBox= Black queen's side
+
+BoardSetDlg.BlackKingBox= king's side
+
+BoardSetDlg.WhiteQueenBox= White queen's side
+
+BoardSetDlg.WhiteKingBox= king's side
+
+BoardSetDlg.FirstGroup= First Player
+
+BoardSetDlg.StatusGroup= Game Status | Normal | Drawn | Resigned
+
+BoardSetDlg.OkBtn= &OK
+
+BoardSetDlg.CancelBtn= &Cancel
+
+BoardSetDlg.HelpBtn= &Help
+
+ChessForm.FreezePanel= Game Frozen
+
+ChessForm.FileMenu1= &File
+
+ChessForm.FileNew1= &New | Ctrl+N
+
+ChessForm.FileOpen1= &Open... | Ctrl+O
+
+ChessForm.FileReopen1= &Reopen | Ctrl+R
+
+ChessForm.FileSave1= &Save | Ctrl+S
+
+ChessForm.FileSaveAs1= Save &As... | Ctrl+A
+
+ChessForm.PrintMoves1= &Print Moves... | Ctrl+P
+
+ChessForm.BoardPrint1= Print &Board... | Ctrl+B
+
+ChessForm.PrintSetup1= Prin&t Setup...
+
+ChessForm.FileExit1= E&xit
+
+ChessForm.PlayMenu1= &Play
+
+ChessForm.BoardSetup1= Board &Setup Mode
+
+ChessForm.Clear1= C&lear Board
+
+ChessForm.EnterPosition1= Enter &Position...
+
+ChessForm.SetBoardState1= Board S&ettings...
+
+ChessForm.Opening1= Openin&g... | Ctrl+G
+
+ChessForm.AutoPlay1= &Auto Play | Alt+A
+
+ChessForm.PlayWhite1= Play &White | Alt+W
+
+ChessForm.PlayBlack1= Play &Black | Alt+B
+
+ChessForm.TwoPlayer1= &Two Player | Alt+T
+
+ChessForm.Analyse1= Analyse
+
+ChessForm.Rotate1= &Rotate Board | Alt+Q
+
+ChessForm.Speak1= Spea&k
+
+ChessForm.SpeakMove1= &Move | Alt+0
+
+ChessForm.SpeakRank11= Rank &1 | Alt+1
+
+ChessForm.SpeakRank21= Rank &2 | Alt+2
+
+ChessForm.SpeakRank31= Rank &3 | Alt+3
+
+ChessForm.SpeakRank41= Rank &4 | Alt+4
+
+ChessForm.SpeakRank51= Rank &5 | Alt+5
+
+ChessForm.SpeakRank61= Rank &6 | Alt+6
+
+ChessForm.SpeakRank71= Rank &7 | Alt+7
+
+ChessForm.SpeakRank81= Rank &8 | Alt+8
+
+ChessForm.SpeakFilea1= File &a | Ctrl+1
+
+ChessForm.SpeakFileb1= File &b | Ctrl+2
+
+ChessForm.SpeakFilec1= File &c | Ctrl+3
+
+ChessForm.SpeakFiled1= File &d | Ctrl+4
+
+ChessForm.SpeakFilee1= File &e | Ctrl+5
+
+ChessForm.SpeakFilef1= File &f | Ctrl+6
+
+ChessForm.SpeakFileg1= File &g | Ctrl+7
+
+ChessForm.SpeakFileh1= File &h | Ctrl+8
+
+ChessForm.SpeakStatus1= &Status | Alt+9
+
+ChessForm.CopyGame1= &Copy Game | Ctrl+C
+
+ChessForm.PasteGame1= &Paste Game | Ctrl+V
+
+ChessForm.Variation1= &Variation | Alt+V
+
+ChessForm.Freeze1= Free&ze Game | Alt+Z
+
+ChessForm.GameInfo1= &Game Info... | Alt+G
+
+ChessForm.Options1= &Options... | Alt+O
+
+ChessForm.MoveMenu1= &Move
+
+ChessForm.Undo1= &Undo | Alt+U
+
+ChessForm.Redo1= &Redo | Alt+R
+
+ChessForm.UndoAll1= Un&do All | Alt+D
+
+ChessForm.RedoAll1= Redo Al&l | Alt+L
+
+ChessForm.Hint1= Quick H&int | Alt+I
+
+ChessForm.EnterMove1= &Enter Move... | Enter
+
+ChessForm.ComputerMove1= &Computer Move | Alt+C
+
+ChessForm.Stop1= &Stop thinking | Alt+S
+
+ChessForm.Replay1= Repla&y | Alt+Y
+
+ChessForm.Resign1= Resig&n | Alt+N
+
+ChessForm.OfferDraw1= Offer Dra&w
+
+ChessForm.Comment1= Comm&ent | Alt+E
+
+ChessForm.HelpMenu1= &Help
+
+ChessForm.HelpHelp1= &Help
+
+ChessForm.HelpUsing1= &Using Help
+
+ChessForm.HelpIndex1= Help &Index
+
+ChessForm.SearchHelpfor1= &Search Help for...
+
+ChessForm.BeginnersInfo1= &Beginners Info
+
+ChessForm.Rules1= Ru&les of Chess
+
+ChessForm.TipoftheDay1= &Tip of the Day...
+
+ChessForm.KChessWebSite1= KChess web site
+
+ChessForm.HelpAbout1= &About KChess...
+
+ChessForm.NewButton= New game
+
+ChessForm.OpenButton= Open game
+
+ChessForm.SaveButton= Save game
+
+ChessForm.PrintButton= Print game
+
+ChessForm.SetupButton= Board setup
+
+ChessForm.AutoplayButton= Auto Play
+
+ChessForm.PlayWhiteButton= Play White
+
+ChessForm.PlayBlackButton= Play Black
+
+ChessForm.TwoPlayerButton= Two Player
+
+ChessForm.AnalyseButton= Analyse position
+
+ChessForm.RotateButton= Rotate board
+
+ChessForm.CopyButton= Copy game
+
+ChessForm.PasteButton= Paste game
+
+ChessForm.VariationButton= Variation
+
+ChessForm.FreezeButton= Freeze game
+
+ChessForm.OptionsButton= Options
+
+ChessForm.UndoAllButton= Undo all
+
+ChessForm.UndoButton= Undo move
+
+ChessForm.RedoButton= Redo move
+
+ChessForm.RedoAllButton= Redo all
+
+ChessForm.HintButton= Quick Hint
+
+ChessForm.ComputerButton= Computer move
+
+ChessForm.StopButton= Stop thinking
+
+ChessForm.ReplayButton= Replay move
+
+ChessForm.HelpButton= Help
+
+EnterMoveDlg.OkBtn= &OK
+
+EnterMoveDlg.CancelBtn= &Cancel
+
+EnterMoveDlg.HelpBtn= &Help
+
+InfoDlg= Game and Player Information
+
+InfoDlg.Heading= Enter any relevant information about this game and it's players:
+
+InfoDlg.EventLabel= Event Name:
+
+InfoDlg.SiteLabel= Site/Location:
+
+InfoDlg.DateLabel= Game Date (yyyy.mm.dd):
+
+InfoDlg.TimeLabel= Time (hh:mm:ss):
+
+InfoDlg.RoundLabel= Round:
+
+InfoDlg.WhiteLabel= White Player:
+
+InfoDlg.BlackLabel= Black Player:
+
+InfoDlg.EventDateLabel= Event Date (yyyy.mm.dd):
+
+InfoDlg.OpeningLabel= Opening:
+
+InfoDlg.TitleLabel= Title:
+
+InfoDlg.PlayerLabel= Name:
+
+InfoDlg.CtryLabel= Ctry:
+
+InfoDlg.AnnotatorLabel= Annotator:
+
+InfoDlg.OkBtn= &OK
+
+InfoDlg.CancelBtn= &Cancel
+
+InfoDlg.HelpBtn= &Help
+
+OpeningsDlg= Encyclopaedia of Chess Openings
+
+OpeningsDlg.Heading= Select the opening you wish to play:
+
+OpeningsDlg.ColumnHeader= Code | Name | Moves
+
+OpeningsDlg.OkBtn= &OK
+
+OpeningsDlg.CancelBtn= &Cancel
+
+OpeningsDlg.SortBtn= &Sort
+
+OpeningsDlg.HelpBtn= &Help
+
+OptionsDlg= Options
+
+OptionsDlg.OptionsTab= Strength | Display | Pieces | Board | Text | Audio | Print
+
+OptionsDlg.LimitTypeGroup= Time Limit Type | &No time limit | Limit player &game time | Limit player &turn time | Set moves per &hour | Computer &match user time | &Sandclock timer
+
+OptionsDlg.LengthGroup= Time Limit Value
+
+OptionsDlg.UserLimitGroup= &User Limit Scope | Not applied to user | Computer moves for user | User loses game
+
+OptionsDlg.MiscGroup= &Playing Options
+
+OptionsDlg.ThinkAheadBox= Allow computer think-ahead
+
+OptionsDlg.FreezeCoversBox= Freeze covers board
+
+OptionsDlg.OpeningLibBox= Use opening book
+
+OptionsDlg.ResignBox= Allow computer resignation
+
+OptionsDlg.DrawBox= Allow insufficient forces draw
+
+OptionsDlg.PromoteBox= Always promote to Queen
+
+OptionsDlg.PressBox= Auto clock press on move
+
+OptionsDlg.FreezeMinimizeBox= Auto-freeze when minimized
+
+OptionsDlg.ValidateBoardBox= Validate board layout in setup
+
+OptionsDlg.SearchGroup= Search &Depth
+
+OptionsDlg.WeakestLabel= Weakest
+
+OptionsDlg.StrongestLabel= Strongest
+
+OptionsDlg.NoviceBtn= Novice | Set options to simplest level
+
+OptionsDlg.AverageBtn= Average | Set options to intermediate level
+
+OptionsDlg.ExpertBtn= Expert | Set options to hardest level
+
+OptionsDlg.ButtonsGroup= &Button Bar | None | Left | Top
+
+OptionsDlg.TakenGroup= Taken Pieces
+
+OptionsDlg.ShowTakenBox= Show &taken pieces
+
+OptionsDlg.SortTakenBox= Sort taken pieces by &value
+
+OptionsDlg.EdgeGroup= Board Edge
+
+OptionsDlg.LabelsBox= Show square labels
+
+OptionsDlg.PlayersBox= Show &player names
+
+OptionsDlg.EdgeSizeGroup= Board &Edge Size
+
+OptionsDlg.NarrowestLabel= Narrowest
+
+OptionsDlg.WidestLabel= Widest
+
+OptionsDlg.StatusGroup= Status Panel
+
+OptionsDlg.CommentBox= Show co&mments
+
+OptionsDlg.WorkingBox= Show &workings
+
+OptionsDlg.ShowStatusBox= Show &status panel
+
+OptionsDlg.AnalogueBox= Show analogue &clocks
+
+OptionsDlg.DigitalBox= Show &digital clocks
+
+OptionsDlg.HundredthsBox= Show &hundredths of seconds
+
+OptionsDlg.NarrationBox= Show &narration
+
+OptionsDlg.EcoBox= Show &ECO names
+
+OptionsDlg.RefreshGroup= Refresh Fre&quency
+
+OptionsDlg.HighestLabel= Highest
+
+OptionsDlg.LowestLabel= Lowest
+
+OptionsDlg.PiecesGroup= &Pieces
+
+OptionsDlg.DisplayGroup= Piece Display Options
+
+OptionsDlg.ScaleBox= Sca&le pieces to board size
+
+OptionsDlg.CaptionsBox= Show piece &captions
+
+OptionsDlg.SpeedGroup= Piece &Moving Speed
+
+OptionsDlg.FastestLabel= Fastest
+
+OptionsDlg.SlowestLabel= Slowest
+
+OptionsDlg.MovingGroup= Piece Moving Options
+
+OptionsDlg.FastOpenBox= Fast &file open
+
+OptionsDlg.FastUndoBox= Fast move &undo
+
+OptionsDlg.FastRedoBox= Fast move &redo
+
+OptionsDlg.OpenToEndBox= Open files to &end
+
+OptionsDlg.DragPiecesBox= Dra&g moves pieces
+
+OptionsDlg.TwoClickBox= Enable two click moves
+
+OptionsDlg.MoveCursorBox= Enable space bar moves
+
+OptionsDlg.ReduceFlickerBox= Reduce flicker on redraw
+
+OptionsDlg.DelayGroup= Dela&y Between Moves
+
+OptionsDlg.ShortestLabel= Shortest
+
+OptionsDlg.LongestLabel= Longest
+
+OptionsDlg.HintsGroup= Board Hints
+
+OptionsDlg.AttacksBox= Show &attacks
+
+OptionsDlg.JeopardiesBox= Show &jeopardies
+
+OptionsDlg.PieceHintsBox= Show &piece hints
+
+OptionsDlg.SquareHintsBox= Show s&quare hints
+
+OptionsDlg.MoveMarkerBox= Show &move marker
+
+OptionsDlg.SquareSizeGroup= Board &Square Size
+
+OptionsDlg.SmallestLabel= Smallest
+
+OptionsDlg.LargestLabel= Largest
+
+OptionsDlg.BorderSizeGroup= Attack/Jeopardy Border Si&ze
+
+OptionsDlg.ThinnestLabel= Thinnest
+
+OptionsDlg.ThickestLabel= Thickest
+
+OptionsDlg.TextureGroup= Board Te&xture
+
+OptionsDlg.ColourGroup= Colours
+
+OptionsDlg.WhiteSquareBtn= &White squares
+
+OptionsDlg.BlackSquareBtn= &Black squares
+
+OptionsDlg.AttackBtn= &Attacks
+
+OptionsDlg.JeopardyBtn= &Jeopardies
+
+OptionsDlg.MoveMarkerBtn= Move Marker
+
+OptionsDlg.FontGroup= &Screen Font
+
+OptionsDlg.FontLabel= Font Sample Text
+
+OptionsDlg.FixedLabel= Font Sample Text
+
+OptionsDlg.FixedBox= Fixed width font for moves list
+
+OptionsDlg.NotationGroup= &Notation | Standard Algebraic  (eg Be3) | Long Algebraic  (eg Bc1-e3) | Computer  (eg c1e3)
+
+OptionsDlg.LanguageGroup= &Language
+
+OptionsDlg.TextTypeGroup= &Piece Letters | Standard English | Custom Language
+
+OptionsDlg.CustomTextGroup= &Custom Text
+
+OptionsDlg.AudioGroup= &Audio | None | Sound effects only | Sound and spoken status | Sound and spoken full move
+
+OptionsDlg.WhiteVoiceGroup= &White voice | Male | Female
+
+OptionsDlg.BlackVoiceGroup= &Black voice | Male | Female
+
+OptionsDlg.PrintGroup= &Printer Font
+
+OptionsDlg.PrintLabel= Font Sample Text
+
+OptionsDlg.PrintBoldBox= &Bold
+
+OptionsDlg.PrintItalicBox= &Italic
+
+OptionsDlg.PrintFixedBox= Fixed width font for moves list in column format
+
+OptionsDlg.FigureGroup= &Figure Font
+
+OptionsDlg.FigureCharLabel= Figure character set
+
+OptionsDlg.PrintSetupBtn= P&rint Setup
+
+OptionsDlg.OkBtn= &OK
+
+OptionsDlg.CancelBtn= &Cancel
+
+OptionsDlg.PreviewBtn= &Preview
+
+OptionsDlg.DefaultsBtn= &Defaults
+
+OptionsDlg.HelpBtn= &Help
+
+OrderDlg= Registration/Order Form
+
+OrderDlg.Heading= Enter your name, address and payment details, and send as follows:
+
+OrderDlg.NameLabel= Name:
+
+OrderDlg.CompanyLabel= Company:
+
+OrderDlg.AddressLabel= Address:
+
+OrderDlg.CountryLabel= Country:
+
+OrderDlg.PhoneLabel= Phone:
+
+OrderDlg.FaxLabel= Fax:
+
+OrderDlg.EmailLabel= Email:
+
+OrderDlg.SourceLabel= Where software seen or obtained:
+
+OrderDlg.ProductLabel= Product:
+
+OrderDlg.AmountLabel= Currency and Amount paid:
+
+OrderDlg.CommentLabel= Comment:
+
+OrderDlg.PaymentGroup= Payment Type:
+
+OrderDlg.CardLabel= Card No:
+
+OrderDlg.ExpiryLabel= Expires:
+
+OrderDlg.HolderLabel= Cardholder Name:
+
+OrderDlg.CloseBtn= Close
+
+OrderDlg.PrintBtn= &Print
+
+OrderDlg.FileBtn= &File
+
+OrderDlg.CopyBtn= &Copy
+
+OrderDlg.EmailBtn= &Email
+
+OrderDlg.HelpBtn= &Help
+
+PromoteDlg= Promotion
+
+PromoteDlg.QueenBtn= &Queen
+
+PromoteDlg.RookBtn= &Rook
+
+PromoteDlg.BishopBtn= &Bishop
+
+PromoteDlg.KnightBtn= K&night
+
+PromoteDlg.HelpBtn= &Help
+
+SelectDlg= Select Game
+
+SelectDlg.Heading= This file is a library of games. Select the game you wish to open:
+
+SelectDlg.KeepBox= Keep library in memory
+
+SelectDlg.OkBtn= &OK
+
+SelectDlg.CancelBtn= &Cancel
+
+SelectDlg.HelpBtn= &Help
+
+TipsDlg= Tip of the Day
+
+TipsDlg.TipLabel= Did You Know...
+
+TipsDlg.ShowTipsBox= Show tips on startup
+
+TipsDlg.TipTypesGroup= Show tip types | KChess program | Playing chess | Chess trivia | All tip types
+
+TipsDlg.PrevBtn= <  &Prev tip
+
+TipsDlg.NextBtn= &Next tip  >
+
+TipsDlg.CloseBtn= &Close
+
+UnlockDlg= Unlock Program
+
+UnlockDlg.Heading= Enter your registration details below to access all the functions of this program:
+
+UnlockDlg.NameLabel= Your Name:
+
+UnlockDlg.SerialLabel= Serial Number:
+
+UnlockDlg.UnlockLabel= Unlock Code:
+
+UnlockDlg.OkBtn= &OK
+
+UnlockDlg.CancelBtn= &Cancel
+
+UnlockDlg.HelpBtn= &Help
+
+[Messages]
+
+1000= Error message %d not found.
+
+1001= Invalid board layout.
+
+1002= Invalid en passant square.
+
+1003= Invalid number of moves since last capture or pawn move.
+
+1004= An internal processing error has been detected. Try disabling other programs that may be running, such as anti-virus software. If the problem prsists make a note of the following error messages and contact ARK ANGLES at arkangles@arkangles.com.
+
+1005= Unknown file format.
+
+1006= Invalid Data.
+
+1007= Illegal move in game file.
+
+1008= The status panel is too small to show comments. To enter a comment you must first either increase the board size or do not show the game clocks.
+
+1009= Invalid Name, Serial Number or Unlock Code.
+
+1011= Unable to retract move %s.
+
+1012= Cannot move piece on %s.
+
+1013= %s is an illegal move.
+
+1014= %s is not a valid move.
+
+1015= Unable to perform move, %s is not valid.
+
+1016= File %s is missing or corrupt. Please reinstall KChess Elite.
+
+1017= File %s does not exist.
+
+1018= File %s already exists. Would you like to replace it?
+
+1019= File %s already exists. Would you like to append to it or replace it?
+
+1020= Quit the game in progress without saving?
+
+1021= You have only one minute remaining in this program.
+
+1022= Your time for running this program has expired.
+
+1023= You cannot save games in this evaluation version. Please register to get the full program - see the About function on the Help menu.
+
+1024= The offer of a draw is declined.
+
+1025= Unable to read file %s. (KChess Elite 16 cannot read more than 32K lines, please use KChess Elite 32).
+
+1026= This beta test version cannot be unlocked, you need to get the latest evaluation or registered version.
+
+1027= Some options were changed when the current game was loaded. Do you want to restore the previous options?
+
+1031= Enter Move
+
+1032= Enter your move in an unambiguous format (such as e2e4 or Pe4 or just e4):
+
+1033= Enter Position
+
+1034= Enter a setup position in standard FEN format:
+
+1035= Store settings with saved games
+
+1041= minutes per player
+
+1042= seconds per turn
+
+1043= moves per hour
+
+1045= seconds in sandclock
+
+1051= ply
+
+1052= steps
+
+1053= pixels
+
+1054= seconds
+
+1101= Test Version
+
+1102= Unregistered Evaluation Version
+
+1103= Registered Version
+
+1104= You have used %d days out of your 30 day evaluation period.
+
+1105= Your 30 day evaluation period has now expired.
+
+1106= Registered to %0:s. Serial Number %1:s.
+
+1107= You can try out this program free of charge for up to 30 days. After that time you must either register for the full product or stop using this evaluation copy.
+
+1108= This version is licensed for use by one person or on one machine.
+
+1109= This version is licensed for use on any number of machines in one class room or office.
+
+2001= White
+
+2002= Black
+
+2003= empty
+
+2004= King
+
+2005= Queen
+
+2006= Rook
+
+2007= Bishop
+
+2008= Knight
+
+2009= Pawn
+
+2011= En passant.
+
+2012= Castle King's side.
+
+2013= Castle Queen's side.
+
+2014= Pawn promotion to %s.
+
+2015= under Attack
+
+2016= in Jeopardy
+
+2017= taken
+
+2018= Resigns
+
+2019= Draw
+
+2021= Comment
+
+2022= Variation
+
+2031= Check!
+
+2032= Checkmate! %s wins.
+
+2033= Stalemate! %s is not in check but cannot move.
+
+2034= %0:s resigns! %1:s wins.
+
+2035= Draw! No captures occurred in the last 50 moves.
+
+2036= Draw! Same board layout has been repeated 3 times.
+
+2037= Draw! No result can be forced with these pieces.
+
+2038= Both players agree to a draw.
+
+2039= Mate found in %d moves.
+
+2041= Game time limit exceeded. %s wins.
+
+2042= Turn time limit exceeded. %s wins.
+
+2043= Moves per hour not attained. %s wins.
+
+2044= Sandclock time has run out. %s wins.
+
+2052= Mate
+
+2053= Stalemate
+
+2054= Resigns
+
+2055= Draw (50 moves)
+
+2056= Draw (3 repeats)
+
+2057= Draw (forces)
+
+2058= Draw (agreed)
+
+2059= Out of Time
+
+2061= Loading...
+
+2062= Running...
+
+2063= Playing...
+
+2064= Board Setup Mode
+
+2065= Ready
+
+2066= Analysing...
+
+2067= Game Over
+
+2071= Program Searching
+
+2072= Program Thinking Ahead
+
+2073= Program Waiting
+
+2074= Thinking...
+
+2075= Waiting...
+
+2076= Turn %d
+
+2077= %s to move
+
+2081= Auto Play Mode
+
+2082= Play White Mode
+
+2083= Play Black Mode
+
+2084= Two Player Mode
+
+2091= Value: %d
+
+2092= Nodes: %dK
+
+2093= Best Line: %s
+
+2094= FEN board layout: %s
+
+2095= Untitled
+
+2096= Unknown
+
+2101= a Pawn
+
+2102= two Pawns
+
+2103= a minor piece, or three Pawns
+
+2104= a minor piece and a Pawn
+
+2105= a Rook, or a minor piece and two Pawns
+
+2106= a Rook and a Pawn, or two minor pieces
+
+2107= a Rook and two Pawns, or two minor pieces and a Pawn
+
+2108= a Rook and a minor piece, or two minor pieces and two Pawns
+
+2109= a Queen, or a Rook and a minor piece and a Pawn
+
+2110= a Queen and a Pawn, or two Rooks
+
+2111= a Queen and two Pawns, or two Rooks and a Pawn
+
+2112= a Queen and a minor piece, or two Rooks and two Pawns
+
+2113= a Queen and a minor piece and a Pawn, or two Rooks and a minor piece
+
+2114= a Queen and a Rook, or two Rooks and a minor piece and a Pawn
+
+2115= a Queen and a Rook and a Pawn, or two Rooks and a minor piece and a Pawn
+
+2116= a Queen and a Rook and two Pawns, or two Rooks and two minor pieces
+
+2117= a Queen and a Rook and a minor piece, or two Rooks and two minor pieces and a Pawn
+
+2118= a Queen and a Rook and a minor piece and a Pawn, or two Rooks and two minor pieces and two Pawns
+
+2119= a Queen and two Rooks, or two Rooks and three minor pieces
+
+2120= a Queen, two Rooks and a Pawn
+
+2121= a Queen, two Rooks and two Pawns
+
+2122= a Queen, two Rooks and a minor piece
+
+2123= a Queen, two Rooks, a minor piece and a Pawn
+
+2124= a Queen, two Rooks, a minor piece and two Pawns
+
+2125= a Queen, two Rooks and two minor pieces
+
+2126= a Queen, two Rooks, two minor pieces and a Pawn
+
+2127= a Queen, two Rooks, two minor pieces and two Pawns
+
+2128= a Queen, two Rooks and three minor pieces
+
+2129= a Queen, two Rooks, three minor pieces and a Pawn
+
+2130= a Queen, two Rooks, three minor pieces and two Pawns
+
+2131= a Queen, two Rooks and four minor pieces
+
+2132= a Queen, two Rooks, four minor pieces and a Pawn
+
+2133= a Queen, two Rooks, four minor pieces and two Pawns
+
+2134= a Queen, two Rooks, four minor pieces and three Pawns
+
+2135= a Queen, two Rooks, four minor pieces and four Pawns
+
+2136= a Queen, two Rooks, four minor pieces and five Pawns
+
+2137= a Queen, two Rooks, four minor pieces and six Pawns
+
+2138= a Queen, two Rooks, four minor pieces and seven Pawns
+
+2139= a Queen, two Rooks, four minor pieces and eight Pawns
+
+2140= more than a full set of pieces
+
+2201= The board is at the normal starting position.
+
+2202= The game is finished.
+
+2203= Both players have equivalent forces, with a point count of %d.
+
+2204= Point count for %0:s is %1:d higher than %2:s, having an advantage the equivalent of %3:s.
+
+2205= Both players have equivalent mobility around the board, each having a similar number of moves available (%0:s can make %1:d moves, %2:s can make %3:d).
+
+2206= %0:s has greater mobility around the board, having %1:d moves available while %2:s has only %3:d.
+
+2207= Both players have equivalent coverage of the board, attacking a similar number of squares (%0:s attacks %1:d squares, %2:s attacks %3:d).
+
+2208= %0:s has more coverage of the board, attacking %1:d squares while %2:s attacks only %3:d.
+
+2209= Both players have comparable command of the centre of the board.
+
+2210= %s has stronger command of the centre of the board.
+
+2211= %s may castle on both sides.
+
+2212= %s may castle on the King's side.
+
+2213= %s may castle on the Queen's side.
+
+2214= %0:s may capture en passant at %1:s.
+
+2301= Event
+
+2302= Site
+
+2303= Round
+
+2304= Date
+
+2305= Time
+
+2306= Opening
+
+2307= Title
+
+2308= Country
+
+2309= Annotator
+
+[Program Tips]
+
+1= Welcome to KChess Elite. If you need any Help or want some troubleshooting information, just click on Help from the Help Menu.
+
+2= You can choose to play either Black or White by selecting the appropriate mode from the Play menu.
+
+3= If you make a mistake while playing you can choose Undo from the Play Menu to take back your last move.
+
+4= If you are stuck during gameplay you can choose Quick Hint from the Move Menu to get a suggestion on what to do.
+
+5= If you are finding your games too easy or hard then go to the Strength page in Options which can be found in the Play menu. Click on the Novice, Average or Expert buttons.
+
+6= At any time during gameplay you can Rotate the board by clicking on Rotate Board from the Play Menu.
+
+7= Short cuts to many common commands can be found on the button bar.
+
+8= To change the appearance of the Board colours, texture and pieces go to the Board page in Options which can be found in the Play Menu.
+
+9= If you want to sit back and watch KChess Elite play itself, then choose Auto Play from the Play menu.
+
+10= If you have played enough for now but you want to continue your game later then you can save your game by choosing Save from the Game menu.
+
+11= You can load previously saved games (ones you have saved yourself, as well as the sample games that came with the program) by choosing Open from the Game menu, and selecting the name of the game to load.
+
+12= If you hold the left mouse button down on a piece, then all the squares that it can be moved to will be highlighted.
+
+13= If you hold the right mouse button down on a piece or square, then all the pieces attacking that piece or square will be highlighted.
+
+14= You can use a range of standard chess file formats. When saving or opening games, choose the file format from the File Type drop down list.
+
+15= If you want to practice some moves or analyse a position, create another board with the same setup by choosing Variation from the Play menu.
+
+[Game Tips]
+
+1= A good opening move is to advance one of your centre Pawns by 2 squares. This occupies the centre of the board, and opens an avenue to move some of your other pieces.
+
+2= In the early part of the game, you should concentrate on developing your pieces as quickly as possible.
+
+3= If you can advance a Pawn to the opposite end of the board, it will be promoted to your choice of Queen, Rook, Bishop or Knight.
+
+4= It is best to avoid moving any piece more than once in the early part of the game, as this will delay development of other pieces.
+
+5= It is helpful to assign a relative value to each piece: 1 for Pawns, 3 for Knights and Bishops, 5 for Rooks, and 9 for Queens.
+
+6= A Pawn can take an enemy Pawn that has advanced 2 squares on its first move as if it had only advanced one square. This special move is called "en passant".
+
+7= You can help protect your King by leaving Pawns in front of it, at least early on in the game.
+
+8= It is best not to bring your Queen out too early in the game.
+
+9= You should always assume your opponent will make the best move. Never assume they do not know what you are doing with your moves.
+
+10= The 4 centre squares are the most crucial ones on the board. Try to place your own pieces on them.
+
+11= If neither your King nor one of your Rooks has been moved, and the squares between them are vacant, you can move your King across two squares and jump the Rook over it. This is called "castling".
+
+12= Pieces have more mobility when they are in the centre of the board, and they control more squares.
+
+13= When you have a stronger force than your opponent, it is a good idea to exchange pieces. This will increase your relative strength.
+
+14= You should use the least valuable piece possible to protect another piece. Try to never use pieces more valuable than the ones they are protecting.
+
+[Chess Trivia]
+
+1= It is thought that chess originated in India around 550-600 A.D. It spread rapidly through Asia, then to Arab territories and eventually to Europe.
+
+2= The longest chess game ever played by top ranking players was 269 moves by Ivan Nikolic and Goran Arsovic in Belgrade in 1989. It lasted more than 20 hours, and resulted in a draw.
+
+3= It has been said there is more literature devoted to chess than for all other games combined.
+
+4= There are 318,979,564,000 different ways of playing the first four moves by each player in a game of chess.
+
+5= The word "Checkmate" comes from the Persian phrase "Shah Mat", which means "the king is dead".
+
+6= The first chessboard of alternating light and dark squares appeared in Europe in 1090.
+
+7= In 1851 the world chess champion was A. Anderssen, while at the same time the world checker champion was A. Anderson.
+
+8= Niaz Murshed of Bangladesh is the youngest person to ever win a national championship, winning the Bangladesh championship at age 12, and later becoming the first (and only) grandmaster from Bangladesh at age 20.
+
+9= In the television series "Star Trek", Captain Kirk and Mr Spock played chess three times. Kirk won every game.
+
+10= The first pocket chess set was created in 1845 by Peter Mark Roget, author of Roget's Thesaurus.
+
+11= In 1939 Weaver Adams wrote a book entitled "White to play and Win". At his next tournament he lost all his games as White and won all his games as Black.
+
+12= The leading British chess masters of World War 2 all became leading codebreakers for British intelligence.
+
+13= There are over 200 million inhabitants of China that are keen chess players.
+
+14= There are 169,518,829,100,544,000,000,000,000,000 different ways of playing the first ten moves by each player in a game of chess.
+
+15= The first chess game played by telephone was played by two men in Derbyshire, England in 1878.
+
+16= The first computer program to play proper chess was written at MIT by Alex Bernstein in 1958-59.
+
+17= The first chess tournament on record was held in Madrid in 1575. Giulio Polerio and Giovanni Leonardo defeated Ruy Lopez and Alfonso Ceron in a series of matches arranged by King Phillip II.
+
+18= Former world champion Jose Capablanca began to play chess at the age of 4, and beat his father in his first game also at age 4.
+
+19= The slowest move on record was by Francisco R. Torres Trois, who took 2 hours 20 minutes to make one move in a game against Luis M.C.P. Santos, in Vigo, Spain in 1980. Trois had only two possible moves to consider.
+
+20= "The Chess Players", painted in 1490, was the first known painting with a chess theme.
+
+21= The youngest world champion of all was Maya Chiburdanidze of the former USSR, who was 17 years old when she won the women's title in 1978.
+
+22= Garry Kasparov of the former USSR was 22 years old when he beat Anatoly Karpov for the world championship of chess in 1985, making him the youngest men's champion in history.
+
+23= Automatons are machines that give the illusion of playing chess. The first automaton was "The Turk" in 1769, followed by "Ajeeb" in 1868, and "Mephisto" in 1878.
+
+24= Draughts is an older game than chess.
+
+25= Judit Polgar of Hungary was the youngest female to gain International Master status in 1989 when she was 12, and the youngest female to gain International Grandmaster status in 1991 at age 15.
+
+26= The first appearance of chess in a film was in "The Wishing Ring" in 1914.
+
+27= In 1974, Stockholm hosted the first world computer chess championship, won by the Soviet program "Kaissa".
