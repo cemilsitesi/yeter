@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<XML_DIZ_INFO>
+<MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>1.00</MASTER_PAD_VERSION>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to dissemminate information to anyone interested in their software products.  To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+</MASTER_PAD_VERSION_INFO>
+<Company_Info>
+        <Company_Name>JGsoft - Just Great Software</Company_Name>
+        <Address_1>Lerrekensstraat 5</Address_1>
+        <Address_2 />
+        <City_Town>Heist-op-den-Berg</City_Town>
+        <State_Province />
+        <Zip_Postal_Code>2220</Zip_Postal_Code>
+        <Country>Belgium</Country>
+        <ASP_Member>Y</ASP_Member>
+        <ASP_Member_Number>03960</ASP_Member_Number>
+        <ESC_Member>N</ESC_Member>
+        <Company_WebSite_URL>http://www.justgreatsoftware.com</Company_WebSite_URL>
+<Contact_Info>
+        <Author_First_Name>Jan</Author_First_Name>
+        <Author_Last_Name>Goyvaerts</Author_Last_Name>
+        <Author_Email>jg@jgsoft.com</Author_Email>
+        <Contact_First_Name />
+        <Contact_Last_Name />
+        <Contact_Email />
+    </Contact_Info>
+<Support_Info>
+        <Sales_Email>sales@jgsoft.com</Sales_Email>
+        <Support_Email>support@jgsoft.com</Support_Email>
+        <General_Email>info@jgsoft.com</General_Email>
+        <Sales_Phone />
+        <Support_Phone />
+        <General_Phone />
+        <Fax_Phone />
+    </Support_Info>
+</Company_Info>
+<Program_Info>
+        <Program_Name>EditPad Classic</Program_Name>
+        <Program_Version>3.5.3</Program_Version>
+        <Program_Release_Month>08</Program_Release_Month>
+        <Program_Release_Day>06</Program_Release_Day>
+        <Program_Release_Year>2000</Program_Release_Year>
+        <Program_Cost_Dollars />
+        <Program_Cost_Other>postcard</Program_Cost_Other>
+        <Program_Type>Postcardware</Program_Type>
+        <Program_Release_Status>Minor Update</Program_Release_Status>
+        <Program_Install_Support>No Install Support</Program_Install_Support>
+        <Program_OS_Support>Win95,Win98,WinNT 4.x,Windows2000</Program_OS_Support>
+        <Program_Language>English</Program_Language>
+        <Program_System_Requirements />
+        <Program_Categories>Text Editors</Program_Categories>
+<File_Info>
+        <Filename_Versioned>edtpad35.zip</Filename_Versioned>
+        <Filename_Previous />
+        <Filename_Generic>edtpad.zip</Filename_Generic>
+        <Filename_Long>EditPadClassic.zip</Filename_Long>
+        <File_Size_Bytes>315599</File_Size_Bytes>
+        <File_Size_K>308</File_Size_K>
+        <File_Size_MB>0.31</File_Size_MB>
+    </File_Info>
+<Expire_Info>
+        <Has_Expire_Info>N</Has_Expire_Info>
+        <Expire_Count />
+        <Expire_Based_On>Days</Expire_Based_On>
+        <Expire_Other_Info />
+        <Expire_Month />
+        <Expire_Day />
+        <Expire_Year />
+    </Expire_Info>
+        <Includes_VB_Runtime>N</Includes_VB_Runtime>
+        <Includes_JAVA_VM>N</Includes_JAVA_VM>
+        <Includes_DirectX>N</Includes_DirectX>
+</Program_Info>
+<Program_Descriptions>
+<English>
+        <Keywords>EditPad,EditPad Classic,notepad,text editor</Keywords>
+        <Char_Desc_45>The classic small but powerful text editor.</Char_Desc_45>
+        <Char_Desc_80>Small but powerful text editor and Notepad replacement in a single executable.</Char_Desc_80>
+        <Char_Desc_250>EditPad Classic is a small but powerful text editor and Notepad replacement.
+It is compact (a single exe) and has an easy-to-use tabbed interface.</Char_Desc_250>
+        <Char_Desc_450>EditPad Classic is a small but powerful text editor and Notepad replacement.
+It is compact (a single exe) and has an easy-to-use tabbed interface.
+
+Some of its features include:
+  * EditPad can open as many files at a time as you want, with no arbitrary file size limit.
+  * ANSI &lt;=&gt; OEM (DOS ASCII) conversion.
+  * System tray icon (optional)
+  * Opens and saves Unix and Mac files
+  * Costs only one postcard!</Char_Desc_450>
+        <Char_Desc_2000>EditPad Classic is a small but powerful text editor and Notepad replacement.
+It is compact (a single exe) and has an easy-to-use tabbed interface.
+
+It has some very interesting features:
+  * EditPad can open as many files at a time as you want, with no arbitrary file size limit.
+  * You change between the open files by clicking on their tabs. No hassle with heaps of overlapping windows.
+  * If you run EditPad again when there is already an instance running, the file(s) you wish to edit will be opened by the existing EditPad window. This means there will be at most one EditPad window open, which will save you from a lot of task switching.
+  * If you do need more instances, simply pick View|New editor from the menu.
+  * If you wish, the EditPad window stays on top of all other windows
+  * Block functions: Save parts of your text to disk; Insert a file in the current text
+  * Specify many print settings: font, margins, headers/footers, line spacing, etc.
+  * Reopen menu that lists the last 16 files opened.
+  * EditPad can put an icon in the system tray that remains visible, even if EditPad is closed. This way you have easy and fast access to EditPad, without the need to keep it open all the time. 
+  * Configure the open and save dialog file filters (file types list).
+  * Opens and saves Unix and Mac files
+  * Conversions: ANSI &lt;=&gt; OEM (DOS ASCII); Tabs &lt;=&gt; Spaces; Uppercase, lowercase or initial caps; ROT-13
+  * Easy and working installation and uninstallation (just copy the .exe onto your hard drive and delete it to get rid of it).
+  * It&apos;s almost free! (just a postcard, a stamp and some nice words)
+  * Praised by its users at http://www.jgsoft.com/editpadcomm.html
+  * ...
+
+Also available from http://www.justgreatsoftware.com/
+  * EditPad for Windows 3.1 (not maintained)
+  * EditPad Lite  (successor to EditPad Classic)
+  * EditPad Pro (professional version with many new, great features!)</Char_Desc_2000>
+</English>
+<Dutch>
+        <Keywords>EditPad,notepad,kladblok,text editor,tekst editor,tekstverwerker</Keywords>
+        <Char_Desc_45>De klassieke compacte maar krachtige editor</Char_Desc_45>
+        <Char_Desc_80>De klassieke compacte maar krachtige editor (in een enkele .exe)</Char_Desc_80>
+        <Char_Desc_250>De klassieke compacte maar krachtige editor.  Met z&apos;n handige interface met tabbladen, de ideale vervanger voor Kladblok (Notepad).</Char_Desc_250>
+        <Char_Desc_450>De klassieke compacte maar krachtige editor.  Met z&apos;n handige interface met tabbladen, de ideale vervanger voor Kladblok (Notepad).
+
+Enkele van de vele eigenschappen:
+  * EditPad kan zoveel bestanden tegelijk openen als u wil, zonder voorafbepaalde maximale bestandsgrootte.
+  * ANSI &lt;=&gt; OEM (DOS ASCII) conversie.
+  * System tray icoon (optioneel)
+  * Leest en schrijft Unix en Mac bestanden
+  * Voor de luttele prijs van een prentkaart!</Char_Desc_450>
+        <Char_Desc_2000>De klassieke compacte maar krachtige editor.  Met z&apos;n handige interface met tabbladen, de ideale vervanger voor Kladblok (Notepad).
+
+EditPad heeft vele interessante eigenschappen:
+  * EditPad kan zoveel bestanden tegelijk openen als u wil, zonder voorafbepaalde maximale bestandsgrootte.
+  * U kan tussen teksten wisselen door op hun tabbladen te klikken.  Geen geknoei met massa&apos;s overlappende vensters.
+  * Als u EditPad opnieuw start terwijl er al een kopie actief is, worden de bestanden die u wenst te bewerken door de reeds actieve kopie geopend.  Dit wil dus zeggen dat steeds maar een enkel  EditPad venster open zal zal zijn, wat u heel wat taakwisselingen zal besparen.
+  * Natuurlijk, als u toch meer vensters wil, kies dan simpelweg Venster|Nieuwe Editor in het menu.
+  * Zo u wenst kan het EditPad venster steeds zichbaar blijven, zelfs als u van taak wisselt.
+  * Blok functies: Gedeeltes van een tekst naar schijf schrijven; een bestand in de huidige tekst invoegen.
+  * U kan allerlei afdrukopties instellen: lettertype, marges, kop- en voetteksten, regelhoogte, enz...
+  * Heropenen menu dat een lijst bevat van de 16 meest recent geopende teksten.
+  * Configureer de dialoogvensters voor het openen en opslaan van teksten
+  * Leest en schrijft Unix en Mac bestanden
+  * Omzetten van Windows ANSI teksten naar OEM (DOS ASCII) en terug.
+  * Eenvoudige en functionerende installatie en verwijdering.  (Gewoon EditPad.exe naar de harde schijf kopieren en eventueel weer wissen)
+  * Bijna gratis! (enkel een prentkaart, postzegel en een vriendelijk woord)
+  * Geprezen door de gebruikers op http://www.jgsoft.com/editpadcomm.html
+  * ...
+
+Ook verkrijgbaar op http://www.justgreatsoftware.com/
+  * EditPad for Windows 3.1 (wordt niet bijgewerkt)
+  * EditPad Lite  (de opvolger van EditPad Classic)
+  * EditPad Pro (professionele versie met vele nieuwe, interessante functies!)</Char_Desc_2000>
+</Dutch>
+</Program_Descriptions>
+<Web_Info>
+<Application_URLs>
+        <Application_Info_URL>http://www.jgsoft.com/editpad.html</Application_Info_URL>
+        <Application_Order_URL>http://www.jgsoft.com/order.html</Application_Order_URL>
+        <Application_Screenshot_URL>http://www.jgsoft.com/img/editpadscreen.gif</Application_Screenshot_URL>
+        <Application_Icon_URL>http://www.jgsoft.com/img/editpad.gif</Application_Icon_URL>
+        <Application_XML_File_URL>http://www.jgsoft.com/pad/EditPadClassic.xml</Application_XML_File_URL>
+    </Application_URLs>
+<Download_URLs>
+        <Primary_Download_URL>http://www.jgsoft.com/zips/EditPadClassic.zip</Primary_Download_URL>
+        <Secondary_Download_URL />
+        <Additional_Download_URL_1 />
+        <Additional_Download_URL_2 />
+    </Download_URLs>
+</Web_Info>
+<Permissions>
+        <Distribution_Permissions>EditPad Classic may be freely distributed on the conditions that this is done by duplicating the .zip file as can be downloaded from the author&apos;s web site (http://www.jgsoft.com) and that no money is charged for EditPad Classic itself (which the recipient must be aware of).
+EditPad Classic may not in any way be distributed as part of another package, unless that package is a collection of freeware and shareware packages and is clearly advertised as being that.</Distribution_Permissions>
+        <EULA>EditPad is copyright (C) 1996-2000, by Jan Goyvaerts.
+
+The software (EditPad Classic) is provided &quot;as is&quot;. In no event shall I, the author, be liable for any consequential, special, incidental or indirect damages of any kind arising out of the delivery, performance or use of this software. This software has been written with great care but I do not warrant that the software is error free.
+You may not attempt to reverse compile, modify, translate or disassemble the software in whole or in part.
+
+You may freely give copies of EditPad Classic to others, as long as the software is unmodified. You may not change a single bit, you may not exclude any files or add any to the package and you may not make EditPad Classic part of another package.
+You may not charge any money for the copying and/or distribution of EditPad Classic, also not for EditPad itself.
+
+EditPad Classic is postcardware. You are allowed to install EditPad and to try it out for a short while (a week or two), but if you want to continue using it you are kindly requested to &quot;pay&quot; by sending the author a nice postcard to the address shown below.
+A postcard is a piece of thick paper with a pretty picture on one side (showing something about where you live, what you do, what you like, etc.) and some nice words written by the sender on the other side.
+I collect postcards. Only real ones, not the electronic/virtual version.
+Used phone cards are also welcome, as my sister collects them.
+
+After your postcard has arrived, you are allowed to use EditPad Classic for as long and as much as you want, without any other cost. You also have the right then to update your copy of EditPad Classicwhen new versions come out.
+If you mention your email address very clearly on the postcard, I will send you a message when I receive your postcard.
+
+Please note that this &quot;payment&quot; is strictly personal. Everyone who uses EditPad Classic has to register, even if someone else installed it on your computer or if you found it on some CD-ROM you bought. (You paid for the CD, not for EditPad Classic.)
+
+Even if EditPad Classic seems to be a simple application, writing it was not a very easy task. So if you like it, send me a nice postcard. 
+If everyone would say &quot;thank you&quot; when someone else did or said something nice, this world would be a much better place.
+
+If you feel that EditPad Classic is definitively worth some money, feel free to put your postcard in an envelope and include a few dollars (or your local currency). This will surely encourage me to go on with the development of new EditPad versions.
+You may also consider buying a license to EditPad Pro at http://www.editpadpro.com
+
+Send your postcards to this address:
+
+   Jan Goyvaerts
+   Lerrekensstraat 5
+   2220 Heist-op-den-Berg
+      Belgium</EULA>
+</Permissions>
+<MSN>
+    <MSN_FORM>Y</MSN_FORM>
+    <MSN_IS_32bit>Y</MSN_IS_32bit>
+</MSN>
+<ZDNET>
+    <ZDNET_FORM>Y</ZDNET_FORM>
+    <ZDNET_Product_ID_Code />
+</ZDNET>
+</XML_DIZ_INFO>
