@@ -1,0 +1,35 @@
+                                Scanning speed
+
+Users of F-PROT 2.x will probably notice that version 3.x is in some cases
+slower than the old scanner.
+
+We are working on improvements that should speed the scanner up, but for
+now, we suggest that you consider the following tips:
+
+  * Scanning of compressed executables (/PACKED) should not be enabled by
+    default when you are doing a routine scan.  We recommend that it is only
+    used when scanning new software before installation, and when cleaning
+    up a virus infection.
+
+  * The same applies to scanning inside ZIP/ARJ archives (/ARCHIVE).  Viruses
+    will in general not "creep" inside them, so if they are scanned initially
+    and found to be virus-free, there is little reason to scan them over and
+    over.
+
+  * If all your Word/Excel files have the standard DOC/DOT and XL? file
+    name extensions, you should just use "Standard file extensions",
+    instead of "Ignore document extensions" (/TYPE).  This will speed up
+    the scan, as the scanner now does not have to check every file to see
+    if it is a Word/Excel file.
+
+  * Doing a "Dumb" scan of all files forces the scanner to scan every data
+    file as if it was a program, which is usually just a waste of time.  The
+    primary reason this option is provided is that certain anti-virus
+    testers have renamed the COM/EXE files in their virus collections to
+    something like VOM/VXE, and if we do not provide a way to scan "all"
+    files, we will get an artificially low score in their tests.  We do not
+    like this, but we are forced to offer this option.  However, using it
+    is generally a "dumb" thing to do.
+
+If you find any files that take unacceptably long to scan, you can send us
+a copy, and we will try to speed up the scanning of those files.
