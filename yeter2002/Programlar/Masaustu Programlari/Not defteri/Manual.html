@@ -1,0 +1,604 @@
+<HTML>
+<HEAD>
+	<TITLE>EditPad Classic User's Guide</TITLE>
+	<META NAME="Author" CONTENT="Jan Goyvaerts">
+	<META NAME="Description" CONTENT="EditPad Classic User's Guide">
+</HEAD>
+
+<BODY TEXT="#000000" BGCOLOR="#FFFFC0" LINK="#0000FF" VLINK="#000080" ALINK="#FF0000">
+
+<H1 ALIGN=CENTER><FONT COLOR="#FF8000" SIZE=+4>EditPad Classic User's Guide</FONT></H1>
+
+<H2 ALIGN=CENTER>Your Guide to the Best Postcardware Text Editor on Earth<BR>
+<FONT COLOR="#FF0000">================================================</FONT></H2>
+
+<UL><H2>Contents</H2>
+
+<LI><A HREF="#features">EditPad Classic's Features</A>
+<LI><A HREF="#license">License Agreement</A>
+<LI><A HREF="#install">Installing EditPad Classic</A>
+<LI><A HREF="#uninstall">Uninstalling EditPad Classic</A>
+<LI>EditPad Menu Reference:
+	<UL>
+	<LI><A HREF="#file">File Menu</A>
+	<LI><A HREF="#edit">Edit Menu</A>
+	<LI><A HREF="#print">Print Menu</A>
+	<LI><A HREF="#block">Block Menu</A>
+	<LI><A HREF="#convert">Convert Menu</A>
+	<LI><A HREF="#options">Options Menu</A>
+	<LI><A HREF="#view">View Menu</A>
+	<LI><A HREF="#help">Help Menu</A>
+	</UL>
+<LI>EditPad Windows:
+	<UL>
+	<LI><A HREF="#main">EditPad Classic Main Window</A>
+	<LI><A HREF="#prefs">Preferences</A>
+	<LI><A HREF="#config">Configure</A>
+	<LI><A HREF="#find">Find and Replace</A>
+	</UL>
+<LI><A HREF="#commandline">Command Line Parameters</A>
+<LI><A HREF="#faq">Frequently Asked Questions</A>
+</UL>
+
+<P>For the latest information on EditPad Classic, check out the author's home page at <A HREF="http://www.EditPadClassic.com/">http://www.EditPad Classicclassic.com/</A>.</P>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="features"><UL><H2>EditPad Classic's Features</H2></UL>
+
+<P>EditPad Classic is a text editor, a replacement for the standard Windows NotePad.<BR>
+EditPad Classic requires Windows 95 or later to run. No additional DLLs or
+whatever are required.<P>
+
+<P>Note that EditPad Classic is a finished project.  No enchancements will 
+ever be made to it.  Only if any serious bugs would be found, it will 
+be updated.
+EditPad Classic has been superceded by EditPad Lite and EditPad Pro.  
+These versions are the result of redeveloping EditPad from scratch and 
+have many interesting new features (certainly EditPad Pro), while still 
+remaining as fast and compact as EditPad Classic.
+EditPad Lite and EditPad Pro are available at 
+<A HREF="http://www.EditPadLite.com">http://www.EditPadLite.com</A> and 
+<A HREF="http://www.EditPadPro.com">http://www.EditPadPro.com</A> respectively.</P>
+
+<P><U>It has a some very interesting features:</U></P>
+<UL>
+		<LI>EditPad Classic can open as many files at a time as you want.
+		<LI>File size is only limited by available RAM and hard disk space.
+		<LI>You change between the open files by clicking on their tabs.
+		    No hassle with heaps of overlapping windows.
+		<LI>If you run EditPad Classic again when their is already an instance running,
+		    the file(s) you wish to edit will be opened by the existing EditPad Classic window.
+		    This means there will be at most one EditPad Classic window open,
+		    which will save you from a lot of task switching.<BR>
+		    Of course, if you do need more instances, simply pick View|New editor from the menu.
+		<LI>Block functions: save parts of your text to disk and insert a file in the current text
+		<LI>Specify many print settings: font, margins, headers/footers, line spacing, etc.
+		<LI>Option for keeping the EditPad Classic window on top of all other windows.
+		<LI>When you close an unsaved file, EditPad Classic will either warn you, automatically save the file
+		    or do nothing.
+		<LI>Reopen menu that lists the last 16 files opened.
+		<LI>EditPad Classic puts an icon in the system tray that remains visible, even if EditPad Classic is closed. (Can be disabled.)
+		    This way you have easy and fast access to EditPad Classic, without the need to keep it running all the time.
+		<LI>Configure the open and save dialog file filters.
+		<LI>EditPad Classic reads UNIX (LF only) and Mac (CR only) text files (in addition to DOS/Win CR+LF files, of course) and can export files to both formats.
+		<LI>ROT-13 standard used on the Usenet for making (possibly) offensive texts illegible.
+		<LI>ANSI <=> OEM (DOS ASCII) conversion
+		<LI>MAPI support for emailing texts
+		<LI>Easy and working <A HREF="#install">installation</A> and <A HREF="#uninstall">uninstallation</A>.
+		<LI>It's <A HREF="#postcard">almost free</A>!
+		<LI>...
+		</UL></TD></TR>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="license"><UL><H2>License Agreement</H2></UL>
+
+<P>EditPad Classic is copyright &copy; 1996-2000, by Jan Goyvaerts.</P>
+
+<P>The software (EditPad Classic) is provided "as is". In no event shall I, the
+author, be liable for any consequential, special, incidental or
+indirect damages of any kind arising out of the delivery, performance
+or use of this software. This software has been written with great care
+but I do not warrant that the software is error free.
+You may not attempt to reverse compile, modify, translate or
+disassemble the software in whole or in part.</P>
+
+<P>You may freely give copies of EditPad Classic to others, as long as the
+software is unmodified. You may not change a single bit,
+you may not exclude any files or add any to the package and you may not
+make EditPad Classic part of another package.
+You may not charge any money for the copying and/or distribution of
+EditPad Classic, also not for EditPad Classic itself.</P>
+
+<P>EditPad Classic is postcardware. You are allowed to install EditPad Classic and to try
+it out for a short while (a week or two), but if you want to continue
+using it you are kindly requested to "pay" by sending the author a
+nice postcard to the address shown below.
+A postcard is a piece of thick paper with a pretty picture on one side
+(showing something about where you live, what you do, what you like,
+etc.) and some nice words written by the sender on the other side.
+I collect postcards. Only real ones, not the electronic/virtual
+version.
+Used phone cards are also welcome, as my sister collects them.</P>
+
+<P>After your postcard has arrived, you are allowed to use EditPad Classic for as
+long and as much as you want, without any other cost. You also have the
+right then to update your copy of EditPad Classic when new versions come out.
+If you mention your email address very clearly on the postcard,
+I will send you a message when I receive your postcard.</P>
+
+<P>Please note that this "payment" is strictly personal. Everyone who uses
+EditPad Classic has to register, even if someone else installed it on your
+computer or if you found it on some CD-ROM you bought. (You paid for
+the CD, not for EditPad Classic.)</P>
+
+<P>Even if EditPad Classic seems to be a simple application, writing it was not a
+very easy task. So if you like it, send me a nice postcard. If everyone
+would say "thank you" when someone else did or said something nice,
+this world would be a much better place.</P>
+
+<P>If you feel that EditPad Classic is definitively worth some money, feel free to
+put your postcard in an envelope and include a few dollars (or your
+local currency). This will surely encourage me to go on with the
+development of new EditPad versions.
+You may also want to buy a license to EditPad Pro, available at <A HREF="http://www.EditPadPro.com">http://www.EditPadPro.com</A></P>
+
+<P>Send your postcards to this address:</P>
+<PRE>
+   Jan Goyvaerts
+   Lerrekensstraat 5
+   2220 Heist-op-den-Berg
+      Belgium
+</PRE>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="install"><UL><H2>Installing EditPad Classic</H2></UL>
+
+<P>Simply put a copy of EditPad Classic.exe on your hard disk somewhere (e.g.: c:\Program Files) and run it.</P>
+
+<P>A dialog box displaying the <A HREF="#license">license agreement</A> will pop up. Read the entire text
+carefully.
+<BR>If you agree with it, check the little box below and click on the button below.
+<BR>If you do not agree with it, click on the button below to terminate EditPad Classic.</P>
+
+<P>If you agreed, you will see the EditPad Classic window with an empty text opened, named "Untitled".
+<BR>Don't bother about it, just pick Options|Configure from the menu.</P>
+
+<P>A small <A HREF="#config">dialog box</A> will pop up. Check the options you like and click on OK.</P>
+
+<P>That's all there is to it.</P>
+
+<P>If you change your mind later about which options you like, simply repeat the above procedure. More preferences can be set using the Options|<A HREF="#prefs">Preferences</A> command.</P>
+
+<P>If you wish to replace the version of EditPad Classic you have currently installed with a newer one, simply replace the old EditPad Classic.exe on your hard disk with the new one. No other actions are necessary.</P>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="uninstall"><UL><H2>Uninstalling EditPad Classic</H2></UL>
+
+<P>There should never be any reason to do so. If you wish to update 
+EditPad Classic to the latest version, simply replace the old EditPad Classic.exe on 
+your hard disk with the new one.
+<BR>However, uninstalling EditPad Classic is an easy thing to do.</P>
+
+<P>Run EditPad Classic and pick Options|Configure from the menu.</P>
+
+<P>Click on the Uninstall button in the dialog box that pops up. This
+will remove all shortcuts that EditPad Classic installed and will also clean
+any information stored in the registry by EditPad Classic.</P>
+
+<P>Close EditPad Classic and delete EditPad Classic.exe from your hard disk.</P>
+
+<P>RIP.</P>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="file"><UL><H2>File Menu</H2>
+
+<LI><B>New</B>
+<BR>Start with a new, empty text.
+
+<LI><B>Open</B>
+<BR>Load a text from disk.
+<BR>This command will display a standard open dialog. You can open several files at once by selecting all of them in the open dialog.
+
+<LI><B>Reopen</B>
+<BR>Selecting this item will display a submenu displaying the last 16 files you have opened in EditPad Classic. Select a file to open it.
+<BR>Pick Remove Obsolete from the submenu to remove all texts that no longer exist from the Reopen menu. Pick Remove All to completely clear the Reopen menu.
+
+<LI><B>Refresh From Disk</B>
+<BR>Reload the currect text from disk.
+<BR>Use this command when you have opened a text in EditPad Classic that is being updated by another program. Use this command to make sure that what you are seeing in EditPad Classic is up-to-date.
+
+<LI><B>Save</B>
+<BR>Save the current text to disk.
+<BR>Prompts for a filename if the file does not yet exist.
+
+<LI><B>Save As</B>
+<BR>Save the current text under a different name.
+<BR>The original version of the text will still exist under its original name too.
+
+<LI><B>Save All</B>
+<BR>Save all the open texts to disk.
+
+<LI><B>Rename / Move</B>
+<BR>Change the filename of the current text and/or put it in another folder.
+<BR>This command works just like the Save As command, with the difference that Rename/Move will delete the original file so you will have only one copy of the text.
+
+<LI><B>Insert File</B>
+<BR>Insert the contents of another file into the current text.
+
+<LI><B>Mail</B>
+<BR>Send the text to someone via email.
+<BR><I>Warning:</I> On some systems, this command will lock up your computer if you do not have a valid MAPI server installed. MAPI servers are MS Exchange (which comes with Windows 95) and Eudora PRO. Note that the latter needs to be configured to be a MAPI server. This option is off by default. (See Eudora's online help for more information.)
+
+<LI><B>Export</B>
+<BR>Save the text so it can be read by a different operating system.
+
+<LI><B>Close</B>
+<BR>Close the current text.
+
+<LI><B>Close All</B>
+<BR>Close all the open texts.
+
+<LI><B>Exit</B>
+<BR>Tell EditPad Classic to get lost.
+
+</UL>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="edit"><UL><H2>Edit Menu</H2>
+
+<LI><B>Undo</B>
+<BR>Undo the last action. Repeat the command to redo the action.
+<BR>Note that you can undo only the last action. If you are not sure that you will like the changes you are about to make, save the text first.
+
+<LI><B>Cut</B>
+<BR>Delete the selected part of the current text and put it on the Windows clipboard.
+<BR>If the clipboard already contained a piece of text (or any other data), it will be cleared first.
+
+<LI><B>Copy</B>
+<BR>Put the selected part of the current text on the clipboard. If the clipboard already contained a piece of text (or any other data), it will be cleared first.
+<BR>You can then paste the text into EditPad Classic or any other Windows application.
+
+<LI><B>Paste</B>
+<BR>Insert the text on the clipboard into the current text. This command has no effect when the clipboard does not contain any text. Pasting a text does not remove it from the clipboard.
+<BR>If you select a part of the text before you issue the Paste command, that part will be replaced by the text on the clipboard.
+
+<LI><B>Select All</B>
+<BR>Select the entire text.
+
+<LI><B>Find and Replace</B>
+<BR>Search for a word or phrase and optionally replace it with another.
+<BR>See Find and Replace for more information.
+
+<LI><B>Search Again</B>
+<BR>Repeat the last Find and Replace command.
+
+<LI><B>Go to Line</B>
+<BR>Go to a certain line in your text.
+<BR>If you use EditPad Classic to edit source code for programs, etc., you can use this command to quickly locate the error location reported by the compiler, etc.
+
+<LI><B>Insert Date and Time</B>
+<BR>Insert the current date and/or time into the text.
+</UL>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="print"><UL><H2>Print Menu</H2>
+
+<LI><B>Print</B>
+<BR>Waste some more trees by sending your text to the printer.
+
+<LI><B>Print Selected Text</B>
+<BR>Only print the selected part of the current text.
+
+<LI><B>Printer Setup</B>
+<BR>Change printer settings.
+
+<LI><B>Page Setup</B>
+<BR>Change margin settings. To set page headers and footers, use the Preferences command in the <A HREF="#options">Options</A> menu.
+</UL>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="block"><UL><H2>Block Menu</H2>
+
+<LI><B>Write</B>
+<BR>Save the selected part of the current text to a new file.
+
+<LI><B>Append</B>
+<BR>Add the selected part of the current text to the end of an existing file.
+</UL>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="convert"><UL><H2>Convert Menu</H2>
+
+<LI><B>OEM -&gt; ANSI</B>
+<BR>Convert a text from the OEM character set (DOS ASCII) to the ANSI character set (Windows).
+<BR>This command command has no effect if your text does not use any characters with diacritics.
+Note that EditPad Classic cannot guess if the text is written using the OEM character set or not, so it will try to convert it anyway when you issue this command.
+
+<LI><B>ANSI -&gt; OEM</B>
+<BR>Convert a text from the ANSI character set (Windows) to the OEM character set (DOS ASCII).
+<BR>This command command has no effect if your text does not use any characters with diacritics.
+Note that EditPad Classic cannot guess if the text is written using the ANSI character set or not, so it will try to convert it anyway when you issue this command.
+
+<LI><B>Tabs -&gt; Spaces</B>
+<BR>Convert all tab chacters in the text to spaces, without affecting the text's layout if you are using a monospaced font.
+
+<LI><B>Spaces -&gt; Tabs</B>
+<BR>EditPad Classic will prompt for a tab size (in spaces) and then convert as many spaces to tabs as possible without affecting the text's layout (for best results, use a monospaced font).
+
+<LI><B>To Uppercase</B>
+<BR>Make all the characters in the selected part of the current text (or the entire text if no text is selected), uppercase (capital) characters.
+
+<LI><B>To Lowercase</B>
+<BR>Make all the characters in the selected part of the current text (or the entire text if no text is selected), lowercase (small) characters.
+
+<LI><B>To Title</B>
+<BR>Make all the words in the selected part of the current text (or the entire text if no text is selected) start with a capital letter.
+
+<LI><B>ROT-13</B>
+<BR>If you post a message to the Usenet that might offend some people, you should "encrypt" it using ROT-13. People cannot read the text accidentically, as they have to explicitly "decrypt" it using ROT-13. (ROT-13 rotates the letters of the alphabet 13 positions forward, so repeating the command undoes it. This is said to be the first cryptographic algorithm and was used by Julius Caesar to send secret, military messages.)
+<BR>When you use the command in EditPad Classic, only the selected part of the current text is affected. If no text has been selected, EditPad Classic encrypts/decrypts the entire text.
+</UL>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="options"><UL><H2>Options Menu</H2>
+
+<LI><B>Current Font</B>
+<UL><LI><B>Fixed Width</B>
+    <BR>Use a fixed width (monospaced) font for the current text. The default fixed width font is Courier.
+    <LI><B>Variable Width</B>
+    <BR>Use a variable width (proportionally spaced) font for the current text. The default variable width font is Arial.
+    <LI><B>Bigger Font</B>
+    <BR>Increase the font size.
+    <LI><B>Smaller Font</B>
+    <BR>Decrease the font size.
+</UL>
+You can select the fonts using the Preferences command in the Options menu.
+
+<LI><B>Stay On Top</B>
+<BR>When this menu item is checked, the EditPad Classic window will remain visible (i.e. stay on top of all other windows), even when you switch to another application.
+
+<LI><B>Break Lines</B>
+<BR>When selected, lines that are too long to fit in the EditPad Classic window, are automatically broken into multiple lines. This prevents you from having to scroll horizontally.
+<BR>This option is also known as Word Wrap.
+
+<LI><B>Preferences</B>
+<BR>Set preferences like color, font, print headers and footers, etc.
+
+<LI><B>Configure</B>
+<BR>Configure EditPad Classic and its environment. Allows you to automatically create (or remove) shortcuts to EditPad Classic in the Start Menu, assign EditPad Classic to be the default editor for text files, etc.
+
+<LI><B>Filters</B>
+<BR>Edit the file filters used in the various open and save dialog boxes.
+</UL>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="view"><UL><H2>View Menu</H2>
+
+<LI><B>Next File</B>
+<BR>Switch to the next file you have opened in EditPad Classic. (The next tab in the row.)
+
+<LI><B>Previous File</B>
+<BR>Switch to the previous file you have opened in EditPad Classic. (The previous tab in the row.)
+
+<LI><B>Toolbar</B>
+<BR>View or hide the EditPad Classic toolbar. All the buttons on the toolbar are simply shortcuts to menu commands, so you can hide them to save screen space without losing any functionality.
+
+<LI><B>New Editor</B>
+<BR>By default, there will be at most only one EditPad Classic window visible. If you try to run EditPad Classic again, it will simply make the existing window pop up.
+<BR>If you absolutely need more than one window, use the New Editor command to force a second instance to pop up. (See also: <A HREF="#commandline">command line parameters</A>)
+</UL>
+
+<HR WIDTH=80% NOSHADE>
+
+<A NAME="help"><UL><H2>Help Menu</H2></UL>
+
+<P>Use the items in this menu when things are getting desparate. :-)</P>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="main"><UL><H2>EditPad Classic Main Window</H2></UL>
+
+<P>The status bar at the bottom of the main window displays the following information, from left to right:</P>
+
+<UL>
+<LI><B>Cursor Position</B>
+<BR>Displays the current cursor position in the format line:column. So 35:10 means you are 35 lines down from the top and you are about to type the 10th character on that line.
+
+<LI><B>Modified Indicator</B>
+<BR>If the file you are viewing has been modified (after you saved the file the last time), the word "Modified" is displayed. Otherwise, this part of the status bar is empty.
+
+<LI><B>Insert/Overwrite Indicator</B>
+<BR>When you hit the Insert (Ins) key on the keyboard, you can toggle between insert and overwrite mode. In insert mode, typing a character in the middle of the text makes all following characters move on. In overwrite mode, the next character is replaced by the new character you type.
+<BR>The current mode is indicated in the third position of the status bar.
+
+<LI><B>File Size and Number of Files Open</B>
+<BR>The first number indicates the size of the current text in characters, the second number indicates the total number of files you have currently open in EditPad Classic.
+</UL>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="prefs"><UL><H2>Preferences Window</H2></UL>
+
+<P>This window shows up when you pick the Preferences command from the <A HREF="#options">Options menu</A>.</P>
+
+<UL>
+<LI><B>Colors</B>
+<BR>Change the colors of the text and the text background.
+
+<LI><B>Fonts</B>
+<BR>Click on one of the buttons to select the screen and printer fonts. Since some fonts look good on the screen, but not on the printer and vice versa, you can select different fonts for screen and printer.
+<BR>Whether the fixed or variable width font is used, depends on which one you select in the Options|Current font menu.
+<BR>The <I>Default Font</I> setting determines which font is used when you open a text.
+<BR><I>Tab Size</I> sets the size of a tab in spaces. Note that when mixing tabs with spaces, you should use a fixed width font for best results. When using a variable width font, use tabs only to indent your texts.
+
+<LI><B>Saving Files</B>
+<BR><I>Closing Unsaved Files</I> determines what EditPad Classic should do when you tell it to close a file that has not yet been saved to disk. (If you close an unsaved file, the changes you made will be lost permanently.)
+<BR>You can choose to make EditPad Classic display a warning message, allowing you to save the file. You can also make EditPad Classic save the file automatically or to do nothing, abandoning the changes you made.
+<BR>When <I>Save Backup Files</I> is activated, EditPad Classic will create a backup copy of the original file when you overwrite a file. This backup has the same name as the original, but with the .bak extension. This option should be on when you have selected to automatically save files, in case you want to revert the changes you made.
+
+<LI><B>Printing</B>
+<BR><I>Line Spacing</I> allows you to add additional space between each line when printing a text.
+<BR>You can also enter a header and a footer that will be added to each printed page. If you include the following special codes in your header or footer text, they will be replaced when printing the text by what follows:
+<UL><LI><TT>%D -&gt; </TT>the current date (when you issue the print command)
+    <LI><TT>%T -&gt; </TT>the current time (when you issue the print command)
+    <LI><TT>%P -&gt; </TT>page number that increases with every page
+    <LI><TT>%N -&gt; </TT>total number of pages that are being printed
+    <LI><TT>%FD -&gt; </TT>file date (when you last saved the file)
+    <LI><TT>%FT -&gt; </TT>file time (when you last saved the file)
+    <LI><TT>%FN -&gt; </TT>file name
+</UL>
+</UL>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="config"><UL><H2>Configuration Window</H2></UL>
+
+<P>This window shows up when you pick Configure from the <A HREF="#options">Options menu</A>.</P>
+
+<UL>
+<LI><B>Default program for text files</B>
+<BR>Associate EditPad Classic with text files. This will make sure that when you double-click on a text file in the Windows Explorer, EditPad Classic will be used to view and edit the file.
+
+<LI><B>In Send To menu</B>
+<BR>Put a link to EditPad Classic in the Send To menu. This way you can easily open any file from within the Windows Explorer with EditPad Classic. Right-click on the file, go to the Send To menu and select EditPad Classic.
+
+<LI><B>Icon on Desktop</B>
+<BR>Put a shortcut to EditPad Classic on the desktop.
+
+<LI><B>Icon in Start Menu</B>
+<BR>Put a shortcut to EditPad Classic in the Start menu.
+
+<LI><B>Icon in Programs Menu</B>
+<BR>Put a shortcut to EditPad Classic in the Programs submenu of the Start menu.
+
+<LI><B>Enable TaskBar icon</B>
+<BR>Make EditPad Classic put an icon in the Windows system tray (next to the clock in the TaskBar). This icon will allow you to access EditPad Classic quickly. Click on it to open EditPad Classic. Right-click on it to show the context menu and quickly access the most important menu items.
+
+<LI><B>Icon to Use</B>
+<BR>If green is not your favorite color, you can select another icon to be used for the shortcuts.
+<BR>Note that the icon in the taskbar and in the caption of EditPad Classic's window will still be the green one.
+</UL>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="find"><UL><H2>Find and Replace Window</H2></UL>
+
+<P>This window shows up when you pick Edit|Find and Replace from the menu. You do not have to close it to switch back to EditPad Classic's main window.</P>
+
+<P>First, you can specify the search options:</P>
+
+<UL>
+<LI><B>Text to Find</B>
+<BR>The word or phrase you wish to locate.
+<BR>You can also search for special characters like tabs and line breaks. For a tab, include <TT>\t</TT> in the find text; <TT>\n</TT> for a newline. If you wish to search for a backslash (\), type in a double backslash (\\).
+<BR>E.g.: searching for <TT>\nhello</TT> will find all words "hello" that are placed at the beginning of a line.
+
+<LI><B>Replace with</B>
+<BR>If you wish to replace the word or phrase you are searching for with something else, type it here.
+<BR>The same special characters as in the text to find can be used.
+<BR>E.g.: if you wish to make sure that there is only one sentence on each line, you can search for "." (without the quotes) and replace it with ".\n"
+
+<LI><B>Options</B>
+<BR><I>Case sensitive</I>: Take into account the capitalization of the text to find. When this option is checked, searching for "Dog" will find "Dog", but not "DOG" or "dog". If the option is not selected, all three will be found.
+<BR><I>Whole words only</I>: When checked, only words that match the text to find completely will be found. So searching for "dog", will not find "doggie" if the option is selected. In the other case, "doggie"
+<BR><I>Prompt on replace</I>: When checked, EditPad Classic will ask for your confirmation to replace a word.
+
+<LI><B>Scope</B>
+<BR><I>All open documents</I>: Search through all the texts currently open.
+<BR><I>Current document</I>: Search through the current text only.
+<BR><I>Current selected</I>: Search through the selected part of the current text only.
+
+<LI><B>Origin</B>
+<BR><I>Start of document</I>: Start searching at the beginning of the current text.
+<BR><I>Start of selection</I>: Start searching at the beginning of the selected part of the current text.
+<BR><I>Current cursor position</I>: Start searching at the current position of the text cursor (the I-beam that indicates where the next character will be placed).
+</UL>
+
+<P>Then you can hit one of the buttons to start searching (and replacing).</P>
+
+<UL>
+<LI><B>Find</B>
+<BR>Look for the text to find, starting from the specified origin.
+
+<LI><B>Find Next</B>
+<BR>Look for the text to find, starting from the last position where the text to find was found, even if you have changed the text to find since the last search.
+
+<LI><B>Replace Current</B>
+<BR>Replace the currently highlighted occurrence of the text to find with the replace text.
+
+<LI><B>Replace Next</B>
+<BR>Find the next occurrence and replace it.
+
+<LI><B>Replace All</B>
+<BR>Replace all occurrences of the text to find that appear in the specified scope, starting at the specified origin.
+</UL>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="commandline"><UL><H2>Command Line Parameters</H2></UL>
+
+<P>The EditPad Classic command line syntax is as follows:</P>
+
+<UL><TT><B>EditPad Classic</B> [<I><B>filename1.txt</B></I> [<I><B>filename2.txt</B></I> [...]]] [<B>/p</B>] [<B>/newinstance</B>]</TT></UL>
+
+<P>You can put several filenames on the command line and long filenames are supported. However, you cannot use any wildcards like * and ?.</P>
+
+<P>The /p command line parameter will instruct EditPad Classic to print the files instead of opening them. This parameter is used by the Print action associated with text files after you have used the Configure command in the <A HREF="#options">Options menu</A> and have selected to associate EditPad Classic with text files.</P>
+
+<P>When you try to run EditPad Classic while another copy is already running, the new copy will simply make the existing window pop up. If you want a second window, you need to specify the /newinstance parameter. (This is what the New Editor command from the <A HREF="#view">View menu</A> does.)</P>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<A NAME="faq"><UL><H2>Frequently Asked Questions</H2></UL>
+
+<P><B>Q: I downloaded another version of EditPad Classic (newer version, different language), but when I try to run it, I keep getting the old version.</B></P>
+
+<P>A: You did not overwrite the old EditPad Classic.exe with the new one. Pick Find|Files or Folders from the Windows Start Menu and search for EditPad Classic.exe. Select all but one items found and hit the Delete button on the keyboard.
+<BR>Then double-click on the one EditPad Classic.exe left to run it. Select Options|Configuration from the menu and click on OK to update all the shortcuts to point to the correct EditPad Classic.exe</P>
+
+<P><B>Q: When I try to run EditPad Classic, it shows up all right but I cannot enter any text or open files.</B></P>
+
+<P>A: First make sure that you are running either Windows 95/98, Windows NT 4 or Windows NT 3.51 Service Release #5 with the new shell installed.
+<BR>Then, make sure that your Windows installation is still intact. Some applications seem to remove riched32.dll from the Windows\System directory.
+<BR>If this file is missing or has somehow been corrupted, EditPad Classic will not work properly and you will have to restore it from a backup or your original Windows CD.</P>
+
+<P><B>Q: EditPad Classic does not seem to remember any settings I made.</B></P>
+
+<P>A: EditPad Classic requires either Windows 95/98, Windows NT 4 or Windows NT 3.51 Service Release #5 with the new shell installed. Windows 3.1 will not work.<BR>
+If you are on a network or multi-user system, make sure EditPad Classic has sufficient rights to write to \HKEY_CURRENT_USER\Software\JG\EditPad Classic in the registry.<BR>
+Also, you may try picking File|Exit in EditPad Classic to force it to save its settings.</P>
+
+<P><B>Q: Some applications still use NotePad instead of EditPad Classic.
+<BR>Why? Can I change this?</B></P>
+
+<P>A: These applications execute NotePad directly, instead of running the 
+program associated to text files.
+<BR>You can fix this by renaming EditPad Classic.exe to NotePad.exe and putting it 
+in your Windows directory, <B>overwriting</B> the old NotePad.exe. If you want to keep a backup copy of NotePad,
+do not rename it but make a copy of it. If you rename NotePad.exe to something else, Windows will try to be smart and update all file associations to the renamed NotePad.exe, defeating the purpose of renaming EditPad Classic.exe to NotePad.exe
+<BR>Then run the new NotePad.exe (EditPad Classic), pick Options|Configure from the 
+menu and click on OK to update the EditPad Classic links to the new exe.</P>
+
+<P><B>Q: I cannot switch to other applications when EditPad Classic is running, unless I minimize it.</B></P>
+
+<P>A: Turn off Options|Stay On Top</P>
+
+<P ALIGN=CENTER><FONT COLOR="#FF0000"><TT>======================================================================</TT></FONT></P>
+
+<P><I><FONT SIZE=-1>EditPad Classic User's Guide - Version 3.5.3 - Updated August 6th, 2000<BR>
+Copyright &copy; 1997-2000, by Jan Goyvaerts.<BR>
+</FONT></I></P>
+
+</BODY>
+</HTML>
