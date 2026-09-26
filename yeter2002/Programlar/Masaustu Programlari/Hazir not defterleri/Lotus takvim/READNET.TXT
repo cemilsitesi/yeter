@@ -1,0 +1,21 @@
+****** Maximize this window before reading this file in Notepad. ******
+
+For information on planning, installing and setting up Lotus Organizer
+Release 2.1 on your network, see the Lotus Organizer Release 2.1
+Administrator's Guide. The Lotus Organizer Release 2.1 Administrator's
+Guide is intended for administrators who use Organizer mail-based or
+single-server scheduling. It is not intended for Organizer PIM
+(stand-alone) or SmartSuite administrators.
+
+NDEPLOY.WRI and CDEPLOY.WRI are Windows Write files that answer common
+deployment questions for administrators who use Lotus Organizer
+Release 2.1 for group scheduling with Lotus Notes or cc:Mail,
+respectively. The files are not intended for administrators who use
+Organizer 2.1 for single-server scheduling, shared calendaring with
+no group scheduling, or Lotus SmartSuite administrators. By default,
+the files are located in the \LOTUS\ORG2\ADMIN directory.
+
+TECHNOTE.OR2 provides information for Organizer Release 2.1
+administrators and advanced users. By default, the file is located in
+the \LOTUS\ORG2\ORGFILES directory.
+
