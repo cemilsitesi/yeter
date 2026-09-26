@@ -1,0 +1,1077 @@
+[Objects]
+
+AboutDlg= Informazioni su KChess Elite
+
+AboutDlg.RegoLabel= Registrando il programma si accede a tutte le funzioni dell'ultima versione. Si eliminano i messaggi di ricordo ed i limiti di tempo. Si ha inoltre diritto all'aggiornamento alle versioni future a prezzo ridotto o gratuitamente.
+
+AboutDlg.ClickLabel= Cliccare il tasto di Aiuto per maggiori informazioni su questo programma e su come registrarlo. Cliccare il tasto Registra per ordinare. Se già si è effettuata la Registrazione cliccare il tasto Sblocca per immettere i dati di registrazione.
+
+AboutDlg.OkBtn= &Conferma
+
+AboutDlg.RegoBtn= &Registra
+
+AboutDlg.UnlockBtn= &Sblocca
+
+AboutDlg.HelpBtn= &Aiuto
+
+BoardSetDlg= Stato iniziale della scacchiera
+
+BoardSetDlg.Heading= Imposta lo stato iniziale della scacchiera:
+
+BoardSetDlg.EnPassantLabel= Presa en passant:
+
+BoardSetDlg.FirstMoveLabel= Numero prima mossa:
+
+BoardSetDlg.FiftyMoveLabel= Mosse da ult. cattura o m. pedone:
+
+BoardSetDlg.CastleGroup= Arrocco consentito
+
+BoardSetDlg.BlackQueenBox= lato di Donna N
+
+BoardSetDlg.BlackKingBox= lato di Re B
+
+BoardSetDlg.WhiteQueenBox= lato di Donna B
+
+BoardSetDlg.WhiteKingBox= lato di Re B
+
+BoardSetDlg.FirstGroup= Tratto
+
+BoardSetDlg.StatusGroup= Stato Della Partita | Normale | Patta | Abband.
+
+BoardSetDlg.OkBtn= &Conferma
+
+BoardSetDlg.CancelBtn= &Annulla
+
+BoardSetDlg.HelpBtn= A&iuto
+
+ChessForm.FreezePanel= Gioco in Pausa
+
+ChessForm.FileMenu1= &File
+
+ChessForm.FileNew1= &Nuovo | Ctrl+N
+
+ChessForm.FileOpen1= &Apri...
+
+ChessForm.FileReopen1= &Riapri | Ctrl+R
+
+ChessForm.FileSave1= &Salva | Ctrl+S
+
+ChessForm.FileSaveAs1= Salva &Come...
+
+ChessForm.PrintMoves1= Stampa Mosse...
+
+ChessForm.BoardPrint1= Stampa &Scacchiera...
+
+ChessForm.PrintSetup1= Opzioni di s&tampa...
+
+ChessForm.FileExit1= &Esci
+
+ChessForm.PlayMenu1= &Partita
+
+ChessForm.BoardSetup1= Imposta &Posizione
+
+ChessForm.Clear1= &Svuota scacchiera
+
+ChessForm.EnterPosition1= Enter Position...
+
+ChessForm.SetBoardState1= &Impostazioni della Partita...
+
+ChessForm.Opening1= &Apertura...
+
+ChessForm.AutoPlay1= Gioco A&utomatico
+
+ChessForm.PlayWhite1= Gioca col &Bianco
+
+ChessForm.PlayBlack1= Gioca col &Nero
+
+ChessForm.TwoPlayer1= &Due Giocatori
+
+ChessForm.Analyse1= Ana&lisi
+
+ChessForm.Rotate1= &Ruota la Scacchiera | Alt+Q
+
+ChessForm.Speak1= Pa&rla
+
+ChessForm.SpeakMove1= &Muovi | Alt+0
+
+ChessForm.SpeakRank11= Riga &1 | Alt+1
+
+ChessForm.SpeakRank21= Riga &2 | Alt+2
+
+ChessForm.SpeakRank31= Riga &3 | Alt+3
+
+ChessForm.SpeakRank41= Riga &4 | Alt+4
+
+ChessForm.SpeakRank51= Riga &5 | Alt+5
+
+ChessForm.SpeakRank61= Riga &6 | Alt+6
+
+ChessForm.SpeakRank71= Riga &7 | Alt+7
+
+ChessForm.SpeakRank81= Riga &8 | Alt+8
+
+ChessForm.SpeakFilea1= Colonna &a | Ctrl+1
+
+ChessForm.SpeakFileb1= Colonna &b | Ctrl+2
+
+ChessForm.SpeakFilec1= Colonna &c | Ctrl+3
+
+ChessForm.SpeakFiled1= Colonna &d | Ctrl+4
+
+ChessForm.SpeakFilee1= Colonna &e | Ctrl+5
+
+ChessForm.SpeakFilef1= Colonna &f | Ctrl+6
+
+ChessForm.SpeakFileg1= Colonna &g | Ctrl+7
+
+ChessForm.SpeakFileh1= Colonna &h | Ctrl+8
+
+ChessForm.SpeakStatus1= &Situazione | Alt+9
+
+ChessForm.CopyGame1= Copia Partita | Ctrl+C
+
+ChessForm.PasteGame1= Incolla Partita | Ctrl+V
+
+ChessForm.Variation1= Variante | Alt+V
+
+ChessForm.Freeze1= Pa&usa
+
+ChessForm.GameInfo1= Informazioni...
+
+ChessForm.Options1= Opzioni... | Alt+O
+
+ChessForm.MoveMenu1= &Mossa
+
+ChessForm.Undo1= Mossa Indietro | Alt+U
+
+ChessForm.Redo1= Mossa Avanti | Alt+R
+
+ChessForm.UndoAll1= Vai a Inizio Partita
+
+ChessForm.RedoAll1= Vai a Fine Partita
+
+ChessForm.Hint1= Suggerimento | Alt+I
+
+ChessForm.EnterMove1= &Immetti la mossa... | Enter
+
+ChessForm.ComputerMove1= Mossa al &Computer | Alt+C
+
+ChessForm.Stop1= In&terrompi il calcolo | Alt+S
+
+ChessForm.Replay1= Rivedi la mossa
+
+ChessForm.Resign1= A&bbandona
+
+ChessForm.OfferDraw1= Offri la patta
+
+ChessForm.Comment1= Com&mento | Alt+E
+
+ChessForm.HelpMenu1= &Aiuto
+
+ChessForm.HelpHelp1= &Aiuto
+
+ChessForm.HelpUsing1= Informazioni sull'Aiuto
+
+ChessForm.HelpIndex1= &Indice dell'Aiuto
+
+ChessForm.SearchHelpFor1= &Ricerca nell'Aiuto...
+
+ChessForm.BeginnersInfo1= Informazioni per i &Principianti
+
+ChessForm.Rules1= R&egole degli scacchi
+
+ChessForm.TipoftheDay1= &Consiglio del giorno...
+
+ChessForm.KChessWebSite1= Sito &Web di KChess
+
+ChessForm.HelpAbout1= Informazioni su &KChess...
+
+ChessForm.NewButton= Nuova partita
+
+ChessForm.OpenButton= Apri partita
+
+ChessForm.SaveButton= Salva partita
+
+ChessForm.PrintButton= Stampa partita
+
+ChessForm.SetupButton= Imposta posizione
+
+ChessForm.AutoplayButton= Gioco Automatico
+
+ChessForm.PlayWhiteButton= Gioca col Bianco
+
+ChessForm.PlayBlackButton= Gioca col Nero
+
+ChessForm.TwoPlayerButton= Due giocatori
+
+ChessForm.AnalyseButton= Analizza posizione
+
+ChessForm.RotateButton= Ruota la scacchiera
+
+ChessForm.CopyButton= Copia partita
+
+ChessForm.PasteButton= Incolla partita
+
+ChessForm.VariationButton= Variante
+
+ChessForm.FreezeButton= Pausa
+
+ChessForm.OptionsButton= Opzioni
+
+ChessForm.UndoAllButton= Vai a Inizio partita
+
+ChessForm.UndoButton= Mossa Indietro
+
+ChessForm.RedoButton= Mossa Avanti
+
+ChessForm.RedoAllButton= Vai a Fine Partita
+
+ChessForm.HintButton= Suggerimento
+
+ChessForm.ComputerButton= Mossa al computer
+
+ChessForm.StopButton= Interrompi il calcolo
+
+ChessForm.ReplayButton= Rivedi la mossa
+
+ChessForm.HelpButton= Aiuto
+
+EnterMoveDlg.OkBtn= &Conferma
+
+EnterMoveDlg.CancelBtn= &Annulla
+
+EnterMoveDlg.HelpBtn= A&iuto
+
+InfoDlg= Informazioni sulla partita
+
+InfoDlg.Heading= Immetti tutte le informazioni importanti su questa partita:
+
+InfoDlg.EventLabel= Evento:
+
+InfoDlg.SiteLabel= Località:
+
+InfoDlg.DateLabel= Data partita (yyyy.mm.dd):
+
+InfoDlg.TimeLabel= Tempo (hh:mm:ss):
+
+InfoDlg.RoundLabel= Turno:
+
+InfoDlg.WhiteLabel= Bianco:
+
+InfoDlg.BlackLabel= Nero:
+
+InfoDlg.EventDateLabel= Data evento (yyyy.mm.dd):
+
+InfoDlg.OpeningLabel= Apertura:
+
+InfoDlg.TitleLabel= Titolo:
+
+InfoDlg.PlayerLabel= Nome:
+
+InfoDlg.CtryLabel= Nazione:
+
+InfoDlg.AnnotatorLabel= Annotatore:
+
+InfoDlg.OkBtn= &Conferma
+
+InfoDlg.CancelBtn= &Annulla
+
+InfoDlg.HelpBtn= A&iuto
+
+OpeningsDlg= Enciclopedia delle Aperture degli Scacchi
+
+OpeningsDlg.Heading= Seleziona l'apertura che desideri giocare:
+
+OpeningsDlg.ColumnHeader= Codice | Nome | Mosse
+
+OpeningsDlg.OkBtn= &Conferma
+
+OpeningsDlg.CancelBtn= &Annulla
+
+OpeningsDlg.SortBtn= &Ordina
+
+OpeningsDlg.HelpBtn= A&iuto
+
+OptionsDlg= Opzioni
+
+OptionsDlg.OptionsTab= Forza | Visualizzazione | Pezzi | Scacchiera | Testo | Audio | Stampa
+
+OptionsDlg.LimitTypeGroup= Tipo di controlli del Tempo| Calcolo &Infinito | Tempo &Partita | Tempo &Mossa | Mosse in un'&Ora | Imita il Tempo del &Giocatore | &Sandclock
+
+OptionsDlg.LengthGroup= Valore di Tempo
+
+OptionsDlg.UserLimitGroup= Limiti di Tempo per l'&Utente | Nessun limite per l'utente | Continua il &Computer | L'Utente perde la partita
+
+OptionsDlg.MiscGroup= &Opzioni di Gioco
+
+OptionsDlg.ThinkAheadBox= Calcolo continuo
+
+OptionsDlg.FreezeCoversBox= Copri scacchiera in pausa
+
+OptionsDlg.OpeningLibBox= Usa il Libro delle Aperture
+
+OptionsDlg.ResignBox= Abbandono del Computer
+
+OptionsDlg.DrawBox= Patta per forze insufficienti
+
+OptionsDlg.PromoteBox= Promuovi sempre a Donna
+
+OptionsDlg.PressBox= Orologio automatico
+
+OptionsDlg.FreezeMinimizeBox= Pausa se minimizzato
+
+OptionsDlg.ValidateBoardBox= Convalida impostazione posiz.
+
+OptionsDlg.SearchGroup= Profondità Di Ricerca
+
+OptionsDlg.WeakestLabel= Più debole
+
+OptionsDlg.StrongestLabel= Più forte
+
+OptionsDlg.NoviceBtn= Princip. | Regola le opzioni al livello più semplice
+
+OptionsDlg.AverageBtn= Interm. | Regola le opzioni al livello intermedio
+
+OptionsDlg.ExpertBtn= Esperto | Regola le opzioni al livello più difficile
+
+OptionsDlg.ButtonsGroup= Barra dei &Pulsanti | Senza | Sinistra | In Alto
+
+OptionsDlg.TakenGroup= Pezzi Catturati
+
+OptionsDlg.ShowTakenBox= Mostra i pezzi catturati
+
+OptionsDlg.SortTakenBox= Ordina i pezzi catturati
+
+OptionsDlg.EdgeGroup= Bordo della scacchiera
+
+OptionsDlg.LabelsBox= Mostra le coordinate
+
+OptionsDlg.PlayersBox= Mostra i nomi dei giocatori
+
+OptionsDlg.EdgeSizeGroup= Bordo della scacchiera
+
+OptionsDlg.NarrowestLabel= Più sottile
+
+OptionsDlg.WidestLabel= Più larga
+
+OptionsDlg.StatusGroup= Pannello di Stato
+
+OptionsDlg.CommentBox= Mostra commento
+
+OptionsDlg.WorkingBox= Mostra calcolo
+
+OptionsDlg.ShowStatusBox= Mostra pannello di stato
+
+OptionsDlg.AnalogueBox= Orologio analogico
+
+OptionsDlg.DigitalBox= Orologio digitale
+
+OptionsDlg.HundredthsBox= Mostra i centesimi di secondo
+
+OptionsDlg.NarrationBox= Mostra descrizione
+
+OptionsDlg.EcoBox= Mostra nomi aperture
+
+OptionsDlg.RefreshGroup= Frequenza di Refresh
+
+OptionsDlg.HighestLabel= Più alta
+
+OptionsDlg.LowestLabel= Più bassa
+
+OptionsDlg.PiecesGroup= Pezzi
+
+OptionsDlg.DisplayGroup= Opzioni di visualizzazione dei pezzi
+
+OptionsDlg.ScaleBox= Adatta i pezzi alla scacchiera
+
+OptionsDlg.CaptionsBox= Mostra i nomi dei pezzi
+
+OptionsDlg.SpeedGroup= Velocità di movimento dei pezzi
+
+OptionsDlg.FastestLabel= Più veloce
+
+OptionsDlg.SlowestLabel= Più lento
+
+OptionsDlg.MovingGroup= Opzioni di movimento dei pezzi
+
+OptionsDlg.FastOpenBox= Replay rapido partite aperte
+
+OptionsDlg.FastUndoBox= Mossa Indietro rapida
+
+OptionsDlg.FastRedoBox= Mossa Avanti rapida
+
+OptionsDlg.OpenToEndBox= Replay partite aperte
+
+OptionsDlg.DragPiecesBox= Visualizza trascinamento
+
+OptionsDlg.TwoClickBox= Abilita la mossa con due clic
+
+OptionsDlg.MoveCursorBox= Abilita barra spazio
+
+OptionsDlg.ReduceFlickerBox= Riduci flicker
+
+OptionsDlg.DelayGroup= Ritardo tra le mosse
+
+OptionsDlg.ShortestLabel= Più corto
+
+OptionsDlg.LongestLabel= Più lungo
+
+OptionsDlg.HintsGroup= Facilitazioni di visualizzazione
+
+OptionsDlg.AttacksBox= Pezzi attaccati
+
+OptionsDlg.JeopardiesBox= Pezzi in presa
+
+OptionsDlg.PieceHintsBox= Suggerimenti pezzo
+
+OptionsDlg.SquareHintsBox= Suggerimenti casella
+
+OptionsDlg.MoveMarkerBox= Indicatore ultima mossa
+
+OptionsDlg.SquareSizeGroup= Dimensioni marcatore di casella
+
+OptionsDlg.SmallestLabel= Più piccola
+
+OptionsDlg.LargestLabel= Più grande
+
+OptionsDlg.BorderSizeGroup= Dimens. pezzo attacc./in presa
+
+OptionsDlg.ThinnestLabel= Più fine
+
+OptionsDlg.ThickestLabel= Più spesso
+
+OptionsDlg.TextureGroup= Sfondo scacchiera
+
+OptionsDlg.ColourGroup= Colori
+
+OptionsDlg.WhiteSquareBtn= Caselle bianche
+
+OptionsDlg.BlackSquareBtn= Caselle nere
+
+OptionsDlg.AttackBtn= Pezzo attaccato
+
+OptionsDlg.JeopardyBtn= Pezzo in presa
+
+OptionsDlg.MoveMarkerBtn= Indicatore mossa
+
+OptionsDlg.FontGroup= Font di caratteri
+
+OptionsDlg.FontLabel= Esempio Font
+
+OptionsDlg.FixedLabel= Esempio Font
+
+OptionsDlg.FixedBox= Larghezza fissa in lista mosse
+
+OptionsDlg.NotationGroup= &Notazione | Algebrica standard (es. Be3) | Algebrica lunga (es. Bc1-e3) | Computer (es. c1e3) 
+
+OptionsDlg.LanguageGroup= &Lingua
+
+OptionsDlg.TextTypeGroup= Lettere dei Pezzi | Inglese Standard | Personalizzate
+
+OptionsDlg.CustomTextGroup= Testo personalizzato
+
+OptionsDlg.AudioGroup= Audio | Nessuno | Solo effetti sonori | Suono e annunci vocali | Suono e mosse vocali
+
+OptionsDlg.WhiteVoiceGroup= Voce Bianco | Maschio | Femmina
+
+OptionsDlg.BlackVoiceGroup= Voce Nero | Maschio | Femmina
+
+OptionsDlg.PrintGroup= Font dei Caratteri per la Stampa
+
+OptionsDlg.PrintLabel= Esempio Font
+
+OptionsDlg.PrintBoldBox= Gras.
+
+OptionsDlg.PrintItalicBox= Cors.
+
+OptionsDlg.PrintFixedBox= Larghezza fissa dei caratteri per la lista delle mosse in colonna
+
+OptionsDlg.FigureGroup= Font delle Figure
+
+OptionsDlg.FigureCharLabel= Set di caratteri delle Figure
+
+OptionsDlg.PrintSetupBtn= Opz. Stampa
+
+OptionsDlg.OkBtn= &Conferma
+
+OptionsDlg.CancelBtn= &Annulla
+
+OptionsDlg.PreviewBtn= A&nteprima
+
+OptionsDlg.DefaultsBtn= Prede&finite
+
+OptionsDlg.HelpBtn= A&iuto
+
+OrderDlg= Modulo di Registrazione/Ordine
+
+OrderDlg.Heading= Immettere le voci seguenti ed inviarle all'indirizzo indicato:
+
+OrderDlg.NameLabel= Nome:
+
+OrderDlg.CompanyLabel= Azienda:
+
+OrderDlg.AddressLabel= Indirizzo:
+
+OrderDlg.CountryLabel= Nazione:
+
+OrderDlg.PhoneLabel= Telefono:
+
+OrderDlg.FaxLabel= Fax:
+
+OrderDlg.EmailLabel= Email:
+
+OrderDlg.SourceLabel= Come è stato ottenuto il programma:
+
+OrderDlg.ProductLabel= Prodotto e Licenza richiesta:
+
+OrderDlg.AmountLabel= Valuta ed importo pagato:
+
+OrderDlg.CommentLabel= Commento:
+
+OrderDlg.PaymentGroup= Tipo Di Pagamento:
+
+OrderDlg.CardLabel= N. Carta di Credito:
+
+OrderDlg.ExpiryLabel= Scadenza:
+
+OrderDlg.HolderLabel= Circuito:
+
+OrderDlg.CloseBtn= Ch&iudi
+
+OrderDlg.PrintBtn= &Stampa
+
+OrderDlg.FileBtn= &File
+
+OrderDlg.CopyBtn= &Copia
+
+OrderDlg.EmailBtn= &Email
+
+OrderDlg.HelpBtn= &Aiuto
+
+PromoteDlg= Promozione
+
+PromoteDlg.QueenBtn= &Donna
+
+PromoteDlg.RookBtn= &Torre
+
+PromoteDlg.BishopBtn= &Alfiere
+
+PromoteDlg.KnightBtn= &Cavallo
+
+PromoteDlg.HelpBtn= &Aiuto
+
+SelectDlg= Scegli Partita
+
+SelectDlg.Heading= Questo file è una libreria di partite. Seleziona la partita che desideri aprire:
+
+SelectDlg.KeepBox= Mantieni in memoria
+
+SelectDlg.OkBtn= &Conferma
+
+SelectDlg.CancelBtn= &Annulla
+
+SelectDlg.HelpBtn= A&iuto
+
+TipsDlg= Consiglio del giorno
+
+TipsDlg.TipLabel= Lo sapevi che...
+
+TipsDlg.ShowTipsBox= Mostra i consigli all'avvio
+
+TipsDlg.TipTypesGroup= Tipologie | KChess | Il Gioco | Curiosità | Tutti i tipi
+
+TipsDlg.PrevBtn= < Prec.
+
+TipsDlg.NextBtn= Succ. > 
+
+TipsDlg.CloseBtn= &Chiudi
+
+UnlockDlg= Sblocca
+
+UnlockDlg.Heading= Immetti i dettagli di registrazione per accedere a tutte le funzioni di questo programma:
+
+UnlockDlg.NameLabel= Name:
+
+UnlockDlg.SerialLabel= Serial Number:
+
+UnlockDlg.UnlockLabel= Unlock code:
+
+UnlockDlg.OkBtn= &Conferma
+
+UnlockDlg.CancelBtn= &Annulla
+
+UnlockDlg.HelpBtn= A&iuto
+
+[Messages]
+
+1000= Messaggio di errore %d non trovato.
+
+1001= Posizione sulla scacchiera non valida.
+
+1002= Casella en passant non valida.
+
+1003= Numero di mosse dall'ultima cattura o mossa di pedone non valido.
+
+1004= E' stato rilevato un errore di elaborazione interno.  Prova ad uscire da altri programmi aperti, come gli anti-virus ed altri.  Se il problema persiste prendi nota dei messaggi di errore e contatta ARK ANGLES all'indirizzo arkangles@arkangles.com.
+
+1005= Formato di file sconosciuto.
+
+1006= Dati non validi.
+
+1007= Mossa illegale nel file della partita.
+
+1008= Il pannello di stato è troppo piccolo per mostrare i commenti.  Aumentare la dimensione della scacchiera o disabilitare la visualizzazione dell'orologio.
+
+1009= "Name", "Serial Number" o "Unlock Code" non valido.
+
+1011= Non è possibile ritirare la mossa %s.
+
+1012= Non posso muovere il pezzo su %s.
+
+1013= %s è una mossa illegale.
+
+1014= %s non è una mossa valida.
+
+1015= Non posso effettuare la mossa, %s non è valida.
+
+1016= Il file %s mancante o danneggiato.  Reinstallare KChess Elite.
+
+1017= Il file %s non esiste.
+
+1018= Il file %s esiste già. Vuoi sostituirlo?
+
+1019= Il file %s esiste già. Vuoi aggiungere a quello esistente o sostituirlo?
+
+1020= Esci dalla partita in corso senza salvarla?
+
+1021= Hai solo un minuto rimasto in questo programma.
+
+1022= Il tempo per il funzionamento di questo programma è espirato.
+
+1023= Non puoi salvare le partite in questa versione di valutazione.  Effettua la Registrazione per ottenere il programma completo - vedi la funzione Informazioni nel menù Aiuto.
+
+1024= Il programma rifiuta l'offerta di patta.
+
+1025= Non posso leggere il file %s. (KChess Elite 16 non può leggere righe più grosse di 32K, usa KChess Elite 32).
+
+1026= Questa versione di beta test non può essere sbloccata, devi ottenere l'ultima versione di valutazione o registrata.
+
+1027= Alcune opzioni sono state cambiate quando la partita corrente è stata caricata. Desideri ristabilire le opzioni precedenti?
+
+1031= Immetti la mossa
+
+1032= Immetti la tua mossa in un formato inequivocabile (quali e2e4 o Pe4 o soltanto e4):
+
+1033= Immetti la posizione
+
+1034= Immetti una posizione nel formato standard FEN:
+
+1035= Memorizza in salvataggio partite
+
+1041= minutes per player
+
+1042= seconds per turn
+
+1043= moves per hour
+
+1045= seconds in sandclock
+
+1051= ply
+
+1052= steps
+
+1053= pixels
+
+1054= secondo
+
+1101= Versione di Prova
+
+1102= Versione di Valutazione Non Registrata
+
+1103= Versione Registrata
+
+1104= Hai usato %d giorni di valutazione dei previsti 30 giorni.
+
+1105= Il tuo periodo di valutazione di 30 giorni è terminato.
+
+1106= Registrato a %0:s Numero di serie %1:s.
+
+1107= Puoi provare questo programma gratis per 30 giorni. Trascorso questo periodo devi registrare il prodotto o smettere di usare questa copia di valutazione.
+
+1108= Questa versione è autorizzata per l'uso di una sola persona o su una sola macchina.
+
+1109= Questa versione è autorizzata per uso su qualsiasi numero di macchine in una classe o un ufficio.
+
+2001= Bianco
+
+2002= Nero
+
+2003= vuoto
+
+2004= Re
+
+2005= Donna
+
+2006= Torre
+
+2007= Alfiere
+
+2008= Cavallo
+
+2009= Pedone
+
+2011= En passant.
+
+2012= Arrocco sul lato di Re.
+
+2013= Arrocco sul lato di Donna.
+
+2014= Promozione del pedone a %s.
+
+2015= sotto attacco
+
+2016= in presa
+
+2017= catturato
+
+2018= Abbandona
+
+2019= Patta
+
+2021= Commento
+
+2022= Variante
+
+2031= Scacco!
+
+2032= Scacco Matto!  Il %s vince.
+
+2033= Stallo! Il Re %s non è sotto scacco ma non può muoversi.
+
+2034= Il %0:s abbandona! Vince il %1:s.
+
+2035= Patta! Nessuna cattura si è verificata nelle ultime 50 mosse.
+
+2036= Patta! La stessa posizione si è ripetuta 3 volte.
+
+2037= Patta!  Nessun risultato può essere forzato con questi pezzi.
+
+2038= I giocatori si accordano per la patta.
+
+2039= Trovato il Matto in %d mosse.
+
+2041= Limiti di tempo della partita oltrepassati. Vince il %s.
+
+2042= Limiti di tempo della mossa oltrepassati. Vince il %s.
+
+2043= Mosse stabilite per un'ora non raggiunte. Vince il %s.
+
+2044= Tempo Sandclock esaurito. Vince il %s.
+
+2052= Matto
+
+2053= Stallo
+
+2054= Abbandona
+
+2055= Patta (50 mosse) 
+
+2056= Patta (3 ripetizioni) 
+
+2057= Patta (Forze insufficienti) 
+
+2058= Patta (accordo tra i giocatori) 
+
+2059= Fuori tempo limite
+
+2061= Caricamento...
+
+2062= Lavorando...
+
+2063= Giocando...
+
+2064= Modalità Impostazione
+
+2065= Pronto
+
+2066= Analizzando...
+
+2067= Fine della Partita
+
+2071= Il programma sta pensando
+
+2072= Il programma continua a pensare
+
+2073= Il programma è in attesa
+
+2074= Calcolando...
+
+2075= Attendendo...
+
+2076= Mossa %d
+
+2077= Tocca al %s
+
+2081= Gioco Automatico
+
+2082= Gioca col Bianco
+
+2083= Gioca col Nero
+
+2084= Due Giocatori
+
+2091= Valutazione: %d
+
+2092= Nodi: %dK
+
+2093= Linea migliore: %s
+
+2094= Posizione in formato FEN:  %s
+
+2095= Senza Nome
+
+2096= Sconosciuto
+
+2101= un Pedone
+
+2102= due Pedoni
+
+2103= un pezzo minore, o tre Pedoni
+
+2104= un pezzo minore e un Pedone
+
+2105= una Torre, o un pezzo minore e due Pedoni
+
+2106= una Torre e un Pedone, o due pezzi minori
+
+2107= una Torre e due Pedoni, o due pezzi minori e un Pedone
+
+2108= una Torre e un pezzo minore, o due pezzi minori e due Pedoni
+
+2109= una Donna, o una Torre e un pezzo minore e un Pedone
+
+2110= una Donna e un Pedone, o due Torri
+
+2111= una Donna e due Pedoni, o due Torri e un Pedone
+
+2112= una Donna e un pezzo minore, o due Torri e due Pedoni
+
+2113= una Donna e un pezzo minore e un Pedone, o due Torri e un pezzo minore
+
+2114= una Donna e una Torre, o due Torri e un pezzo minore e un Pedone
+
+2115= una Donna e una Torre e un Pedone, o due Torri e un pezzo minore e un Pedone
+
+2116= una Donna e una Torre e due Pedoni, o due Torri e due pezzi minori
+
+2117= una Donna e una Torre e un pezzo minore, o due Torri e due pezzi minori e un Pedone
+
+2118= una Donna e una Torre e un pezzo minore e un Pedone, o due Torri e due pezzi minori e due Pedoni
+
+2119= una Donna e due Torri, o due Torri e tre pezzi minori
+
+2120= una Donna, due Torri e un Pedone
+
+2121= una Donna, due Torri e due Pedoni
+
+2122= una Donna, due Torri e un pezzo minore
+
+2123= una Donna, due Torri, un pezzo minore e un Pedone
+
+2124= una Donna, due Torri, un pezzo minore e due Pedoni
+
+2125= una Donna, due Torri e due pezzi minori
+
+2126= una Donna, due Torri, due pezzi minori e un Pedone
+
+2127= una Donna, due Torri, due pezzi minori e due Pedoni
+
+2128= una Donna, due Torri e tre pezzi minori
+
+2129= una Donna, due Torri, tre pezzi minori e un Pedone
+
+2130= una Donna, due Torri, tre pezzi minori e due Pedoni
+
+2131= una Donna, due Torri e quattro pezzi minori
+
+2132= una Donna, due Torri, quattro pezzi minori e un Pedone
+
+2133= una Donna, due Torri, quattro pezzi minori e due Pedoni
+
+2134= una Donna, due Torri, quattro pezzi minori e tre Pedoni
+
+2135= una Donna, due Torri, quattro pezzi minori e quattro Pedoni
+
+2136= una Donna, due Torri, quattro pezzi minori e cinque Pedoni
+
+2137= una Donna, due Torri, quattro pezzi minori e sei Pedoni
+
+2138= una Donna, due Torri, quattro pezzi minori e sette Pedoni
+
+2139= una Donna, due Torri, quattro pezzi minori e otto Pedoni
+
+2140= Più di un intero set di pezzi
+
+2201= La scacchiera è nella posizione iniziale normale.
+
+2202= La partita è finita.
+
+2203= I giocatori hanno forze materiali uguali, valutabili in %d punti.
+
+2204= Le forze materiali del %0:s sono valutabili %1:d punti più del %2:s, pari a %3:s.
+
+2205= I due schieramenti hanno mobilità equivalente, avendo un numero simile di mosse disponibili (%1:d per il %0:s e %3:d per il %2:s).
+
+2206= I pezzi del %0:s hanno maggiore mobilità, con %1:d mosse disponibili contro le %3:d del %2:s.
+
+2207= I giocatori controllano uno spazio equivalente, attaccando un numero simile di caselle (%1:d per il %0:s e %3:d per il %2:s).
+
+2208= Il %0:s è in vantaggio di spazio, controllando %1:d caselle contro le %3:d del %2:s.
+
+2209= I giocatori hanno un controllo del centro equivalente.
+
+2210= Il %s ha un migliore controllo del centro.
+
+2211= Il %s può arroccare da entrambi i lati.
+
+2212= Il %s può arroccare dal lato di Re.
+
+2213= Il %s può arroccare dal lato di Donna.
+
+2214= Il %0:s può catturare en passant in %1:s.
+
+2301= Evento
+
+2302= Località
+
+2303= Turno
+
+2304= Data
+
+2305= Tempo
+
+2306= Apertura
+
+2307= Titolo
+
+2308= Nazione
+
+2309= Annotatore
+
+[Program Tips]
+
+1= Benvenuto nel programma KChess Elite. Se hai bisogno di aiuto o desideri informazioni per la risoluzione dei problemi del programma, clicca sulla voce Aiuto nel menù Aiuto.
+
+2= Puoi scegliere giocare col nero o col bianco selezionando la modalità appropriata nel menù Partita.
+
+3= Se fai un errore durante la partita, puoi selezionare la voce Mossa Indietro nel menù Partita per ritirare la tua ultima mossa.
+
+4= Se non sai come proseguire la partita, puoi selezionare la voce Suggerimento Rapido nel menù Mossa per ottenere un suggerimento sulla mossa da effettuare.
+
+5= Se stai trovando le partite troppo facili o troppo difficili, vai alla scheda Forza delle Opzioni, che trovi nel menù Partita. Clicca i tasti Principiante, Intermedio o Esperto.
+
+6= In qualunque momento puoi ruotare la scacchiera cliccando sulla voce Ruota Scacchiera nel menù Partita.
+
+7= Un rapido accesso ai comandi più comuni può essere ottenuto con la barra dei pulsanti.
+
+8= Per cambiare l'aspetto della scacchiera, vai alla scheda Scacchiera delle Opzioni, che trovi nel menù Partita.
+
+9= Se desideri guardare KChess Elite che gioca da solo, seleziona la voce Gioco Automatico nel menù Partita.
+
+10= Se vuoi smettere di giocare, ma desideri continuare la partita in un altro momento, puoi salvare la partita in corso selezionando la voce Salva nel menù File.
+
+11= Puoi caricare le partite precedentemente salvate (sia le tue che quelle fornite con il programma), selezionando la voce Apri nel menù File e scegliendo il nome della partita.
+
+12= Se tieni premuto il tasto sinistro del mouse su un pezzo, verranno evidenziate tutte le caselle in cui quel pezzo può muovere.
+
+13= Se tieni premuto il tasto destro del mouse su un pezzo o su una casella, verranno evidenziati tutti i pezzi che attaccano quel pezzo o quella casella.
+
+14= Puoi usare una gamma di formati standard per i file delle partite. Quando salvi o apri i file, scegli il formato che desideri dalla lista a scorrimento del Tipo di File.
+
+15= Se vuoi provare una serie di mosse o analizzare una posizione, crea un'altra immagine della stessa partita selezionando la voce Variante nel menu Partita.
+
+[Game Tips]
+
+1= Una buona mossa d'apertura è l'avanzata di uno dei due Pedoni centrali, per occupare il centro ed aprire la strada ad altri pezzi.
+
+2= Nella fase iniziale della partita, dovresti preoccuparti di sviluppare i tuoi pezzi il più velocemente possibile.
+
+3= Se riesci ad avanzare un Pedone sino all'estremità opposta della scacchiera, verrà promosso ad un pezzo a tua scelta tra Donna, Torre, Alfiere e Cavallo.
+
+4= E' meglio evitare di muovere lo stesso pezzo più di una volta in apertura, poiché ciò ritarderebbe lo sviluppo degli altri pezzi.
+
+5= E' utile assegnare un valore relativo ai pezzi: 1 per il Pedone, 3 per il Cavallo e l'Alfiere, 5 per la Torre e 9 per la Donna.
+
+6= Un Pedone può catturare un Pedone nemico che è appena avanzato di 2 caselle alla sua prima mossa come se fosse avanzato di una sola casella. Questa mossa speciale si chiama cattura "en passant".
+
+7= Puoi proteggere meglio il tuo Re lasciandogli davanti dei Pedoni, almeno nella fase iniziale  e mediana della partita.
+
+8= E' meglio non portare in gioco troppo presto la Donna.
+
+9= Dovresti sempre presumere che il tuo avversario farà la mossa migliore. Non ritenere mai che egli non possa immaginare i tuoi piani.
+
+10= Le 4 caselle centrali sono le più importanti sulla scacchiera. Cerca di piazzare i tuoi pezzi su di esse.
+
+11= Se il tuo Re ed una delle tue Torri non sono state ancora mosse e le caselle che li separano sono libere, puoi muovere il Re di due caselle verso la Torre e muovere la Torre a scavalcare il Re, posizionandola al suo fianco. Questa mossa speciale si chiama "arrocco".
+
+12= I pezzi hanno maggiore mobilità quando sono posti nel centro della scacchiera, da dove controllano un numero maggiore di caselle.
+
+13= Quando hai forze materiali maggiori del tuo avversario, è buona norma forzare cambi di pezzi. Questo accrescerà la tua forza relativa.
+
+14= Dovresti usare il pezzo di minor valore possibile per proteggere un altro pezzo. Cerca di non usare mai un pezzo di valore superiore a quello del pezzo che deve essere protetto.
+
+[Chess Trivia]
+
+1= Si pensa che il gioco degli scacchi abbia avuto origine in India intorno al 550-600 a.C. Si diffuse rapidamente in Asia, poi nei territori arabi e quindi in Europa.
+
+2= La più lunga partita di scacchi tra giocatori di alto livello fu di 269 mosse. Venne giocata da Ivan Nikolic e Goran Arsovic a Belgrado nel 1989. Durò 20 ore e finì patta.
+
+3= E' stato detto che esiste una letteratura più copiosa sugli scacchi che su tutti gli altri giochi messi insieme.
+
+4= Ci sono 318.979.564.000 modi diversi di giocare le prime quattro mosse di ciascun giocatore in una partita di scacchi.
+
+5= La frase "Scacco Matto" viene dal Persiano "Shah Mat", che significa "il re è morto".
+
+6= La prima scacchiera con le caselle di colore alternato bianco e nero comparve in Europa nel 1090.
+
+7= Nel 1851 il campione del mondo era A. Anderssen, mentre nello stesso periodo il campione del mondo di Dama era A. Anderson.
+
+8= Niaz Murshed è lo scacchista più giovane ad aver mai vinto un campionato nazionale, quello del Bangladesh, all'età di 12 anni. E' poi divenuto, a 20 anni, il primo (e l'unico) Grande Maestro del Bangladesh.
+
+9= Nella serie televisiva "Star Trek", il Capitano Kirk ed il Signor Spock hanno giocato a scacchi tre volte. Kirk ha vinto tutte le partite.
+
+10= La prima scacchiera tascabile venne realizzata nel 1845 da Peter Mark Roget, autore del "Roget's Thesaurus" (un famoso dizionario).
+
+11= Nel 1939 Weaver Adams scrisse un libro intitolato "Il Bianco muove e vince". Al suo successivo torneo egli perse tutte le partite che gioco col Bianco e vinse tutte quelle col Nero.
+
+12= I più bravi maestri di scacchi inglesi all'epoca della Seconda Guerra Mondiale divennero tutti abili decrittatori per i Servizi Segreti del loro Paese.
+
+13= Ci sono oltre 200 milioni di abitanti della Cina che sono appassionati giocatori di scacchi.
+
+14= Ci sono 169.518.829.100.544.000.000.000.000.000 modi diversi di giocare le prime 10 mosse di ciascun giocatore in una partita di scacchi.
+
+15= La prima partita di scacchi giocata via telefono, ebbe luogo in Derbyshire (Inghilterra) nel 1878.
+
+16= Il primo programma per computer che giocasse decentemente a scacchi venne realizzato al MIT da Alex Bernstein nel 1958-59.
+
+17= Il primo torneo di scacchi di cui si ha notizia si tenne a Madrid nel 1575. Giulio Polerio e Giovanni Leonardo sconfissero Ruy Lopez de Segura e Alfonso Ceron in una serie di incontri organizzati dal re Filippo II.
+
+18= Il Campione del Mondo del passato Josè Raul Capablanca imparò a giocare a scacchi all'età di 4 anni e battè il padre alla sua prima partita, sempre all'età di 4 anni.
+
+19= La mossa più lenta che si conosca (2 ore e 20") venne giocata da Francisco R. Torres Trois in una parita con Luis M.C.P. Santos, in Vigo (Spagna) nel 1980. Trois aveva solo due mosse possibili da considerare.
+
+20= "The Chess Players", dipinto nel 1940, fu il primo quadro conosciuto avente per soggetto gli Scacchi.
+
+21= Il più giovane campione del mondo in assoluto fu la sovietica Maya Chiburdanize, che aveva 17 anni quando vinse il titolo mondiale femminile nel 1978.
+
+22= Garry Kasparov, dell'ex U.R.S.S., aveva 22 anni quando battè Anatoly Karpov per il campionato mondiale di scacchi del 1985, che lo consacrò come il più giovane campione maschile della storia.
+
+23= Automi e macchine che danno l'illusione di giocare a scacchi. Il primo automa fu "The Turk" (il turco) nel 1769, seguito da "Ajeeb" nel 1868 e da Mephisto nel 1878.
+
+24= La Dama è un gioco più antico degli Scacchi.
+
+25= L'ungherese Judit Polgar fu la più giovane donna ad ottenere il titolo di Maestro Internazionale nel 1989, all'eta di 12 anni, e poi quello di Grande Maestro nel 1991, all'età di 15 anni.
+
+26= La prima apparizione degli Scacchi in un film fu in "The Wishing Ring" nel 1914.
+
+27= Nel 1974, Stoccolma ospitò il primo campionato mondiale di scacchi per computer, vinto dal programma sovietico "Kaissa".
