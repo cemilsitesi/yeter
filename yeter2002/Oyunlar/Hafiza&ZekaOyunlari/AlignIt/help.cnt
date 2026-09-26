@@ -1,0 +1,46 @@
+:Base help.hlp
+:Index Align It! Help=Help.hlp
+1 Align It! Help
+3 More Games from Digital 42=IDH_MoreGames
+2 Playing Align It!
+3 Align It! Help Topics=IDH_Topics
+3 Rules of the game=IDH_Rules
+3 Highscores=IDH_Highscores
+3 Special Game Pieces and Game Modes=IDH_Pieces_and_Modes
+3 Options=IDH_Options
+3 Registration Problems=IDH_Registration_Problems
+3 Better looking graphics for Windows with 256 colors=IDH_256colors
+3 Support/Contacting the Author=IDH_Support_and_Contact
+3 Copyright=IDH_Copyright
+2 Buy the full version
+3 Buy the full version=IDH_Registration
+3 Buy Online =IDH_Online
+3 Buy by Mail =IDH_Mail
+3 Buy by FAX=IDH_Fax
+3 Business Offer=IDH_Business_Offer
+1 Help in other languages
+2 Align It! Help in other Languages=IDH_Languages
+2 Spanish =IDH_Spanish
+2 Italiano=IDH_Italian
+2 Nederlands=IDH_Dutch
+2 Danish =IDH_Danish
+2 Croatian =IDH_Croation
+2 Turkish=IDH_Turkish>main
+2 Deutsche Hilfe
+4 Weitere Spiele von Digital 42=IDH_WeitereSpiele
+3 Spielregeln und Hilfe
+4 Align It! Hilfe Inhaltsverzeichnis=IDH_Inhaltsverzeichnis
+4 Spielregeln=IDH_Spielregeln
+4 Highscores=IDH_Highscores_German
+4 Spezialsteine und Schwierigkeitsgrad=IDH_Spezialsteine_und_Spielmodi
+4 Optionen=IDH_Optionen
+4 Bessere Graphiken mit nur 256 Farben=IDH_256
+4 Eingeben des Registriercodes=IDH_Registriercode_eingeben
+4 Technische Unterstützung/Autor kontaktieren=IDH_Support
+4 Copyright=IDH_Copyright
+3 Vollversion kaufen
+4 Vollversion kaufen=IDH_Registrierung
+4 Online kaufen=IDH_OnlineRegistrierung
+4 Kaufen per Post=IDH_Post
+4 Kaufen per Banküberweisung=IDH_Banküberweisung
+4 Align It! als Werbegeschenk=IDH_Geschäftskunden
