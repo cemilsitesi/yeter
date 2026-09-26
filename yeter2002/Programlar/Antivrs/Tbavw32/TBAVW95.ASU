@@ -1,0 +1,7 @@
+[TBND]
+Name=ThunderByte Anti-Virus for Windows 95
+Platform=Win95
+Version=8.07.00.50
+SetupExe=setup.exe /INF=setup.inf
+InstLib=tbinfo32.dll
+Disks=disk1~_setup.ex_
