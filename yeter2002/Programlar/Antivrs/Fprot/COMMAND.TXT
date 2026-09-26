@@ -1,0 +1,172 @@
+                        The command-line options
+
+F-PROT.EXE is usually run without any parameters and will then enter
+interactive mode, but if the /HARD option is used, or a drive, file or
+directory is specified, it will enter command-line mode.
+
+Syntax for command-line mode:  F-PROT [drive, file or directory] [options]
+
+The available command-line options are
+
+/APPEND
+Appends the report to an existing file (Only used with /REPORT).
+
+/ARCHIVE
+Scans inside .ZIP and .ARJ files.  Support for .LZH and .RAR archives, as
+well as self-extracting archives may be added later.
+
+/AUTO
+May be specified with /DISINF, /DELETE or /RENAME so F-PROT will not
+request permission before rremoving each virus.
+
+/BEEP
+Produces an annoying beep when a virus is found.  NOT recommended when
+scanning a virus collection.
+
+/COLLECT
+Assumes what is being scanned is a virus collection, where viruses might be
+found in "abnormal" locations.  In particular, selecting this option will
+enable detection of file images of boot sector viruses.  This switch also 
+provides the same features as the old /GURU option.  Note that using /COLLECT
+will slow down the scan.
+
+/DELETE
+Deletes infected files.
+
+/DISINF
+Disinfects whenever possible.  It is possible to specify the following
+combinations of switches:
+
+    /DISINF /DELETE
+        Disinfects when possible, otherwise deletes infected files.
+
+    /DISINF /RENAME
+        Disinfects when possible, otherwise attempts to rename infected COM/EXE 
+        files to VOM/VXE.
+
+    /DISINF /RENAME /DELETE
+        Disinfects when possible, otherwise attempts to rename infected COM/EXE
+        files to VOM/VXE, but if that fails the files are deleted.
+
+/DUMB
+Does a "dumb" scan of all files.  This option is practically never
+necessary, and will normally just result in a significant slowdown of the
+scanner.  The only cases where it might be needed are the following:
+
+    If you are scanning a virus collection, where infected files have
+    non-standard extensions, such as .VOM instead of .COM, they will not
+    be scanned for viruses, unless this switch is specified.
+
+    If you are cleaning up a virus infection by one of the rare viruses like
+    Frodo, which accidentally "infect" data files, you should use this
+    switch.
+    
+/FREEZE
+"Freezes" the program if a virus is found anywhere.
+
+/HARD
+Scans all files on all hard disks in the computer.
+
+/HELP
+Displays the list of command-line options.
+
+/INTER
+Forces the program to enter interactive mode, even when a path, directory
+or file name is given on the command line.
+
+/LIST
+Lists all files that are scanned.
+
+/NOBOOT
+Does not scan boot sectors.
+
+/NOBREAK
+Disables ESC and ^C during scanning.
+
+/NOFILE
+Does not scan files.  Only useful if you cleaning up a boot sector infection
+and do not want to spend unnecessary time scanning files.
+
+/NOFLOPPY
+For use on systems without floppy drives.
+
+/NOHEUR
+Version 3 has a smaller, more reliable set of heuristics than version 2,
+but they are enabled by default, unlike version 2.  This option allows
+you to turn the heuristics off.
+
+/NOMEM
+Does not scan memory for viruses.  Not recommended, unless you are
+absolutely certain that no viruses are present in memory.
+
+/NOSUB
+Does not scan subdirectories.
+
+/PACKED
+Scans "inside" various types of compressed executables (PKLITE for
+example), by emulating the execution of the decompressor.  As this option
+can slow the scan down significantly, we only recommend using it when
+scanning new software before installation.
+
+/PAGE
+Pauses after each page (command-line mode only).
+
+/REMOVEALL
+Removes all macros from all documents.  Useful if you encounter a new
+macro virus, and you know that the document did not contain any macros
+before it got infected.
+
+/REMOVENEW
+If a new variant of a macro virus is found in a document, all macros are
+removed from that particular document.
+
+/RENAME
+Renames infected COM/EXE files to VOM/VXE.  If files with those
+extensions already exist, .VVV  is used instead.  Infected document files
+are not renamed, as that would be pointless - they would be equally
+infectious afterwards.
+
+/REPORT=file
+Sends the output to a file, in addition to displaying it on the screen.
+
+/SAFEREMOVE
+Removes all macros from documents, if a known virus is found.
+
+/SILENT
+Does not generate any screen output (command-line mode only).
+
+/TYPE
+By default F-PROT will only scan Word and Excel files with "standard"
+names, that is with .DO? and .XL? extensions.  If your Word/Excel
+documents use other extensions, you need to specify this switch.  This will
+slow the scan down, as every file is checked to see if it is a Word or
+Excel document.
+
+/VIRLIST
+Produces a list of known viruses, as well as information on whether they
+can be disinfected.
+
+/VIRNO
+Counts the known viruses and reports the total.
+
+/WRAP
+Wraps text so the report fits in 78 columns.
+
+
+The program uses the following exit codes, which can be checked with the
+ERRORLEVEL command from a BAT file.
+
+    0 - Normal exit - nothing found
+    1 - Abnormal termination - unrecoverable error.  This can mean any of
+        the following:
+            Internal error in the program.
+            DOS version prior to 3.0 was used.
+            ENGLISH.TX0, SIGN.DEF or MACRO.DEF corrupted or not present.
+    2 - Selftest failed - program has been modified.
+    3 - A Boot/File virus infection found.
+    4 - Virus found in memory.
+    5 - Program terminated with ^C or ESC.
+    6 - A virus was removed.  This code is only meaningful if
+        the program is used to scan just a single file.
+    7 - Insufficient memory to run the program.
+    8 - At least one suspicious file was found, but no infections.
