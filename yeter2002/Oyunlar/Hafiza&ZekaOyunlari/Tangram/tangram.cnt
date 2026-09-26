@@ -1,0 +1,28 @@
+:Base Tangram
+:Title Tangram Help
+1 Tangram
+2 Overview=TO_OVERVIEW
+2 Choosing the level=TO_LEVELS
+2 Solving the puzzles=TO_SOLVING
+1 Puzzle files
+2 Loading a puzzle file=TO_FILES
+2 alphabet.tan=TO_FILE_ALPHABET
+2 animals.tan=TO_FILE_ANIMALS
+2 geometry.tan=TO_FILE_GEOMETRY
+2 people.tan=TO_FILE_PEOPLE
+2 various.tan=TO_FILE_VARIOUS
+1 Options
+2 Sound options=TO_SOUND
+2 Color options=TO_COLOR
+1 Tangram Editor
+2 Overview=TO_EDITOR
+2 Opening and saving puzzle files=TO_ED_FILES
+2 Creating shapes=TO_ED_SHAPES
+2 Inserting, cutting, copying, and pasting puzzles=TO_ED_CUT
+2 Changing the color of pieces=TO_ED_COLOR
+2 Exit the editor=TO_ED_EXIT
+2 Pieces files
+3 Changing the pieces used=TO_ED_PIECES
+3 tangram.pcs=TO_PIECES_TANGRAM
+3 easy.pcs=TO_PIECES_EASY
+3 Making your own pieces files=TO_ED_MAKEPIECES
