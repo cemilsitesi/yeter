@@ -1,0 +1,17 @@
+EditPad is available in several languages.
+If you would rather have a version in another language,
+feel free to download it from http://www.editpadclassic.com/
+
+Languages currently available: (August 6th, 2000)
+  * Dansk       (Danish)
+  * Deutsch     (German)
+  * Français    (French)
+  * English     (English)
+  * Español     (Spanish)
+  * Italiano    (Italian)
+  * Nederlands  (Dutch)
+  * Norsk       (Norwegian)
+  * Polski      (Polish)
+  * Português   (Portuguese)
+  * Suomi       (Finnish)
+  * Svenska     (Swedish)
