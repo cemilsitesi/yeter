@@ -1,0 +1,71 @@
+[K-Chess Game]
+[Settings]
+MoveSpeed: 7
+MoveDelay: 2
+ShowAttacks: Y
+ShowJeopardies: Y
+MoveMarker: Y
+[Demo]
+[Moves]
+COMMENT This demonstration game of chess shows the basic moves and method play. Two players take it in turns to move their pieces. White moves first.
+  1   e2-e4   e7-e5
+  2   f2-f3   d7-d6
+COMMENT Pawns move forward one square at a time, or optionally two squares on their first move.
+  3   c2-c4   f7-f6
+  4   g2-g3   d6-d5
+  5   f3-f4
+COMMENT Pawns take other pieces by moving one square diagonally onto the opponent's piece.
+  5           d5xe4
+  6   f4xe5   f6xe5
+COMMENT Bishops move diagonally any number of squares.
+  7  Bf1-e2  Bf8-c5
+  8  Be2-g4
+COMMENT Bishops, like all other pieces except pawns, take opponent's pieces by moving onto the square they occupy.
+  8          Bc5xg1
+  9  Bg4xc8
+COMMENT Knights move two squares in one direction (not diagonally) then one square at right angles. Knights are the only pieces that can jump over other pieces.
+  9          Ng8-f6
+ 10  Nb1-c3  Nb8-c6
+ 11  Nc3xe4  Nf6xe4
+COMMENT Rooks move vertically or horizontally any number of squares.
+ 12  Rh1xg1  Ra8xc8
+ 13  Rg1-g2  Rc8-b8
+ 14  Rg2-e2  Rb8-c8
+ 15  Re2xe4
+COMMENT Queens move in any direction any number of squares.
+ 15          Qd8-d6
+ 16  Qd1-f3  Qd6-b4
+ 17  Qf3-c3  Qb4xc3
+ 18   b2xc3  Nc6-a5
+ 19  Bc1-b2
+COMMENT Castling is a special move where the King moves two squares towards the Rook and the Rook jumps over it (provided neither piece has moved before).
+ 19             o-o
+COMMENT Castling can be done on either side.
+ 20   o-o-o
+COMMENT Apart from castling, Kings move just one square in any direction.
+ 20          Kg8-h8
+ 21  Kc1-c2  Kh8-g8
+ 22  Kc2-d3
+COMMENT When a piece threatens to take a King, the King is in "check".
+ 22          Rc8-d8+
+COMMENT The King cannot be taken, but must get out of check any way that it can.
+ 23  Kd3-e3  Na5xc4+
+ 24  Re4xc4  Rf8-f3+
+ 25  Ke3xf3   e5-e4+
+ 26  Rc4xe4  Rd8-f8+
+ 27  Re4-f4
+COMMENT If pawns move all the way to the other end of the board, they can be promoted to any other piece except a King, usually a Queen because it's the most powerful piece.
+ 27           c7-c5
+ 28   a2-a4   b7-b5
+ 29   a4xb5   a7-a5
+ 30   b5-b6   a5-a4
+ 31   b6-b7   a4-a3
+ 32  Qb7-b8   a3-a2
+ 33  Qb8-e5  Qa2-a1
+COMMENT The objective of the game is to get the opponent's King in check in such a way that they can't get out of it. This is called "mate".
+ 34   c3-c4  Qa1xd1+
+ 35  Kf3-g2  Qd1xd2+
+ 36  Kg2-h3  Rf8xf4
+ 37  Qe5xg7*
+COMMENT That's the end of the game!
+[EndGame]
