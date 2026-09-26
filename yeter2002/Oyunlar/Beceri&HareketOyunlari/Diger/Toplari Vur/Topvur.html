@@ -1,0 +1,193 @@
+<HTML>
+<HEAD>
+<TITLE>[ (* ] TÜRK ÖĞRETMENLER SİTESİ © http://www.ogretmenlersitesi.com © [ (* ] TÜRK ÖĞRETMENLER SİTESİ</TITLE>
+<META NAME="Generator" CONTENT="EditPlus 1.2">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<LINK href="bar.css" rel=stylesheet>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFCC">
+<META content="text/html; charset=windows-1254" http-equiv=Content-Type>
+<div align="center">
+  <SCRIPT language=Javascript1.2>
+<!-- 
+// please keep these lines on when you copy the source
+// made by: Nicolas - http://www.javascript-page.com
+  
+if(navigator.appName == "Netscape") {
+
+window.captureEvents(Event.MOUSEMOVE)
+
+var numdots = 5
+var dotcolor = "#325032"
+var step2 = .14
+
+var speed = 1
+var Xpos = 50
+var Ypos = 50
+var yBase = window.innerHeight/2
+var xBase = window.innerWidth/2
+var speed = 1
+var step = 0
+
+for (var w = 0; w < numdots; w++) {
+document.write('<layer left="10" top="10" visibility="show"'
++' bgcolor="'+dotcolor+'" clip="0,0,3,3"></layer>')
+}
+
+function movedots(z) {
+Xpos = z.pageX
+Ypos = z.pageY
+}
+
+window.onMouseMove = movedots
+
+function dotcursor() {
+
+yBase = window.innerHeight/4
+xBase = window.innerWidth/4
+
+for (var q = 0; q < numdots; q++) {
+ document.layers[q].top = Ypos +
+Math.cos((20*Math.sin(step/(20+q)))+q*70)*yBase*(Math.sin(10+step/10)+0.2)*Math.cos((step + q*25)/10)
+ document.layers[q].left =Xpos + 
+Math.sin((20*Math.sin(step/20))+q*70)*xBase*(Math.sin(10+step/(10+q))+0.2)*Math.cos((step + q*25)/10)
+}
+
+step += step2
+}
+
+setInterval("dotcursor()", speed)
+}
+
+function rtclickcheck(keyp){
+
+  if (navigator.appName == "Netscape" && keyp.which == 3) {
+    return false;
+  }
+
+
+  if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 
+    return false;
+  }
+}
+
+document.onmousedown = rtclickcheck
+//-->
+</SCRIPT>
+  <STYLE>A:link {
+	COLOR: rgb(0,255,0); TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: rgb(0,70,0); TEXT-DECORATION: none
+}
+</STYLE>
+  <SCRIPT language=JavaScript>
+
+
+// ---- Make array
+function MakeArray( n){
+    this.length = n;
+    for (var i = 1; i <= n; i++) { 
+        this[i] = 0 
+    }
+    return this
+}
+
+// ----- poor man's random number
+var d0 = new Date();
+var r0 = d0.getSeconds();
+function poor_rand(){
+    d1 = new Date();
+    r0 = (r0 * r0 + r0 + d1.getSeconds()) % 3721 ;
+    return r0 % width_n;
+}
+
+// ---- Parameters of game
+var height_n = 8;
+var width_n =5;
+
+// ---- state of game
+var enemy = new MakeArray( width_n); // enemy positions
+var wtime; // wait time
+var score; // points
+var gameover; // in case of gameover set to true
+
+// ----- Make the battlefield.
+document.write( "<FORM NAME='fm1'>");
+document.write( "<INPUT TYPE='text' NAME='message' SIZE=20>");
+document.write( "</FORM>");
+document.write( "<FORM NAME='fm2'><TABLE>");
+for( var i=0; i<height_n; i++){
+    document.write( "<TR>");
+    for( var j=0;j<width_n; j++){
+        document.write( "<TD><CENTER><INPUT TYPE='radio'></CENTER></TD>");
+    }
+    document.write( "</TR>");
+}
+document.write( "<TR>");
+for( var j=0;j<width_n; j++){
+    document.write( "<TD><INPUT TYPE='button' style={background:'orange';} VALUE='Bas' onClick='fire("
+        + j + ")'></TD>");
+}
+document.write( "</TR>");
+document.write( "</TABLE>");
+document.write( "<INPUT TYPE='button' VALUE=' BAŞLA ' onClick='game_start()'>");
+document.write( "</FORM>");
+
+// ----- game main timer event 
+// -----     enemy come one step
+function come(){
+    var n = poor_rand();
+    document.fm2.elements[ width_n * enemy[n+1] + n].checked = true;
+    enemy[n+1]++;
+    if( enemy[n+1] < height_n){
+        setTimeout("come()", wtime);
+    }else{
+      gameover = true;
+      document.fm1.message.value =  "OYUN BİTTİ:" + score ;
+    }
+}
+
+// ----- Fire the n th beam
+function fire( n){
+    if( gameover ) return;
+    for( var i=0; i<enemy[n+1]; i++){ // clear enemy
+        document.fm2.elements[ width_n * i + n].checked = false;
+    }
+    score += enemy[ n+1];
+    document.fm1.message.value = "Puanınız:" + score;
+    enemy[ n+1] = 0;
+    if( wtime > 100){ wtime -= 10};
+}
+
+// ---- initialize & start game
+function game_start(){
+   for( var n=0; n<width_n; n++){
+        for( var i=0; i<enemy[n+1]; i++){
+            document.fm2.elements[ width_n * i + n].checked = false;
+        }
+        enemy[n+1] = 0;
+    }
+    wtime = 400;
+    score = 0;
+    gameover = false;
+    document.fm1.message.value = "Puanınız:" + score;
+    setTimeout("come()", wtime);
+}
+
+// --></SCRIPT>
+  <font size="2" face="Arial, Helvetica, sans-serif">Bu oyunda amacımız yukarıdan 
+  aşağıya düşen minik siyah noktacıkları </font></div>
+<p></P>
+<P align=center><font size="3"><SMALL><FONT face=Verdana>Her sütunun altındaki 
+  <FONT color=#ff8000>Bas</FONT> butonlarına basarak vurmak. Böylece minik noktaları 
+  yere ulaştırmamış oluyoruz ve puan kazanıyoruz.</FONT></SMALL></font></P>
+                    <P>&nbsp;</P>
+</BODY>
+</HTML>
