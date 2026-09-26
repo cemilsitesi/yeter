@@ -1,0 +1,299 @@
+
+                        M I N A R E T
+                        -------------
+
+This program computes Islamic prayer schedules, the Qibla direction,
+and various data related to the Hijri calendar. 
+
+Minaret is a shareware program.  You may freely give copies of this
+program to others.  Please give only unmodified copies to others, and
+include this documentation with the program.  If you decide to keep
+the program for yourself, please send $10 to: 
+
+              Kamal Abdali 
+              P.O. Box 65207 
+              Washington, DC 20035 
+              USA.
+
+The author's e-mail address is abdali@netcom.com.
+
+The most recent version of this program is available for anonymous
+ftp in the directory "/pub/ab/abdali" on the host "ftp.netcom.com".
+
+
+The Place menu 
+--------------
+
+This is the first menu you should look at.  Minaret contains a
+built-in gazetteer with geographical information about 170 cities
+initially.  At any time, there is also a Current Location for
+which all computations are done.  To specify any location as the
+Current Location, click on the "Open Gazetteer" item in the Place
+menu.  A large window will appear in which the list at left is the
+Gazetteer.  As you scroll through the Gazetteer list and click on
+various location names, the stored data about them appears in the
+boxes at right.  If your desired location is in the Gazetteer,
+select it, then press "Make it Current Location".  All subsequent 
+computations will be done for that city.
+
+You can edit the Gazetteer to add and delete locations, and to
+modify information about existing locations.  By editing the boxes
+and setting radio buttons at right, you can supply the 
+geographical data about the cities you wish to add.  You will need 
+to know the latitude, longitude, zone time relative to Greenwich, 
+and whether or not the place observes Daylight Savings Time.  
+After filling in the information for each city, press "Update/add 
+this location".  To delete a location, select it in the Gazetteer, 
+then press "Remove this location".  Only 200 cities are allowed in 
+the Gazetteer, so you may need to delete some locations to make 
+room for others.  You can find out how many cities are already in 
+the Gazetteer by selecting the "Gazetteer size" item. 
+
+Note: Editing the Gazetteer doesn't change the Current Location.
+Also, the Current Location does not have to be necessarily added 
+to the Gazetteer.  To do computations for a city not in the
+Gazetteer, you would normally first edit the Gazetteer to add that
+city, then make the city the Current Location.  But if you want to
+use a location only temporarily, you can fill in its name and
+geographical data, and make it the Current Location without adding
+it to the Gazetteer. 
+
+The changes made to the Gazetteer by editing it accumulate from
+session to session.  To revert to the original Gazetteer supplied
+with the program, use the the menu item "Restore factory-set
+gazetteer".  You may like to do this before any other computation 
+in case your copy of Minaret is not an original distribution from 
+the author, and you're not sure of the validity of the stored 
+data. 
+
+Note: At the time of quitting a Minaret session in which you've
+edited the Gazetteer, Minaret asks you whether or not you want to
+save the changes you've made within that session.  Should you
+respond by clicking "No", the Gazetteer remains unchanged for that
+session.  On the other hand, "Restore factory-set gazetteer" throws
+away the changes accumulated through ALL the previous sessions in
+which the Gazetteer was edited. 
+
+
+The Prayer Hours menu 
+---------------------
+
+Select "Prayer hours for a day" to get the five prayer hours plus
+the time of sunrise for any date.  (Be sure to first set your
+location using the Place menu.)  Minaret starts out by displaying
+the prayer hours for today (the current date).  Minaret also
+presents you a dialog box in which you can fill in any other dates
+for which the prayer hours are desired.  (Click on "Compute" after
+filling in the date.)  If you hear a beep at this point, then you
+have typed either an illegal date or a date outside the period
+1901--2100 A.D.  You can compute prayer hours for as many
+different dates as you want.  When you are done, click "CLOSE" to
+dismiss the prayer hours window.
+
+Select "Prayer hours for a month" or "Prayer hours for a year" to
+display a table of prayer hours in a text window.  Minaret will 
+first present you a dialog box in which you should fill in the 
+month or the year for which the schedule is desired.  For a 
+"perpetual" schedule for a year, type "0" (zero) for the year.  
+Perpetual schedules are further discussed below.  
+
+You can print the contents of the text window in front by 
+selecting "Print" from the File menu.  By using the "Save" or 
+"Save as" item from the File menu, you can save into a file the 
+contents of the text window in front, for possible reformatting 
+with a word processor.  If you use a word processor for printing
+a saved schedule file, then print it using a monospaced font.
+This will keep the tabular columns  neatly aligned. 
+
+NOTE: The menu item "TeX input for prayer hours for a year"
+mentioned in the next paragraph is available only in the Mac
+version at present, not in the Windows version.
+     
+The printout of the results from the menu selections "Prayer 
+schedule for a month" and "Prayer schedule for a year" contain a 
+single month's schedule per page.  If you have access to the 
+text-formatting system TeX (developed by Professor Knuth of 
+Stanford University), then you can print a much prettier prayer 
+schedule for a year by running TeX on a file generated by Minaret.  
+This schedule comes out on three pages, four months per page.  For 
+this, first select "TeX input for prayer hours for a year" from 
+the Prayer menu, and fill in the year (or 0 for a perpetual 
+schedule).  Minaret will generate TeX code for the schedule, and 
+display it in a new window.  Then select "Save As" from the File 
+menu, choose an appropriate drive and folder, and type a suitable 
+document name (for example, "schedule.tex") to save the window 
+contents.  You have now captured the TeX input which you can later 
+process according to the instructions specific to your TeX system.
+
+Since prayer hours depend upon the sun's position, it is more
+practical to tabulate the Islamic prayer schedule according to the
+dates in the Western, solar calendar.  For a fixed location, 
+prayer times for any particular date in the Western calendar vary 
+very little from year to year, and for all practical purposes 
+repeat themselves in four year cycles.  (Find this out for 
+yourself by computing prayer hours for the same dates in different 
+years.)  If you want to print annual prayer schedules, I strongly 
+recommend using zero for the year.  This doesn't mean the year 
+zero B.C. or A.D., but is a special value to cause Minaret to 
+print a perpetual calendar in which the times are essentially the 
+average of the four years of a cycle.  It is silly to print a new 
+calendar every year, since the yearly variation is seldom more 
+than two minutes. 
+
+If, according to the gazetteer, the Current Location observes
+Daylight Saving Time, then Minaret adds one hour to all times
+computed for the dates between the first Sunday of April and the
+last Saturday of October (inclusive).  If the year is zero (that 
+is, if a perpetual schedule is desired), then the adjustment is 
+made throughout the period from April to October. 
+
+Islamic prayer times are computed from their well-known
+astronomical  definitions.  (See, for example, the appendices A 
+and B in "Prayer Schedules for North America", American Trust
+Publications, Indianapolis, Indiana, 1978.)  Under certain
+conditions (for example, on certain summer dates at very high
+latitudes), the traditional astronomical definitions do not work,
+and the equations defining prayer times do not have solutions. 
+Minaret prints "*" when it cannot compute a  prayer time.  (See
+also the description of Method menu below.) 
+
+
+The Qibla menu 
+--------------
+
+Select "Angle from North" to find the direction of the Qibla.  (Be 
+sure to first set your location using the Place menu.)   The angle 
+is given from the geographical, not magnetic, North.  Since it is 
+not always easy to accurately either determine North or measure
+angles, the shadow method described below is generally a better
+way to determine the Qibla. 
+
+"Shadow diagram for a day" lets you determine the Qibla by
+observing shadows, without having to know the true North direction. 
+You get a diagram which shows the directions in which the shadow
+of a vertical object points at certain times of the day.  One of 
+the lines in the diagram is marked with a Q.  This is the 
+direction of the Qibla.  The times have been so computed that the 
+angle between the Qibla and the shadow is a multiple of 45 
+degrees, quite easy to measure.  (If there is a time on the line 
+marked Q, then the Qibla is exactly in the same direction as the 
+shadow at that time, and you don't have to measure any angle.)  
+Experiment with this menu using different dates to see the 
+relation between the Qibla and the shadow.  Summer dates give you 
+more opportunities to determine the Qibla using the shadow method. 
+
+Select "Shadow chart for a month" or "Shadow chart for a year" to 
+display tables of the shadow information in a text window.  See 
+remarks under the Prayer menu for printing and saving the contents 
+of the window. 
+
+Note:  The computed value of the qibla is not meaningful for
+locations very close to the Ka'aba (or its antipode in the Pacific
+Ocean), e.g., for the city of Makkah.  Also, when using the shadow
+method, you should avoid the times within an hour of noon when the
+shadow is short and moves very fast. 
+
+
+The Calendar menu 
+-----------------
+
+Select "Date conversion" to convert Hijri dates into Western ones,
+and vice versa.  Minaret will accept as input any date starting 
+from Muharram 1, 1 A.H. (July 16, 622 A.D.), but will beep at any 
+illegal or earlier date.  The conversion is approximate, based on 
+some heuristic algorithms for predicting the crescent moon's
+visibility.
+
+Select "New moon phase" to get the time of the astronomical new
+moon phase just preceding the start of any Hijri month.  Minaret
+computes the time of this phenomenon with an accuracy of about
+three minutes, and displays it both as the Greenwich Mean Time and
+as the Zone time for the Current Location.  Remember that the moon
+is invisible at the astronomical new moon phase, and the formation
+of the visible lunar crescent takes anywhere from about 18 to
+about 42 hours.  Although a few younger sightings of the moon have 
+been reported, they are extremely rare, and would be possible only 
+under certain special circumstances.  
+
+Select "Moon's age" to determine the age of moon at any desired 
+time on any date in the period 1901--2100 A.D.  To make a rough
+prediction whether the lunar crescent will be visible on a certain
+evening, you can find the time of sunset on that date by selecting
+"Prayer schedule for a day" in the Prayer hours menu, then find the
+moon's age at that time by selecting "Moon's age" in the Calendar
+menu.  If the age turns out to be less than 18 hours, then it is
+quite unlikely that the crescent will be visible that evening.  Of
+course, the first visibility of the crescent depends on several other
+factors too. 
+
+The Method menu 
+---------------
+
+NOTE: In the Windows version, this called the "Options" menu.
+
+There are some variations in the methods people use to compute
+certain prayer times.  This menu lets you select the methods
+according to your preference. 
+
+The "shadow ratio" for a vertical object at any time is defined to
+be the quantity: 
+
+  (the length of shadow at the given time D the "residual" shadow 
+  of the object at noon) / (the object height). 
+
+The shadow ratio at asr time is taken to be 2 by the Hanafi 
+school, 1 by others.  For fajr and isha, the time is usually 
+determined by the Sun's angle of depression below the horizon.  
+If this value is taken to be 18 degrees, then fajr coincides with 
+the astronomical twilight.  This seems OK for temperate latitudes. 
+But at higher latitudes, say above 42 degrees, the resulting times 
+for fajr and isha are too inconvenient (fajr too early, and isha 
+too late).  ISNA schedules are computed by taking this angle as 15 
+degrees. 
+
+At latitudes higher than 50 degrees, such as for cities in 
+Northern Europe, it is impossible on certain dates to determine 
+fajr and isha times by taking the value of the sun's depression to 
+be 18 (or even 15) degrees.  This is so because on those dates the 
+sun doesn't descend sufficiently below the horizon.  So people in 
+some of those cities compute the fajr and isha times to be at 90 
+minutes from sunrise/sunset.  For latitudes above 66 1/2 degrees, 
+of course, even sunrise and sunset are not always defined. 
+
+
+The File Menu 
+-------------
+
+Use this menu to open, save, and print the monthly or yearly 
+prayer schedules and qibla charts computed by Minaret.  When text 
+files are printed using "Print" in this menu, the RETURN (ascii 
+13) and FORMFEED (ascii 12) characters will cause line skip and 
+page eject, respectively.  The File menu is intended only for use 
+with the text files generated by Minaret.  In particular, it will 
+not work on non-text files, large text files (more than 32K 
+characters), or text files with very long lines. 
+
+
+Any Comments? 
+--------------
+
+Please send your comments, suggestions, and bug reports to the
+author at the address given above (preferably by e-mail).  They
+will be greatly appreciated.  Please include your address in any
+correspondence. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
