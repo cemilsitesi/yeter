@@ -1,0 +1,28 @@
+[K-Chess Game]
+[Moves]
+COMMENT This game demonstrates the Giuoco Piano or "quiet game". This is a placid, often symmetrical opening, ideal for inexperienced players.
+  1   e2-e4
+COMMENT White advances a pawn to gain control of the centre of the board.
+  1           e7-e5
+COMMENT Black does likewise.
+  2  Ng1-f3
+COMMENT A good developing move which further bears on the centre of the board, and also attacks a piece.
+  2          Ng8-f6
+COMMENT Black replies with a counter attack, an equally good move.
+  3  Bf1-c4
+COMMENT Further development of White's pieces, with focus on the centre but also an attack on one of Black's weakest Pawns. This also makes castling possible.
+  3          Bf8-c5
+COMMENT Another suitable counter measure from Black, also opening up the possibility of castling.
+  4  Nb1-c3
+COMMENT Another developing move with focus on the centre.
+  4          Nb8-c6
+COMMENT A like response from Black.
+  5   d2-d3
+COMMENT White opens an avenue for the other Bishop, and supports two other pieces.
+  5           d7-d6
+COMMENT Black continues to match White's moves.
+  6     o-o
+COMMENT White finally castles to consolidate the King's position and develop the Rook.
+  6          Bc8-e6
+COMMENT Black develops another piece in a counter attack, still with a focus on the centre.
+[EndGame]
