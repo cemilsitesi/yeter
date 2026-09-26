@@ -1,0 +1,1077 @@
+[Objects]
+
+AboutDlg= About KChess Elite
+
+AboutDlg.RegoLabel= Registráciou získate prístup k všetkım funkciám programu. Nebudete viac upozoròovanı a obmedzenı èasovım limitom. Tie máte nárok na získanie ïalších verzií programu so z¾avou, prípadne celkom zdarma.
+
+AboutDlg.ClickLabel= Viac informácií o programe a registrácii získate, ak kliknete na tlaèítko pomoci. Ak ste registrovanı uívate¾, kliknite na odblokovacie tlaèítko a vlote svoje údaje.
+
+AboutDlg.OkBtn= &OK
+
+AboutDlg.RegoBtn= &Registrácia
+
+AboutDlg.UnlockBtn= &Odblokova
+
+AboutDlg.HelpBtn= &Pomoc
+
+BoardSetDlg= Základné nastavenia šachovnice
+
+BoardSetDlg.Heading= Zada poèiatoèné hodnoty šachovnice:
+
+BoardSetDlg.EnPassantLabel= Cie¾ ahu mimochod.:
+
+BoardSetDlg.FirstMoveLabel= Èíslo prvého ahu:
+
+BoardSetDlg.FiftyMoveLabel= ahy od vzatia alebo pohybu pešiaka:
+
+BoardSetDlg.CastleGroup= Rošáda povolená
+
+BoardSetDlg.BlackQueenBox= Strana È. dámy
+
+BoardSetDlg.BlackKingBox= Strana krá¾a
+
+BoardSetDlg.WhiteQueenBox= Strana B dámy
+
+BoardSetDlg.WhiteKingBox= Strana krá¾a
+
+BoardSetDlg.FirstGroup= Prvı hráè
+
+BoardSetDlg.StatusGroup= Charakter hry | Normal | Rozohratá | Vzdaná
+
+BoardSetDlg.OkBtn= &OK
+
+BoardSetDlg.CancelBtn= &Zruši
+
+BoardSetDlg.HelpBtn= &Pomoc
+
+ChessForm.FreezePanel= Hra stopnutá
+
+ChessForm.FileMenu1= &Súbor
+
+ChessForm.FileNew1= &Nová | Ctrl+N
+
+ChessForm.FileOpen1= &Otvori... | Ctrl+O
+
+ChessForm.FileReopen1= &Znovunaèíta | Ctrl+R
+
+ChessForm.FileSave1= &Uloi | Ctrl+S
+
+ChessForm.FileSaveAs1= Uloi &ako... | Ctrl+A
+
+ChessForm.PrintMoves1= &Vytlaèi ahy... | Ctrl+P
+
+ChessForm.BoardPrint1= Vytlaèi &šachovnicu... | Ctrl+B
+
+ChessForm.PrintSetup1= Vytlaèi nastavenie...
+
+ChessForm.FileExit1= &Koniec
+
+ChessForm.PlayMenu1= &Hra
+
+ChessForm.BoardSetup1= Mód nastavenia šachovnice
+
+ChessForm.Clear1= Uvo¾ni šachovnicu
+
+ChessForm.EnterPosition1= Zada pozíciu...
+
+ChessForm.SetBoardState1= Nastavenia šachovnice...
+
+ChessForm.Opening1= Otvorenie... | Ctrl+G
+
+ChessForm.AutoPlay1= &Automatická hra | Alt+A
+
+ChessForm.PlayWhite1= Hrá &Biely | Alt+W
+
+ChessForm.PlayBlack1= Hrá &Èierny | Alt+B
+
+ChessForm.TwoPlayer1= &Dvaja hráèi | Alt+T
+
+ChessForm.Analyse1= Rozbor
+
+ChessForm.Rotate1= &Otoèenie šachovnice | Alt+Q
+
+ChessForm.Speak1= Komentár
+
+ChessForm.SpeakMove1= &aha | Alt+0
+
+ChessForm.SpeakRank11= Riadok &1 | Alt+1
+
+ChessForm.SpeakRank21= Riadok &2 | Alt+2
+
+ChessForm.SpeakRank31= Riadok &3 | Alt+3
+
+ChessForm.SpeakRank41= Riadok &4 | Alt+4
+
+ChessForm.SpeakRank51= Riadok &5 | Alt+5
+
+ChessForm.SpeakRank61= Riadok &6 | Alt+6
+
+ChessForm.SpeakRank71= Riadok &7 | Alt+7
+
+ChessForm.SpeakRank81= Riadok &8 | Alt+8
+
+ChessForm.SpeakFilea1= Ståpec &a | Ctrl+1
+
+ChessForm.SpeakFileb1= Ståpec &b | Ctrl+2
+
+ChessForm.SpeakFilec1= Ståpec &c | Ctrl+3
+
+ChessForm.SpeakFiled1= Ståpec &d | Ctrl+4
+
+ChessForm.SpeakFilee1= Ståpec &e | Ctrl+5
+
+ChessForm.SpeakFilef1= Ståpec &f | Ctrl+6
+
+ChessForm.SpeakFileg1= Ståpec &g | Ctrl+7
+
+ChessForm.SpeakFileh1= Ståpec &h | Ctrl+8
+
+ChessForm.SpeakStatus1= &Stav | Alt+9
+
+ChessForm.CopyGame1= &Kopírova hru | Ctrl+C
+
+ChessForm.PasteGame1= &Vloi hru | Ctrl+V
+
+ChessForm.Variation1= &Obmena | Alt+V
+
+ChessForm.Freeze1= Stopnú hru | Alt+Z
+
+ChessForm.GameInfo1= &Info o hre... | Alt+G
+
+ChessForm.Options1= &Nastavenia... | Alt+O
+
+ChessForm.MoveMenu1= &ah
+
+ChessForm.Undo1= &Dozadu | Alt+U
+
+ChessForm.Redo1= D&opredu | Alt+R
+
+ChessForm.UndoAll1= Dozadu všetko | Alt+D
+
+ChessForm.RedoAll1= Dopredu všetko | Alt+L
+
+ChessForm.Hint1= Rıchla rada | Alt+I
+
+ChessForm.EnterMove1= &Vloi ah... | Enter
+
+ChessForm.ComputerMove1= &ah poèítaèa | Alt+C
+
+ChessForm.Stop1= &Zastavenie rozmıš¾ania | Alt+S
+
+ChessForm.Replay1= Zopakova | Alt+Y
+
+ChessForm.Resign1= Vzda sa | Alt+N
+
+ChessForm.OfferDraw1= Ponúknu ah
+
+ChessForm.Comment1= Komentár | Alt+E
+
+ChessForm.HelpMenu1= &Pomoc
+
+ChessForm.HelpHelp1= &Pomoc
+
+ChessForm.HelpUsing1= &Pouitie pomoci
+
+ChessForm.HelpIndex1= Zoznam tém
+
+ChessForm.SearchHelpfor1= &H¾ada pomoc pre...
+
+ChessForm.BeginnersInfo1= &Info pre zaèiatoèníkov
+
+ChessForm.Rules1= Pravidlá šachu
+
+ChessForm.TipoftheDay1= &Tip dòa...
+
+ChessForm.KChessWebSite1= KChess web site
+
+ChessForm.HelpAbout1= &O programe KChess...
+
+ChessForm.NewButton= Nová hra
+
+ChessForm.OpenButton= Otvori hru
+
+ChessForm.SaveButton= Uloi hru
+
+ChessForm.PrintButton= Vytlaèi hru
+
+ChessForm.SetupButton= Nastavenie šachovnice
+
+ChessForm.AutoplayButton= Automatická hra
+
+ChessForm.PlayWhiteButton= Hra bielymi
+
+ChessForm.PlayBlackButton= Hra èiernymi
+
+ChessForm.TwoPlayerButton= Dvaja hráèi
+
+ChessForm.AnalyseButton= Zhodnoi pozíciu
+
+ChessForm.RotateButton= Otoèi šachovnicu
+
+ChessForm.CopyButton= Kopírova hru
+
+ChessForm.PasteButton= Vloi hru
+
+ChessForm.VariationButton= Obmena
+
+ChessForm.FreezeButton= Zastavi hru
+
+ChessForm.OptionsButton= Nastavenia
+
+ChessForm.UndoAllButton= Vráti všetko
+
+ChessForm.UndoButton= Vráti ah
+
+ChessForm.RedoButton= Obnovi ah
+
+ChessForm.RedoAllButton= Obnovi všetko
+
+ChessForm.HintButton= Rıchla rada
+
+ChessForm.ComputerButton= ah poèítaèa
+
+ChessForm.StopButton= Zastavi premıš¾anie
+
+ChessForm.ReplayButton= Zopakova ah
+
+ChessForm.HelpButton= Pomoc
+
+EnterMoveDlg.OkBtn= &OK
+
+EnterMoveDlg.CancelBtn= &Zruši
+
+EnterMoveDlg.HelpBtn= &Pomoc
+
+InfoDlg= Informácie o hre a hráèovi
+
+InfoDlg.Heading= Vloi hocijaké podstatné informácie o tejto hre a hráèoch:
+
+InfoDlg.EventLabel= Meno situácie:
+
+InfoDlg.SiteLabel= Dejisko/Miesto:
+
+InfoDlg.DateLabel= Dátum hry (yyyy.mm.dd):
+
+InfoDlg.TimeLabel= Èas (hh:mm:ss):
+
+InfoDlg.RoundLabel= Kolo:
+
+InfoDlg.WhiteLabel= Biely hráè:
+
+InfoDlg.BlackLabel= Èierny hráè:
+
+InfoDlg.EventDateLabel= Èas situácie (yyyy.mm.dd):
+
+InfoDlg.OpeningLabel= Otvorenie:
+
+InfoDlg.TitleLabel= Oznaèenie:
+
+InfoDlg.PlayerLabel= Meno:
+
+InfoDlg.CtryLabel= Krajina:
+
+InfoDlg.AnnotatorLabel= Zapisovate¾:
+
+InfoDlg.OkBtn= &OK
+
+InfoDlg.CancelBtn= &Zruši
+
+InfoDlg.HelpBtn= &Pomoc
+
+OpeningsDlg= Encyklopécia šachovıch otvorení
+
+OpeningsDlg.Heading= Vybra otvorenie ktorım chcete hra:
+
+OpeningsDlg.ColumnHeader= Kód | Meno | ahy
+
+OpeningsDlg.OkBtn= &OK
+
+OpeningsDlg.CancelBtn= &Zruši
+
+OpeningsDlg.SortBtn= &Typ
+
+OpeningsDlg.HelpBtn= &Pomoc
+
+OptionsDlg= Nastavenia
+
+OptionsDlg.OptionsTab= Stupeò | Zobrazenie | Figúry | Šachovnica | Text | Audio | Tlaè
+
+OptionsDlg.LimitTypeGroup= Zada èasovı limit | &Bez èasového limitu | Limit hráèa na èas hry | Limit hráèa na ah | Poèet ahov za hodinu | Èas pre hru poèítaèa | &Presıpacie hodiny
+
+OptionsDlg.LengthGroup= Hodnota èasového limitu
+
+OptionsDlg.UserLimitGroup= &Uívate¾ské vymedzenie | Nepouité uívate¾om | ahy poèítaèa pre uívate¾a | Uívate¾ stratí hru
+
+OptionsDlg.MiscGroup= &Nastavenia hry
+
+OptionsDlg.ThinkAheadBox= Umoni PC premıš¾a dopredu
+
+OptionsDlg.FreezeCoversBox= Uchova obsah šachovnice
+
+OptionsDlg.OpeningLibBox= Poui zoznam otvorení
+
+OptionsDlg.ResignBox= Umoni vzda sa poèítaèu
+
+OptionsDlg.DrawBox= Umoni slabı ah
+
+OptionsDlg.PromoteBox= Vdy podporova dámu
+
+OptionsDlg.PressBox= Automat.stlaèenie hodín pri ahu
+
+OptionsDlg.FreezeMinimizeBox= Pri minimaliz. automat. pauza
+
+OptionsDlg.ValidateBoardBox= Umo. nast. šachov. v nastavení
+
+OptionsDlg.SearchGroup= H¾ada do h¾bky
+
+OptionsDlg.WeakestLabel= Najslabšie
+
+OptionsDlg.StrongestLabel= Najsilnejšie
+
+OptionsDlg.NoviceBtn= Nováèik | Nastavenie na najjednoduchšiu úroveò
+
+OptionsDlg.AverageBtn= Skúsenı | Nastavenie na strednú úroveò
+
+OptionsDlg.ExpertBtn= Expert | Nastavenie na najašiu úroveò
+
+OptionsDlg.ButtonsGroup= &Tlaèítková lišta | iadna | V¾avo | Hore
+
+OptionsDlg.TakenGroup= Zobraté figúry
+
+OptionsDlg.ShowTakenBox= Ukáza zobraté figúry
+
+OptionsDlg.SortTakenBox= Zoradi zobr.figúry pod¾a hodnoty
+
+OptionsDlg.EdgeGroup= Okraj šachovnice
+
+OptionsDlg.LabelsBox= Zobrazi oznaèenia políèok
+
+OptionsDlg.PlayersBox= Zobrazi mená hráèov
+
+OptionsDlg.EdgeSizeGroup= Ve¾kos okraja šachovnice
+
+OptionsDlg.NarrowestLabel= Najušia
+
+OptionsDlg.WidestLabel= Najširšia
+
+OptionsDlg.StatusGroup= Stavovı panel
+
+OptionsDlg.CommentBox= Zobrazi komentáre
+
+OptionsDlg.WorkingBox= Zobrazi spracovanie
+
+OptionsDlg.ShowStatusBox= Zobrazi stavovı panel
+
+OptionsDlg.AnalogueBox= Zobrazi analógové hodiny
+
+OptionsDlg.DigitalBox= Zobrazi digitálne hodiny
+
+OptionsDlg.HundredthsBox= Zobrazi stotiny sekúnd
+
+OptionsDlg.NarrationBox= Zobrazova hodnotenie
+
+OptionsDlg.EcoBox= Zobrazi ECO
+
+OptionsDlg.RefreshGroup= Obnovit frekvenciu
+
+OptionsDlg.HighestLabel= Najvyššiu
+
+OptionsDlg.LowestLabel= Najnišiu
+
+OptionsDlg.PiecesGroup= &Figúry
+
+OptionsDlg.DisplayGroup= Nastavenie zobraznenia figúr
+
+OptionsDlg.ScaleBox= Nast.figúry na ve¾k.šachovnice
+
+OptionsDlg.CaptionsBox= Zobrazi popisy figúr
+
+OptionsDlg.SpeedGroup= Rıchlos pohybu figúr
+
+OptionsDlg.FastestLabel= Najrıchlejšia
+
+OptionsDlg.SlowestLabel= Najpomalšia
+
+OptionsDlg.MovingGroup= Nastavenie pohybu figúr
+
+OptionsDlg.FastOpenBox= Rıchle otvorenie súboru
+
+OptionsDlg.FastUndoBox= Rıchle vrátenie ahu
+
+OptionsDlg.FastRedoBox= Rıchle obnovenie ahu
+
+OptionsDlg.OpenToEndBox= Otvorenie súborov koncovky
+
+OptionsDlg.DragPiecesBox= Pohyb figúry ahaním
+
+OptionsDlg.TwoClickBox= Umoni ah dvojklikom
+
+OptionsDlg.MoveCursorBox= Umoni ah medzerníkom
+
+OptionsDlg.ReduceFlickerBox= Zníi blikanie pri opak.ahu
+
+OptionsDlg.DelayGroup= Zdranie medzi ahmi
+
+OptionsDlg.ShortestLabel= Najkratšie
+
+OptionsDlg.LongestLabel= Najdlhšie
+
+OptionsDlg.HintsGroup= Nastavenie šachovnice
+
+OptionsDlg.AttacksBox= Zobrazi napadnuté figúry
+
+OptionsDlg.JeopardiesBox= Zobrazi riziká
+
+OptionsDlg.PieceHintsBox= Ukáza moné ahy na políèka
+
+OptionsDlg.SquareHintsBox= Zobrazi doporuèené políèka
+
+OptionsDlg.MoveMarkerBox= Zobrazi oznaèenie ahu
+
+OptionsDlg.SquareSizeGroup= Ve¾kos políèka šachovnice
+
+OptionsDlg.SmallestLabel= Najmenšie
+
+OptionsDlg.LargestLabel= Najväèšie
+
+OptionsDlg.BorderSizeGroup= Útok/Ohrozenie - šírka okraja
+
+OptionsDlg.ThinnestLabel= Najtenšia
+
+OptionsDlg.ThickestLabel= Najhrubšia
+
+OptionsDlg.TextureGroup= Textúra šachovnice
+
+OptionsDlg.ColourGroup= Farby
+
+OptionsDlg.WhiteSquareBtn= &Biele políèka
+
+OptionsDlg.BlackSquareBtn= &Èierne políèka
+
+OptionsDlg.AttackBtn= &Útoky
+
+OptionsDlg.JeopardyBtn= &Ohrozenie
+
+OptionsDlg.MoveMarkerBtn= Oznaèenie ahu
+
+OptionsDlg.FontGroup= &Písmo obrazovky
+
+OptionsDlg.FontLabel= Príklad písma
+
+OptionsDlg.FixedLabel= Príklad písma
+
+OptionsDlg.FixedBox= Ponech. písmo pre zozn. ahov
+
+OptionsDlg.NotationGroup= &Notácia | Klasická Algebraická (eg Be3) | Dlhá Algebraická (eg Bc1-e3) | Poèítaèová  (eg c1e3)
+
+OptionsDlg.LanguageGroup= &Jazyk
+
+OptionsDlg.TextTypeGroup= &Oznaèenie figúr | Klasické anglické | V uívate¾skom jazyku
+
+OptionsDlg.CustomTextGroup= &Uívate¾skı popis
+
+OptionsDlg.AudioGroup= &Audio | iadne | Len zvukové efekty | Zvuk a komentár | Zvuk a plnı popis ahu
+
+OptionsDlg.WhiteVoiceGroup= &Hlas bieleho | Muskı | enskı
+
+OptionsDlg.BlackVoiceGroup= &Hlas èierneho | Muskı | enskı
+
+OptionsDlg.PrintGroup= &Písmo tlaèiarne
+
+OptionsDlg.PrintLabel= Príklad písma
+
+OptionsDlg.PrintBoldBox= &Hrubé
+
+OptionsDlg.PrintItalicBox= &Kurz.
+
+OptionsDlg.PrintFixedBox= Zachova šírku písma pre zoznam ahov v ståpcovom formáte
+
+OptionsDlg.FigureGroup= &Písmo figúr
+
+OptionsDlg.FigureCharLabel= Skupina znakov figúr
+
+OptionsDlg.PrintSetupBtn= Nast. tlaèe
+
+OptionsDlg.OkBtn= &OK
+
+OptionsDlg.CancelBtn= &Zruši
+
+OptionsDlg.PreviewBtn= &Náh¾ad
+
+OptionsDlg.DefaultsBtn= &Prednast.
+
+OptionsDlg.HelpBtn= &Pomoc
+
+OrderDlg= Registrácia/Objednávka
+
+OrderDlg.Heading= Vlote meno, adresu a platobné detaily, a pošlite:
+
+OrderDlg.NameLabel= Meno:
+
+OrderDlg.CompanyLabel= Firma:
+
+OrderDlg.AddressLabel= Adresa:
+
+OrderDlg.CountryLabel= Krajina:
+
+OrderDlg.PhoneLabel= Telefón:
+
+OrderDlg.FaxLabel= Fax:
+
+OrderDlg.EmailLabel= Email:
+
+OrderDlg.SourceLabel= Odkia¾ ste program získali:
+
+OrderDlg.ProductLabel= Produkt:
+
+OrderDlg.AmountLabel= Mena a hodnota platby:
+
+OrderDlg.CommentLabel= Poznámka:
+
+OrderDlg.PaymentGroup= Typ platby:
+
+OrderDlg.CardLabel= Èíslo karty:
+
+OrderDlg.ExpiryLabel= Expires:
+
+OrderDlg.HolderLabel= Cardholder Name:
+
+OrderDlg.CloseBtn= Zatvori
+
+OrderDlg.PrintBtn= &Vytlaèi
+
+OrderDlg.FileBtn= &Súbor
+
+OrderDlg.CopyBtn= &Kopírova
+
+OrderDlg.EmailBtn= &Email
+
+OrderDlg.HelpBtn= &Pomoc
+
+PromoteDlg= Podpora
+
+PromoteDlg.QueenBtn= &Dáma
+
+PromoteDlg.RookBtn= &Vea
+
+PromoteDlg.BishopBtn= &Strelec
+
+PromoteDlg.KnightBtn= Jazdec
+
+PromoteDlg.HelpBtn= &Pomoc
+
+SelectDlg= Vybra hru
+
+SelectDlg.Heading= Tento súbor je kninica hier. Vyberte hru, ktorú chcete otvori:
+
+SelectDlg.KeepBox= Uloi kninicu do pamäte
+
+SelectDlg.OkBtn= &OK
+
+SelectDlg.CancelBtn= &Zruši
+
+SelectDlg.HelpBtn= &Pomoc
+
+TipsDlg= Tip dòa
+
+TipsDlg.TipLabel= Vedeli ste...
+
+TipsDlg.ShowTipsBox= Zobrazi tipy pri štarte
+
+TipsDlg.TipTypesGroup= Zobrazi druhy tipov | KChess program | Playing chess | Chess trivia | All tip types
+
+TipsDlg.PrevBtn= < &Predch.tip
+
+TipsDlg.NextBtn= &Nasled.tip >
+
+TipsDlg.CloseBtn= &Zatvori
+
+UnlockDlg= Odblokova program
+
+UnlockDlg.Heading= Vlote registraèné údaje pre prístup ku všetkım funkciám tohoto programu:
+
+UnlockDlg.NameLabel= Meno:
+
+UnlockDlg.SerialLabel= Osobné èíslo:
+
+UnlockDlg.UnlockLabel= Odblokovací kód:
+
+UnlockDlg.OkBtn= &OK
+
+UnlockDlg.CancelBtn= &Zruši
+
+UnlockDlg.HelpBtn= &Pomoc
+
+[Messages]
+
+1000= Chybové hlásenie %d nenájdené.
+
+1001= Chybná schéma šachovnice.
+
+1002= Chybné políèko pre ah mimochodom.
+
+1003= Chybnı poèet ahov od posledného vzatia figúry alebo ahu pešiakom.
+
+1004= Detekovaná chyba vnútorného spracovania. Skúste zatvori ostatné programy, aj anti-virusovı software. Ak problém pretrváva a dostávate stále chybové hlásenie, kontaktujte ARK ANGLES na adrese arkangles@arkangles.com.
+
+1005= Neznámy formát súboru.
+
+1006= Chybné dáta.
+
+1007= Neprípustnı ah v súbore hry.
+
+1008= Stavovı panel je plíli malı pre zobrazenie komentárov. Pre vloenie komentára musíte najprv zväèši ve¾kos šachovnice alebo nezobrazova hodiny.
+
+1009= Chybné meno, osobné èíslo alebo odblokovací kód.
+
+1011= Nedá sa zruši ah %s.
+
+1012= Nedá sa aha figúrou na %s.
+
+1013= %s je nepovolenı ah.
+
+1014= %s nie je správny ah.
+
+1015= Memôem zobrazi ah, %s nie je správne.
+
+1016= Súbor %s chıba alebo je poškodenı. Preinštalujte prosím KChess Elite.
+
+1017= Súbor %s neexistuje.
+
+1018= Súbor %s u existuje. Chcete ho nahradi?
+
+1019= Súbor %s u existuje. Chcete k nemu pripoji, alebo ho nahradi?
+
+1020= Skonèi rozohratú hru bez uloenia?
+
+1021= U máte len minútu do skonèenia programu.
+
+1022= Váš èas pre beh tohoto programu uplynul.
+
+1023= V skúšobnej verzii nemôete uloi hru. Po registrácii dostanete plne funkènı program - pozrite funkciu O programe v Help menu.
+
+1024= Ponuka na ah je znehodnotená.
+
+1025= Nedá sa naèíta súbor %s. (KChess Elite 16 nedokáe preèíta viac ako 32K riadkov, skúste prosím KChess Elite 32).
+
+1026= Táto testovacia beta verzia nemôe by odblokovaná, potrebujete získa poslednú skúšobnú alebo registrovanú verziu.
+
+1027= Niektoré nastavenia boli zmenené keï bola nahrávaná táto hra. Chcete sa vráti k predošlému nastaveniu?
+
+1031= Vloi ah
+
+1032= Vlote svoj ah v jednoznaènom formáte (ako e2e4 alebo Pe4 alebo len e4):
+
+1033= Vloi pozíciu
+
+1034= Vlote nastavenie pozície v klasickom FEN formáte:
+
+1035= Uloi nastavenia s uloením hry
+
+1041= minút pre hráèa
+
+1042= sekúnd na ah
+
+1043= ahov za hodinu
+
+1045= sekúnd v presıp. hodinách
+
+1051= ah(y,ov)
+
+1052= krokov
+
+1053= pixel(y,ov)
+
+1054= sekúnd
+
+1101= Testovacia verzia
+
+1102= Neregistrovaná skúšobná verzia
+
+1103= Registrovaná verzia
+
+1104= Pouili ste %d dní z vášho 30 dòového limitu.
+
+1105= Váš 30 dòovı limit vypršal.
+
+1106= Registrované pre: %0:s. Osobné èíslo: %1:s.
+
+1107= Tento program môete skúša bez poplatku 30 dní. po tomto èase musíte si buï zaregistrova plnı program, alebo ho presta pouíva.
+
+1108= Licencia pre jednu osobu na jeden poèítaè.
+
+1109= Licencia pre viac poèítaèov v jednej triede alebo kancelárii.
+
+2001= Biely(a)
+
+2002= Èierny(a)
+
+2003= prázdne
+
+2004= Krá¾
+
+2005= Dáma
+
+2006= Vea
+
+2007= Strelec
+
+2008= Jazdec
+
+2009= Pešiak
+
+2011= En passant.
+
+2012= Vea na krá¾.krídle.
+
+2013= Vea na dámskom krídle.
+
+2014= Postup pešiaka na %s.
+
+2015= zaútoèené
+
+2016= ohrozené
+
+2017= zobraté
+
+2018= Vzda
+
+2019= ah
+
+2021= Komentár
+
+2022= Monosti
+
+2031= Šach!
+
+2032= Šach-mat! %s vyhral.
+
+2033= Pat! %s nie je v šachu ale nemá ani ah.
+
+2034= %0:s vzdáva sa! %1:s vyhráva.
+
+2035= ahaj! iadna figúra nebola vzatá v poslednıch 50 ahoch.
+
+2036= ahaj! Tá istá pozícia bola zopakovaná 3 krát.
+
+2037= ahaj! iadny vısledok tımi figúrami nie je dosiahnutı.
+
+2038= Obaja hráèi súhlasia s hrou.
+
+2039= Mat nájdenı v %d ahoch.
+
+2041= Prekroèenı limit hry. %s vyhráva.
+
+2042= Prekroèenı èasovı limit ahu. %s vyhráva.
+
+2043= iadny ah v priebehu hodiny. %s vyhráva.
+
+2044= Vypršal èas presıpacích hodín. %s vyhráva.
+
+2052= Mat
+
+2053= Pat
+
+2054= Vzdanie
+
+2055= ah (50 ahov)
+
+2056= ah (3 opakovania)
+
+2057= ah (forces)
+
+2058= ah (agreed)
+
+2059= Èas vypršal
+
+2061= Nahrávanie...
+
+2062= Priebeh...
+
+2063= Hranie...
+
+2064= Mód nastavenia šachovnice
+
+2065= Pripravené
+
+2066= Analyzovanie...
+
+2067= Koniec hry
+
+2071= Program vyh¾adáva
+
+2072= Program premıš¾a dopredu
+
+2073= Program èaká
+
+2074= Premıš¾anie...
+
+2075= Èakanie...
+
+2076= ah %d
+
+2077= %s na ahu
+
+2081= Automatickı mód
+
+2082= Mód bieleho
+
+2083= Mód èierneho
+
+2084= Mód dvoch hráèov
+
+2091= Hodnota: %d
+
+2092= Vrcholy: %dK
+
+2093= Najlepšie ahy: %s
+
+2094= FEN schéma rozloenia figúr: %s
+
+2095= Bez oznaèenia
+
+2096= Neznámy
+
+2101= pešiak
+
+2102= dvaja pešiaci
+
+2103= slabšia figúra alebo traja pešiaci
+
+2104= slabá figúra a pešiak
+
+2105= vea, alebo slabá figúra a dvaja pešiaci
+
+2106= vea a pešiak, alebo dve slabé figúry
+
+2107= vea a dvaja pešiaci, alebo dve slabé figúry a pešiak
+
+2108= vea a slabá figúra, alebo dve slabé figúry a dvaja pešiaci
+
+2109= dáma, alebo vea a slabá figúra a pešiak
+
+2110= dáma a pešiak, alebo dve vee
+
+2111= dáma a dvaja pešiaci, alebo dve vee a pešiak
+
+2112= dáma a slabá figúra, alebo dve vee a dvaja pešiaci
+
+2113= dáma a slabá figúra a pešiak,alebo dve vee a slabá figúra
+
+2114= dáma a vea, alebo dve vee a slabá figúra a pešiak
+
+2115= dáma a vea a pešiak, alebo dve vee a slabá figúra a pešiak
+
+2116= dáma a vea a dvaja pešiaci, alebo dve vee a dve slabé figúry
+
+2117= kirá¾ovná a vea a slabá figúra, alebo dve vee a dve slabé figúry a pešiak
+
+2118= dáma a vea a slabá figúra a pešiak, alebo dve vee a dve slabé figúry a dvaja pešiaci
+
+2119= dáma a dve vee, alebo dve vee a tri slabé figúry
+
+2120= dáma, dve vee a pešiak
+
+2121= dáma, dve vee a dvaja pešiaci
+
+2122= dáma, dve vee a slabá figúra
+
+2123= dáma, dve vee, slabá figúra a pešiak
+
+2124= dáma, dve vee, slabá figúra a dvaja pešiaci
+
+2125= dáma, dve vee a dve slabé figúry
+
+2126= dáma, dve vee, dve slabé figúry a pešiak
+
+2127= dáma, dve vee, dve slabé figúry a dvaja pešiaci
+
+2128= dáma, dve vee a tri slabé figúry
+
+2129= dáma, dve vee, tri slabé figúry a pešiak
+
+2130= dáma, dve vee, tri slabé figúry a dvaja pešiaci
+
+2131= dáma, dve vee a štyri slabé figúry 
+
+2132= dáma, dve vee, štyri slabé figúry  a pešiak
+
+2133= dáma, dve vee, štyri slabé figúry a dvaja pešiaci
+
+2134= dáma, dve vee, štyri slabé figúry a traja pešiaci
+
+2135= dáma, dve vee, štyri slabé figúry  a štyria pešiaci
+
+2136= dáma, dve vee, štyri slabé figúry  a pä pešiakov
+
+2137= dáma, dve vee, štyri slabé figúry  a šes pešiakov
+
+2138= dáma, dve vee, štyri slabé figúry  a sedem pešiakov
+
+2139= dáma, dve vee, štyri slabé figúry  a osem pešiakov
+
+2140= viac ako plná súprava figúr
+
+2201= Šachovnica je v normálnej zahajovacej pozícii.
+
+2202= Hra je skonèená.
+
+2203= Obaja hráèi majú rovnocenné sily, s bodovım súètom %d.
+
+2204= Bodovı súèet pre %0:s je %1:d vyšší ako %2:s, vıhoda zhodná s %3:s.
+
+2205= Obaja hráèi majú zhodnú pohyblivos na šachovnici, kadı má podobnı poèet ahov pouite¾né (%0:s môe urovi %1:d ahov, %2:s môe urobi %3:d).
+
+2206= %0:s má väèšiu pohyblivos na šachovnici, má %1:d pouite¾nıch ahov zatia¾ èo %2:s má len %3:d.
+
+2207= Obaja hráèi majú rovnocenné kryty na šachovnici, zaútoèené na podobnı poèet políèok (%0:s ohrozuje %1:d políèok, %2:s ohrozuje %3:d).
+
+2208= %0:s má viac krytov na šachovnici, ohrozuje %1:d políèok zatia¾ èo %2:s ohrozuje len %3:d.
+
+2209= Obaja hráèi majú porovnate¾nú kontrolu centra šachovnice.
+
+2210= %s má silnejšiu kontrolu centra šachovnice.
+
+2211= %s môe robi rošádu na obe strany.
+
+2212= %s môe robi rošádu na krá¾ovskú stranu.
+
+2213= %s môe robi rošádu na stranu dámy.
+
+2214= %0:s môe vzia  en passant na %1:s.
+
+2301= Vısledok
+
+2302= Dejisko
+
+2303= Kolo
+
+2304= Dátum
+
+2305= Èas
+
+2306= Otvorenie
+
+2307= Oznaèenie
+
+2308= Krajina
+
+2309= Zapisovate¾
+
+[Program Tips]
+
+1= Vitajte . Ak potrebujete akúko¾vek pomoc, kliknite na tlaèítko pomoci v menu.
+
+2= Môete si zvoli hráèa bieleho alebo èierneho vıberom príslušného módu v menu.
+
+3= Ak poèas hry urobíte chybu, môete ah vráti príkazom Spä z menu.
+
+4= Ak si poèas hry neviete da rady, vyberte si Rıchlu radu z menu. Poradí vám, ako pokraèova.
+
+5= Ak sa vám zdá hra príli ¾ahká alebo aká, v menu môete zmeni obtianos. Kliknite na tlaèítko Nováèik, Skúsenı alebo Expert.
+
+6= Hocikedy poèas hry môete otoèi šachovnicu príkazom v menu.
+
+7= Skratky benıch príkazov  nájdete na tlaèítkovej lište.
+
+8= Môete meni farbu šachovnice, textútu a figúry vo vıbere nastavení v menu.
+
+9= Ak chcete pozorova hru programu KChess Elite samého so sebou, vyberte Auto Play z menu.
+
+10= Ak chcete preruši hru a pokraèova neskôr,môete ju uloi - vyberte uloi v základnom vıbere.
+
+11= Môete nahra uloené hry (uloené vami tak isto, ako príklady hier dodané s programom) príkazom Otvori z menu a vybra meno uloenej hry.
+
+12= Ak podríte stlaèené ¾avé tlaèítko myši nad figúrou, vysvietia sa vám políèka, na ktoré môete aha.
+
+13= Ak podríte stlaèené ¾avé tlaèítko myši nad figúrou alebo políèkom, vysvietia sa všetky napadnuté figúrky alebo políèka.
+
+14= Môete pouíva klasické šachové oznaèenia súborov. Keï ukladáte alebo otvárate hry, vyberte formát súboru zo zoznamu.
+
+15= Ak si chcete vyskúša nejaké ahy alebo analyzova pozíciu, vytvorte si ïalšiu šachovnicu v tom istom nastavení vıberom Obmena z menu.
+
+[Game Tips]
+
+1= Doporuèuje sa otvára hru jednım z centrálnych pešiakov cez dve políèka. Obsadí cetrum hracej plochy a otvorí cestu pre ahy ïalších figúr.
+
+2= V poèiatoènıch fázach hry by ste sa mali zamera na rozvinutie svojich figúr tak rıchlo, ako je to moné.
+
+3= Ak postúpite pešiakom na opaènı koniec šachovnice, ten bude premenenı pod¾a vášho vıberu na Dámu, Veu, Strelca alebo Jazdca.
+
+4= Je dobré vyvarova sa ahaniu figúry viac ako raz v skorom štádiu hry, aby ste mali monos rozvinú ostatné figúry.
+
+5= Je uitoèné urèi hodnotu kadej figúry: 1 pre pešiakov, 3 pre jazdcov a Strelcov, 5 pre vee, a 9 pre dámy.
+
+6= Pešiak môe vzia nebezpeèného pešiaka posunutého cez 2 políèka v jeho prvom ahu ahom na políèko za neho. Tento špeciálny ah sa volá "en passant" - ah mimochodom.
+
+7= Svojho krá¾a si môete ochráni ponechaním pešiakov pred ním, hlavne v skorıch fázach hry.
+
+8= Najlepšie je neuvádza dámu príli skoro do hry.
+
+9= Stále by ste mali predpoklada najlepší ah svojho protivníka. Nikdy nepredpokladajte, e protivník nevie, èo sa chystáte urobi.
+
+10= 4 centrálne plôšky sú najrozhodujúcejšie na šachovnici. Skúste umiestni na ne svoje vlastné figúry.
+
+11= Ak ste neposunuli svojho krá¾a alebo niektorú veu a plochy medzi nimi su vo¾né, môete svojho krá¾a presunú cez dve polia a veou preskoèi cez neho. Tento ah sa volá "rošáda".
+
+12= Figúrky majú väèšiu pohyblivos keï sú v centre šachovnice a kontrolujú viac políèok.
+
+13= Ak máte silnejšie figúry ako váš súper je dobré meni figúry. Takto si ešte zvıšite svoju relatívnu silu.
+
+14= Mali by ste chráni hodnotnejšími figúrami ostatné figúry. Skúste nepouíva hodnotnejšie figúry namiesto slabších. 
+
+[Chess Trivia]
+
+1= Šach pravdepodobne vznikol v Indii okolo 550-600 n.l. Rıchlo sa rozšíril cez Áziu do Arabskıch oblastí a ïalej do Európy.
+
+2= Najdlhšia hra, hraná špièkovımi hráèmi mala 269 ahov. Hrali ju Ivan Nikolic a Goran Arsovic v Belehrade v roku 1989. Trvala viac ako 20 hodín, skonèila nerozhodne.
+
+3= Vraj je viac šachovej literaúry ako literatúry pre všetky ostatné hry spolu.
+
+4= Je 318,979,564,000 rozliènıch moností hry prvıch štyroch ahov kadım hráèom šachu.
+
+5= Slovo "Šach-mat" pochádza z Perzskej  frázy "Shah Mat", èo znamená "krá¾ je màtvy".
+
+6= Prvá šachovnica so svetlımi a tmavımi políèkami sa v Európe objavila v roku 1090.
+
+7= V roku 1851 sa stal šachovım majstrom sveta A. Anderssen, zatia¾ èo v tom istom období bol svetovım šampiónom v kockách A. Anderson.
+
+8= Niaz Murshed z Bangladéša je najmladšou osobou, ktorá kedy vyhrala medzinárodné majstrovstvá, víaz Bangladéšskych majstrovstiev vo veku 12 rokov. Neskôr sa stal prvım a jedinım ve¾majstrom z Bangladéša vo veku 20 rokov.
+
+9= V televíznom seriáli "Star Trek", Kapitán Kirk a pán Spock hrali šach trikrát. Kirk vyhral všetky hry.
+
+10= Prvé vreckové šachy boli vytvorené v roku 1845  Petrom Mark Rogetom, autorom Rogetovho lexikónu.
+
+11= V roku 1939 Weaver Adams napísal knihu "Hra bielymi a vyhra". V jeho neskorších turnajoch prehral všetky zápasy ako biely a vyhral všetky ako èierny.
+
+12= Všetci lídri Britskej šachovej školy sa poèas 2.svetovej vojny stali dešifrantmi pre Britskú spravodajskú tajnú slubu.
+
+13= V Èíne je viac ako 200 miliónov obyvate¾ov náruivımi hráèmi šachu.
+
+14= V šachu je 169,518,829,100,544,000,000,000,000,000 rozliènıch moností hrania prvıch desiatich ahov oboma hráèmi.
+
+15= Prvá telefonická šachová hra bola hraná dvoma mumi v Derbyshire, v Anglicku v roku 1878.
+
+16= Prvı poèítaèovı šachovı program bol napísanı na MIT Alexom Bernsteinom v rokoch 1958-59.
+
+17= Prvı zaznamenanı šachovı turnaj sa odohral v Madride v roku 1575. Giulio Polerio a Giovanni Leonardo porazili Ruy Lopeza a Alfonso Cerona v sérii zápasov, organizovanıch krá¾om Filipom II.
+
+18= Bıvalı majster sveta Jose Capablanca zaèal hra šach, keï mal 4 roky. Svojho otca porazil v tom istom veku.
+
+19= Najpomalší zaznamenanı ah zahral Francisco R. Torres Trois. Zabral mu 2 hodiny a 20 minút v hre proti Luisovi M.C.P. Santosovi, vo Vigo, Španielsko v roku 1980. Trois mal len dva moné ahy.
+
+20= "Hráèi šachu", nama¾ovanı v roku 1490, je prvou známou ma¾bou na šachovú tému.
+
+21= Najmladšou svetovou šampiónkou všetkıch èias bola Maya Chiburdanidze z bıvalého ZSSR. Mala 17 rokov keï vyhrala enskı titul v roku 1978.
+
+22= Garry Kasparov z bıvalého ZSSR mal 22 rokov keï porazil Anatolia Karpova na svetovom šachovom šampionáte v roku 1985. Stal sa najmladším muskım šampiónom v histórii.
+
+23= Automatons sú stroje, ktoré vytvárajú ilúziu hrania šachu. Prvı automaton bol "The Turk" v roku 1769, nasledovanı "Ajeeb" v roku 1868, a "Mephisto" v roku 1878.
+
+24= Dáma je staršia hra ako šach.
+
+25= Judit Polgar z Maïarska bola najmladšou enou, ktorá získala Medzinárodnú majstrovskú úroveò v roku 1989, keï mala len 12 rokov. Je najmladšou enou s Medzinárodnou ve¾majsterskou úrovòou or roku 1991, ktorú získala vo veku 15 rokov.
+
+26= Po prvı krát sa šach objavil vo filme "Túobnı prsteò" v roku 1914.
+
+27= V roku 1974 sa v Štockholme odohral prvı poèítaèovı šachovı turnaj. Vyhral Sovietsky program "Kaissa".
