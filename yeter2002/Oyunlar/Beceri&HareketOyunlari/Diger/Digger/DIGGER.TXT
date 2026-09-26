@@ -1,0 +1,1014 @@
+
+                     Digger - back and digitally remastered
+                     ======================================
+
+                     The really long digger file - 1/6/1999
+
+                                by Andrew Jenner
+                        with thanks to Windmill Software
+
+Included in the distribution is the game itself, this document, and an icon for
+running under Windows or OS/2 (but see Known bugs and issues for information
+about running Digger under these operating systems).
+
+There is also a version for RiscOS. See the website for more information.
+
+
+Contents
+--------
+
+The story so far...
+How to play Digger
+Frequently Asked Questions
+Extra levels
+Hall of Fame
+Technical details
+Windows version
+Known bugs and issues
+Ideas for future enhancement
+Digger pages on the web and other versions of Digger
+What's New?
+Feedback
+
+
+The story so far...
+-------------------
+
+Finally, after 3 years of (on and off) hacking, Digger is back! This game, for
+those who don't know it, was one of the best games available for the XT - the
+CGA graphics were beautifully drawn and animated, and the sound effects and
+music were state of the art.
+
+It wouldn't run on modern PCs, of course. The CGA graphics directly accessed
+hardware registers that the VGA didn't have (and wouldn't have looked so hot on
+today's high resolution monitors anyway), the background music and sound
+effects just didn't sound right and the whole thing just ran far too fast.
+Also, you probably didn't want the game to access the disk directly and save
+your high scores in an arbitrary place (probably overwriting some other file)
+or to reset your computer just to exit the game.
+
+I was extremely disappointed to discover all these things when we replaced the
+family PC1512 with a brand new multimedia 486, so I set about re-writing it. It
+was a big job - all the code had to be disassembled, the necessary routines
+re-written and the whole thing put back together again. I finally finished the
+project in Easter 1998, having decided not only to fix all the compatibility
+problems but also to convert all the graphics to VGA standard, redrawing them.
+
+Since then, I have almost completely rewritten Digger in C to make it easier to
+add new features and move it to other platforms. This is the result!
+
+Unfortunately, I have not been able to contact the original author of the game,
+as all I know is the copyright message on the title screen "(C) Windmill
+Software 1983." I have heard one rumour that the author died shortly after
+completing the game, but if you know otherwise, or, indeed, if you are the
+author, please get in touch.
+
+Jaap van Hengstum found the original address of Windmill Software in an ancient
+computer magazine. It is:
+
+Windmill Software Inc.
+2209 Leominster Dr.
+POB 1008
+Burlington
+Ontario
+L7P 3W8
+CANADA
+
+I have written to this address but received no reply. The next stage of the
+story is that someone found another address for a Windmill Software in a
+listings directory. It is:
+
+Windmill Software Inc.
+2200 Glenwood School Dr.
+Burlington
+Ontario
+Z1Z 1Z1
+CANADA
+
+Same city, different street. That postcode seems too good to be true, though. I
+wrote to this address, but my letter came back (opened - I hadn't put a return
+address on the back) saying "return to sender". Stamped on the front of my
+envelope was a list of reasons why letters were returned with little boxes, one
+of which was presumably meant to be ticked, but it was too faint to read.
+
+The directory also listed a telephone number: (905) 639-4515.
+
+
+How to play Digger
+------------------
+
+The keys you need to play the game are, by default: Left, Right, Up, Down (or
+2, 4, 6, 8 on the numeric keypad) to move Digger, F1 to fire, Space to pause,
+F7 to toggle background music and F9 to toggle all sound. On the title screen
+press Esc or N to toggle one or two player mode, or F8 to save the last game if
+you forgot to give a name on the command line. To exit from the game to the
+title screen or from the title screen to the operating system press F10. To
+increase the game speed during play, press +. To decrease it press -. Each
+press of these keys corresponds to an increase or decrease in the command line
+speed parameter of 5. The default keys for the second player in two player
+simultaneous mode are W, A, S, Z and Tab to fire. All these keys except Esc, N
+and F8 can be redefined with the /K option.
+
+The command line options are:
+  /S:n    = Set speed to n.
+  /L:name = Use level file "name".
+  /C      = Use CGA graphics - these are faster than VGA but this is only
+            really noticeable if you have a slower computer or are playing at
+            high speeds.
+  /B      = Use CGA graphics with BIOS palette functions (try this if the
+            palette doesn't work properly with the /C option, but be warned: it
+            might cause a crash if you get a high score).
+  /Q      = Quiet mode (no sound at all) - use this if you're running under
+            Windows.
+  /M      = Turn background music off.
+  /R:name = Record game to file "name".
+  /P:name = Playback game file "name" and restart program.
+  /E:name = Playback game file "name" and exit program.
+  /O      = Go back to the beginning of the command line and start again. Handy
+            for playing recorded games as screensavers.
+  /K      = Redefine keyboard. To redefine all the redefinable keys, use /KA.
+  /G:time = Gauntlet mode.
+  /2      = Put two diggers on screen at once.
+  /?      = Display this list.
+  /A:1,port,irq,dma,rate,length= Use SoundBlaster sound, e.g.
+            /A:1,220,7,1,20000,128. No background music yet.
+  /V      = Synchronize timing to screen refresh.
+  /U      = Allow unlimited lives.
+  /I:level= Start on the specified level instead of level 1. You can't go on
+            the hall of fame if you use this option.
+
+/S and /L are optional (you can just specify a name and/or number) but are
+harmless, and will help to prevent confusion (especially if you have a level
+data file called something like "20.DLF").
+
+/Q and /M don't completely disable sound and music, you can still toggle them
+with the F9 and F7 keys.
+
+/K lets you choose the keys you want to use to play the game with. Normally,
+the program will let you redefine the keys to move Digger around and fire, but
+if you override another key (by making the space bar fire, for example) other
+keys will be redefined. If you specify the /K option, the program enters
+keyboard redefinition mode before the title screen appears. In keyboard
+redefinition mode, the name of each action which needs a key comes up on the
+screen in red, and changes to green once you've pressed the key for that
+action. Note that the name of the key does not appear on the screen: it would
+be too complicated to program Digger with knowledge of all known keyboard
+layouts. However, I may program it with knowledge of some of the keys in a
+future version. I do not recommend redefining N, Esc or F8 as anything else, as
+these keys cannot currently be redefined so this could cause confusion. To
+return all the keys to their defaults, delete the DIGGER.INI file.
+
+/G starts Gauntlet mode: infinite lives but only finite time. You can specify a
+time on the command line, for example "DIGGER /G:60" for one minute play. If
+you don't specify a time it defaults to 2 minutes. You can have anything up to
+1 hour. Countdown stops when you pause and between levels, but not when you die
+(so you get a time penalty of 5 seconds or so (depending on the game speed)
+each time you die). Instead of an extra life at 20,000 points you get 15 extra
+seconds. When playing back a recorded Gauntlet game be sure to play it back
+with the same speed it was recorded, or the timer will be wrong. If you play it
+back at a slower speed it will timeout before it's supposed to. High scores in
+Gauntlet mode are saved in the same file as the normal scores, but are
+separate. This same table is used no matter what Gauntlet time is used.
+Gauntlet mode is currently one player only. Thanks to Marek Zgadzaj for this
+idea - he played a hacked version of the original Digger to do the same thing.
+
+/2 starts two player simultaneous mode. The first time you do this you will
+probably want to use the command line "DIGGER /2 /K" as the default player 1
+keys use both sides of the keyboard and you will probably want them to be only
+on one side. Two player mode can be used with Gauntlet mode. The scores are
+saved separately from the one player modes. The two player simultaneous game
+has not quite been finalised yet - the rules may change slightly. Recording
+works, but games recorded with this version might not play back with future
+versions. When one digger dies the other can continue, and after a while the
+digger that died will be reincarnated (if he has any lives left). He will flash
+for a short time after being reincarnated. During this time, he is invincible.
+
+/A may eventually be used to enable many different sound cards. However, the
+only one currently supported is SoundBlaster, but most sound cards seem to be
+able emulate this one. If you do not have a genuine SoundBlaster card, ensure
+that your sound card is set up to emulate SoundBlaster before you run the game.
+How you do this will depend on your card. If you've set up games before, you
+should know how to do this. You should also know the port address, IRQ number
+and DMA channel that your card uses. Factory defaults are usually 220,7,1. To
+enable SoundBlaster sound, use the /A option as follows:
+/A:1,220,7,1,20000,128. The first "1", after the colon, means SoundBlaster. No
+other values for the first option have any meaning at the moment. The second
+"1" (the fourth option) is the DMA channel, so if you use port 210, IRQ 5 and
+DMA channel 3, the option is /A:1,210,5,3,20000,128. The 20000 is the sample
+rate (this means 20,000 samples per second). You can change this: higher
+numbers give better sound quality, but if this number is too high the sound may
+break up. The last option is the buffer length. If the sound is breaking up you
+can try increasing this instead of decreasing the sample rate. If the sound
+seems to "lag" behind the action, decrease this value.
+
+See the Known Bugs and Issues section for information about the /V option.
+
+/U gives you the ability to save up as many lives as you like. Digger
+originally only let you have up to 4 reserves. If you use this option, save up
+more than 4 lives and get a score eligible for the hall of fame, the score you
+obtained on the last few lives won't count (the score will be added up by the
+original rules).
+
+
+Record and playback could hardly be easier to use. There are two ways to record
+your game: either give Digger a filename when it starts, or press F8 once your
+game is over. The filename used if none is specified on the command line is
+composed of your score and the initials you entered if you got a high score.
+Bear in mind that any previously saved games in this file will be overwritten
+unless you rename or move the file first.
+
+To automatically save your game once it is finished, simply start Digger with a
+command such as "DIGGER /R:DIGGER.DRF". Then, the last game you play before
+exiting to DOS will be saved to this file (in this case, DIGGER.DRF, although
+it can be anything you like). The recommended extension is .DRF (Digger
+Recorded File). Again, remember that only the last game played before exiting
+is kept.
+
+To playback the file, use either the /P or the /E option:
+"DIGGER /P:DIGGER.DRF" or "DIGGER /E:DIGGER.DRF". The only difference is that
+when the playback is finished, the /P option restarts the program so you can
+play normally, and the /E option exits to the operating system.
+
+If you specify both /P and /R (or /E and /R) on the command line (/R first),
+the playback itself is recorded, so some elementary editing of recorded game
+files can be done. Not enough to make it look like you've done better than you
+have, of course.
+
+To playback a file at a different speed, put the speed on the command line
+first. Command line arguments are processed in order. You can even play back
+multiple files at different speeds with the same command, such as
+"DIGGER 20 /P:DATA1.DRF 10 /E:DATA2.DRF" (plays DATA1.DRF at speed 20, then
+DATA2.DRF at speed 10, then exits). You can take control of a game that is
+playing by pressing Ctrl-T. However, you will not then be able to record that
+game (that would be cheating).
+
+No information about the speed at which the recording was made is kept, nor
+whether it was recorded with CGA or VGA graphics, so any file can be played
+back at any speed or resolution.
+
+Recorded files are very small (only a few kilobytes) and are formatted as text
+files, so they can easily be transported on floppy disks or sent over email.
+
+Please send me your recorded files to put on the website!
+
+Unfortunately, the DRF format completely changed on October 15th, 1998, so any
+old DRF files you have won't work any more. I'm afraid that no converter is
+possible, you'll just have to make new ones. However, the new format is much
+smaller and more versatile.
+
+You can set up Windows 95 to play a DRF when you double click on it. The
+sequence is as follows (this assumes you've installed Digger in
+C:\Games\Digger):
+
+Explorer-View-Options-FileTypes
+New Type
+Description of Type: Digger Recorded File
+Assosiated Extension: DRF
+Actions: open
+Edit: C:\Games\Digger\Digger.exe "/Q" "/E:%0"
+Change Icon: C:\Games\Digger\Digger.ico
+
+You can also do a similar thing with level files:
+
+Explorer-View-Options-FileTypes
+New Type
+Description of Type: Digger Level File
+Assosiated Extension: DLF
+Actions: open
+Edit: C:\Games\Digger\Digger.exe "/Q" "/L:%0"
+Change Icon: C:\Games\Digger\Digger2.ico
+
+You can add the other command line options you usually use as well, or
+substitute /A for /Q etc. Thanks to Diethelm Kabus for this information, and
+Digger2.ico, which you can download from the website. Diethelm also helped with
+these batch files for replaying all the DRFs in a directory in a continuous
+loop. This is PLAYALL.BAT:
+
+@echo off
+set DIGPLAY=1
+:start
+for %%i in (*.drf) do call play.bat %%i %1 %2 %3 %4 %5 %6 %7 %8
+if %DIGPLAY%==1 goto start
+set DIGPLAY=
+
+and this is PLAY.BAT:
+
+@echo off
+if not %DIGPLAY%==1 goto end
+digger %2 %3 %4 %5 %6 %7 %8 %9 /e:%1
+if errorlevel 1 goto end
+set DIGPLAY=0
+:end
+
+If you put both of these files in your Digger directory, you can then run
+PLAYALL with your preferred options, for example, "PLAYALL /Q /C /S:10" to play
+all DRFs in CGA, with no sound, at speed 10. If you get the message
+"environment out of space" whilst running from a .PIF file under Windows NT,
+use the command line "C:\WINNT\System32\cmd.exe /C playall.bat ..." instead of
+"playall.bat ...", changing the "C:" to another drive if your cmd.exe resides
+elsewhere.
+
+
+Frequently Asked Questions
+--------------------------
+
+Q: How does the scoring system work? (may be considered spoiler material)
+
+A: As follows:
+
+* Emerald: 25 pts.
+* Eight consecutive emeralds (octave): Extra 250 pts.
+* Gold: 500 pts.
+* Killing Nobbin or Hobbin by shooting or hitting with gold: 250 pts.
+* Bonus: 1,000 pts.
+* (In bonus mode) Eating Nobbin or Hobbin: 200 pts. for first, 400 for 2nd,
+  etc. (doubling each time) - still 250 for other methods of killing, though.
+* At every multiple of 20,000 pts. you get an extra life. This is different in
+  some of the sets of extra levels (see below for more information on these).
+
+
+Q: What's the most you can score?
+
+A: The maximum possible score on completion of level 1 is 8,650 plus 3,150 for
+every life used. I can repeatably obtain 8,650. The maximum possible score you
+can have by the end of level 2 is 19,925 if you don't die, so it is not
+possible to start level 3 with more than 2 lives in reserve. I have got maximum
+score on the first two levels a few times. For levels 2-7 the maximum score
+goes up by 5,250 plus 250 multipled by the level number for each life used
+(5,750 on level 2, 6,000 for level 3, 6,250 for level 4 etc.)
+
+I haven't bothered to calculate similar statistics for the other levels, but I
+can if anyone's interested...
+
+
+Q: What's the music that plays in the background?
+
+A: The background music for the main part of the game is called "Popcorn", and
+was a hit for the group "Hot Butter" in the 70s. There's more info at
+http://www.cam.org/~lafranc/popcorn/origin.html. The background music for the
+bonus is the William Tell Overture by Rossini. The music which plays when you
+die is "Funeral March" by F. Chopin.
+
+
+Q: What other interesting things do you know about Digger?
+
+A: In my explorations of the code of the game, I have discovered some things I
+didn't know.
+
+On each new level up to level 10:
+* The monsters arrive more frequently.
+* There are more monsters in total.
+* The number of monsters on screen at once increases.
+* The number of times nobbins have to cross to become hobbins decreases.
+* The monsters move slightly faster on average (their speed is actually
+  random).
+* The monsters less frequently stop chasing you (they always chase you on level
+  6 and above).
+* Hobbins stay hobbins for longer.
+* Gold hangs around for less long.
+* Fire takes longer to recharge.
+* Bonus mode lasts for less long.
+
+Levels above 10 use the same variables as level 10 but different layouts.
+
+The level plan is 1-2-3-4-5-6-7-8-6-7-8 followed by the sequence 5-6-7-8
+repeated 247 times. If you complete level 8 249 times, all the subsequent
+levels use the layout from level 5.
+
+Gold (as in a broken bag) disappears very quickly if you dig underneath it.
+
+Monsters going up change direction when there is a bag falling on them, but
+they do the same thing even if the bag is below them in the same column.
+
+Player 2 (in two player mode, obviously) doesn't get the extra life until after
+multiples of 20,000. Player 1 (in either mode) gets it *at* multiples of
+20,000.
+
+The noise made when you complete a level is polyphonic if no background music
+has been played since the game was started.
+
+The program allocates enough resources for 6 monsters, but only 5 are on screen
+at any given time. By changing a single byte in the executable, you can make
+all 6 appear at the same time.
+
+When you get a game over and no high score, the screen flashes between its two
+colour schemes for a while, but the original didn't do this on my 8086.
+Apparently it did on some other people's computers, though, so it must have
+been a hardware oddity. It was taking ages to get back to the title screen, so
+I changed the number of times it flashes from 20 to 10. This seems to do
+something different in the latest version.
+
+You can't collect more than 4 spare lives.
+
+
+Q: Help me! It runs too fast (or too slow)
+
+A: This version of Digger now uses your computer's internal timing chip for all
+its timing, so it should run at exactly the same speed on all machines, no
+matter what how much action is happening on the screen. The only exception is
+that if there is more action on screen than your computer can handle, it will
+run too slowly (as happened with the original game on a 4.77MHz machine). You
+won't notice this effect unless you have a very slow computer or are running
+Digger at an extremely high speed. Using the CGA graphics rather than the VGA
+ones will speed things up in this case.
+
+You can speed up or slow down the game depending on your personal preference.
+To do this, simply specify the speed on the command line. The default is 40,
+higher numbers give slower speeds, lower numbers (1 being the lowest) give
+faster speeds.
+
+If you're good at the game you might like to try playing it at a faster speed.
+
+If you use a really slow speed like 500, you may have to hold the keys down for
+longer to get it to do anything.
+
+Note that the music and sound effects are independent of this speed setting.
+
+If you are used to playing Digger on a slower computer, you might notice an
+apparent increase in speed as more monsters appear on screen. This is a
+psychological illusion! If you notice this, it means that your subconscious has
+been counting the number of monsters on the screen and adjusting the apparent
+speed to compensate! This effect will disappear after playing the new version
+for a while. However, if there is demand I could put in a feature to actually
+slow down the game more when there is more action on the screen.
+
+If you get bursts of speed, see the Known bugs and issues section.
+
+
+Q: Can you send me this other game I used to play called...
+
+A: No, try Altavista.
+
+
+Q: Can I send you this other game I used to play called...
+
+A: No! Please, whatever you do, DON'T send me games over email - half the time
+I have to download my email over a very slow modem and expensive telephone
+line, and the other half of the time I have very limited mailbox space. Sending
+large binaries over email is known as mail-bombing and is extremely rude. If
+you want to send something, email me first describing exactly what it is, ask
+me if I want it and if so, what the best way to get it to me is.
+
+
+Q: I have found a bug in Digger. Can you fix it?
+
+A: First download the latest version from http://www.digger.org, and see if
+your bug still happens with that. If it doesn't, I already fixed it. Next, look
+at the DIGGER.TXT file that came with it and see if the "Known bugs and issues"
+section lists this bug. If it does, I know about it already. If not, please
+send me details of the bug, the operating system you are using, the command
+line parameters you gave to Digger and a .DRF file if you can make one which
+reproduces the bug.
+
+
+Q: My computer does not know how to run .ZIP files. What do I do?
+
+A: Download Winzip from http://www.winzip.com and learn how to use it. (How did
+I guess you're using Windows?) Unzipping files is a skill you really need to
+learn if you're going to be downloading programs from the internet: it is an
+industry standard format.
+
+
+Q: My Apple Mac won't run Digger. What do I do?
+
+A: Go and buy a real computer! :-) Or you could, if you are so inclined, try to
+run it on a PC emulator. Some people have reported limited success in doing so.
+Hopefully sometime soon a Mac programmer will write a native version.
+
+
+Q: I like Apple Macs and want to write a nasty message (a flame) to you about
+that last comment. Where should I send it?
+
+A: To the wastebasket.
+
+
+Q: How do I specify command line arguments?
+
+A: This depends on how you load the game. If you load it from a DOS prompt by
+typing the command "DIGGER" and pressing enter, then it is as simple as typing
+the options after the word "DIGGER", i.e. "DIGGER /C 20" to play in CGA at
+double speed.
+
+If you're running it by double-clicking on an icon in Windows 95 or above,
+right-click the icon, select properties and there will be a command-line box
+which you can change in the same way (although instead of saying just "DIGGER"
+it may say something like "C:\Games\Digger\Digger.exe" but it's the same
+principle.
+
+There may be a feature to make this easier to use in the future.
+
+
+
+Extra levels
+------------
+
+An extra 35 sets of levels are available from my website at
+http://www.digger.org/diglev.zip. To use these, unzip the file into directory
+where you installed Digger, and make sure that this is the current directory
+when you run the game.
+
+To play a different level set, just specify its name on the command line when
+you play the game.
+
+Note that the scores are now saved in the same files as the level data, not in
+separate .SCO files as in one old version (although the DIGGER.SCO file is
+still used if no .DLF file is specified). If you played this version and have
+lots of .SCO files, email me for the conversion utility.
+
+Most of the levels in the pack were designed by Mikel Lavrentyev and his
+friends.
+
+The files VALYA123, VALYA2 and VALYA3 were designed by Valentina Borisenko, a
+schoolgirl from the Irkutsk (Russia).
+
+The file ANTON was designed by someone called Kalmykow Anton, who hacked into
+Digger in 1987 and made several changes. His version of Digger (ANTONDIG.EXE)
+displayed the graphics better than the original on non-CGA displays and had a
+whole new set of levels but there were still many problems with it.
+
+Note that the recommended extension for level files has changed from .DAT to
+.DLF, so if you have any level files with the extension .DAT files, rename
+them.
+
+
+Hall of fame
+------------
+
+Welcome to the hall of fame. Your name could be here! All you need to do is
+send me a recording of a game you played where you got more than 127,350
+points. Recordings of all the official top scores are available on the website.
+
+
+Rank Name                    Country        Score  Level Speed
+
+  1  Dror Bohrer             Israel        903,750  105   30-130
+  2  Krishna Kumar           India         205,600   24   40
+  3  Tomek Stochel           Poland        196,400   23   40-65
+  4  Filipus Hunadi          Indonesia     196,075   23   35-60
+  5  Urmas Tartes            Estonia       186,250   22   40-50
+  6  Gal Masri               Israel        161,975   20   45?
+  7  Ramin Darvari           United States 143,825   14   50
+  8  Dharmendra Rana         Australia     138,800   16   65-165
+  9  Avi Nakash              Israel        132,375   17   30-40
+ 10  Henrik Olsen            Denmark       127,350   14   25-50
+
+
+Notes:
+
+* Yes, Dror Bohrer's score really is genuine! It took over 4.5 hours to record.
+  You need version 19990408 or later to play it back. It's quite lucky that the
+  game finished when it did, because with the version of Digger Dror was using,
+  an internal buffer would have overflowed in one or two more levels and the
+  game wouldn't have been recorded at all! This problem should not occur with
+  the latest version of Digger.
+* Stephane Reusser from France recorded THEVOID.DRF, a new way of playing
+  Digger which really must be seen to be believed...
+
+Please note that games recorded with the /I option are not eligible for the
+hall of fame, and that if you use the /U option, your fame score may be lower
+than the total score from the game. See the How to play Digger section for more
+details.
+
+If you can beat 127,350 you can get into the hall of fame. To save your game,
+wait until you are back at the title screen (after the "Enter your initials"
+screen, or when the "Game Over" screen has disappeared) just hit F8. Then exit
+the program in the normal way. This will create a file with the extension DRF
+and a name composed of your score and the initials you entered. You can then
+send this to me.
+
+If you have access to email, this is the best way to send it: simply attach the
+DRF file to an email and send it to "fame@digger.org". If you don't know how to
+attach a file to an email, simply open the DRF file in a text editor (such as
+Notepad in Windows), select the whole thing, copy it and paste it into the
+email message. If you don't have access to email, you can still send in your
+DRF - put it on a floppy disk and snail-mail it to me at the address at the end
+of this file. If you want your disk back send a suitable SAE as well.
+
+For some more information on recording and playback, see the "How to play
+Digger" section.
+
+When sending scores, please check the website first to make sure that your
+score is good enough. Also, please tell me your full name, nationality and
+whether or not you want your email address published on the website.
+
+
+Technical details
+-----------------
+
+The disassembly was done using Microsoft's DEBUG utility and lots of QEdit
+macros. The new code was completely written by me, from scratch. Most of the
+old code was subsequently converted from assembler to C line by line, by hand.
+I wrote utilities in Borland's Turbo C 2.0 to extract the graphics data and put
+it into a format I could use with CHARDES, my personal favourite sprite editor.
+I used this program to redraw all the graphics in glorious 16 colour 640x400
+VGA. With more utilities I wrote, I turned the new sprites back into C code so
+it could be easily linked with the code. Finally, I assembled everything with
+A86 and Turbo C, linked it all with Borland's TLINK and compressed it with
+PKLITE (it's now smaller than the original!)
+
+Note: the high scores are now saved in an actual file, DIGGER.SCO, and *not* on
+an arbitrary sector of the disk in drive A:, as the original did. If you're
+clever, you can hack into this file and make your scores apparently arbitrarily
+large. Please don't do this, it's very antisocial. Don't do it on Minesweeper
+or Freecell, either.
+
+
+Windows version
+---------------
+
+To run WinDig you need to have Windows 95 or 98. I don't know if it will work
+with Windows NT or not. DirectX is recommended as without it there will be no
+sound. DirectX 6 is especially recommended as without it there will be no
+full-screen mode and a possible performance penalty. DirectX 6 can be
+downloaded from the Microsoft website
+(http://www.microsoft.com/directx/download.asp) if you don't already have it
+but beware: it is a large download (7Mb).
+
+You'll need at least a 486 to play WinDig, but a Pentium is recommended. A
+DirectX compatible sound card is also recommended (or you won't be able to hear
+the sound) as is a display capable of 256 colours or more.
+
+Things that are working (at least in part):
+
+* single player / 2 player game
+* 2 player simultaneous mode
+* gauntlet mode
+* change speed with /S switch and also +/- keys on num pad
+* recording with /R switch and F8
+* playback of recorded files /E /P (use T instead of CTRL-T)
+* limited support for keyboard redefinition (non-alphabet/number keys may not
+  work properly. Cannot use same DIGGER.INI file as the DOS version) VGA
+  graphics in a window or full-screen
+* the /? switch works (although some of the information it displays is not
+  appropriate for the Win95 version)
+* ALT-ENTER to switch between Windowed and Fullscreen mode
+
+  Known problems:
+Graphics:
+
+* no CGA graphics yet
+* the flashing palette is very slow (when you get a high score)
+* changing your screen resolution/color depth while digger is running will
+  cause digger to crash.
+* in windowed mode, the game may draw over top of any windows that are above
+  it, including the taskbar.
+
+  Keyboard:
+
+* keyboard remapping doesn't work yet.
+* future plans: use DirectInput
+
+  Sound:
+
+* The sound might break up/skip a bit more than the DOS/SoundBlaster version.
+
+  Other:
+
+* There are many, many bugs.
+* There is very little error checking done at the moment.
+* There are a few calls to exit() in digger (i.e.. after playback using /E) so
+  some memory, GDI objects, etc. may not be released properly when this
+  happens.
+* switches (DO NOT use these): /c /b /q /m /a /v /i
+* occasionally, Windows performs some disk access during the game (this is kind
+  of annoying)
+* on one computer it was tested on, the playback of a recorded file didn't work
+  properly. The background didn't appear, but the other sprites did.
+* starting a DOS fullscreen session while the game is running may cause the
+  game to crash.
+* no joystick support
+
+  This hasn't been tested on very many computers, so I'm sure there are many,
+many more problems that I don't know about yet. I apologise if the program
+crashes, or locks up your computer or something. But if it does do something
+like this, please let me (Tim Draper) know and I will try to fix it as quickly
+as possible.
+
+Notes:
+If you change the sample rate or buffer size in the dialog box, you must
+restart the program for the changes to take effect. Don't put anything
+unreasonable as the sample rate, since this may cause the program to crash on
+start-up. (You can edit the INI file if this happens.)
+
+The 'Aync' option improves the performance of the game while in Windowed mode
+only. You may notice that when this is 'on', some of the flashing sprites that
+you normally see (when pushing bags, etc.) don't flash. This option has no
+effect when in Full Screen mode.
+
+I added the 'Aync' option so that Digger would run on an old 486 that I have.
+It has no sound card, and only a VGA monochrome monitor (and a VLB video card).
+Although the game will run on a 486, I recommend running it in FullScreen mode
+only. In Windowed mode, there will be major slowdowns whenever the palette
+flashes (before/after bonus) and in the 'enter your initials' screen. Also, the
+game is unplayable (far too slow) if the Async option is off.
+
+
+Known bugs and issues
+---------------------
+
+Most of these have arisen because of the way the original game uses the
+hardware, and I that want to keep it as similar to the original as possible, in
+terms of sound and gameplay). However, with the latest version this list is
+looking a bit depleted...
+
+* Pressing F8 before playing a game means that you can't start a new game. I'll
+  fix this very soon.
+
+* The PC speaker sound doesn't work with Windows 3.1 (it crashes when you
+  complete level 1). To hear it under Windows 95 or 98, create a shortcut to
+  Digger.exe, right-click the shortcut, click "Properties", "Program",
+  "Advanced..." and ensure that "Suggest MS-DOS mode as necessary" is
+  unchecked. Please let me know if this doesn't work for you.
+
+* I have had some reports of problems related to the speed, running too fast,
+  erratically, or with occasional bursts of speed. If you notice this, at least
+  one of the following cures should work:
+  1) If you're using the /A option then try not using it. If you're not using
+  it and you have a SoundBlaster compatible soundcard then try using it.
+  2) If you're not using the /A try the /M (disable music) option, and if that
+  doesn't work try the /Q (disable sound) option.
+  3) Try the /V option. The timing may not be quite so smooth, you may have to
+  use a larger buffer with the /A option and there may be other adverse effects
+  on other areas of the game in the future, so don't use it unless you have to.
+  4) If you're running under Windows, try a true DOS session (not a DOS box).
+  How you do this depends on which version of Windows you are using. If it's
+  3.x, select "Exit Windows" from the program manager's File menu. If it's 95
+  or 98, press "Start", "Shut down" and select "Restart in MS-DOS mode". You
+  can then run Digger from the MS-DOS prompt. In Win95 or 98, you can also set
+  up a shortcut to run Digger in MS-DOS mode ("Use default settings" will
+  usually work).
+
+* There are still one or two minor problems with SoundBlaster sound - crashing
+  if you specify the wrong parameters and some strange artifacts with certain
+  sample rate (22050 for example). Fixes are in progress.
+
+* The screen goes all speckly when you get a high score. The faster your
+  computer the more speckly it gets. Sometime I will write something to try and
+  make it more like the original.
+
+* Digger can be run under OS/2 in a full-screen DOS session, but the music may
+  be a little distorted. To fix it, set:
+
+  HW_TIMER         ON
+  IDLE_SENSITIVITY 100
+  INT_DURING_IO    ON
+  SESSION_PRIORITY 32
+
+  OS/2 displays the Windows icon with no problems. Thanks to Mariusz Borkowski
+  for this information. If anyone knows how to do something similar to Windows
+  NT, let me know.
+
+
+Ideas for future enhancements
+-----------------------------
+
+Please get in touch and tell me which of these you'd particularly like/hate or
+if you have any better ideas.
+
+
+* Analogue joystick support (this was in the original game, but didn't work
+  unless you were running the game on a 4.77MHz 8088).
+
+* Level editor, graphics editor, background music editor etc.
+
+* Changes to two player simultaneous mode. Is it too easy? Should some monsters
+  reappear when only one digger dies? Separate keys for one and two player
+  modes? No friendly fire option? Team total score?
+
+* Network play (Null modem, modem, network, internet).
+
+* Windows version.
+
+* More than two players.
+
+
+Which other classic games would you like to see restored? Styx has already been
+restored, and can be obtained from http://www.digger.org/styx. I have three
+other Windmill software games ("Conquest", "Rollo and the Brush brothers" and
+"Moonbugs") and have heard of another 3 ("The Exterminator", "Floppy Frenzy"
+and "Video Trek 88"). I mentioned here previously that I'd like to restore
+Datasoft's 1983 masterpiece "Bruce Lee", but it had already been done and only
+needed a minor speed patch. Email me for further information. I also might do a
+new version of "Sopwith" by BMB Compuscience.
+
+Any programmers interested in working on Digger - implementing new features,
+making secondary products such as screensavers and editors, or porting to new
+platforms such as Unix, Mac, Atari, Amiga and Java - should download the source
+code from http://www.digger.org.
+
+
+Digger pages on the web and other versions of Digger
+----------------------------------------------------
+
+* http://www.digger.org
+  The latest version of this document is available at my own site, redesigned
+  by Aycan Gulez. Various other bits and pieces, including recorded games are
+  also available here. Check back here often for updates. The 80s Server's
+  "Totally Awesome site of the day" on January 25th, 1999.
+
+* http://www.geocities.com/SiliconValley/Horizon/9754/
+  SteppenWolf has written another Windows/DirectX version of Digger. I haven't
+  tried it yet because it's a 6Mb download but you can tell from the
+  screenshots that it is based on the Windmill software game.
+
+* http://www.geocities.com/TimesSquare/Maze/1723/
+  Andy Skyman created this shrine to Digger. There are some bits of information
+  and programs about getting the original Digger to run on modern machines as
+  well, if you're interested.
+
+* http://www.geocities.com/SunsetStrip/Underground/3842/Digger/
+  Chris's Digger page was somewhat out of date last time I looked at it.
+
+* http://home.worldonline.nl/~terdudio
+  Reinder Kraaij of Holland has started a rewrite of Digger in Java. The
+  graphics are as in the original, but the game itself is being rewritten from
+  scratch. What is there is playable, but it's just not the same as the
+  original -- yet. Work on the project has restarted, so watch this space! (Or
+  that one...)
+
+* http://www.digger.subnet.dk
+  I barely understand this site at all, but it's obvious what it's about!
+
+* http://www.hole.ru/~mikel
+  Mikel Lavrentyev of Russia has written a "patcher" for the original Digger
+  which fixes most of the problems. The loader also has a level editor and many
+  sample levels. This package is highly recommended, although the patcher does
+  have some unwanted side effects - neither the speed nor the background music
+  is quite right. The levels from Digger's Loader are available for use with
+  this version of Digger - see the "Extra levels" section of this file for more
+  details.
+
+* ftp://ftp.torget.se/pub/games/reader_files
+  This game plays nothing like the original Digger, although it does have
+  certain game elements in common. Don't be fooled by the 4Mb installation or
+  deliciously rendered title screen, the game itself is simple, slow and fairly
+  boring. It does, however, attribute itself to the original Digger so I
+  include it here. To download, get both digger_1.zip and digger_2.zip and use
+  PKUNZIP with the -d option.
+
+* http://klyatskin.da.ru
+  Constantine Klyatskin of Russia has created a PC demo of what Digger would be
+  like on a Palmpilot. The demo requires SVGA (Constantine thought that
+  800x600x256 would be the best mode for displaying a 160x160x4 image) and is
+  shareware, costing US$5. Yes, you did read that right. It doesn't use any of
+  the original code. With the proceeds from the demo, Constantine hopes to
+  create a real Palmpilot version which will also be shareware and will cost
+  about US$12 (although there may be a discount for those who register the
+  demo).
+
+* http://www.oldskool.org
+  The Oldskool PC used to host the Digger site and is an invaluable reference
+  for anyone interested in old games or demos and running them on modern PCs.
+
+
+Know of any more? Get in touch!
+
+
+What's new?
+-----------
+
+* 24 May 1999: The source code is now available from the website.
+
+* 6 May 1999: Minor bugfix release. Protected mode version released.
+
+* 16 Apr 1999: Minor bugfixes in WinDig.
+
+* 8 Apr 1999: WinDig now doesn't need DirectX at all. DOS Digger will now
+  record and playback really huge DRF files correctly.
+
+* 3 Apr 1999: Update to Windows version: now runs correctly in 256 colour mode
+  and without DirectDraw 6.
+
+* 2 Apr 1999: More slight bug fixes in DOS version.
+
+* 1 Apr 1999: Slight bug fixes in both DOS and Windows versions.
+
+* 28 Mar 1999: Windows 95 version added, thanks to Tim Draper. SoundBlaster
+  music now works. Various other tweaks and bug fixes.
+
+* 30 Jan 1999: Bug fix: Recording two-player simultaneous games with the music
+  off now works properly. If you have any two-player simultaneous recordings
+  which you want to keep but which now do not playback, send them to me and
+  I'll see if I can fix them.
+
+* 28 Jan 1999: Bug fix: You can't lose all your lives in Gauntlet mode any
+  more.
+
+* 21 Jan 1999: Bug fix: In old-style two-player mode, player one doesn't get
+  all the points for bags killing monsters.
+
+* 18 Jan 1999: Bug fix: Digger doesn't stall if you pause for too long.
+
+* 15 Jan 1999: Unlimited lives (/U) and start at different level (/I) cheat
+  switches added to Digger at the request of players.
+
+* 13 Jan 1999: SoundBlaster cards using IRQ numbers 8 to 15 should now work.
+  Bug with more than 4 spare lives fixed. Vsynch option restored for those with
+  serious timing problems.
+
+* 12 Jan 1999: The SoundBlaster sound should now work on genuine SoundBlaster
+  sound cards. Thanks to Tomer Gabel for finding the cause of this bug.
+  Recommended extension for level data files changed from .DAT to .DLF.
+
+* 9 Jan 1999: Yet another bug fix: You now don't die twice if you die whilst
+  completing a level.
+
+* 8 Jan 1999: More bugs in old two player mode and keyboard redefinition fixed.
+
+* 5 Jan 1999: SoundBlaster sound added, although it may not work properly and
+  there's no background music yet. Bug fixes: Old two player mode now works,
+  and some bugs in the keyboard redefinition routines have been fixed.
+
+* 15 Dec 1998: Bug fix: keyboard redefinition in two player simultaneous mode
+  now works.
+
+* 13 Dec 1998: Two player simultaneous mode (/2 option) added.
+
+* 9 Dec 1998: Digger level editor added. This is a Windows program and should
+  be pretty self explanatory to use, so there isn't any information about how
+  to use it here.
+
+* 7 Dec 1998: Bug fix for Gauntlet mode high score table, added /V and /T
+  command line options to help with timing problems.
+
+* 25 Nov 1998: Gauntlet mode added.
+
+* 20 Nov 1998: Minor bug fixes to do with the high scores, playback and taking
+  over.
+
+* 18 Nov 1998: Minor timing bug fixed. Major timing bug caused by fixing minor
+  timing bug fixed.
+
+* 14 Nov 1998: Hall of fame revamped.
+
+* 13 Nov 1998: Keyboard redefinition (/K option) added.
+
+* 4 Nov 1998: New URL: http://www.digger.org . Minor bug fix for /O option.
+
+* 21 Oct 1998: Minor changes so you can playback a recording as a screensaver.
+
+* 18 Oct 1998: Another minor bug fix: you can't score twice for killing one
+  monster.
+
+* 17 Oct 1998: Update to RiscOS version: minor bug fixes and sound added.
+
+* 16 Oct 1998: RiscOS version added. Minor bug fix to DOS version making the
+  keyboard work more like it did in the original. Speed control and playback
+  cheat added.
+
+* 15 Oct 1998: Major new version! Most of the changes are invisible but will
+  help with future development. However, there are some major new features,
+  including a greatly improved recording/playback feature, which you will need
+  if you want to get on the new Hall of Fame.
+
+* 13 Oct 1998: Digger chat mailing list added. You can subscribe at
+  "http://www.onelist.com/subscribe.cgi/digger".
+
+* 22 Sep 1998: Four new sets of levels added in the extra level pack.
+
+* 8 Sep 1998: Trivia section added in the FAQ.
+
+* 7 Aug 1998: If you liked Digger, try Styx (http://www.digger.org/styx), the
+  latest game from Windmill Software / Andrew Jenner.
+
+* 28 Jul 1998: DRF compressor program (now obsolete) and DRF files added.
+
+* 25 Jul 1998: Digger should now run on slower computers.
+
+
+Feedback
+--------
+
+That's about all I can think of to put in the really long Digger file for now.
+Let me know if there's any other Digger information you urgently need or you
+want to be put on an email list to be told whenever a new version comes out.
+
+If you have access to email that is the best way to contact me - my address is
+andrew@digger.org
+
+If not, you can snail-mail me at:
+
+Andrew Jenner
+Queens' College
+Cambridge
+CB3 9ET
+ENGLAND
+
+You can also visit my personal website at
+http://homepages.enterprise.net/berrypark/andrew if you're interested.
+
+If you liked the Digger website and want Aycan to design your site, you should
+email him at "gulez@rorqual.cc.metu.edu.tr".
+
+Many thanks to Matthias Wermann (matt@digger.org) for the very generous
+donation of the digger.org domain name and web server. Matthias runs an ISP,
+the URL of which is "http://www.emsnet.de".
+
+The Windows 95 version of Digger is by Tim Draper, who can be contacted on
+"tdraper@trytel.com".
+
+Tim Lees wrote the Digger level editor for Windows. His email address is
+"balltung@hotmail.com".
+
+Finally, many thanks to Jim Leonard (trixter@oldskool.org) for all his advice
+and encouragement.
