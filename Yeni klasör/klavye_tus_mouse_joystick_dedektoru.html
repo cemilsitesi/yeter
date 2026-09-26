@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Giriş Aygıtı Dedektörü</title>
+<style>
+:root{color-scheme:dark;--bg:#070a10;--card:#111827;--line:#29364d;--cyan:#66e7ff;--muted:#9ca9bd}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top,#17233a,#070a10 48%);font-family:Segoe UI,Arial;color:#fff}
+.wrap{max-width:1500px;margin:auto;padding:18px} h1{text-align:center;margin:5px}.hint{text-align:center;color:var(--muted);margin:8px 0 15px}
+.hero{min-height:245px;background:#111827e8;border:1px solid var(--line);border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+.big{font-size:clamp(52px,9vw,135px);font-weight:900;line-height:1;text-align:center;color:var(--cyan);text-shadow:0 0 30px #66e7ff44;overflow-wrap:anywhere}.sub{font-size:clamp(18px,2.3vw,30px);margin-top:15px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.panel{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:14px;min-height:160px}.panel h2{margin:0 0 10px;font-size:17px;color:var(--cyan)}
+.data{display:grid;grid-template-columns:1fr 1fr;gap:7px}.v{background:#182234;border-radius:8px;padding:8px;overflow-wrap:anywhere}.v b{display:block;font-size:11px;color:var(--muted);margin-bottom:3px}.mono{font-family:Consolas,monospace}
+.buttons{display:flex;gap:6px;flex-wrap:wrap}.badge{padding:7px 10px;border-radius:8px;background:#263247}.on{background:#08788d;color:#fff;box-shadow:0 0 12px #66e7ff55}
+.axes{margin-top:8px}.axis{display:grid;grid-template-columns:45px 1fr 65px;gap:7px;align-items:center;margin:6px 0}.bar{height:12px;background:#202b3e;border-radius:9px;position:relative;overflow:hidden}.fill{position:absolute;left:50%;height:100%;width:2px;background:var(--cyan)}
+.history{margin-top:12px}.event{font:13px Consolas,monospace;padding:5px 8px;background:#192337;border-radius:7px;margin:4px 0}
+#joyStatus{font-weight:700}.ok{color:#7cff9a}.warn{color:#ffd166}
+@media(max-width:900px){.grid{grid-template-columns:1fr}.hero{min-height:210px}}
+</style></head>
+<body><div class="wrap">
+<h1>Klavye • Mouse • Joystick / Gamepad Dedektörü</h1>
+<div class="hint">Klavye tuşları, fare hareketi/tuşları/tekerleği ve tarayıcının Gamepad API ile gördüğü kontrolcü girişlerini canlı gösterir.</div>
+<div class="hero"><div class="big" id="big">GİRİŞ BEKLENİYOR</div><div class="sub" id="sub">Bir tuşa bas, fareyi hareket ettir veya gamepad kullan</div></div>
+
+<div class="grid">
+<section class="panel"><h2>⌨ Klavye</h2><div class="data">
+<div class="v"><b>KEY</b><span id="key" class="mono">—</span></div><div class="v"><b>CODE</b><span id="code" class="mono">—</span></div>
+<div class="v"><b>KEYCODE</b><span id="keycode" class="mono">—</span></div><div class="v"><b>KONUM</b><span id="keyloc" class="mono">—</span></div></div>
+<div class="buttons" style="margin-top:10px"><span id="ctrl" class="badge">Ctrl</span><span id="shift" class="badge">Shift</span><span id="alt" class="badge">Alt</span><span id="meta" class="badge">Win</span></div></section>
+
+<section class="panel"><h2>🖱 Mouse</h2><div class="data">
+<div class="v"><b>EKRAN X / Y</b><span id="mousexy" class="mono">—</span></div><div class="v"><b>HAREKET X / Y</b><span id="movement" class="mono">—</span></div>
+<div class="v"><b>BASILAN TUŞ</b><span id="mousebtn" class="mono">—</span></div><div class="v"><b>BUTTONS MASK</b><span id="mousemask" class="mono">0</span></div>
+<div class="v"><b>TEKERLEK X</b><span id="wheelx" class="mono">0</span></div><div class="v"><b>TEKERLEK Y</b><span id="wheely" class="mono">0</span></div></div>
+<div class="buttons" style="margin-top:10px"><span id="mb0" class="badge">Sol</span><span id="mb1" class="badge">Orta</span><span id="mb2" class="badge">Sağ</span><span id="mb3" class="badge">Geri</span><span id="mb4" class="badge">İleri</span></div></section>
+
+<section class="panel"><h2>🎮 Joystick / Gamepad</h2><div id="joyStatus" class="warn">Gamepad bekleniyor… Bir tuşa basmanız gerekebilir.</div>
+<div id="joyName" class="mono" style="font-size:12px;margin:8px 0;color:#aebbd0">—</div>
+<div><b style="font-size:11px;color:#9ca9bd">TUŞLAR</b><div id="joyButtons" class="buttons" style="margin-top:6px">—</div></div>
+<div class="axes" id="axes"></div></section>
+</div>
+
+<section class="panel history"><h2>Son olaylar</h2><div id="events"></div></section>
+</div>
+<script>
+const $=id=>document.getElementById(id), events=[];
+function hero(a,b){$('big').textContent=a;$('sub').textContent=b}
+function log(s){events.unshift(new Date().toLocaleTimeString()+'  '+s);events.splice(12);$('events').innerHTML=events.map(x=>'<div class="event">'+esc(x)+'</div>').join('')}
+function esc(s){return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')}
+function badge(id,on){$(id).classList.toggle('on',!!on)}
+const names={' ':'BOŞLUK',Enter:'ENTER',Escape:'ESC',Backspace:'BACKSPACE',Tab:'TAB',Control:'CTRL',Shift:'SHIFT',Alt:'ALT',Meta:'WINDOWS',ArrowUp:'YUKARI ↑',ArrowDown:'AŞAĞI ↓',ArrowLeft:'SOL ←',ArrowRight:'SAĞ →'};
+addEventListener('keydown',e=>{e.preventDefault();let n=names[e.key]||(e.key.length===1?e.key.toUpperCase():e.key);hero(n,e.code);$('key').textContent=JSON.stringify(e.key);$('code').textContent=e.code;$('keycode').textContent=e.keyCode;$('keyloc').textContent=e.location;badge('ctrl',e.ctrlKey);badge('shift',e.shiftKey);badge('alt',e.altKey);badge('meta',e.metaKey);if(!e.repeat)log('KLAVYE: '+n+' ['+e.code+']')});
+addEventListener('keyup',e=>{badge('ctrl',e.ctrlKey);badge('shift',e.shiftKey);badge('alt',e.altKey);badge('meta',e.metaKey)});
+
+const mouseNames=['SOL TUŞ','ORTA TUŞ','SAĞ TUŞ','GERİ TUŞU','İLERİ TUŞU'];
+addEventListener('mousemove',e=>{$('mousexy').textContent=e.clientX+' / '+e.clientY;$('movement').textContent=e.movementX+' / '+e.movementY;$('mousemask').textContent=e.buttons});
+addEventListener('mousedown',e=>{let n=mouseNames[e.button]||('TUŞ '+e.button);hero('MOUSE '+n,'button: '+e.button+' • buttons: '+e.buttons);$('mousebtn').textContent=n;$('mousemask').textContent=e.buttons;for(let i=0;i<5;i++)badge('mb'+i,i===e.button);log('MOUSE: '+n)});
+addEventListener('mouseup',e=>{for(let i=0;i<5;i++)badge('mb'+i,false);$('mousemask').textContent=e.buttons});
+addEventListener('wheel',e=>{hero('MOUSE TEKERLEK',`X ${e.deltaX} • Y ${e.deltaY}`);$('wheelx').textContent=e.deltaX;$('wheely').textContent=e.deltaY;log('TEKERLEK: X='+e.deltaX+' Y='+e.deltaY)}, {passive:true});
+addEventListener('contextmenu',e=>e.preventDefault());
+
+let prevButtons={}, prevAxes={};
+addEventListener('gamepadconnected',e=>{log('GAMEPAD BAĞLANDI: '+e.gamepad.id)});
+addEventListener('gamepaddisconnected',e=>{log('GAMEPAD AYRILDI: '+e.gamepad.id)});
+function loop(){
+ const gps=navigator.getGamepads?navigator.getGamepads():[];
+ const gp=[...gps].find(Boolean);
+ if(gp){
+   $('joyStatus').textContent='Bağlı • index '+gp.index+' • '+gp.mapping;$('joyStatus').className='ok';$('joyName').textContent=gp.id;
+   $('joyButtons').innerHTML=gp.buttons.map((b,i)=>`<span class="badge ${b.pressed?'on':''}">B${i}: ${b.value.toFixed(2)}</span>`).join('');
+   $('axes').innerHTML=gp.axes.map((a,i)=>{let pct=50+a*50;return `<div class="axis"><span>A${i}</span><div class="bar"><div class="fill" style="left:${pct}%"></div></div><span class="mono">${a.toFixed(3)}</span></div>`}).join('');
+   gp.buttons.forEach((b,i)=>{let key=gp.index+'-'+i;if(b.pressed&&!prevButtons[key]){hero('GAMEPAD B'+i,'Değer: '+b.value.toFixed(3));log('GAMEPAD TUŞ: B'+i+' = '+b.value.toFixed(3))}prevButtons[key]=b.pressed});
+   gp.axes.forEach((a,i)=>{let key=gp.index+'-'+i,old=prevAxes[key]??0;if(Math.abs(a)>0.25 && Math.abs(a-old)>0.12){hero('JOYSTICK A'+i,(a<0?'← / ↑ ':'→ / ↓ ')+a.toFixed(3))}prevAxes[key]=a});
+ }else{$('joyStatus').textContent='Gamepad bekleniyor… Bir tuşa basmanız gerekebilir.';$('joyStatus').className='warn';$('joyName').textContent='—';$('joyButtons').textContent='—';$('axes').innerHTML=''}
+ requestAnimationFrame(loop)
+}
+loop();
+</script></body></html>
