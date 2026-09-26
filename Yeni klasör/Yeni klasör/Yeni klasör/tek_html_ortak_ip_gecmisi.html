@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>İnternet Çıkış IP Geçmişi</title>
+<style>
+:root{
+  --bg:#0b1120;--panel:#111827;--panel2:#0f172a;--border:#334155;
+  --text:#e5e7eb;--muted:#94a3b8;--blue:#38bdf8;--green:#4ade80;--red:#f87171;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:linear-gradient(145deg,#0b1120,#111827);
+  color:var(--text);font-family:Segoe UI,Arial,sans-serif;min-height:100vh
+}
+.wrap{max-width:900px;margin:auto;padding:28px 16px 50px}
+h1{margin:0 0 6px;font-size:28px}
+.sub{color:var(--muted);font-size:14px;margin-bottom:18px;line-height:1.45}
+.notice{
+  background:#172033;border:1px solid var(--border);border-radius:12px;
+  padding:11px 13px;color:#cbd5e1;font-size:12px;margin-bottom:16px;line-height:1.5
+}
+.card{
+  background:rgba(17,24,39,.96);border:1px solid var(--border);
+  border-radius:17px;padding:18px;margin-bottom:16px;
+  box-shadow:0 18px 55px rgba(0,0,0,.22)
+}
+.current{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.ipbox{flex:1;min-width:240px}
+.label{font-size:12px;color:var(--muted);margin-bottom:5px}
+#currentIp{font-size:30px;font-weight:800;color:var(--blue);word-break:break-all}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+button{
+  border:0;border-radius:10px;padding:10px 13px;font-weight:700;
+  background:#263449;color:white;cursor:pointer
+}
+button:hover{filter:brightness(1.1)}
+.primary{background:#0284c7}
+#status{margin-top:12px;color:var(--muted);font-size:13px;min-height:18px}
+.ok{color:var(--green)!important} .err{color:var(--red)!important}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+input{
+  width:min(320px,100%);padding:10px 12px;border-radius:9px;border:1px solid var(--border);
+  background:#0b1220;color:#fff;outline:none
+}
+.tablewrap{overflow:auto;border:1px solid var(--border);border-radius:11px}
+table{width:100%;border-collapse:collapse;min-width:670px}
+th,td{padding:11px 12px;text-align:left;border-bottom:1px solid #273449;font-size:14px}
+th{background:#172033;color:#cbd5e1;font-size:12px;position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+.copySmall{padding:6px 9px;font-size:12px;background:#334155}
+.empty{text-align:center;color:var(--muted);padding:25px!important}
+.footer{font-size:11px;color:#64748b;line-height:1.5;margin-top:10px}
+@media(max-width:600px){#currentIp{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>İnternet Çıkış IP Geçmişi</h1>
+  <div class="sub">Genel internet çıkış IP adresini tespit eder ve bu HTML dosyasının tüm ziyaretçileri için ortak geçmişte tutar.</div>
+
+  <div class="notice">
+    Bu sayfa açıldığında genel IP adresiniz ile tarih/saat bilgisi
+    <b>api.keyval.org</b> üzerindeki ortak kayda gönderilir.
+    IP tespiti için <b>api.ipify.org</b> kullanılır.
+    Kayıt sistemi herkese açık, hesapsız bir depolama servisidir.
+  </div>
+
+  <div class="card">
+    <div class="current">
+      <div class="ipbox">
+        <div class="label">Şu anki internet çıkış IP adresi</div>
+        <div id="currentIp">Tespit ediliyor…</div>
+      </div>
+      <div class="actions">
+        <button id="copyCurrent" class="primary" disabled>Kopyala</button>
+        <button id="checkBtn">Yeniden Kontrol Et</button>
+        <button id="csvBtn">CSV İndir</button>
+      </div>
+    </div>
+    <div id="status">Başlatılıyor…</div>
+  </div>
+
+  <div class="card">
+    <div class="toolbar">
+      <strong>Ortak IP Geçmişi</strong>
+      <input id="search" type="search" placeholder="IP veya tarih ara…">
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>IP Adresi</th>
+            <th>Tarih</th>
+            <th>Saat</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr><td colspan="5" class="empty">Yükleniyor…</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      Bu sürümde ayrıca hesap, veritabanı, SQL veya kurulum gerekmez.
+      Ücretsiz ortak servis kullanıldığı için kritik/kalıcı arşiv garantisi yoktur.
+    </div>
+  </div>
+</div>
+
+<script>
+const PREFIX = 'iplog-c56f5154e4a371a1343b761dd8cf346607e3';
+const HEAD_KEY = PREFIX + "-head";
+const KV = "https://api.keyval.org";
+const MAX_SHOW = 100;
+
+let currentIp = "";
+let historyRows = [];
+
+function cleanResponse(text){
+  text = (text || "").trim();
+  if(!text) return "";
+  try{
+    const j = JSON.parse(text);
+    if(typeof j === "string") return j;
+    if(j && typeof j.value === "string") return j.value;
+    if(j && typeof j.data === "string") return j.data;
+  }catch(e){}
+  if(/^(null|undefined|not found)$/i.test(text)) return "";
+  return text;
+}
+
+async function kvGet(key){
+  try{
+    const url = KV + "/get/" + encodeURIComponent(key) + "?_=" + Date.now();
+    const r = await fetch(url, {cache:"no-store"});
+    if(!r.ok) return "";
+    return cleanResponse(await r.text());
+  }catch(e){
+    return "";
+  }
+}
+
+async function kvSet(key, value){
+  const url = KV + "/set/" + encodeURIComponent(key) + "/" +
+              encodeURIComponent(value) + "?_=" + Date.now();
+  const r = await fetch(url, {cache:"no-store"});
+  if(!r.ok) throw new Error("Kayıt servisi HTTP " + r.status);
+  return await r.text();
+}
+
+async function getPublicIp(){
+  const sources = [
+    "https://api64.ipify.org?format=json",
+    "https://api.ipify.org?format=json"
+  ];
+  for(const url of sources){
+    try{
+      const r = await fetch(url, {cache:"no-store"});
+      if(!r.ok) continue;
+      const d = await r.json();
+      if(d && d.ip) return String(d.ip).trim();
+    }catch(e){}
+  }
+  throw new Error("Genel IP tespit edilemedi");
+}
+
+function makeNodeKey(){
+  const t = Date.now().toString(36);
+  const rnd = Math.random().toString(36).slice(2,10);
+  return PREFIX + "-n-" + t + "-" + rnd;
+}
+
+async function addRecord(ip){
+  const oldHead = await kvGet(HEAD_KEY);
+  const nodeKey = makeNodeKey();
+  const iso = new Date().toISOString();
+
+  // IP ~ zaman ~ önceki kayıt anahtarı
+  const value = ip + "~" + iso + "~" +
+    (oldHead.startsWith(PREFIX + "-n-") ? oldHead : "");
+
+  if(value.length > 290) throw new Error("Kayıt boyutu sınırı aşıldı");
+
+  // Önce kayıt, sonra HEAD: yarım kalırsa eski geçmiş korunur.
+  await kvSet(nodeKey, value);
+  await kvSet(HEAD_KEY, nodeKey);
+}
+
+function parseNode(raw){
+  const p = String(raw || "").split("~");
+  if(p.length < 2) return null;
+  return {
+    ip:p[0],
+    time:p[1],
+    prev:p.slice(2).join("~")
+  };
+}
+
+async function loadHistory(){
+  const rows = [];
+  const seen = new Set();
+  let key = await kvGet(HEAD_KEY);
+
+  for(let i=0; i<MAX_SHOW && key; i++){
+    if(!key.startsWith(PREFIX + "-n-") || seen.has(key)) break;
+    seen.add(key);
+
+    const raw = await kvGet(key);
+    const node = parseNode(raw);
+    if(!node || !node.ip || !node.time) break;
+
+    rows.push(node);
+    key = node.prev || "";
+  }
+
+  historyRows = rows;
+  renderHistory();
+}
+
+function fmtDate(iso){
+  const d = new Date(iso);
+  return isNaN(d) ? "" : d.toLocaleDateString("tr-TR");
+}
+function fmtTime(iso){
+  const d = new Date(iso);
+  return isNaN(d) ? "" : d.toLocaleTimeString("tr-TR");
+}
+function esc(s){
+  return String(s).replace(/[&<>"']/g, c=>({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[c]));
+}
+function renderHistory(){
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  const rows = historyRows.filter(x =>
+    x.ip.toLowerCase().includes(q) ||
+    fmtDate(x.time).toLowerCase().includes(q) ||
+    fmtTime(x.time).toLowerCase().includes(q)
+  );
+
+  const tb = document.getElementById("tbody");
+  if(!rows.length){
+    tb.innerHTML = '<tr><td colspan="5" class="empty">Henüz kayıt yok.</td></tr>';
+    return;
+  }
+
+  tb.innerHTML = rows.map((x,i)=>`
+    <tr>
+      <td>${i+1}</td>
+      <td><strong>${esc(x.ip)}</strong></td>
+      <td>${esc(fmtDate(x.time))}</td>
+      <td>${esc(fmtTime(x.time))}</td>
+      <td><button class="copySmall" data-ip="${esc(x.ip)}">Kopyala</button></td>
+    </tr>
+  `).join("");
+}
+
+function setStatus(t, type=""){
+  const s = document.getElementById("status");
+  s.textContent = t;
+  s.className = type;
+}
+
+async function copyText(text){
+  try{
+    await navigator.clipboard.writeText(text);
+  }catch(e){
+    const ta=document.createElement("textarea");
+    ta.value=text;document.body.appendChild(ta);ta.select();
+    document.execCommand("copy");ta.remove();
+  }
+}
+
+async function detectSaveAndRefresh(){
+  const ipEl = document.getElementById("currentIp");
+  const btn = document.getElementById("copyCurrent");
+  ipEl.textContent = "Tespit ediliyor…";
+  btn.disabled = true;
+  setStatus("İnternet çıkış IP adresi sorgulanıyor…");
+
+  try{
+    const ip = await getPublicIp();
+    currentIp = ip;
+    ipEl.textContent = ip;
+    btn.disabled = false;
+
+    setStatus("IP bulundu. Ortak geçmişe kaydediliyor…");
+    await addRecord(ip);
+
+    setStatus("IP adresi ortak geçmişe kaydedildi.","ok");
+    await loadHistory();
+  }catch(e){
+    setStatus("İşlem başarısız: " + e.message, "err");
+    if(!currentIp) ipEl.textContent = "Alınamadı";
+    await loadHistory();
+  }
+}
+
+document.getElementById("copyCurrent").addEventListener("click", async ()=>{
+  if(!currentIp) return;
+  await copyText(currentIp);
+  setStatus("IP adresi panoya kopyalandı.","ok");
+});
+
+document.getElementById("checkBtn").addEventListener("click", detectSaveAndRefresh);
+
+document.getElementById("search").addEventListener("input", renderHistory);
+
+document.getElementById("tbody").addEventListener("click", async e=>{
+  const b=e.target.closest("[data-ip]");
+  if(!b) return;
+  await copyText(b.dataset.ip);
+  setStatus("IP adresi panoya kopyalandı.","ok");
+});
+
+document.getElementById("csvBtn").addEventListener("click", ()=>{
+  if(!historyRows.length){
+    alert("İndirilecek kayıt yok.");
+    return;
+  }
+  const rows=[["IP","Tarih","Saat"]];
+  historyRows.forEach(x=>rows.push([x.ip,fmtDate(x.time),fmtTime(x.time)]));
+  const csv="\uFEFF"+rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(";")).join("\r\n");
+  const blob=new Blob([csv],{type:"text/csv;charset=utf-8"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);
+  a.download="ortak-ip-gecmisi.csv";
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+
+detectSaveAndRefresh();
+</script>
+</body>
+</html>
