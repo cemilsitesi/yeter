@@ -1,0 +1,14 @@
+[K-Chess Game]
+[Moves]
+COMMENT Scotch Gambit.
+  1   e2-e4   e7-e5
+  2  Ng1-f3  Nb8-c6
+  3   d2-d4   e5xd4
+  4  Bf1-c4  Ng8-f6
+  5   e4-e5   d7-d5
+  6  Bc4-b5  Nf6-e4
+  7  Nf3xd4  Bf8-c5
+  8  Bb5xc6+  b7xc6
+  9  Nd4xc6  Bc8-a6
+ 10  Nc6xd8  Bc5xf2*
+[EndGame]
