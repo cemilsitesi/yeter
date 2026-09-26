@@ -1,0 +1,785 @@
+;
+; This is the language file that accompanies TBAV for Windows, TBAV
+; for Window95 and TBAV for Windows NT.
+;
+; If you want to translate this language file into your own language,
+; which is very easy, you should take care of the following:
+;
+; 1. Only translate the parts of the language file that are
+;    preceeded by an '=' sign. So, do not translate the line
+;    "[Questions]", for example!
+;
+; 2. This language file makes use of special control characters, which
+;    you are not allowed to change. The following control characters
+;    are distinguished:
+;
+;       %s - a string will be inserted at this place at runtime
+;       %d - a number will be inserted at this place at runtime
+;       %c - a character will be inserted at this place at runtime
+;       %o - the operating system name will be inserted here at runtime
+;       %p - the program name will be inserted here at runtime
+;       \n - newline character
+;       \r - carriage return
+;       \t - horiontal tabstop
+;       \\ - backslash
+;       \  - leading whitespace
+;
+
+ProgramName = TBAV for %o
+
+
+[Operating System]
+  0 = Windows
+  1 = Windows 95
+  2 = Windows NT
+
+
+[General]
+  0 = Ok
+  1 = Stop
+  2 = Continue
+  3 = ERROR!\n\n
+  4 = WARNING!\n\n
+  5 = \n\nPress OK to continue.
+  6 = The Thunderbyte Anti-Virus utilities provide a collection of
+  7 = sophisticated programs which offer various ways to check for,
+  8 = identify and remove known as well as unknown viruses from hard
+  9 = and floppy disks on PCs or across networks.
+ 10 = The scanning process is completed.\n\nAll scanned items appear to be clean.,
+ 11 = The scan process has been interrupted by the user.\n\nAll scanned items appear to be clean.
+ 12 = The scan process has finished.\n\nSome items are infected by one or more viruses, or some files have been changed.
+ 13 = The scan process has been interrupted by the user.\n\nSome items are infected by one or more viruses, or some files have been changed.
+ 14 = TBAV SECURITY NOTE\n\nThe file that contains the TBAV Security information has a wrong internal format (the file probably originated from an old installation of %p.\n\nAll %p options have been disabled now.
+ 15 = The password for the TBAV Security has not been entered yet.\n\nIf you press OK now, you can specify your TBAV Security password. If you press CANCEL, you will not have access to the TBAV Security options.
+ 16 = Retail
+ 17 = Professional
+ 18 = The disk in drive %c was sucessfully immunized.
+ 19 = %p just cleaned the file\n\n%s\n\nThe \"%s\" virus that infected the file is now removed.
+ 20 = The scanned item did not trigger any of the heuristic alarms, so there are no heuristic flags to be displayed.
+ 21 = The TbSetup process is completed.\n\nNone of the processed files have changed.
+ 22 = The TbSetup process has been interrupted by the user.\n\nNone of the processed files have changed.
+ 23 = The TbSetup process has finished.\n\nSome files have been changed.
+ 24 = The TbSetup process has been interrupted by the user.\n\nSome files have been changed.
+ 25 = &Immunize disk
+ 26 = added
+ 27 = changed
+ 28 = updated
+ 29 = removed
+ 30 = Some files in the TBAV directory have been updated or added by the Automatic Update feature. Since the fingerprint information of those files must be updated also, TbSetup will be executed now.\n\nPress OK to start TbSetup.
+ 31 = Virus Info
+ 32 = Heur. Info
+ 33 = Virus information for this specific virus is not available.
+ 34 = %p authentication failure while executing\n\n%s.
+ 35 = The application\n\n%s\n\nthat you want to execute is (probably) infected by a virus.
+ 36 = Access denied
+ 37 = The TbSetup process could not create or update the checksum information because the disk is write protected or inaccessible.\n\nDo you want to continue the TbSetup process ?
+ 38 = %p just immunized the disk in drive %c:.\n\nThe "%s" virus that infected the disk is now removed.
+
+
+[Errors]
+  0 = An error occurred while initializing %s:\n\n%s
+  1 = The program failed to create its window.
+  2 = The TBAV library %s.
+  3 = reports an undefined error
+  4 = detected an error in the initialization codes
+  5 = ran out of memory
+  6 = could not open the signature or definition file, or detected an error in the signature or definition file (probably a wrong version ID)
+  7 = could not open the TbSetup data file, or detected an error in the TbSetup data file
+  8 = The TBAV Administrator module %s.
+  9 = reports an undefined error
+ 10 = could not register the workstation, since the user cancelled the registration process
+ 11 = could not access the communication directory (perhaps no write access ?)
+ 12 = refused the registration of this workstation
+ 13 = An error occurred while accessing drive %c:.\n\nPerhaps the drive door is not closed (in case of a removable drive), or the network connection went down (in case of a network drive). Please try to correct this error.
+ 14 = An error occured while trying to execute "%s".\n\nThe error code returned by the system is:\n\n%s
+ 15 = An error occured while trying to view \"%s\".\n\nThe file does not exist.
+ 16 = An error occured while trying to open the TbScan log file for writing.\n\nYou are probably out of disk space, or a logfile already exists and has been set read-only.
+ 17 = One of the DLLs needed for the this application cannot be loaded.\n\nThe application will now exit.
+ 18 = Couldn't find any 'What's New' in the home directory of %p. Please check your installation disks for 'What's New' files.
+ 19 = You didn't specify a target for the background scan.\n\nPlease specify a target or disable the background scan option via the '%p options' dialog.
+ 20 = You didn't specify a target to scan when %o boots.\n\n"Please specify a target or disable the scan-upon-boot option via the '%o boot options' dialog.
+ 21 = The password that you entered does not match. You do not have access to this option.
+ 22 = Either the length of the new password is too small (less than 4 characters), the choosen password is not secure enough or the two passwords that you entered do not match with each other. Please try again.
+ 23 = The file that contains the settings for the TBAV Security has been tampered with. Probably someone tried to alter the contents of the TBAV Security settings without permission.\n\nAll %p options are disabled now.
+ 24 = You are using an unregistered version of %p.\n\nThis unregistered version does not support the option that you just choose.
+ 25 = You didn't specify a valid directory for the Automatic Update feature.\n\nPlease specify a directory or disable the Automatic Update feature via the '%p options' dialog.
+ 26 = \n\nExecution of this program will be cancelled.
+ 27 = The item that you want to scan does not reflect to specific disk areas or directories. \n\n%p will now continue in normal mode.
+ 28 = %p is already scanning a target for viruses.\n\nPlease wait until this has finished to scan a new target.
+
+
+[Warnings]
+  0 = You tried to add an opened folder to the currently selected target.\n\nPlease close the folder by double-clicking it, and add the closed folder to the target.
+  1 = The path that you tried to add to the target, is already included of the target.\n\nThe target probably contains a higher-level directory that includes the path that you selected.
+  2 = The changes that you made will only take effect if you restart this program.
+  3 = %p detected the resident virus "%s" in memory!\n\n%p will now exit. After that, reboot your computer with a virus-free startup disk, scan it for viruses and make sure all infected items are cleaned or replaced by a clean backup!
+  4 = The %o VxD that takes care of intercepting all file input and output could not be initialized. The File I/O Monitor is disabled now.
+  5 = If you close %p, the File I/O Monitor, Application Execution Tracker and Background Scanning will be disabled. You might want to minimize %p rather than quit it, because minimizing %p keeps the application active in the background
+  6 = If you close %p, the File I/O Monitor and Background Scanning will be disabled. You might want to minimize %p rather than quit it, because minimizing %p keeps the application active in the background.
+  7 = If you close %p, Background Scanning will be disabled. You might want to minimize %p rather than quit it, because minimizing %p keeps the application active in the background.
+  8 = Now that you have registered %p, you might also want to use the security features of %p. However, these features will only be available the next time %p is started.
+
+
+[Questions]
+  0 = You selected the target file "%s".\n\nDo you really want to remove this target file ?
+  1 = The file "%s" that you choose to save the contents of the target file already exists.\n\nIf you want this file to be overwritten, press Yes to continue. Otherwise, press No.
+  2 = The target that you have been editing has changed.\n\nDo you want to save the contents of the target file ?
+  3 = The registration of this workstation to TBAV Administrator failed for some reason.\n\nDo you want to retry the registration operation ?
+  4 = WARNING!\n\n%p has detected that a %s drive (drive %c:) was added to the system.\n\nDo you want to scan this new drive for viruses ?
+  5 = WARNING!\n\n%p has detected a disk in drive A:. You probably want to remove the disk before rebooting your system unless you want to boot from the floppy disk. In the latter case you'd better scan the floppy disk for viruses that could be activated during the boot process.\n\nDo you want to scan the disk in drive A: for such viruses ?
+  6 = The scan process has just finished, but you have the 'repeat scan' option enabled.\n\nDo you want to scan this target again ?\n\nPress YES to scan the target again, or NO to stop scanning.
+  7 = The disk in drive %c: has not been immunized yet (an immunized disk has a special bootsector that can detect viruses).\n\nWARNING: In case of a Windows 95 bootable disk the startup-code will be removed. You won't be able to boot from that disk anymore.\n\n\rDo you want to immunize the disk in drive %c: ?
+  8 = ERROR!\n\nThe disk in drive %c: that you tried to immunize could not be accessed or is write protected. The immunization process is therefore not completed.\n\nDo you want to retry immunizing the disk ?
+  9 = ERROR!\n\nThe file that you tried to clean (%s) is probably write protected. The file was therefore not cleaned, so the "%s" virus is still present.\n\nDo you want to retry cleaning the file ?
+ 10 = \n\nDo you still want to execute this program ?
+
+
+[Filters]
+  0 = TbSetup data files *.DAT
+  1 = TbScan log files *.LOG
+  2 = Sound files *.WAV
+  3 = TBAV target files *.SCN
+
+
+[Drives]
+  0 = invalid or unknown drive
+  1 = floppy disk drive
+  2 = harddisk drive
+  3 = cd-rom drive
+  4 = ramdrive
+  5 = network drive
+  6 = removable drive
+
+
+[VirusInfo]
+  0 = This is not a virus but a Trojan Horse. It does not spread but simply causes damage. Determine the source of the file and simply delete it.
+  1 = This file is not a virus, but a dropper of a virus. If you run this file it will install a virus on your system. It is highly recommended to delete the file.
+  2 = This file is completely innocent. It merely imitates virus activity but is actually harmless. Just delete it if you do not like it.
+  3 = This is NOT a virus, but is detected as such because it has been identified as a virus by some independent tester and is being used in virus scanner tests. To avoid an undeserved penalty in such tests, TbScan detects this file too!
+  4 = This virus is known to infect
+  5 = COM files,
+  6 = EXE files,
+  7 = device drivers,
+  8 = boot sectors,
+  9 = but unknown variants may infect other items as well.
+ 10 = It remains resident in memory and infects/damages its victims in the background.
+ 11 = Actually, this is not just a virus, but a class of viruses. They are all created with the same tool. It is hardly possible to divide and describe all viruses created with this tool individually. Be aware of unknown side-effects. It is highly recommended to restore all files from a reliable backup.
+ 12 = The virus is polymorphic, which means that it looks different each time it infects a file. Some anti-virus products may have difficulties detecting this virus reliably. Also some false alarms may occur, especially on non-executable files.
+ 13 = The virus is encrypted using a trivial encryption scheme. There is no simple signature that can be used to find it. However, the better anti-virus scanners should not have any problems detecting this virus.
+ 14 = This is a companion virus. It does not alter existing executable files, instead it creates a new file with the same name, but with a filename extension that has a higher execution priority than the existing one. DOS will start this virus file instead of the original program. After execution, the virus executes the original program.
+ 15 = The virus is not written in assembly language, as usual, but in a high-level language. Since all components of the virus are the same as the other programs developed with the same programming language, it is difficult to detect such viruses without false alarms.
+ 16 = Because the source code of this virus is widely spread, there are many variants of this virus. It is hardly possible to divide and describe all variants individually. Be aware of unknown side-effects. It is highly recommended to restore all files from a reliable backup.
+ 17 = This virus has 'stealth' capabilities, which means that it is able to hide its presence from most people, and even virus scanners and checksummers, unless the virus has not yet been loaded in memory. It is highly recommended to boot from a clean diskette before scanning or cleaning!
+ 18 = The speaker of your PC may emit unusual sounds.
+ 19 = Unusual messages or effects may appear on the screen.
+ 20 = Unexpected system hangs may occur.
+ 21 = This virus is very obvious, and it is therefore extremely unlikely that the virus will succeed in spreading unnoticed. If you ever get it on your system, it has probably been put there intentionally! Anyway, you will find out that you have a virus immediately, even without a scanner.
+ 22 = This virus is very buggy and/or requires a special setup. It is hardly possible that the virus will ever succeed to infect another file. Therefore this virus is not a serious threat, but can be classified as a LAB virus.
+ 23 = This virus has been reported to be 'in the wild'.
+ 24 = Before cleaning or restoring, it is HIGHLY RECOMMENDED to boot from a clean, write-protected system diskette first! This is necessary to ensure that no viruses are active in memory, and to reduce the risk that you execute an infected file by accident.
+ 25 = WARNING!\nThis virus is known to corrupt data files. Although the damage may not be visible immediately, the integrity of your data has been affected once this virus got active in your system. There is no other option than restoring all information from a reliable backup.
+ 26 = This virus uses an infection method which makes it impossible to remove it from the file afterwards. Part of the victim file is destroyed by the virus. Therefore you have no other option than to restore everything from a reliable backup.
+ 27 = Removing this virus is easy, just delete it !
+ 28 = The best thing to do is to restore all executable files from a backup, or to re-install them from their original disks. If speed or ease is more important than data integrity, you may attempt to separate the virus from the file with a cleaner, such as TbClean. Results are always depending on the exact virus variant you may have, on the lay-out of the victim file, and your system configuration.
+ 29 = You need to restore the original DOS bootsector and/or system files. Enter 'SYS C:' on the DOS command line. You also need to check and clean all your diskettes! Otherwise the virus will return sooner or later! You can clean the diskettes with the 'TbUtil -immunize' command.
+ 30 = You need to clean the partition code. You can do so with the DOS FDISK program ('FDISK /MBR'), or with TbUtil ('TbUtil C: -immunize'). The latter is recommended.
+ 31 = As new variants of existing viruses appear almost daily, it is possible that you will encounter a variant of this virus which will still be identified by our scanner, but behaves differently than described above. The information above is therefore intended as a basic guideline.
+ 32 = Probably
+ 33 = Might be
+ 34 = trojan named
+ 35 = dropper of
+ 36 = joke named
+ 37 = garbage: (not a virus)
+ 38 = damaged by
+ 39 = found
+ 40 = infected by
+ 41 = has been changed
+ 42 = an unknown
+ 43 = virus
+ 44 = text files,
+ 45 = Microsoft Word documents.
+ 46 = Microsoft Excel sheets.
+ 47 = When detected, this virus may be removed from documents by using the selective user options "Clean" or "Erase All Macros".
+ 48 = When detected, this virus may be removed from spreadsheets by using the selective user options "Clean" or "Erase All Macros".
+ 49 = This virus can not yet be removed from documents.
+ 50 = This virus can not yet be removed from spreadsheets.
+ 51 = CLEANING INFORMATION:
+
+
+[HeurFlags]
+ cl = No checksum / recovery information (Anti-Vir.Dat) available.
+  C = The checksum data does not match! File has been changed!
+  F = Suspicious file access. Might be able to infect a file.
+  R = Relocator. Program code will be relocated in a suspicious way.
+  A = Suspicious Memory Allocation. The program uses a non-standard way to search for, and/or allocate memory.
+  N = Wrong name extension. Extension conflicts with program structure.
+  S = Contains a routine to search for executable (.COM or .EXE) files.
+  # = Found a code decryption routine or debugger trap. This is common for viruses but also for some copy-protected software.
+  V = This suspicious file has been validated to avoid heuristic alarms.
+  E = Flexible Entry-point. The code seems to be designed to be linked on any location within an executable file. Common for viruses.
+  L = The program traps the loading of software. Might be a virus that intercepts program load to infect the software.
+  D = Disk write access. The program writes to disk without using DOS.
+  M = Memory resident code. The program might stay resident in memory.
+  ! = Invalid opcode (non-8088 instructions) or out-of-range branch.
+  T = Incorrect timestamp. Some viruses use this to mark infected files.
+  J = Suspicious jump construct. Entry point via chained or indirect jumps. This is unusual for normal software but common for viruses.
+  ? = Inconsistent exe-header. Might be a virus but can also be a bug.
+  G = Garbage instructions. Contains code that seems to have no purpose other than encryption or avoiding recognition by virus scanners.
+  U = Undocumented interrupt/DOS call. The program might be just tricky but can also be a virus using a non-standard way to detect itself.
+  Z = EXE/COM determination. The program tries to check whether a file is a COM or EXE file. Viruses need to do this to infect a program.
+  O = Found code that can be used to overwrite/move a program in memory.
+  B = Back to entry point. Contains code to re-start the program after modifications at the entry-point are made. Very usual for viruses.
+  K = Unusual stack.  The program has a suspicious stack or an odd stack.
+  1 = Found instructions which require a 80186 processor or above.
+  @ = Encountered instructions which are not likely to be generated by an assembler, but by some code generator like a polymorphic virus.
+  X = Stealth capabilities.
+  Y = Bootsector violates IBM bootsector format.
+  t = Program contains a time or date triggered event.
+  p = Packed program.  A virus could be hidden inside the program.
+  i = Additional data found at end of file. Probably internal overlay.
+  h = The program has the hidden or system attribute set.
+  w = The program contains a MS-Windows or OS/2 exe-header.
+
+
+[TbKeyW]
+  0 = The key file TBAV.KEY has been generated.
+  1 = An error occured while generating the TBAV.KEY file. You probably typed in a wrong user ID.
+  2 = An error occured while generating the TBAV.KEY file. The keycodes that you entered are wrong (checksum mismatch).
+  3 = An error occured while generating the TBAV.KEY file. The file cannot be created; please check your diskdrive for low diskspace.
+  4 = Wrong character '%c' in KeyCode!
+
+
+[Buttons]
+  1 = OK
+  2 = Cancel
+  3 = Abort
+  4 = Retry
+  5 = Ignore
+  6 = Yes
+  7 = No
+  9 = Help
+
+
+[Target Editor]
+  0 = Predefined targets
+  1 = Directory
+  2 = Target contents
+  3 = Edit target
+  4 = Ok
+  5 = New target
+  6 = Add item ->
+  7 = Remove target
+  8 = <- Remove item
+  9 = Clear Target
+ 10 = Save Target
+
+
+[Target Files]
+  0 = Drive_A.SCN
+  1 = Drive_B.SCN
+  2 = Local.SCN
+  3 = Network.SCN
+  4 = CD-Rom.Scn
+  5 = FullScan.Scn
+
+
+[Target Files (LFN)]
+  0 = First floppy disk drive.Scn
+  1 = Second floppy disk drive.Scn
+  2 = All local fixed disks.Scn
+  3 = All network drives.Scn
+  4 = All CD-Rom drives.Scn
+  5 = All drives.Scn
+
+
+[TBAVMenu]
+  1 = &File
+  2 = E&xit
+  3 = Tb&Scan
+  4 = &Options...
+  5 = &Advanced options...
+  6 = &If virus found...
+  7 = &Log file options...
+  8 = &View log file
+  9 = &TbSetup
+ 10 = &Options...
+ 11 = &Flags...
+ 12 = &Data file pathname...
+ 13 = &View data file...
+ 14 = &Documentation
+ 15 = &License agreement
+ 16 = List of &Agents
+ 17 = Application &Notes
+ 18 = &Report Form
+ 19 = &Express Upgrade Order Form
+ 20 = &What's New ? ...
+ 21 = &Virus information...
+ 22 = &Options
+ 23 = &TBAV for %o configuration
+ 24 = &Background Scan configuration
+ 25 = &File I/O monitor configuration
+ 26 = %o boot &options
+ 27 = &Automatic update configuration
+ 28 = TBAV &Security options
+ 29 = TBAV Administrator &Client options
+ 30 = &Register %p
+ 31 = &Help
+ 32 = Help &Index
+ 33 = How to contact &ThunderBYTE
+ 34 = &About %p...
+ 35 = Application &Execution Tracker configuration
+ 36 = ThunderBYTE Live &Internet update
+
+
+[TbMon]
+  0 = Background scan options...
+  1 = Always on top
+  2 = Background Scan
+  3 = is due within %d:%02d minute(s).
+  4 = is disabled.
+  5 = is now scanning:
+  6 = target:
+  7 = Last scan performed at:
+  8 = File I/O Monitor
+  9 = Application Execution Tracker
+ 10 = Servicing network request...
+ 11 = Currently, the Background Scan Module is processing some request. You can interrupt this process, but that will decrease your system security.\n\nDo you really want to interrupt the Background Scan Module ?
+ 12 = The disk in drive A: contains %d infected items.\n\nWe request you to remove the disk from the diskdrive before you continue.
+ 13 = %p is now scanning:
+
+
+[Dlg_About]
+  0 = About %p
+  1 = ThunderBYTE® Anti-Virus for %o
+  2 = Version %s (%s version)
+  3 = Operating System:\t%s
+  4 = \t\t\tVersion %d.%02d (Build: %d)
+  5 = This product is licensed to:\n%s
+  6 = %p revision:\t\t%s, %s
+  7 = TBAV Scan Engine revision:\t\t%s
+  8 = %p is written by:\n%s
+  9 = ThunderBYTE Anti-Virus for %o is distributed by:
+ 10 = ESaSS B.V.
+ 11 = P.O. Box 1380
+ 12 = NL-6501BJ Nijmegen
+ 13 = The Netherlands
+ 14 = Sales: sales@thunderbyte.nl
+ 15 = Credits
+ 16 = Phone:\t+31 (0)24 64 88 555
+ 17 = Fax:\t+31 (0)24 64 50 899
+ 18 = BBS:\t+31 (0)24 64 50 951
+ 19 = WWW:\thttp://www.thunderbyte.nl/
+ 20 = Support: support@thunderbyte.nl
+
+
+[Dlg_ScanOpt]
+  0 = %p Scan Options
+  1 = Scan options
+  2 = &Prompt for pause
+  3 = &Quick scan
+  4 = &Non-executable scan
+  5 = &Bootsector scan
+  6 = Fi&le scan
+  7 = &Subdirectory scan
+  8 = &Fast scrolling
+  9 = &Repeat scan
+ 10 = Scan inside &archive files
+ 11 = Don't scan &encrypted files in archives
+
+
+[Dlg_ScanAdvOpt]
+  0 = %p Advanced Scan Options
+  1 = Heuristic scanning
+  2 = Miscellaneous options
+  3 = Configure executable extensions:
+  4 = &High heuristic sensitivity
+  5 = &Auto heuristic sensitivity
+  6 = &Low heuristic sensitivity
+  7 = &Scan all (non-executable) files as executables
+
+
+[Dlg_ScanLogOpt]
+  0 = %p - Log file options
+  1 = Log file contents
+  2 = Log file options
+  3 = &Log only infected files
+  4 = Log &summary too
+  5 = Log sus&pected too
+  6 = Log all &warnings too
+  7 = Log clean &files too
+  8 = O&utput to log file
+  9 = &Append to existing log file
+ 10 = &No heuristic descriptions
+ 11 = Log&File
+
+
+[Dlg_ScanVirFound]
+  0 = %p - What if a virus is found ?
+  1 = If a virus is found,
+  2 = &Present action menu
+  3 = &Just continue (log only)
+  4 = &Delete infected file
+  5 = &Kill infected file
+  6 = &Rename infected file
+  7 = &Try to automatically clean first, otherwise...
+  8 = If a Word Document or Excel Sheet is found
+  9 = Remove all &macro's if possible
+
+
+[Dlg_SetupOpt]
+  0 = %p TbSetup Options
+  1 = TbSetup Options
+  2 = &Prompt for pause
+  3 = Only &New files
+  4 = &Remove Anti-Vir.Dat files
+  5 = &Test mode (don't change anything)
+  6 = Hide &Anti-Vir.Dat files
+  7 = &Make executables read-only
+  8 = C&lear read-only attributes
+  9 = &Include subdirectories
+
+
+[Dlg_SetupAdvOpt]
+  0 = %p TbSetup Flags
+  1 = Setup Flag usage
+  2 = Select flags to be changed
+  3 = &Use normal flags
+  4 = &Set flags manually
+  5 = &Reset flags manually
+  6 = H&euristic analysis
+  7 = Chec&ksum images
+  8 = Disk image &File
+  9 = Read-&Only sensitive
+ 10 = &TSR program
+ 11 = &Direct disk access
+ 12 = &Attributes modifier
+ 13 = &Interrupt rehook
+
+
+[Dlg_VirusList]
+  0 = %p Virus Information
+  1 = Virus list
+  2 = &View info
+
+
+[Dlg_SaveTarget]
+  0 = Save target file as
+  1 = File &name:
+
+
+[Dlg_TBAVWOptions]
+  0 = Configure %p
+  1 = Program execution options
+  2 = File view utility
+  3 = Virus alert
+  4 = Warning messages
+  5 = &Show status window when minimized
+  6 = &Use NOTEPAD as the default viewer
+  7 = Audible alerts
+  8 = &Play 'beep' sound
+  9 = P&lay .WAV file
+ 10 = &Browse
+ 11 = &Always
+ 12 = &Background scan
+ 13 = &Only once
+ 14 = &Never
+ 15 = &Flash virus alert window
+ 16 = Do not show the &Quit warning dialog - quit immediately
+ 17 = Do not show the '&Immunize disk' message - don't immunize
+ 18 = Do not show the '&Mapped drive' message - don't scan
+ 19 = Do not show the 'File I/O Monitor VxD not present' message
+
+[Dlg_BgScan]
+  0 = %p Background scanning
+  1 = Background Scan Module settings
+  4 = &Enable Background Scan Module
+  2 = Specify period of time (in minutes) after which background scanning should start
+  3 = Target for background scanning:
+  5 = &Targets
+  6 = Use &high priority level
+  7 = Use &low priority level
+  8 = &Check for floppy disk upon reboot
+
+
+[Dlg_TbScan]
+  0 = TbScan
+  1 = Signatures:\nDirectories:\nTotal files:\nScanned files:\nCRC verified:\nInfected items:\nChanged items:\nElapsed time:\nKB/Second:
+  2 = The Thunderbyte Anti-Virus utilities provide a collection of
+  3 = sophisticated programs which offer various ways to check for,
+  4 = identify and remove known as well as unknown viruses from hard
+  5 = and floppy disks on PCs or across networks.
+
+
+[Dlg_VirusInfo]
+  0 = %p Virus Information
+  1 = Information about the %s
+  2 = View detailed virus information (in English!)
+
+
+[Dlg_VirusFound]
+  0 = Virus detected!
+  1 = Virus information
+  2 = Action to take
+  3 = Clean &file
+  4 = &Delete file
+  5 = &Kill file
+  6 = &Rename file
+  7 = &Validate file
+  8 = &Continue
+  9 = &Non-stop continue
+ 10 = &Quit
+ 11 = Virus Info
+ 12 = &Erase all macro's
+ 13 = Erase all &macro's (nonstop)
+
+
+[Dlg_Splash]
+  0 = %p
+  1 = Please wait while %p is initializing...
+
+
+[Dlg_Quit]
+  0 = Quit %p
+  1 = &Do not show this message next time - quit immediately
+  3 = Minimize
+  4 = Quit
+
+
+[Dlg_Disclaimer]
+  0 = %p disclaimer
+  1 = &Do not show this message again
+
+
+[Dlg_Whatsnew]
+  0 = What's new in %p
+  1 = List of what's new files
+  2 = View
+
+
+[Dlg_FileIOMonitor]
+  0 = %p File I/O Monitor
+  1 = File I/O Monitor options
+  2 = The File I/O Monitor automatically scans files that are copied, downloaded, unzipped etc. The File I/O Monitor can be enabled or disabled.
+  3 = &Enable File I/O Monitor
+  4 = &Secure mode (don't allow user-interaction)
+  5 = The File I/O monitor can also be used to deny access to non-authorized files (files that were not processed by TbSetup).
+  6 = &Allow access to non-authorized files
+  7 = &Deny access to non-authorized files
+  8 = Allow access to &non-authorized files on the following drives:
+  9 = &Try to transparently clean infected files
+ 10 = Exclusions
+ 11 = Automatically &create checksum/authorisation files
+ 12 = Use &blue screen for user interaction
+
+
+[Dlg_Boot]
+  0 = %p boot options
+  1 = Boot options
+  2 = &Automatically load %p when %o boots
+  3 = &Scan target when %o boots
+  4 = Target to scan when %o boots
+  5 = &Targets
+
+
+[Dlg_TBAVNWNames]
+  0 = Register to TBAV Administrator
+  1 = Currently, %p is registering this workstation for use with TBAV Administrator. To complete this task, you must fill in your name and a description
+  2 = User name:
+  3 = User description:
+
+
+[Dlg_TbSetup]
+  0 = TbSetup
+  1 = TbSetup entries:\n\nAnti-Vir files:\nDirectories:\nTotal files:\nExecutables:\nNew files:\nChanged files:\nSpecial files:
+  2 = The TbSetup program stores checksum, validation, and cleaning information of programs in hidden Anti-Vir.Dat files. Several Thunderbyte Anti-Virus (TBAV) utilities use this information to enhance detection and removing of viruses.
+  3 = Programs that require special attention of TBAV utilities are listed in the TbSetup.Dat file. Send files that require special TBAV attention to us for inclusion into this file!  You can also add them to this file yourself!
+  4 = Name
+  5 = Length
+  6 = CRC32
+  7 = Action
+  8 = Flags
+  9 = Statistics
+
+
+[Dlg_EnterPassword]
+  0 = Enter TBAV Security password
+  1 = You are about to start an action or process that needs authentification. Please enter the TBAV Security password to continue.
+  2 = TBAV Security password:
+
+
+[Dlg_ChangePassword]
+  0 = Change TBAV Security password
+  1 = Change TBAV Security password
+  2 = New TBAV Security password:
+  3 = Verify the new TBAV Security password:
+
+
+[Dlg_Security]
+  0 = Change TBAV Security settings
+  1 = The user is allowed to:
+  2 = Change the &TbScan configuration
+  3 = Change the Tb&Setup configuration
+  4 = Change the %p c&onfiguration
+  5 = Change the &Background Scan configuration
+  6 = Change the File I/O &Monitor configuration
+  7 = Change the Application Execution T&racker configuration
+  8 = Change the Automatic &Update configuration
+  9 = Change the 'Scan u&pon Boot' configuration
+ 10 = Change the TBAV &Administrator configuration
+ 11 = E&dit target files
+ 12 = Save or remove target &files
+ 13 = &Scan &network drives for viruses
+ 14 = Cancel TbScan or TbSetup while &running
+ 15 = &Continue if an infected or change file was found
+ 16 = &Execute the TbSetup program
+ 17 = E&xit from %p
+ 18 = Change the Live &Internet update configuration
+ 19 = Select all
+ 20 = Unselect all
+
+
+[Dlg_ScanUponReboot]
+  0 = %p Scan Upon Reboot
+  1 = %p is configured in such a way, that it checks for a floppy disk being present in drive A:. If a floppy disk is present, the disk is scanned for viruses.
+
+
+[Dlg_AutoUpdate]
+  0 = Automatic update options
+  1 = The automatic update feature is extremely useful in companies. It helps you to install the most recent version of %p at your workstations
+  2 = &Enable automatic update feature
+  3 = Main update directory (always available):
+  4 = Create log file while updating
+  5 = Alternate update directory (might not always be available):
+  6 = Update &newer files only
+  7 = Update &all files
+
+
+[Dlg_AppExecTrack]
+  0 = Application Execution Tracker configuration
+  1 = General options
+  2 = If a (possible) virus is found,
+  3 = Check for missing Anti-Vir.Dat files
+  4 = &Enable Application Execution Tracker module
+  5 = &Secure mode (don't execute unauthorized files)
+  6 = &Never check for missing files
+  7 = &Always check for missing files
+  8 = Don't &check the following drives:
+  9 = Don't check network &drives
+ 10 = &Present action menu
+ 11 = &Just continue (log only)
+ 12 = &Delete infected file
+ 13 = &Kill infected file
+ 14 = &Rename infected file
+
+
+[Dlg_TbKeyW]
+  0 = TbKey
+  1 = Registration properties
+  2 = Registration name:
+  3 = License description:
+  4 = &Single user registration
+  5 = &Corporate license for
+  6 = Special &registration
+  7 = PCs
+  8 = Key codes
+  9 = Please enter the key codes:
+ 10 = Key code 1:
+ 11 = Key code 2:
+ 12 = Key code 3:
+ 13 = Key code 4:
+ 14 = Key code 5:
+ 15 = Register now!
+ 16 = Cancel
+
+
+[TBAVW95_VxD]
+  0 = %p
+  1 = %s could not open the signature or definition file, or detected an error in the signature or definition file (probably a wrong version ID).
+  2 = The file %s %s infected by %s virus.
+  3 = The disk in drive %s %s infected by %s virus.
+  4 = is probably
+  5 = might be
+  6 = is
+  7 = an unknown
+  8 = Do you want to continue this operation ?
+  9 = %s detected an error reading the configuration data.
+ 10 = Authentication failure while accessing %s.
+ 11 = The file %s has been created or updated. Do you want the TBAV checksum information of this file to be updated also ?
+ 12 = The file %s has been changed.
+ 13 = Memory allocation failure. System is instable now.
+ 14 = Failed to install the exception handlers. The VxD will not be loaded.
+ 15 = A fatal exception (%s) occured while %s the file %s. Please write down the name of this file, and report this error to your ThunderBYTE distributor. The system is unstable at this time.
+ 16 = A fatal exception (%s) occured in the File I/O Monitor. The cause of this exception is unknown. The system is unstable at this time.
+ 17 = retrieving file information about
+ 18 = scanning
+ 19 = determining the checksum information of
+ 20 = cleaning
+ 21 = page has invalid not-present type
+ 22 = page directory table not present
+ 23 = page swap device could not page for some reason
+ 24 = caused by virtual machine running in protected mode
+ 25 = re-entrant page fault
+ 26 = caused by virtual machine running in V86 mode
+ 27 = unexpected not-present page in V86
+ 28 = unexpected not-present page in V86 at high linear address
+ 29 = caused by a virtual device
+ 30 = type unknown
+
+
+[TBLiveUpdate]
+  0 = Failed to connect to the internet. You probably do not have an internet connection available.
+  1 = Connecting to the internet. Please wait.
+  2 = Failed to connect to %s. The server probably went down or is too busy. Please try again later.
+  3 = Opened a connection to %s.
+  4 = Retrieving file information about %s.
+  5 = Downloading the file %s.
+  6 = Finished downloading the virus definition file(s).
+  7 = Failed to download the file %s. The server probably went down or is too busy. Please try again later.
+  8 = Detected that you already have the most recent virus definition file.
+  9 = Trying to establish an internet connection....
+ 10 = The virus definition file(s) appear to be corrupt. Please try again.
+
+
+[Dlg_LiveUpdate]
+  0 = ThunderBYTE Live Internet Update
+  1 = Press OK to continue.
+
+
+[Dlg_TBLUConfig]
+  0 = ThunderBYTE Live Internet Update configuration
+  1 = Live Internet update configuration
+  2 = This feature allows you to update the TBAV virus definition files on a regular basis, to protect your computer from the latest viruses!",
+  3 = FTP address:
+  4 = &Update now
+  5 = Update on a &weekly basis
+  6 = Update on a &daily basis
+  7 = Do not update the virus definition files
+
+
+[Dlg_Repeat]
+  0 = Repeat TbScan ?
+  1 = &Do not show this message again
+
+
+[Dlg_TBArch_AskPassword]
+  0 = Enter archive password
+  1 = An encrypted file (%s) was encountered while scanning the archive %s. Please enter the password to decrypt this file, so that it can be scanned.
+  2 = Archive password:
+  3 = Skip file
+  4 = Skip archive
+  5 = &Skip encrypted files in archives during this scan session
+
+
+[Dlg_VxDExclusions]
+  0 = Exclusions
+  1 = Exclusion list
+  2 = The following paths are excluded by the file I/O monitor while scanning. You can add paths or files to this list, or remove items from the list.
+  3 = Add
+  4 = Exclusion list:
+  5 = Delete
+
+
+[Dlg_TB95VxDNotify]
+  0 = ThunderBYTE File I/O Monitor notification
+  1 = Press OK to continue...
+
