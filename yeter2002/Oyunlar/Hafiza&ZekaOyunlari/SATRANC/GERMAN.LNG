@@ -1,0 +1,1081 @@
+[Introduction]
+
+Status= Part of this translation has been done automatically by computer program. If you would like to help do a proper translation of KChess Elite into German or any other language, please contact Rob McDonell at arkangles@arkangles.com.
+
+[Objects]
+
+AboutDlg= Über KChess Elite
+
+AboutDlg.RegoLabel= Durch Ihre Registrierung erhalten Sie Zugriff auf alle Funktionen der neusten Programmversion (ohne Shareware-Hinweise und Programmbegrenzungen) sowie künftige Versionen des Programms verbilligt bzw. gratis.
+
+AboutDlg.ClickLabel= "Hilfe" anklicken für weitere Angaben zum Programm bzw. zur Registrierung. "Registrieren" anklicken, um das Programm zu bestellen. Schon registriert? "Entsperren" anklicken, um Ihre Registrierungsdaten einzugeben.
+
+AboutDlg.OkBtn= &OK
+
+AboutDlg.RegoBtn= &Registrieren
+
+AboutDlg.UnlockBtn= &Entsperren
+
+AboutDlg.HelpBtn= &Hilfe
+
+BoardSetDlg= Ausgangs-Bretteinstellungen
+
+BoardSetDlg.Heading= Ausgangszustand des Brettes eingeben:
+
+BoardSetDlg.EnPassantLabel= Zielfeld für En-Passant-Schlag:
+
+BoardSetDlg.FirstMoveLabel= Nummer des ersten Zuges:
+
+BoardSetDlg.FiftyMoveLabel= Anzahl der Züge seit dem letzten Schlag bzw. Bauernzug:
+
+BoardSetDlg.CastleGroup= Rochade zulässig
+
+BoardSetDlg.BlackQueenBox= Schwarz, Damenseite
+
+BoardSetDlg.BlackKingBox= Königsseite
+
+BoardSetDlg.WhiteQueenBox= Weiß, Damenseite
+
+BoardSetDlg.WhiteKingBox= Königsseite
+
+BoardSetDlg.FirstGroup= Erster Spieler
+
+BoardSetDlg.StatusGroup= Spielzustand | Normal | Remis | Aufgegeben
+
+BoardSetDlg.OkBtn= &OK
+
+BoardSetDlg.CancelBtn= &Abbrechen
+
+BoardSetDlg.HelpBtn= &Hilfe
+
+ChessForm.FreezePanel= Spiel Eingefroren
+
+ChessForm.FileMenu1= &Datei
+
+ChessForm.FileNew1= &Neu | Ctrl+N
+
+ChessForm.FileOpen1= &Öffnen... | Ctrl+O
+
+ChessForm.FileReopen1= &Wieder öffnen | Ctrl+R
+
+ChessForm.FileSave1= &Speichern | Ctrl+S
+
+ChessForm.FileSaveAs1= Speichern &als... | Ctrl+A
+
+ChessForm.PrintMoves1= &Züge ausdrucken... | Ctrl+P
+
+ChessForm.BoardPrint1= B&rett ausdrucken... | Ctrl+B
+
+ChessForm.PrintSetup1= A&ufstellung ausdrucken...
+
+ChessForm.FileExit1= &Beenden
+
+ChessForm.PlayMenu1= &Spielen
+
+ChessForm.BoardSetup1= Bre&ttaufbau
+
+ChessForm.Clear1= &Brett räumen
+
+ChessForm.EnterPosition1= &Stellung eingeben...
+
+ChessForm.SetBoardState1= B&retteinstellungen...
+
+ChessForm.Opening1= &Eröffnung... | Ctrl+G
+
+ChessForm.AutoPlay1= SelbstSpiel | Alt+A
+
+ChessForm.PlayWhite1= &Weiß spielen | Alt+W
+
+ChessForm.PlayBlack1= &Schwarz spielen | Alt+B
+
+ChessForm.TwoPlayer1= &Zwei Spieler | Alt+T
+
+ChessForm.Analyse1= Analysieren
+
+ChessForm.Rotate1= Brett &umdrehen | Alt+Q
+
+ChessForm.Speak1= Sprechen
+
+ChessForm.SpeakMove1= &Zug | Alt+0
+
+ChessForm.SpeakRank11= Reihe &1 | Alt+1
+
+ChessForm.SpeakRank21= Reihe &2 | Alt+2
+
+ChessForm.SpeakRank31= Reihe &3 | Alt+3
+
+ChessForm.SpeakRank41= Reihe &4 | Alt+4
+
+ChessForm.SpeakRank51= Reihe &5 | Alt+5
+
+ChessForm.SpeakRank61= Reihe &6 | Alt+6
+
+ChessForm.SpeakRank71= Reihe &7 | Alt+7
+
+ChessForm.SpeakRank81= Reihe &8 | Alt+8
+
+ChessForm.SpeakFilea1= Linie &a | Ctrl+1
+
+ChessForm.SpeakFileb1= Linie &b | Ctrl+2
+
+ChessForm.SpeakFilec1= Linie &c | Ctrl+3
+
+ChessForm.SpeakFiled1= Linie &d | Ctrl+4
+
+ChessForm.SpeakFilee1= Linie &e | Ctrl+5
+
+ChessForm.SpeakFilef1= Linie &f | Ctrl+6
+
+ChessForm.SpeakFileg1= Linie &g | Ctrl+7
+
+ChessForm.SpeakFileh1= Linie &h | Ctrl+8
+
+ChessForm.SpeakStatus1= &Zustand | Alt+9
+
+ChessForm.CopyGame1= Partie &kopieren | Ctrl+C
+
+ChessForm.PasteGame1= Partie ein&fügen | Ctrl+V
+
+ChessForm.Variation1= &Variante | Alt+V
+
+ChessForm.Freeze1= Partie &einfrieren | Alt+Z
+
+ChessForm.GameInfo1= Partie-&Infos... | Alt+G
+
+ChessForm.Options1= &Optionen... | Alt+O
+
+ChessForm.MoveMenu1= &Ziehen
+
+ChessForm.Undo1= Undo | Alt+U
+
+ChessForm.Redo1= Machen Nochmals | Alt+R
+
+ChessForm.UndoAll1= Undo Alle | Alt+D
+
+ChessForm.RedoAll1= Machen Alle Nochmals | Alt+L
+
+ChessForm.Hint1= Zug&vorschlag | Alt+I
+
+ChessForm.EnterMove1= Zug &eingeben... | Enter
+
+ChessForm.ComputerMove1= &Computer zieht | Alt+C
+
+ChessForm.Stop1= Denkender Anschlag | Alt+S
+
+ChessForm.Replay1= Replay | Alt+Y
+
+ChessForm.Resign1= &Aufgeben | Alt+N
+
+ChessForm.OfferDraw1= &Remis anbieten
+
+ChessForm.Comment1= A&nmerkungen | Alt+E
+
+ChessForm.HelpMenu1= &Hilfe
+
+ChessForm.HelpHelp1= &Hilfe
+
+ChessForm.HelpUsing1= &Infos zur Hilfe
+
+ChessForm.HelpIndex1= &Register
+
+ChessForm.SearchHelpfor1= &Hilfsdatei durchsuchen nach...
+
+ChessForm.BeginnersInfo1= &Infos für Anfänger
+
+ChessForm.Rules1= R&egeln des Schachspiels
+
+ChessForm.TipoftheDay1= &Tip des Tages...
+
+ChessForm.KChessWebSite1= KChess-Website
+
+ChessForm.HelpAbout1= &Über KChess...
+
+ChessForm.NewButton= Neue Partie
+
+ChessForm.OpenButton= Partie laden
+
+ChessForm.SaveButton= Partie abspeichern
+
+ChessForm.PrintButton= Partie ausdrucken
+
+ChessForm.SetupButton= Brett aufstellen
+
+ChessForm.AutoplayButton= Computer spielt gegen sich selbst
+
+ChessForm.PlayWhiteButton= Weiß spielen
+
+ChessForm.PlayBlackButton= Schwarz spielen
+
+ChessForm.TwoPlayerButton= Zwei Spieler
+
+ChessForm.AnalyseButton= Stellung analysieren
+
+ChessForm.RotateButton= Brett umdrehen
+
+ChessForm.CopyButton= Partie kopieren
+
+ChessForm.PasteButton= Partie einfügen
+
+ChessForm.VariationButton= Variation
+
+ChessForm.FreezeButton= Partie einfrieren
+
+ChessForm.OptionsButton= Optionen
+
+ChessForm.UndoAllButton= Alle Züge zurücknehmen
+
+ChessForm.UndoButton= Zug zurücknehmen
+
+ChessForm.RedoButton= Zug wieder ausführen
+
+ChessForm.RedoAllButton= Alle Züge wieder ausführen
+
+ChessForm.HintButton= Zugvorschlag
+
+ChessForm.ComputerButton= Computer zieht
+
+ChessForm.StopButton= Bisher besten Zug ausführen
+
+ChessForm.ReplayButton= Zug wiederholen
+
+ChessForm.HelpButton= Hilfe
+
+EnterMoveDlg.OkBtn= &OK
+
+EnterMoveDlg.CancelBtn= &Abbrechen
+
+EnterMoveDlg.HelpBtn= &Hilfe
+
+InfoDlg= Infos über Partie bzw. Spieler
+
+InfoDlg.Heading= Entsprechende Informationen über diese Partie bzw. Spieler hier eingeben:
+
+InfoDlg.EventLabel= Name der Veranstaltung:
+
+InfoDlg.SiteLabel= Ort:
+
+InfoDlg.DateLabel= Datum der Partie (yyyy.mm.dd):
+
+InfoDlg.TimeLabel= Zeit (hh:mm:ss):
+
+InfoDlg.RoundLabel= Runde:
+
+InfoDlg.WhiteLabel= Spieler, Weiß:
+
+InfoDlg.BlackLabel= Spieler, Schwarz:
+
+InfoDlg.EventDateLabel= Datum der Veranstaltung (yyyy.mm.dd):
+
+InfoDlg.OpeningLabel= Eröffnung:
+
+InfoDlg.TitleLabel= Titel:
+
+InfoDlg.PlayerLabel= Name:
+
+InfoDlg.CtryLabel= Land:
+
+InfoDlg.AnnotatorLabel= Kommentator:
+
+InfoDlg.OkBtn= &OK
+
+InfoDlg.CancelBtn= &Abbrechen
+
+InfoDlg.HelpBtn= &Hilfe
+
+OpeningsDlg= Enzykopädie der Schacheröffnungen
+
+OpeningsDlg.Heading= Die Eröffnung auswählen, die Sie spielen möchten:
+
+OpeningsDlg.ColumnHeader= Code | Name | Züge
+
+OpeningsDlg.OkBtn= &OK
+
+OpeningsDlg.CancelBtn= &Abbrechen
+
+OpeningsDlg.SortBtn= &Sortieren
+
+OpeningsDlg.HelpBtn= &Hilfe
+
+OptionsDlg= Optionen
+
+OptionsDlg.OptionsTab= Stärke | Anzeige | Figuren | Brett | Text | Ton | Druck
+
+OptionsDlg.LimitTypeGroup= Art der Zeitbegrenzung | &Keine Zeitbegrenzung | &Spielzeitbegrenzung | &Zeitbegrenzung pro Zug | Züge pro S&tunde | &Gleiche Zeit | Sand&uhr
+
+OptionsDlg.LengthGroup= GrenzzeitWert
+
+OptionsDlg.UserLimitGroup= Benutzerbegrenzung Bereich | Gewendet nicht an Benutzer | Computer zieht für Benutzer | Benutzer verliert
+
+OptionsDlg.MiscGroup= &Spieloptionen
+
+OptionsDlg.ThinkAheadBox= &Permanent Brain
+
+OptionsDlg.FreezeCoversBox= Brett abgedeckt wenn eingefroren
+
+OptionsDlg.OpeningLibBox= Eröffnungsbuch verwenden
+
+OptionsDlg.ResignBox= Computer darf aufgeben
+
+OptionsDlg.DrawBox= Remis zulässig (Material)
+
+OptionsDlg.PromoteBox= Bauernumwandlung=Dame
+
+OptionsDlg.PressBox= Selbsttaktgeberpresse auf Bewegung
+
+OptionsDlg.FreezeMinimizeBox= Automobil-frieren ein, wenn sie herabgesetzt werden
+
+OptionsDlg.ValidateBoardBox= Stellung validieren beim Brettaufbau
+
+OptionsDlg.SearchGroup= Such&tiefe
+
+OptionsDlg.WeakestLabel= Am schwächsten
+
+OptionsDlg.StrongestLabel= Am Stärksten
+
+OptionsDlg.NoviceBtn= Anfänger | Stellen Sie Optionen auf einfachste Stufe ein
+
+OptionsDlg.AverageBtn= Durchschnitt | Stellen Sie Optionen auf Zwischenstufe ein
+
+OptionsDlg.ExpertBtn= Experte | Stellen Sie Optionen auf härteste Stufe ein
+
+OptionsDlg.ButtonsGroup= &Button Bar | Keiner | Links | Oben
+
+OptionsDlg.TakenGroup= Geschlagene Figuren
+
+OptionsDlg.ShowTakenBox= Geschlagene &Figuren anzeigen
+
+OptionsDlg.SortTakenBox= Geschlagene Figuren nach &Wertigkeit sortieren
+
+OptionsDlg.EdgeGroup= Brettrand
+
+OptionsDlg.LabelsBox= Bezeichnungen der Felder anzeigen
+
+OptionsDlg.PlayersBox= &Spielernamen anzeigen
+
+OptionsDlg.EdgeSizeGroup= Größe des &Brettrands
+
+OptionsDlg.NarrowestLabel= Am schmälsten
+
+OptionsDlg.WidestLabel= Am breitesten
+
+OptionsDlg.StatusGroup= Statusanzeige
+
+OptionsDlg.CommentBox= &Kommentare anzeigen
+
+OptionsDlg.WorkingBox= &Denkprozess anzeigen
+
+OptionsDlg.ShowStatusBox= S&tatus anzeigen
+
+OptionsDlg.AnalogueBox= &Analoge Uhren anzeigen
+
+OptionsDlg.DigitalBox= &Digitale Uhren anzeigen
+
+OptionsDlg.HundredthsBox= &Hundertstel von Sekunden anzeigen
+
+OptionsDlg.NarrationBox= Erscheinenerzählung
+
+OptionsDlg.EcoBox= &ECO-Namen anzeigen
+
+OptionsDlg.RefreshGroup= Auffrischungsfre&quenz
+
+OptionsDlg.HighestLabel= Am höchsten
+
+OptionsDlg.LowestLabel= Am niedrigsten
+
+OptionsDlg.PiecesGroup= &Figuren
+
+OptionsDlg.DisplayGroup= Optionen zur Figurenanzeige
+
+OptionsDlg.ScaleBox= Figuren&maßstab entsprechend der Brettgröße
+
+OptionsDlg.CaptionsBox= Erscheinenstückuntertitelen
+
+OptionsDlg.SpeedGroup= Figuren-Bewegungs&geschwindigkeit
+
+OptionsDlg.FastestLabel= Am schnellsten
+
+OptionsDlg.SlowestLabel= Am langsamsten
+
+OptionsDlg.MovingGroup= Bewegliche Optionen Des Stückes
+
+OptionsDlg.FastOpenBox= Schnelle Datei geöffnet
+
+OptionsDlg.FastUndoBox= Schnelle Bewegung undo
+
+OptionsDlg.FastRedoBox= Schnelle Bewegung machen nochmals
+
+OptionsDlg.OpenToEndBox= Geöffnete Dateien zum Ende
+
+OptionsDlg.DragPiecesBox= Gegenkraft verschiebt Stücke
+
+OptionsDlg.TwoClickBox= Aktivieren zwei Klickenbewegungen
+
+OptionsDlg.MoveCursorBox= Aktivieren Leertastebewegungen
+
+OptionsDlg.ReduceFlickerBox= Reduce flicker on redraw
+
+OptionsDlg.DelayGroup= Verzögerung Zwischen Bewegungen
+
+OptionsDlg.ShortestLabel= Am kürzesten
+
+OptionsDlg.LongestLabel= Am längsten
+
+OptionsDlg.HintsGroup= BrettTips
+
+OptionsDlg.AttacksBox= Erscheinenangriffe
+
+OptionsDlg.JeopardiesBox= Erscheinengefahren
+
+OptionsDlg.PieceHintsBox= Erscheinenstücktips
+
+OptionsDlg.SquareHintsBox= Quadratische Tips des Erscheinens
+
+OptionsDlg.MoveMarkerBox= Erscheinenbewegung Markierung
+
+OptionsDlg.SquareSizeGroup= Quadratische Größe Des Brettes
+
+OptionsDlg.SmallestLabel= Am kleinsten
+
+OptionsDlg.LargestLabel= Am größten
+
+OptionsDlg.BorderSizeGroup= Attack-/JeopardyRandGröße
+
+OptionsDlg.ThinnestLabel= Dünn
+
+OptionsDlg.ThickestLabel= Dick
+
+OptionsDlg.TextureGroup= BrettBeschaffenheit
+
+OptionsDlg.ColourGroup= Farben
+
+OptionsDlg.WhiteSquareBtn= &Weiße Felder
+
+OptionsDlg.BlackSquareBtn= &Schwarze Felder
+
+OptionsDlg.AttackBtn= &Angriffe
+
+OptionsDlg.JeopardyBtn= &Gefärdungen
+
+OptionsDlg.MoveMarkerBtn= Markierung versetzen
+
+OptionsDlg.FontGroup= &Bildschirm-Schriftsatz
+
+OptionsDlg.FontLabel= SchriftkegelBeispielText
+
+OptionsDlg.FixedLabel= SchriftkegelBeispielText
+
+OptionsDlg.FixedBox= Reparierte Breite Schriftkegel für Bewegungen Liste
+
+OptionsDlg.NotationGroup= Darstellung | Standardalgebraisches (z.B. Be3) | Lang algebraisch (z.B. Bc1-e3) | Computer (z.B. c1e3) 
+
+OptionsDlg.LanguageGroup= Sprache
+
+OptionsDlg.TextTypeGroup= StückZeichen | StandardEnglisch | Kundenspezifische Sprache
+
+OptionsDlg.CustomTextGroup= Kundenspezifischer Text
+
+OptionsDlg.AudioGroup= Audio | Kein | Stichhaltige Effekte nur | Ton und gesprochener Status | Ton und gesprochene volle Bewegung
+
+OptionsDlg.WhiteVoiceGroup= Stimme &Weiß | Männlich | Weiblich
+
+OptionsDlg.BlackVoiceGroup= Stimme &Schwarz | Männlich | Weiblich
+
+OptionsDlg.PrintGroup= &Drucker-Schriftsatz
+
+OptionsDlg.PrintLabel= Textprobe
+
+OptionsDlg.PrintBoldBox= &Fett
+
+OptionsDlg.PrintItalicBox= &Kursiv
+
+OptionsDlg.PrintFixedBox= Reparierte Breite Schriftkegel für Bewegungen Liste im Spalteformat
+
+OptionsDlg.FigureGroup= &Figurensatz
+
+OptionsDlg.FigureCharLabel= Abbildung Zeichensatz
+
+OptionsDlg.PrintSetupBtn= A&ufstellung ausdrucken
+
+OptionsDlg.OkBtn= &OK
+
+OptionsDlg.CancelBtn= &Abbrechen
+
+OptionsDlg.PreviewBtn= &Prüfen
+
+OptionsDlg.DefaultsBtn= &Standard
+
+OptionsDlg.HelpBtn= &Hilfe
+
+OrderDlg= Registration/Bestellformular
+
+OrderDlg.Heading= Tragen Ihre Name, Adresse und Zahlung Details ein und senden, wie folgt:
+
+OrderDlg.NameLabel= Name:
+
+OrderDlg.CompanyLabel= Firma:
+
+OrderDlg.AddressLabel= Anschrift:
+
+OrderDlg.CountryLabel= Land:
+
+OrderDlg.PhoneLabel= Telefon:
+
+OrderDlg.FaxLabel= Fax:
+
+OrderDlg.EmailLabel= Email:
+
+OrderDlg.SourceLabel= Wo Software gesehen oder erhalten:
+
+OrderDlg.ProductLabel= Produkt:
+
+OrderDlg.AmountLabel= Währung und Menge gezahlt:
+
+OrderDlg.CommentLabel= Anmerkungen:
+
+OrderDlg.PaymentGroup= Zahlung Art:
+
+OrderDlg.CardLabel= Karten-Nr.:
+
+OrderDlg.ExpiryLabel= Verfalldatum:
+
+OrderDlg.HolderLabel= Name des Karteninhabers:
+
+OrderDlg.CloseBtn= Schließen
+
+OrderDlg.PrintBtn= &Ausdrucken
+
+OrderDlg.FileBtn= &Datei
+
+OrderDlg.CopyBtn= &Partie
+
+OrderDlg.EmailBtn= &Email
+
+OrderDlg.HelpBtn= &Hilfe
+
+PromoteDlg= Bauernumwandlung
+
+PromoteDlg.QueenBtn= &Dame
+
+PromoteDlg.RookBtn= &Turm
+
+PromoteDlg.BishopBtn= &Läufer
+
+PromoteDlg.KnightBtn= &Springer
+
+PromoteDlg.HelpBtn= &Hilfe
+
+SelectDlg= Partie auswählen
+
+SelectDlg.Heading= Diese Datei ist eine Bibliothek der Spiele.  Wählen Sie das Spiel aus, das Sie sich öffnen möchten:
+
+SelectDlg.KeepBox= Bibliothek immer speicherresident
+
+SelectDlg.OkBtn= &OK
+
+SelectDlg.CancelBtn= &Abbrechen
+
+SelectDlg.HelpBtn= &Hilfe
+
+TipsDlg= Tip des Tages
+
+TipsDlg.TipLabel= Wußten Sie schon...
+
+TipsDlg.ShowTipsBox= Erscheinenspitzen auf Start
+
+TipsDlg.TipTypesGroup= Erscheinenspitzearten | KChess-Programm | Schach spielend | Schach trivia | Alle Spitzearten
+
+TipsDlg.PrevBtn= <  &Vorheriger Tip
+
+TipsDlg.NextBtn= &Nächster Tip  >
+
+TipsDlg.CloseBtn= &Schließen
+
+UnlockDlg= Programm entsperren
+
+UnlockDlg.Heading= Ihre Registrierungsdaten unten eingeben, um Zugriff auf alle Funktionen des Programms zu erhalten:
+
+UnlockDlg.NameLabel= Name:
+
+UnlockDlg.SerialLabel= Laufende Nr.:
+
+UnlockDlg.UnlockLabel= Entsperrcode:
+
+UnlockDlg.OkBtn= &OK
+
+UnlockDlg.CancelBtn= &Abbrechen
+
+UnlockDlg.HelpBtn= &Hilfe
+
+[Messages]
+
+1000= Fehlermeldung %d nicht gefunden.
+
+1001= Brettaufbau ungültig.
+
+1002= En-Passant-Feld ungültig.
+
+1003= Ungültige Anzahl von Zügen seit dem letzten Schlag bzw. Bauernzug.
+
+1004= Ein interner verarbeitenfehler ist ermittelt worden.  Versuchen Sie, andere Programme, die laufen können, wie Anti-Virussoftware zu sperren.  Wenn die Problemprsists die folgenden Fehlermeldungen notieren und mit ARK ANGLES an arkangles@arkangles.com in Verbindung treten.
+
+1005= Unbekanntes Dateiformat.
+
+1006= Daten ungültig.
+
+1007= Ungültiger Zug in der Partiendatei.
+
+1008= Das Statuspanel ist zu klein, Kommentar zu zeigen.  um einen Kommentar einzutragen müssen Sie entweder die Brettgröße zuerst erhöhen oder zeigen nicht die Spieltaktgeber.
+
+1009= Name, laufende Nummer oder Entsperrcode ungültig.
+
+1011= Zug %s kann nicht zurückgenommen werden.
+
+1012= Figur auf %s kann nicht ziehen.
+
+1013= %s ist ein ungültiger Zug.
+
+1014= %s ist kein gültiger Zug.
+
+1015= Zug kann nicht ausgeführt werden; %s ist nicht gültig.
+
+1016= Datei %s fehlt oder ist verstümmelt. Bitte KChess Elite neu installieren.
+
+1017= Datei %s existiert nicht.
+
+1018= Datei %s existiert schon. Möchten Sie sie ersetzen?
+
+1019= Datei %s existiert schon. Möchten Sie sie ergänzen oder ersetzen?
+
+1020= Die laufende Partie abbrechen ohne sie abzuspeichern?
+
+1021= In diesem Programm bleibt Ihnen nur noch eine Minute.
+
+1022= Die Programmlaufzeit ist abgelaufen.
+
+1023= Sie können nicht Spiele in dieser Auswertung Version sichern.  Registrieren Sie bitte, um das volle Programm zu erhalten - sehen Sie die ungefähr Funktion auf dem Hilfemenü.
+
+1024= Das Angebot eines abgehobenen Betrages wird gesunken.
+
+1025= Nicht imstande, Datei %s. zu lesen (KChess Elite 16 kann nicht mehr, als lesen Zeilen 32K, bitte KChess Elite 32 verwenden).
+
+1026= Diese Betatestversion können nicht entsperrt werden, müssen Sie die neueste Auswertung oder erhalten eingetragene Version.
+
+1027= Etwas Optionen wurden geändert, als das aktuelle Spiel geladen wurde.  Möchten Sie die vorhergehenden Optionen wiederherstellen?
+
+1031= Zug eingeben
+
+1032= Tragen Ihre Bewegung in ein eindeutiges Format ein (wie eè4 oder Pe4 oder gerades e4):
+
+1033= Stellung eingeben
+
+1034= Stellung im standardmäßigen FEN-Format eingeben:
+
+1035= Einstellungen mit Partien sichern
+
+1041= minutes per player
+
+1042= seconds per turn
+
+1043= moves per hour
+
+1045= seconds in sandclock
+
+1051= ply
+
+1052= steps
+
+1053= pixels
+
+1054= sekunden
+
+1101= Prüfversion
+
+1102= Nicht registrierte Auswertung Version
+
+1103= Registrierte Version
+
+1104= Sie haben %d-Tage aus Ihrer eine 30 Tagesauswertung Periode heraus verwendet.
+
+1105= Ihre eine 30 Tagesauswertung Periode ist jetzt abgelaufen.
+
+1106= Registriert zur %0:s.-Seriennummer %1:s.
+
+1107= Sie können dieses Programm für bis 30 Tage kostenlos ausprobieren.  Nachher dieses mal müssen Sie entweder für das volle Produkt registrieren oder dieses, Auswertung Exemplar zu verwenden stoppen.
+
+1108= Diese Version wird für Gebrauch von einer Person oder auf einer Maschine genehmigt.
+
+1109= Diese Version wird für Gebrauch auf jeder möglicher Zahl der Maschinen einen Kategorie Raum oder Büro genehmigt.
+
+2001= Weiß
+
+2002= Schwarz
+
+2003= Leer
+
+2004= König
+
+2005= Dame
+
+2006= Turm
+
+2007= Läufer
+
+2008= Springer
+
+2009= Bauer
+
+2011= En passant.
+
+2012= Rochade, Königsseite.
+
+2013= Rochade, Damenseite.
+
+2014= Bauernumwandlung in %s.
+
+2015= Angegriffen
+
+2016= Bedroht
+
+2017= Geschlagen
+
+2018= Gibt auf
+
+2019= Remis
+
+2021= Kommentar
+
+2022= Variation
+
+2031= Schach!
+
+2032= Matt! %s gewinnt.
+
+2033= Patt! %s wurde keinen Schach gesetzt, kann aber nicht ziehen.
+
+2034= %0:s gibt auf! %1:s gewinnt.
+
+2035= Remis! Es wurde keine Figur in den letzten 50 Zügen geschlagen.
+
+2036= Remis! Die Position der Figuren wurde dreimal wiederholt.
+
+2037= Remis! Mit diesen Figuren kann kein Resultat erzwungen werden.
+
+2038= Beide Spieler eignen sich auf Remis.
+
+2039= Matt %d Zügen gefunden.
+
+2041= Spielgrenzzeit überstiegen.  %s-Gewinne.
+
+2042= Umdrehung Grenzzeit überstiegen.  %s-Gewinne.
+
+2043= Bewegt sich pro die Stunde nicht erreicht.  %s-Gewinne.
+
+2044= Zeit Sandclock hat heraus %s-Gewinne laufen gelassen.
+
+2052= Matt
+
+2053= Patt
+
+2054= Gibt auf
+
+2055= Remis (50 Züge)
+
+2056= Remis (dreimalige Wiederholung derselben Position)
+
+2057= Remis (Material)
+
+2058= Remis (vereinbart)
+
+2059= Zeit abgelaufen
+
+2061= Laden...
+
+2062= Laufen...
+
+2063= Spielen...
+
+2064= Brettaufbau-Modus
+
+2065= Bereit
+
+2066= Computer analysiert...
+
+2067= Spielende
+
+2071= Programm rechnet
+
+2072= Programm denkt im voraus
+
+2073= Programm wartet
+
+2074= Computer denkt...
+
+2075= Computer wartet...
+
+2076= Zug %d
+
+2077= %s am Zug
+
+2081= Selbstspiel
+
+2082= Weiß spielen
+
+2083= Schwarz spielen
+
+2084= Zwei Spieler
+
+2091= Wert: %d
+
+2092= Knoten: %dK
+
+2093= Beste Variante: %s
+
+2094= Brettposition im FEN-Format: %s
+
+2095= Kein Titel
+
+2096= Unbekannt
+
+2101= ein Bauer
+
+2102= zwei Bauern
+
+2103= ein geringes Stück oder drei Pfandgegenstände
+
+2104= ein geringes Stück und ein Pfandgegenstand
+
+2105= ein Turm oder ein geringes Stück und zwei Pfandgegenstände
+
+2106= ein Turm und ein Pfandgegenstand oder zwei geringe Stücke
+
+2107= ein Turm und zwei Pfandgegenstände oder zwei geringe Stücke und ein Pfandgegenstand
+
+2108= ein Turm und ein geringes Stück oder zwei geringe Stücke und zwei Pfandgegenstände
+
+2109= eine Königin oder ein Turm und ein geringes Stück und ein Pfandgegenstand
+
+2110= eine Königin und ein Pfandgegenstand oder zwei Türme
+
+2111= eine Königin und zwei Pfandgegenstände oder zwei Türme und ein Pfandgegenstand
+
+2112= eine Königin und ein geringes Stück oder zwei Türme und zwei Pfandgegenstände
+
+2113= eine Königin und ein geringes Stück und ein Pfandgegenstand oder zwei Türme und ein geringes Stück
+
+2114= eine Königin und ein Saatkrähe oder zwei Türme und ein geringes Stück und ein Pfandgegenstand
+
+2115= eine Königin und ein Turm und ein Pfandgegenstand oder zwei Türme und ein geringes Stück und ein Pfandgegenstand
+
+2116= eine Königin und ein Turm und zwei Pfandgegenstände oder zwei Türme und zwei geringe Stücke
+
+2117= eine Königin und ein Turm und ein geringes Stück oder zwei Türme und zwei geringe Stücke und ein Pfandgegenstand
+
+2118= eine Königin und ein Turm und ein geringes Stück und ein Pfandgegenstand oder zwei Türme und zwei geringe Stücke und zwei Pfandgegenstände
+
+2119= eine Königin und zwei Saatkrähen oder zwei Türme und drei geringe Stücke
+
+2120= eine Königin, zwei Türme und ein Pfandgegenstand
+
+2121= eine Königin, zwei Türme und zwei Pfandgegenstände
+
+2122= eine Königin, zwei Türme und ein geringes Stück
+
+2123= eine Königin, zwei Türme, ein geringes Stück und ein Pfandgegenstand
+
+2124= eine Königin, zwei Türme, ein geringes Stück und zwei Pfandgegenstände
+
+2125= eine Königin, zwei Türme und zwei geringe Stücke
+
+2126= eine Königin, zwei Türme, zwei geringe Stücke und ein Pfandgegenstand
+
+2127= eine Königin, zwei Türme, zwei geringe Stücke und zwei Pfandgegenstände
+
+2128= eine Königin, zwei Türme und drei geringe Stücke
+
+2129= eine Königin, zwei Türme, drei geringe Stücke und ein Pfandgegenstand
+
+2130= eine Königin, zwei Türme, drei geringe Stücke und zwei Pfandgegenstände
+
+2131= eine Königin, zwei Türme und vier geringe Stücke
+
+2132= eine Königin, zwei Türme, vier geringe Stücke und ein Pfandgegenstand
+
+2133= eine Königin, zwei Türme, vier geringe Stücke und zwei Pfandgegenstände
+
+2134= eine Königin, zwei Türme, vier geringe Stücke und drei Pfandgegenstände
+
+2135= eine Königin, zwei Türme, vier geringe Stücke und vier Pfandgegenstände
+
+2136= eine Königin, zwei Türme, vier geringe Stücke und fünf Pfandgegenstände
+
+2137= eine Königin, zwei Türme, vier geringe Stücke und sechs Pfandgegenstände
+
+2138= eine Königin, zwei Türme, vier geringe Stücke und sieben Pfandgegenstände
+
+2139= eine Königin, zwei Türme, vier geringe Stücke und acht Pfandgegenstände
+
+2140= mehr als ein volles Set Stücke
+
+2201= Das Brett befindet sich in der normalen Ausgangsposition.
+
+2202= Die Partie ist zu Ende.
+
+2203= Beide Spieler haben gleichwertige Kräfte, mit einem Punktzählimpuls %d.
+
+2204= Punktzählimpuls für %0:s ist %1:d stark als %2:s und hat einen Vorteil das Äquivalent von %3:s.
+
+2205= Beide Spieler haben gleichwertige Mobilität um das Brett, jede, die eine ähnliche Anzahl von den vorhandenen Bewegungen hat (%0:s kann %1:d-Maßnahmen, %2:s treffen kann %3:d bilden).
+
+2206= %0:s hat grössere Mobilität um das Brett und hat die vorhandenen %1:d-Bewegungen, während %2:s nur %3:d hat.
+
+2207= Beide Spieler haben die gleichwertige Dichte des Brettes und nehmen eine ähnliche Anzahl von Quadraten in Angriff (%0:s nimmt %1:d-Quadrate, %2:s-Angriffe %3:d in Angriff).
+
+2208= %0:s hat mehr Dichte des Brettes und nimmt %1:d-Quadrate in Angriff, während %2:s nur %3:d in Angriff nimmt.
+
+2209= Beide Spieler haben vergleichbaren Befehl der Mitte des Brettes.
+
+2210= %s hat stärkeren Befehl der Mitte des Brettes.
+
+2211= %s können auf beiden Seiten sich zurückziehen.
+
+2212= %s können auf der Seite des Königs sich zurückziehen.
+
+2213= %s können auf der Seite der Königin sich zurückziehen.
+
+2214= %0:s können en erfassen, das an %1:s passant ist.
+
+2301= Fall
+
+2302= Site
+
+2303= Rund
+
+2304= Datum
+
+2305= Zeit
+
+2306= Öffnung
+
+2307= Name
+
+2308= Land
+
+2309= Annotator
+
+[Program Tips]
+
+1= Willkommen zur KChess Elite.  Wenn Sie irgendeine Hilfe benötigen oder etwas C$fehler suchen Informationen wünschen, gerade klicken Sie an Hilfe vom Hilfemenü.
+
+2= Sie können beschließen, entweder Schwarzes oder Weiß zu spielen, indem Sie den passenden Modus vom Spielmenü auswählen.
+
+3= Wenn Sie einen Fehler beim Spielen Sie machen, können wählen Undo vom Spielmenü, um Ihre letzte Bewegung zurückzunehmen.
+
+4= Wenn Sie während gameplay Sie gehaftet werden, können schnellen Tip vom Bewegung Menü beschließen, um einen Vorschlag auf was zu erhalten zu tun.
+
+5= Wenn Sie Ihre Spiele zu einfach oder stark dann finden, zur Stärke Seite in den Optionen gehen, die im Spielmenü gefunden werden können.  Klicken Sie an die Anfänger-, Durchschnitts- oder Expertentasten.
+
+6= Jederzeit während gameplay können Sie das Brett, indem Sie an, drehen klicken drehen Brett vom Spielmenü.
+
+7= Kurze Schnitte zu vielen allgemeinen Befehlen können auf dem Taste Stab gefunden werden.
+
+8= Das Aussehen der Bretfarben, -beschaffenheit und -stücke zu ändern gehen zur Brettseite in den Optionen, die im Spielmenü gefunden werden können.
+
+9= Wenn Sie zurück sitzen und KChess Elite selbst überwachen möchten, wählen dann Selbstspiel vom Spielmenü.
+
+10= Wenn Sie genug für jetzt gespielt haben, aber Sie möchten Ihr Spiel fortsetzen, später dann, das Sie Ihr Spiel sichern können, indem Sie außer vom Spielmenü wählen.
+
+11= Sie kann vorher gesicherte Spiele (eine haben Sie sich, sowie die Beispielspiele, die gesichert mit dem Programm kamen), indem Sie geöffnet vom Spielmenü laden wählen, und den Namen des Spiels, um zu laden auswählen.
+
+12= Wenn Sie die linke Maustaste unten auf einem Stück anhalten, dann allen Quadraten, daß es auf Willen verschoben werden kann, werden markiert.
+
+13= Wenn Sie die rechte Maustaste unten auf einem Stück oder ein Quadrat anhalten, dann alle angreifenen Stücke, daß Stück oder Quadrat markiert werden.
+
+14= Sie können eine Strecke der Standardschachdateiformate benutzen.  Wenn Sie Spiele, wählen Sie das Dateiformat vom Dateiarttropfen unten sichern oder öffnen, drucken Sie aus.
+
+15= Wenn Sie einige Bewegungen üben oder eine Position analysieren möchten, erstellen ein anderes Brett mit der gleichen Installation, indem sie Variante vom Spielmenü wählen.
+
+[Game Tips]
+
+1= Gute Bewegung Öffnung A soll einen Ihrer Mittepfandgegenstände durch 2 Quadrate vorrücken.  Dieses besetzt die Mitte des Brettes und öffnet eine Allee, um einige Ihrer anderen Stücke zu verschieben.
+
+2= Im frühen Teil des Spiels, sollten Sie auf Ihre Stücke schnellstmöglich entwickeln sich konzentrieren.
+
+3= Wenn Sie einen Pfandgegenstand zum gegenüberliegenden Ende des Brettes vorrücken können, wird es zu Ihrer Wahl der Königin, des Saatkrähe, des Bishop oder des Ritters gefördert.
+
+4= Es ist am besten irgendein, Stück mehr als einmal zu verschieben zu vermeiden im frühen Teil des Spiels, da dieses Entwicklung anderer Stücke verzögert.
+
+5= Es ist nützlich, einen relativen Wert jedem Stück zuzuweisen:  1 für Pfandgegenstände, 3 für Ritter und Bishops, 5 für Türme und 9 für Königinnen.
+
+6= Ein Pfandgegenstand können einen feindlichen Pfandgegenstand nehmen, der 2 Quadrate auf seiner ersten Bewegung vorgerückt hat, als ob sie nur ein Quadrat vorgerückt hatte.  Diese spezielle Bewegung wird "en passant" genannt.
+
+7= Sie können helfen, Ihren König zu schützen, indem Sie mindestens früh Pfandgegenstände vor ihr, an in das Spiel gehen.
+
+8= Es ist, am besten Ihre Königin zu nicht früh in das Spiel heraus zu holen.
+
+9= Sie sollten immer annehmen, daß Ihr Konkurrent die beste Maßnahme trifft.  Nehmen Sie nie an, daß sie nicht wissen, was Sie mit Ihren Bewegungen tun.
+
+10= Die 4 Mittequadrate sind entscheidendsten auf dem Brett.  Versuchen Sie, Ihre eigenen Stücke auf sie zu plazieren.
+
+11= Wenn weder Ihr König noch einer Ihrer Türme verschoben worden ist, und die Quadrate zwischen ihnen sind frei, können Sie Ihren König über zwei Quadraten verschieben und springen, der Turm über ihm.  Dieses wird "Zurückziehen" genannt.
+
+12= Stücke haben mehr Mobilität, wenn sie in der Mitte des Brettes sind, und sie steuern mehr Quadrate.
+
+13= Wenn Sie eine stärkere Kraft als Ihr Konkurrent haben, ist es eine gute Idee, Stücke auszutauschen.  Dieses erhöht Ihre relative Stärke.
+
+14= Sie sollten das wenige wertvolle Stück benutzen, das möglich ist, ein anderes Stück zu schützen.  Versuchen Sie, die Stücke nie zu benutzen, die wertvoller sind, als die sie sich schützen.
+
+[Chess Trivia]
+
+1= Es wird gedacht, daß Schach in Indien um 550-600 A.d entstand.  Es verbritt schnell durch Asien, dann zu den arabischen Gegenden und schließlich zu Europa.
+
+2= Das längste Schachspiel spielten überhaupt durch obere Rankingspieler waren 269 Bewegungen durch Ivan Nikolic und Goran Arsovic in Belgrad 1989.  Es dauerte mehr als 20 Stunden und ergab einen abgehobenen Betrag.
+
+3= Es ist gesagt worden, daß es mehr Literatur gibt, die Schach als für alle weiteren kombinierten Spiele gewidmet wird.
+
+4= Dort sind 318.979.564.000 unterschiedliche Möglichkeiten des Spielens der ersten vier Bewegungen durch jeden Spieler in einem Spiel des Schachs.
+
+5= Das Wort "Niederlage" kommt von der persischen Phrase "Matte Shah", die bedeutet, daß "der König tot ist".
+
+6= Der erste Chessboard der wechselnden hellen und dunklen Quadrate erschienen in Europa in 1090.
+
+7= 1851 der Weltschachmeister waren- A. Anderssen, während gleichzeitig der Weltkontrolleurmeister A. Anderson war-.
+
+8= Niaz Murshed von Bangladesh ist die jüngste Person zum überhaupt Gewinnen einer nationalen Meisterschaft, gewinnt die Bangladeshmeisterschaft an Alter 12, und später wird das erste (und nur) grandmaster von Bangladesh an Alter 20.
+
+9= In der Fernsehenserie "Star Trek", Kapitän Kirk und Herr Spock spielten Schach dreimal. Kirk gewann jedes Spiel.
+
+10= Das erste pocket Schachset wurden 1845 von Peter Mark Roget, Autor von Thesaurus Rogets erstellt.
+
+11= Weber 1939 Adams schrieben ein Buch, das "Weiß zum Spiel und zum Gewinn" erlaubt wurde. An seinen folgenden Turnieren verlor er alle seine Spiele als Weiß und gewann alle seine Spiele als Schwarzes.
+
+12= Die führenden britischen Schachmeister von Weltkrieg 2 alle wurden führende codebreakers für britische Intelligenz.
+
+13= Dort sind über 200 Million Einwohnern China, die scharfe Schachspieler sind.
+
+14= Dort sind 169.518.829.100.544.000.000.000.000.000 unterschiedliche Möglichkeiten des Spielens der ersten 10 Bewegungen durch jeden Spieler in einem Spiel des Schachs.
+
+15= Das erste Schachspiel, das durch Telefon gespielt wurde, wurden von zwei Männern in Derbyshire, England 1878 gespielt.
+
+16= Das erste Computerprogramm zum Spielen des korrekten Schachs wurden an MIT von Alex Bernstein 1958-59 geschrieben.
+
+17= Die ersten Schachturniere auf Satz wurden in Madrid in 1575 angehalten.  Giulio Polerio und Giovanni Leonardo besiegte Ruy Lopez und Alfonso Ceron in einer Reihe von den Übereinstimmungen, die vom König Phillip II geordnet wurden.
+
+18= Ehemaliger Weltmeister Jose Capablanca fingen an, Schach am Alter von 4 zu spielen und schlugen seinen Vater in seinem ersten Spiel auch an Alter 4.
+
+19= Langsamste verschieben auf Satz waren durch Francisco R. Torres Trois, das 2 Stunden 20 Minuten dauerte, um eine Maßnahme in einem Spiel gegen Luis M.c.p. Santos zu treffen, in Vigo, Spanien 1980.  Trois hatte nur zwei mögliche Bewegungen zu betrachten.
+
+20= "Die Schachspieler", gemalt in 1490, waren der erste bekannte Anstrich mit einem Schachthema.
+
+21= Der jüngste Weltmeister von waren- Maya Chiburdanidze der ehemaligen UDSSR, die 17 Jahre alt war, als sie den Namen der Frauen 1978 gewann.
+
+22= Garry Kasparov der ehemaligen UDSSR waren 22 Jahre alt, als er Anatoly Karpov für die Weltmeisterschaft des Schachs 1985 schlug und bildeten ihn den Meister der jüngsten Männer in der Geschichte.
+
+23= Automaten sind Maschinen, die die Illusion des Spielens des Schachs geben.  Der erste Automat war "der Türke" 1769, gefolgt von "Ajeeb" 1868 und "Mephisto" 1878.
+
+24= Entwürfe ist ein älteres Spiel als Schach.
+
+25= Judit Polgar von Ungarn waren die jüngste Frau zum Gewinnen des internationalen Vorlagenstatus 1989, als sie 12 war, und die jüngste Frau, um internationalen Status Grandmaster 1991 an Alter 15 zu gewinnen.
+
+26= Das erste Aussehen des Schachs in einem Film waren "im wünschenring" 1914.
+
+27= 1974, Stockholm bewirteten die erste Weltcomputerschachmeisterschaft, gewonnen durch das sowjetische Programm "Kaissa".
