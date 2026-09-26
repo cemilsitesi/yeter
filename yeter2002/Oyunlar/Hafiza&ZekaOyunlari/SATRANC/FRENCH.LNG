@@ -1,0 +1,1077 @@
+[Objects]
+
+AboutDlg= A propos de KChess Elite
+
+AboutDlg.RegoLabel= Le fait de vous enregistrer vous permettra d'accéder à toutes les fonctions de la dernière version du programme. Il n'y aura plus de messages de rappel ou de limites de temps. Vous aurez également droit aux futures mises à jour.
+
+AboutDlg.ClickLabel= Cliquez sur le bouton "Aide" pour plus d'informations sur ce programme et pour savoir comment vous enregistrer.
+
+AboutDlg.OkBtn= &OK
+
+AboutDlg.RegoBtn= &Enregistrement
+
+AboutDlg.UnlockBtn= &Déverrouillage
+
+AboutDlg.HelpBtn= &Aide
+
+BoardSetDlg= Réglages initiaux de l'échiquier
+
+BoardSetDlg.Heading= Choisissez l'état initial de l'échiquier:
+
+BoardSetDlg.EnPassantLabel= Prise En Passant:
+
+BoardSetDlg.FirstMoveLabel= Premier coup:
+
+BoardSetDlg.FiftyMoveLabel= Sans déplacement de pion ni capture:
+
+BoardSetDlg.CastleGroup= Roque autorisé:
+
+BoardSetDlg.BlackQueenBox= Noirs: côté reine
+
+BoardSetDlg.BlackKingBox= côté roi
+
+BoardSetDlg.WhiteQueenBox= Blancs: côté reine
+
+BoardSetDlg.WhiteKingBox= côté roi
+
+BoardSetDlg.FirstGroup= Premier:
+
+BoardSetDlg.StatusGroup= Status | Normal | Egalité | Abandon
+
+BoardSetDlg.OkBtn= &OK
+
+BoardSetDlg.CancelBtn= &Annuler
+
+BoardSetDlg.HelpBtn= &Aide
+
+ChessForm.FreezePanel= Rafraichissement
+
+ChessForm.FileMenu1= &Fichier
+
+ChessForm.FileNew1= &Nouveau | Ctrl+N
+
+ChessForm.FileOpen1= &Ouvrir... | Ctrl+O
+
+ChessForm.FileReopen1= &Réouvrir | Ctrl+R
+
+ChessForm.FileSave1= &Sauvegarder | Ctrl+S
+
+ChessForm.FileSaveAs1= Sauvegarder sous... | Ctrl+A
+
+ChessForm.PrintMoves1= &Imprimer les coups... | Ctrl+P
+
+ChessForm.BoardPrint1= Imprimer l'&échiquier... | Ctrl+B
+
+ChessForm.PrintSetup1= Imprimer la &configuration...
+
+ChessForm.FileExit1= &Quitter
+
+ChessForm.PlayMenu1= &Jouer
+
+ChessForm.BoardSetup1= &Imprimer l'échiquier
+
+ChessForm.Clear1= &Effacer l'échiquier
+
+ChessForm.EnterPosition1= &Entrer la position...
+
+ChessForm.SetBoardState1= &Réglages de l'échiquier...
+
+ChessForm.Opening1= &Ouverture... | Ctrl+G
+
+ChessForm.AutoPlay1= &Jeu automatique | Alt+A
+
+ChessForm.PlayWhite1= Jouer avec les &Blancs | Alt+W
+
+ChessForm.PlayBlack1= Jouer avec les &Noirs | Alt+B
+
+ChessForm.TwoPlayer1= Jouer avec &Deux joueurs | Alt+T
+
+ChessForm.Analyse1= Analyse
+
+ChessForm.Rotate1= &Rotation de l'échiquier | Alt+Q
+
+ChessForm.Speak1= Parler
+
+ChessForm.SpeakMove1= Coup | Alt+0
+
+ChessForm.SpeakRank11= Rangée &1 | Alt+1
+
+ChessForm.SpeakRank21= Rangée &2 | Alt+2
+
+ChessForm.SpeakRank31= Rangée &3 | Alt+3
+
+ChessForm.SpeakRank41= Rangée &4 | Alt+4
+
+ChessForm.SpeakRank51= Rangée &5 | Alt+5
+
+ChessForm.SpeakRank61= Rangée &6 | Alt+6
+
+ChessForm.SpeakRank71= Rangée &7 | Alt+7
+
+ChessForm.SpeakRank81= Rangée &8 | Alt+8
+
+ChessForm.SpeakFilea1= Colonne &a | Ctrl+1
+
+ChessForm.SpeakFileb1= Colonne &b | Ctrl+2
+
+ChessForm.SpeakFilec1= Colonne &c | Ctrl+3
+
+ChessForm.SpeakFiled1= Colonne &d | Ctrl+4
+
+ChessForm.SpeakFilee1= Colonne &e | Ctrl+5
+
+ChessForm.SpeakFilef1= Colonne &f | Ctrl+6
+
+ChessForm.SpeakFileg1= Colonne &g | Ctrl+7
+
+ChessForm.SpeakFileh1= Colonne &h | Ctrl+8
+
+ChessForm.SpeakStatus1= &Statut | Alt+9
+
+ChessForm.CopyGame1= &Copier la Partie | Ctrl+C
+
+ChessForm.PasteGame1= &Coller la Partie | Ctrl+V
+
+ChessForm.Variation1= &Variation | Alt+V
+
+ChessForm.Freeze1= &Interrompre la Partie | Alt+Z
+
+ChessForm.GameInfo1= &Information... | Alt+F
+
+ChessForm.Options1= &Options... | Alt+O
+
+ChessForm.MoveMenu1= &Coup
+
+ChessForm.Undo1= &Annuler le dernier coup | Alt+U
+
+ChessForm.Redo1= &Rétablir la dernière position | Alt+R
+
+ChessForm.UndoAll1= Annuler tout
+
+ChessForm.RedoAll1= Rétablir tout
+
+ChessForm.Hint1= &Suggestion | Alt+I
+
+ChessForm.EnterMove1= &Entrer un coup... | Entrée
+
+ChessForm.ComputerMove1= &Coup de l'ordinateur | Alt+C
+
+ChessForm.Stop1= &Arrêter la réflexion
+
+ChessForm.Replay1= Rejouer
+
+ChessForm.Resign1= Abandonner
+
+ChessForm.OfferDraw1= Proposer l'égalité
+
+ChessForm.Comment1= Commentaire | Alt+E
+
+ChessForm.HelpMenu1= &Aide
+
+ChessForm.HelpHelp1= &Aide
+
+ChessForm.HelpUsing1= &Utilisation de l'aide
+
+ChessForm.HelpIndex1= &Index de l'aide
+
+ChessForm.SearchHelpfor1= &Rechercher dans l'aide...
+
+ChessForm.BeginnersInfo1= &Informations pour les débutants
+
+ChessForm.Rules1= &Règles des échecs
+
+ChessForm.TipoftheDay1= &Astuces du jour...
+
+ChessForm.KChessWebSite1= &Site Internet de KChess
+
+ChessForm.HelpAbout1= &A propos de KChess...
+
+ChessForm.NewButton= Nouveau jeu
+
+ChessForm.OpenButton= Ouvrir un jeu
+
+ChessForm.SaveButton= Sauvegarder le jeu
+
+ChessForm.PrintButton= Imprimer le jeu
+
+ChessForm.SetupButton= Configuration de l'échiquier
+
+ChessForm.AutoplayButton= Jeu automatique
+
+ChessForm.PlayWhiteButton= Jouer avec les Blancs
+						
+ChessForm.PlayBlackButton= Jouer avec les Noirs
+
+ChessForm.TwoPlayerButton= Jouer avec deux joueurs
+
+ChessForm.AnalyseButton= Analyser la position
+
+ChessForm.RotateButton= Rotation de l'échiquier
+
+ChessForm.CopyButton= Copier le jeu
+
+ChessForm.PasteButton= Coller le jeu
+
+ChessForm.VariationButton= Variation
+
+ChessForm.FreezeButton= Interrompre le jeu
+
+ChessForm.OptionsButton= Options
+
+ChessForm.UndoAllButton= Annuler tout
+
+ChessForm.UndoButton= Annuler
+
+ChessForm.RedoButton= Rétablir
+
+ChessForm.RedoAllButton= Rétablir tout
+
+ChessForm.HintButton= Suggestion
+
+ChessForm.ComputerButton= Coup de l'ordinateur
+
+ChessForm.StopButton= Arrêter la réflexion
+
+ChessForm.ReplayButton= Rejouer le coup
+
+ChessForm.HelpButton= Aide
+
+EnterMoveDlg.OkBtn= &OK
+
+EnterMoveDlg.CancelBtn= &Annuler
+
+EnterMoveDlg.HelpBtn= &Aide
+
+InfoDlg= Informations sur le jeu et le joueur
+
+InfoDlg.Heading= Entrez des informations concernant le jeu et ses joueurs:
+
+InfoDlg.EventLabel= Evénement:
+
+InfoDlg.SiteLabel= Endroit:
+
+InfoDlg.RoundLabel= Manche:
+
+InfoDlg.EventDateLabel= Date de l'événement:
+
+InfoDlg.DateLabel= Date de la rencontre:
+
+InfoDlg.TimeLabel= Heure:
+
+InfoDlg.OpeningLabel= Ouverture:
+
+InfoDlg.AnnotatorLabel= Annotateur:
+
+InfoDlg.WhiteLabel= Joueur blanc:
+
+InfoDlg.BlackLabel= Joueur noir:
+
+InfoDlg.PlayerLabel= Nom:
+
+InfoDlg.TitleLabel= Titre:
+
+InfoDlg.CtryLabel= Pays:
+
+InfoDlg.OkBtn= &OK
+
+InfoDlg.CancelBtn= &Annuler
+
+InfoDlg.HelpBtn= &Aide
+
+OpeningsDlg= Encyclopédie des ouvertures
+
+OpeningsDlg.Heading= Sélectionnez l'ouverture que vous désirez jouer:
+
+OpeningsDlg.ColumnHeader= Code | Nom | Coups
+
+OpeningsDlg.OkBtn= &OK
+
+OpeningsDlg.CancelBtn= &Annuler
+
+OpeningsDlg.SortBtn= &Classer
+
+OpeningsDlg.HelpBtn= &Aide
+
+OptionsDlg= Options
+
+OptionsDlg.OptionsTab= Force | Affichage | Pièces | Plateau | Texte | Son | Impression
+
+OptionsDlg.LimitTypeGroup= Limite de temps | &Pas de limite | Temps total de chaque &joueur | Temps de chaque &coup | Nombre de coups par &heure | &Calculer le temps du joueur | Utiliser le principe du &Sablier
+
+OptionsDlg.LengthGroup= Limite de temps
+
+OptionsDlg.UserLimitGroup= &En cas de dépassement | Ne pas limiter le joueur | Faire jouer l'ordinateur | Faire perdre la partie au joueur
+
+OptionsDlg.MiscGroup= &Réflexion de l'ordinateur
+
+OptionsDlg.ThinkAheadBox= Réfléchir en &permanence
+
+OptionsDlg.FreezeCoversBox= Cacher l'échiquier en pause
+
+OptionsDlg.OpeningLibBox= Utiliser les exemples d'ouvertures
+
+OptionsDlg.ResignBox= Permettre l'abandon
+
+OptionsDlg.DrawBox= Egalité par défaut de pièces
+
+OptionsDlg.PromoteBox= Toujours promouvoir en Reine
+
+OptionsDlg.PressBox= Appuyer sur l'horloge
+
+OptionsDlg.FreezeMinimizeBox= Rafraîchissement si réduction
+
+OptionsDlg.ValidateBoardBox= &Valider l'échiquier après impression
+
+OptionsDlg.SearchGroup= &Profondeur de recherche
+
+OptionsDlg.WeakestLabel= Faible
+
+OptionsDlg.StrongestLabel= Forte
+
+OptionsDlg.NoviceBtn= Débutant | Régler les options au niveau le plus facile
+
+OptionsDlg.AverageBtn= Confirmé | Régler les options à un niveau intermédiaire
+
+OptionsDlg.ExpertBtn= Expert | Régler les options au niveau le plus difficile
+
+OptionsDlg.ButtonsGroup= Barre De Bouton | Aucune | laissé | En Haut
+
+OptionsDlg.TakenGroup= Pièces Prises
+
+OptionsDlg.ShowTakenBox= Afficher les Pièces Prises
+
+OptionsDlg.SortTakenBox= Pièces prises triées par valeur
+
+OptionsDlg.EdgeGroup= Bord de l'Echiquier
+
+OptionsDlg.LabelsBox= Étiquettes de place d'exposition
+
+OptionsDlg.PlayersBox= Noms de joueur d'exposition
+
+OptionsDlg.EdgeSizeGroup= Taille du Bord De l'échiquier
+
+OptionsDlg.NarrowestLabel= Le plus étroit
+
+OptionsDlg.WidestLabel= Le plus au loin
+
+OptionsDlg.StatusGroup= Panneau De Codes
+
+OptionsDlg.CommentBox= Commentaires sur les Pièces
+
+OptionsDlg.WorkingBox= Fonctionnement des Pièces
+
+OptionsDlg.ShowStatusBox= Panneau de codes d'exposition
+
+OptionsDlg.AnalogueBox= Horloge Analogique
+
+OptionsDlg.DigitalBox= Horloge Digitale
+
+OptionsDlg.HundredthsBox= Centièmes de secondes
+
+OptionsDlg.NarrationBox= Commentaires
+
+OptionsDlg.EcoBox= Noms de l'exposition ECO
+
+OptionsDlg.RefreshGroup= Rafraichissement
+
+OptionsDlg.HighestLabel= Le plus haut
+
+OptionsDlg.LowestLabel= Le plus bas
+
+OptionsDlg.PiecesGroup= Pièces
+
+OptionsDlg.DisplayGroup= Options d'affichage des pièces
+
+OptionsDlg.ScaleBox= Taille des pièces
+
+OptionsDlg.CaptionsBox= Afficher les pièces prises
+
+OptionsDlg.SpeedGroup= Vitesse de déplacement des Pièces
+
+OptionsDlg.FastestLabel= Rapide
+
+OptionsDlg.SlowestLabel= Lente
+
+OptionsDlg.MovingGroup= Options Mouvements des Pièces
+
+OptionsDlg.FastOpenBox= Fichier rapide ouvert
+
+OptionsDlg.FastUndoBox= Mouvement rapide défont
+
+OptionsDlg.FastRedoBox= Mouvement rapide refont
+
+OptionsDlg.OpenToEndBox= Fichiers ouverts à la fin
+
+OptionsDlg.DragPiecesBox= Drague déplace des pièces
+
+OptionsDlg.TwoClickBox= Permettre le double clic
+
+OptionsDlg.MoveCursorBox= Permettre des mouvements de barre d'espacement
+
+OptionsDlg.ReduceFlickerBox= Réduction du Clignotement
+
+OptionsDlg.DelayGroup= Délai entre les Mouvements
+
+OptionsDlg.ShortestLabel= Rapide
+
+OptionsDlg.LongestLabel= Lent
+
+OptionsDlg.HintsGroup= Conseils sur le Jeu
+
+OptionsDlg.AttacksBox= Pièces Adverses Attaquées
+
+OptionsDlg.JeopardiesBox= Vos Pièces Menacées
+
+OptionsDlg.PieceHintsBox= Conseils sur les Pièces	
+
+OptionsDlg.SquareHintsBox= Conseils sur les Cases
+
+OptionsDlg.MoveMarkerBox= Montrer le Repère de Mouvement
+
+OptionsDlg.SquareSizeGroup= Taille des pièces de l'échiquier
+
+OptionsDlg.SmallestLabel= Le plus petit
+
+OptionsDlg.LargestLabel= Le plus grand
+
+OptionsDlg.BorderSizeGroup= Taille des Bordures Attaques/Menaces
+
+OptionsDlg.ThinnestLabel= Plus Fine
+
+OptionsDlg.ThickestLabel= Plus Epaisse
+
+OptionsDlg.TextureGroup= Texture De L'Echiquier
+
+OptionsDlg.ColourGroup= Couleurs
+
+OptionsDlg.WhiteSquareBtn= Cases blanches
+
+OptionsDlg.BlackSquareBtn= Cases noires
+
+OptionsDlg.AttackBtn= Attaques
+
+OptionsDlg.JeopardyBtn= Périls
+
+OptionsDlg.MoveMarkerBtn= Repère de Mouvement
+
+OptionsDlg.FontGroup= Police de l'écran
+
+OptionsDlg.FontLabel= Nom de la Police
+
+OptionsDlg.FixedLabel= Texte Témoin de la Police
+
+OptionsDlg.FixedBox= Déterminer la Largeur de la liste des mouvements
+
+OptionsDlg.NotationGroup= Notation | Algébrique standard (par exemple Be3) | Longtemps algébrique (par exemple Bc1-e3) | Ordinateur (par exemple c1e3) 
+
+OptionsDlg.LanguageGroup= Langue
+
+OptionsDlg.TextTypeGroup= Lettres De Morceau | Anglais Standard | Langue Particulière
+
+OptionsDlg.CustomTextGroup= Texte Fait sur commande
+
+OptionsDlg.AudioGroup= Sons | Aucun | Effets sonores seulement | Sons et Paroles | Sons et Paroles des mouvements
+
+OptionsDlg.WhiteVoiceGroup= Voix des Pions Blancs| Masculine | Féminine
+
+OptionsDlg.BlackVoiceGroup= Voix des Pions Noirs | Masculine | Féminine
+
+OptionsDlg.PrintGroup= Police d'imprimante
+
+OptionsDlg.PrintLabel= Texte Témoin de la Police
+
+OptionsDlg.PrintBoldBox= Caractères Gras
+
+OptionsDlg.PrintItalicBox= Italique
+
+OptionsDlg.PrintFixedBox= Largeur de Police dans la liste des mouvements
+
+OptionsDlg.FigureGroup= Figure Police
+
+OptionsDlg.FigureCharLabel= Figure jeu de caractères
+
+OptionsDlg.PrintSetupBtn= Installation D'Impression
+
+OptionsDlg.OkBtn= Appliquer
+
+OptionsDlg.CancelBtn= Annulation
+
+OptionsDlg.PreviewBtn= Précédent
+
+OptionsDlg.DefaultsBtn= Défaut
+
+OptionsDlg.HelpBtn= Aide
+
+OrderDlg= Formulaire d'enregistrement/Commander
+
+OrderDlg.Heading= Indiquez vos Nom, adresse et mode de paiement, et les saisir comme suit:
+
+OrderDlg.NameLabel= Nom:
+
+OrderDlg.CompanyLabel= Société:
+
+OrderDlg.AddressLabel= Adresse:
+
+OrderDlg.CountryLabel= Pays:
+
+OrderDlg.PhoneLabel= Téléphone:
+
+OrderDlg.FaxLabel= Fax:
+
+OrderDlg.EmailLabel= Email:
+
+OrderDlg.SourceLabel= Comment avez vous connus notre logiciel:
+
+OrderDlg.ProductLabel= Produit:
+
+OrderDlg.AmountLabel= Montant en Devise:
+
+OrderDlg.CommentLabel= Commentaire:
+
+OrderDlg.PaymentGroup= Type De Paiement:
+
+OrderDlg.CardLabel= No. De Carte:
+
+OrderDlg.ExpiryLabel= Date de Fin:
+
+OrderDlg.HolderLabel= Nom du Détenteur de la carte:
+
+OrderDlg.CloseBtn= Fin
+
+OrderDlg.PrintBtn= &Imprimer
+
+OrderDlg.FileBtn= &Fichier
+
+OrderDlg.CopyBtn= &Copie
+
+OrderDlg.EmailBtn= &Email
+
+OrderDlg.HelpBtn= &Aide
+
+PromoteDlg= Promotion
+
+PromoteDlg.QueenBtn= Reine
+
+PromoteDlg.RookBtn= Tour
+	
+PromoteDlg.BishopBtn= Fou
+
+PromoteDlg.KnightBtn= Cavalier
+
+PromoteDlg.HelpBtn= Aide
+
+SelectDlg= Jeu Choisi
+
+SelectDlg.Heading= Ce fichier est une bibliothèque des jeux. Choisissez le jeu que vous souhaitez vous ouvrir:
+
+SelectDlg.KeepBox= Bibliothèque de subsistance dans la mémoire
+
+SelectDlg.OkBtn= Correct
+
+SelectDlg.CancelBtn= Annulation
+
+SelectDlg.HelpBtn= Aide
+
+TipsDlg= Extrémité du jour
+
+TipsDlg.TipLabel= Trucs et Astuces...
+
+TipsDlg.ShowTipsBox= Conseils Divers
+
+TipsDlg.TipTypesGroup= Types de Conseils | Sur le Programme | Pour bien Jouer | Un peu d'Histoire| Tous...
+
+TipsDlg.PrevBtn= < Précédent
+
+TipsDlg.NextBtn= Suite > 
+
+TipsDlg.CloseBtn= Fin
+
+UnlockDlg= Déverrouillage du Programme
+
+UnlockDlg.Heading= Complétez les renseignements ci-dessous pour accéder à toutes les fonctions de ce programme:
+
+UnlockDlg.NameLabel= Votre nom:
+
+UnlockDlg.SerialLabel= Numéro de série:
+
+UnlockDlg.UnlockLabel= Déverrouillage du Code:
+
+UnlockDlg.OkBtn= Correct
+
+UnlockDlg.CancelBtn= Annulation
+
+UnlockDlg.HelpBtn= Aide
+
+[Messages]
+
+1000= Message d'erreur %d non trouvé.
+
+1001= Disposition incorrecte de l'échiquier.
+
+1002= Mouvement 'En passant' incorrect.
+
+1003= Nombre incorrect de mouvements depuis la dernière capture ou le dernier mouvement de pion.
+
+1004= Une erreur de traitement interne a été détectés. Essayez de désactiver d'autres programmes qui peuvent fonctionner, comme le logiciel d'anti-virus. Si le problème persiste notez les messages d'erreur suivants et entrez en contact avec la Société ARK ANGLES à l'adresse Internet suivante: arkangles@arkangles.com.
+
+1005= Format inconnu de fichier.
+
+1006= Données Incorrectes.
+
+1007= Mouvement illégal dans le fichier de jeu.
+
+1008= L'échiquier de codes est trop petit pour montrer des commentaires. Pour entrer un commentaire vous devez d'abord augmenter la taille de l'échiquier ou ne plus afficher les horloges.
+
+1009= Nom , numéro de série ou code incorrects.
+
+1011= Impossible de rétracter le mouvement %s.
+
+1012= Impossible de déplacer la pièce sur %s.
+
+1013= %s est un mouvement illégal.
+
+1014= %s n'est pas un mouvement valide.
+
+1015= Impossible d'exécuter le mouvement, %s est incorrect.
+
+1016= Le fichier %s est manquant ou endommagé. Veuillez réinstaller KChess Elite
+
+1017= Le fichier %s n'existe pas.
+
+1018= Le fichier %s existe déjà. Voulez-vous le remplacer ?
+
+1019= Le fichier %s existe déjà. Voulez-vous l'ajouter ou le remplacer ?
+
+1020= Quitter le jeu sans le sauvegarder ?
+
+1021= Il vous reste seulement une minute.
+
+1022= Votre heure pour exécuter ce programme est terminée.
+
+1023= Vous ne pouvez pas sauvegarder de parties dans cette version d'évaluation. Enregistrez-vous si vous désirez obtenir le programme complet - Utilisez la fonction du menu d'aide.
+
+1024= L'offre d'égalité est refusée
+
+1025= Impossible de lire le fichier %s. (KChess Elite 16 ne peut pas lire plus que les lignes 32K, utilisent s'il vous plaît KChess Elite 32).
+
+1026= Cette version d'essai ne peut pas être déverrouillée, vous devez obtenir la dernière version ou la version enregistrée.
+
+1027= Quelques options ont été changées quand le jeu actuel a été chargé. Voulez-vous restaurer les options précédentes?
+
+1031= Saisir Le Mouvement
+
+1032= Saisir votre mouvement dans un format adapté (tel que e2e4 ou Pe4 ou juste e4):
+
+1033= Saisir La Position
+
+1034= Saisir une position d'installation dans le format standard de MARAIS:
+
+1035= Conservation des paramètres
+
+1041= minutes per player
+
+1042= seconds per turn
+
+1043= moves per hour
+
+1045= seconds in sandclock
+
+1051= ply
+
+1052= steps
+
+1053= pixels
+
+1054= secondes
+
+1101= Version d'essai
+
+1102= Version Non Enregistrée
+
+1103= Version Enregistrée
+
+1104= Vous avez déjà utilisé %d jours sur 30 de la période d'essais
+
+1105= Votre période d'évaluation de 30 jours à maintenant expirée.
+
+1106= Registre au numéro de série %0:s de %1:s.
+
+1107= Vous pouvez essayer ce programme gratuitement pendant jusqu'à 30 jours. Ensuite cette fois vous devez vous inscrire au plein produit ou cesser d'utiliser cette copie d'évaluation.
+
+1108= Cette version est réservée à l'usage d'une personne ou sur une machine.
+
+1109= Cette version est autorisée pour l'usage dans les classes d'école, dans les bureaux ou entreprises.
+
+2001= Blancs
+
+2002= Noirs
+
+2003= vide
+
+2004= Roi
+
+2005= Reine
+
+2006= Tour 
+
+2007= Fou
+
+2008= Cavalier
+
+2009= Pion
+
+2011= En passant.
+
+2012= Roque du coté du Roi
+
+2013= Roque du côté de la Reine
+
+2014= Promotion de pion à %s.
+
+2015= Menacé 
+
+2016= En Péril
+
+2017= pris
+
+2018= Abandon
+
+2019= Egalité
+
+2021= Commentaire
+
+2022= Variation
+
+2031= Echec!
+
+2032= Echec et mat! Victoires des %s.
+
+2033= Impasse! Les %s ne sont pas en Echec mais ne peuvent pas se déplacer.
+
+2034= les %0:s Abandonnent! Victoire des %1:s.
+
+2035= Egalité! Aucune saisie ne s'est pas produite durant les 50 derniers coups.
+
+2036= Egalité! La même disposition de l'échiquier a été répétée trois fois.
+
+2037= Egalité! Aucun résultat ne peut être obtenu avec ces pièces.
+
+2038= Les deux joueurs sont d'accord sur une égalité.
+
+2039= Mat en %d coups.
+
+2041= Délai de la Partie dépassé. victoires des %s.
+
+2042= Délai du coup dépassé. victoires des %s.
+
+2043= Nombre de mouvements à l'heure insuffisant. Victoires des %s.
+
+2044= Temps du Sablier est dépassé. victoires des %s.
+
+2052= Mate
+
+2053= Impasse
+
+2054= Abandon
+
+2055= Egalité (50 mouvements) 
+
+2056= Egalité (Trois répétitions) 
+
+2057= Egalité (forces) 
+
+2058= Egalité (Acceptée) 
+
+2059= Hors Délais
+
+2061= Chargement en cours...
+
+2062= Partie en cours...
+
+2063= Jeu en cours...
+
+2064= Mode d'installation De l'échiquier
+
+2065= Prêt
+
+2066= Analyse en cours...
+
+2067= Jeu Terminé
+
+2071= Recherche De Programme
+
+2072= Programme Pensant En avant
+
+2073= Attente De Programme
+
+2074= Calculs en cours...
+
+2075= En attente...
+
+2076= Coup N° %d
+
+2077= Aux %s de jouer
+
+2081= Coups Automatiques
+
+2082= Jouer avec les Blancs
+
+2083= Jouer avec les Noirs
+
+2084= Jouer à deux Joueurs
+
+2091= Valeur: %d
+
+2092= Nœuds: %dK
+
+2093= Meilleure Ligne des %s
+
+2094= Disposition de l'échiquier de MARAIS: %s
+
+2095= Non intitulé
+
+2096= Inconnu
+
+2101= un pion
+
+2102= deux pions
+
+2103= une pièce mineure ou trois pions
+
+2104= une pièce mineure et un pion
+
+2105= une tour ou une pièce mineure et deux pions
+
+2106= une tour et un pion ou deux pièces mineures
+
+2107= une tour et deux pions ou deux pièces mineures et un pion
+
+2108= une tour et une pièce mineure ou deux pièces mineures et deux pions
+
+2109= une reine ou une tour et une pièce mineure et un pion
+
+2110= une reine et un pion ou deux tours
+
+2111= une reine et deux pions ou deux tours et un pion
+
+2112= une reine et un morceau mineur ou deux tours et deux pions
+
+2113= une reine et une pièce mineure et un pion ou deux tours et une pièce mineur
+
+2114= une reine et une tour ou deux tours et une pièce mineure et un pion
+
+2115= une reine et une tour et un pion ou deux tours et une pièce mineure et un pion
+
+2116= une reine et une tour et deux pions ou deux tours et deux pièces mineures
+
+2117= une reine et une tour et une pièce mineur ou deux tours et deux pièces mineures et un pion
+
+2118= une reine et une tour et un morceau mineur et un pion ou deux tours et deux pièces mineures et deux pions
+
+2119= une reine et deux tours ou deux tours et trois pièces mineures
+
+2120= une reine, deux tours et un pion
+
+2121= une reine, deux tours et deux pions
+
+2122= une reine, deux tours et une pièce mineure
+
+2123= une reine, deux tours, une pièce mineure et un pion
+
+2124= une reine, deux tours, une pièce mineure et deux pions
+
+2125= une reine, deux tours et deux pièces mineures
+
+2126= une reine, deux tours, deux pièces mineures et un pion
+
+2127= une reine, deux tours, deux pièces mineures et deux pions
+
+2128= une reine, deux tours et trois pièces mineures
+
+2129= une reine, deux tours, trois pièces mineures et un pion
+
+2130= une reine, deux tours, trois pièces mineures et deux pions
+
+2131= une reine, deux tours et quatre pièces mineures
+
+2132= une reine, deux tours, quatre pièces mineures et un pion
+
+2133= une reine, deux tours, quatre pièces mineures et deux pions
+
+2134= une reine, deux tours, quatre pièces mineures et trois pions
+
+2135= une reine, deux tours, quatre pièces mineures et quatre pions
+
+2136= une reine, deux tours, quatre pièces mineures et cinq pions
+
+2137= une reine, deux tours, quatre pièces mineures et six pions
+
+2138= une reine, deux tours, quatre pièces mineures et sept pions
+
+2139= une reine, deux tours, quatre pièces mineures et huit pions
+
+2140= plus qu'un ensemble complet des pièces
+
+2201= L'échiquier est à la position de départ normale.
+
+2202= Le jeu est terminé.
+
+2203= Les deux joueurs ont des forces équivalentes, avec un décompte de%d points.
+
+2204= Le décompte des points des %0:s est supérieur de %1:d à celui des %2:s, ce qui constitue un avantage équivalent à %3:s.
+
+2205= Les deux joueurs ont une Mobilité équivalente autour de l'échiquier, chacun peut exécuter un nombre semblable de mouvements (les %0:s peuvent bouger de %1:d façons différentes, et les %2:s le peuvent de %3:d façons)
+
+2206= Les %0:s ont une plus grande Mobilité autour de l'échiquier, en ayant %1:d façons différentes de pouvoir bouger alors que les %2:s en ont seulement %3:d.
+
+2207= Les deux joueurs ont une Maîtrise équivalente de l'échiquier, attaquant en théorie un nombre semblable de cases (les %0:s attaquent %1:d cases, les %2:s attaquent %3:d cases également)
+
+2208= Les %0:s ont une plus grande Maîtrise de l'échiquier, en pouvant attaquer en théorie %1:d cases, alors que, les %2:s en attaquent seulement %3:d.
+
+2209= Les deux joueurs ont une Maîtrise comparable du centre de l'échiquier.
+
+2210= Les %s ont une Maîtrise supérieure du centre de l'échiquier.
+
+2211= Les %s peuvent Roquer des deux côtés.
+
+2212= Les %s peuvent Roquer du côté du roi.
+
+2213= Les %s peuvent Roquer du côté de la reine.
+
+2214= Les %0:s peuvent capturer En passant les %1:s.
+
+2301= Evénement
+
+2302= Site
+
+2303= Manche
+
+2304= Date
+
+2305= Temps
+
+2306= Ouverture
+
+2307= Titre
+
+2308= Pays
+
+2309= Annotations
+
+[Program Tips]
+
+1= Bienvenue dans le programme KChess Elite. Si vous avez besoin d'aide ou si vous avez besoin de renseignements à l'occasion d'un problème, il vous suffit de cliquer sur la touche du menu d'aide.
+
+2= Vous pouvez choisir de jouer avec les noirs ou les blancs en choisissant l'option appropriée à partir du menu de jeu.
+
+3= Si vous faites une erreur en cours de partie, vous pouvez choisir de rejouer le coup afin d'annuler votre dernier mouvement.
+
+4= Si vous êtes en mauvaise position durant la partie vous pouvez choisir le conseil rapide du menu des mouvements afin d'obtenir une suggestion pour votre prochain mouvement.
+
+5= Si vous trouvez vos jeux trop faciles ou trop difficiles, allez à la page et choisissez parmi les options du Menu Jeu un niveau plus adapté. Cliquez en fonction des niveaux Débutant, Moyen ou Expert.
+
+6= À tout moment pendant la partie vous pouvez tourner l'échiquier en cliquant en fonction tournez l'échiquier à partir du menu de jeu.
+
+7= Les raccourcis vers beaucoup de commandes usuelles peuvent être trouvés dans la barre de bouton.
+
+8= Pour changer l'aspect des couleurs, de la texture et des pièces de l'échiquier vont à la page de l'échiquier dans les options qui peuvent être trouvées dans le menu de jeu.
+
+9= Si vous voulez vous asseoir en arrière et observer le jeu KChess Elite lui-même, choisissent alors le jeu automatique du menu de jeu.
+
+10= Si vous en avez assez de jouer pour le moment, et si, vous voulez continuer votre partie plus tard: vous pouvez sauvegarder celle-ci dans le Menu.
+
+11= Vous pouvez recharger les parties précédemment sauvegardés (Les vôtres ainsi que les exemples de parties fournies par le programme Kchess. L'option de restauration le permet à condition d'indiquer le Nom de la partie à restaurer.
+
+12= Si vous maintenez le bouton de souris gauche enfoncé sur une pièce, ceci provoquera la mise en valeur des cases que cette pièces pourra éventuellement occuper.
+
+13= Si vous maintenez le bouton de souris enfoncé sur une pièce ou une case, ceci provoquera la mise en valeur de toutes les pièces pouvant constituer un danger pour celles-ci.
+
+14= Vous pouvez utiliser un intervalle standard de fichier d'échecs. En sauvegardant ou en ouvrant des jeux, choisissez le format de fichier de la baisse de type de fichier vers le bas énumérez.
+
+15= Si vous voulez pratiquer quelques mouvements ou analyser une position, créez un autre échiquier avec la même configuration en choisissant une autre variante du Menu de Jeu.
+
+[Game Tips]
+
+1= Un bon mouvement d'ouverture consiste à avancer un des pions du centre de deux positions. Ceci occupe le centre de l'échiquier, et crée une ouverture pour déplacer vos autres pièces.
+
+2= En début de partie, vous devez vous concentrer sur le déploiement le plus rapide possible de vos pièces.
+
+3= Si un de vos pions arrive à atteindre la dernière ligne de l'échiquier adverse, il se transformera en reine, tour, fou ou cavalier, selon votre choix.
+
+4= Il vaut mieux éviter de déplacer deux fois la même pièce dans un intervalle trop rapproché, car ceci retarde le déploiement des autres pièces.
+
+5= Il est utile d'attribuer une valeur relative à chaque pièces: 1 pour les pions, 3 pour les cavaliers et les fous, 5 pour les tours, et 9 pour le Roi ou la Reine.
+
+6= Un pion peut prendre un pion ennemi qui a avancé de deux cases (Comme s'il n'avait avancé que d'une case). Ce mouvement spécial s'appelle En passant.
+
+7= Vous pouvez aider à protéger votre roi en laissant des pions devant lui, au moins au début de la partie.
+
+8= Il est plus prudent de ne pas sortir ou exposer sa Reine en début de partie.
+
+9= Vous devriez toujours supposer que votre adversaire entreprendra la meilleure démarche. Ne supposez jamais qu'il ne sait pas ce que vous faites.
+
+10= Les quatre cases du centre (Carré Central) sont les plus importantes de l'échiquier. Essayez de placer vos propres pièces sur celles-ci.
+
+11= Si votre roi et une de vos tours n'ont pas été déplacés, et si les cases entre les deux sont vides, vous pouvez déplacer votre roi de deux places et mettre la tour à sa place. Ceci s'appelle Roquer.
+
+12= Les pièces ont plus de Mobilité quand elles sont au centre de l'échiquier et elles contrôlent plus de d'espace.
+
+13= Quand vous avez une force plus forte que votre adversaire, c'est une bonne idée de permuter des pièces. Ceci augmentera votre force relative.
+
+14= Vous devriez utiliser le moins de pièces possible pour protéger une autre pièce ,et, essayez de ne jamais utiliser une pièce d'une plus grande valeur que celle que vous cherchez à protéger.
+
+[Chess Trivia]
+
+1= On le pense que les échecs sont venus de l'Inde aux alentours de 550-600 après Jésus-Christ. Ils se sont répandus rapidement en Asie, puis dans les pays arabes et par la suite en Europe.
+
+2= La plus longue partie d'échecs jamais jouée par de grands joueurs classés fut de 269 mouvements par Ivan Nikolic et Goran Arsovic à Belgrade en 1989. Elle a durée plus de 20 heures, et a eu comme conséquence une égalité.
+
+3= On lui a dit qu'il y a plus de livres consacrés aux échecs que pour aucun autre jeu.
+
+4= Là sont 318.979.564.000 voies différentes de jouer les quatre premiers mouvements par chaque joueur dans un jeu des échecs.
+
+5= Le mot "échec et mat" vient de l'expression persane "natte de Shah", qui signifie que "le roi est mort".
+
+6= Le premier échiquier des places légères et foncées alternatives sont apparus en Europe dans 1090.
+
+7= En 1851 le champion d'échecs du monde étaient A. Anderssen, alors qu'en même temps le champion de contrôleur du monde était A. Anderson.
+
+8= Niaz Murshed du Bangladesh est le jeune pour gagner jamais un championnat national, gagnant le championnat du Bangladesh à l'âge 12, et devenant plus tard le premier (et seulement) grandmaster du Bangladesh à l'âge 20.
+
+9= De la série de télévision "Star Trek", capitaine Kirk et M. Spock ont joué aux échecs trois fois. Kirk a gagné chaque jeu.
+
+10= Le premier positionnement de poche d'échecs ont été créés en 1845 par Peter Mark Roget, auteur du thesaurus de Roget.
+
+11= En le tisserand 1939 Adams ont écrit un livre intitulé "Blanc au jeu et à la victoire". À ses prochains tournois il a détruit tous ses jeux comme blanc et a gagné tous ses jeux en tant que noir.
+
+12= Les principaux maîtres britanniques d'échecs au moment de la deuxième guerre mondiale sont devenus les principaux spécialistes du déchiffrage des services secrets britanniques.
+
+13= Là sont plus de 200 millions d'habitants de la Chine qui sont les joueurs vifs d'échecs.
+
+14= Là sont 169.518.829.100.544.000.000.000.000.000 voies différentes de jouer les dix premiers mouvements par chaque joueur dans un jeu des échecs.
+
+15= Le premier jeu d'échecs joué par téléphone ont été joués par deux hommes dans Derbyshire, Angleterre en 1878.
+
+16= Le premier programme machine pour jouer aux échecs appropriés ont été écrits au MIT par Alex Bernstein en 1958-59.
+
+17= Les premiers tournois d'échecs sur l'enregistrement ont été tenus à Madrid dans 1575. Giulio Polerio et Giovanni Ruy défait par Leonardo Lopez et Alfonso Ceron dans une série d'allumettes a arrangé par le Roi Phillip II.
+
+18= Ancien champion Jose Capablanca du monde ont commencé à jouer aux échecs à l'âge de 4, et ont battu son père dans son premier jeu également à l'âge 4.
+
+19= Le mouvement le plus lent sur l'enregistrement étaient par Francisco R. Torres Trois, qui a pris à 2 heures 20 minutes pour entreprendre une démarche dans un jeu contre Luis M.c.p. Santos, à Vigo, Espagne en 1980. Trois a eu seulement deux mouvements possibles de considérer.
+
+20= "Les joueurs d'échecs", peints dans 1490, étaient la première peinture connue avec un thème d'échecs.
+
+21= Le plus jeune champion du monde de tous étaient Maya Chiburdanidze de l'ancienne URSS, qui avait 17 ans quand elle a gagné le titre des femmes en 1978.
+
+22= Garry Kasparov de l'ancienne URSS avaient 22 ans quand il a battu Anatoly Karpov pour le championnat du monde des échecs en 1985, lui faisant le champion de plus jeunes hommes dans l'histoire.
+
+23= Des automates sont des machines qui donnent l'illusion de jouer aux échecs. Le premier automate était "le Turc" en 1769, suivi d'"Ajeeb" en 1868, et "Mephisto" en 1878.
+
+24= Des ébauches est un jeu plus ancien que des échecs.
+
+25= Judit Polgar de la Hongrie étaient la plus jeune femelle pour gagner le mode principal international en 1989 quand elle avait 12 ans, et la plus jeune femelle pour gagner le mode international de Grandmaster en 1991 à l'âge 15.
+
+26= L'apparition des échecs dans un film étaient dans "La boucle souhaitante" en 1914.
+
+27= En 1974, Stockholm ont accueilli le premier championnat d'échecs par ordinateur du monde, gagné par le programme soviétique "Kaissa".
