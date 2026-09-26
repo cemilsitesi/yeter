@@ -1,0 +1,1077 @@
+[Objects]
+
+AboutDlg= Over KChess Elite
+
+AboutDlg.RegoLabel= Door te registreren kunt u alle functies van dit programma gebruiken. Er zullen zich dan geen waarschuwingen en een maximum te gebruiken tijd voordoen. U komt ook in aanmerking voor toekomstige updates voor lagere prijzen of gratis.
+
+AboutDlg.ClickLabel= Klik op de Help button voor meer informatie over dit programma en registreren. Klik op de Resistreren-knop als u de volledige versie wilt aanschaffen. Als u reeds heeft geregistreerd, klik dan op de Unlock-knop om de registratiegegevens in te voeren.
+
+AboutDlg.OkBtn= &OK
+
+AboutDlg.RegoBtn= &Registreren
+
+AboutDlg.UnlockBtn= &Unlock
+
+AboutDlg.HelpBtn= &Help
+
+BoardSetDlg= Initial Board Settings
+
+BoardSetDlg.Heading= Voer de status van de partij in:
+
+BoardSetDlg.EnPassantLabel= En passant doel:
+
+BoardSetDlg.FirstMoveLabel= Eerste zet nummer:
+
+BoardSetDlg.FiftyMoveLabel= Moves since capture or pawn move:
+
+BoardSetDlg.CastleGroup= Rocheren toegestaan
+
+BoardSetDlg.BlackQueenBox= Zwarte damevleugel
+
+BoardSetDlg.BlackKingBox= koningsvlg.
+
+BoardSetDlg.WhiteQueenBox= Witte damevlg.
+
+BoardSetDlg.WhiteKingBox= koningsvleugel
+
+BoardSetDlg.FirstGroup= Eerste speler
+
+BoardSetDlg.StatusGroup= Partij Status | Normaal | Remise | Opgegeven
+
+BoardSetDlg.OkBtn= &OK
+
+BoardSetDlg.CancelBtn= &Annuleren
+
+BoardSetDlg.HelpBtn= &Help
+
+ChessForm.FreezePanel= Pauze
+
+ChessForm.FileMenu1= &Bestand
+
+ChessForm.FileNew1= &Nieuw | Ctrl+N
+
+ChessForm.FileOpen1= &Openen... | Ctrl+O
+
+ChessForm.FileReopen1= &Reopen | Ctrl+R
+
+ChessForm.FileSave1= Op&slaan | Ctrl+S
+
+ChessForm.FileSaveAs1= Opslaan &Als... | Ctrl+A
+
+ChessForm.PrintMoves1= &Zetten afdrukken... | Ctrl+P
+
+ChessForm.BoardPrint1= &Bord afdrukken... | Ctrl+B
+
+ChessForm.PrintSetup1= Afdruk&instellingen...
+
+ChessForm.FileExit1= A&fsluiten
+
+ChessForm.PlayMenu1= &Spelen
+
+ChessForm.BoardSetup1= Bord be&werken
+
+ChessForm.Clear1= Bord &wissen
+
+ChessForm.EnterPosition1= Voer positie in...
+
+ChessForm.SetBoardState1= Bordinst&ellingen...
+
+ChessForm.Opening1= Openin&g... | Ctrl+G
+
+ChessForm.AutoPlay1= &Automatisch spelen | Alt+A
+
+ChessForm.PlayWhite1= Speel &Wit | Alt+W
+
+ChessForm.PlayBlack1= Speel &Zwart | Alt+B
+
+ChessForm.TwoPlayer1= &Twee Spelers | Alt+T
+
+ChessForm.Analyse1= Analyse
+
+ChessForm.Rotate1= &Roteer Bord | Alt+Q
+
+ChessForm.Speak1= Spraa&k
+
+ChessForm.SpeakMove1= &Zet | Alt+0
+
+ChessForm.SpeakRank11= Rij &1 | Alt+1
+
+ChessForm.SpeakRank21= Rij &2 | Alt+2
+
+ChessForm.SpeakRank31= Rij &3 | Alt+3
+
+ChessForm.SpeakRank41= Rij &4 | Alt+4
+
+ChessForm.SpeakRank51= Rij &5 | Alt+5
+
+ChessForm.SpeakRank61= Rij &6 | Alt+6
+
+ChessForm.SpeakRank71= Rij &7 | Alt+7
+
+ChessForm.SpeakRank81= Rij &8 | Alt+8
+
+ChessForm.SpeakFilea1= Lijn &a | Ctrl+1
+
+ChessForm.SpeakFileb1= Lijn &b | Ctrl+2
+
+ChessForm.SpeakFilec1= Lijn &c | Ctrl+3
+
+ChessForm.SpeakFiled1= Lijn &d | Ctrl+4
+
+ChessForm.SpeakFilee1= Lijn &e | Ctrl+5
+
+ChessForm.SpeakFilef1= Lijn &f | Ctrl+6
+
+ChessForm.SpeakFileg1= Lijn &g | Ctrl+7
+
+ChessForm.SpeakFileh1= Lijn &h | Ctrl+8
+
+ChessForm.SpeakStatus1= &Status | Alt+9
+
+ChessForm.CopyGame1= &Kopiëer partij | Ctrl+C
+
+ChessForm.PasteGame1= &Plak partij | Ctrl+V
+
+ChessForm.Variation1= &Klonen | Alt+V
+
+ChessForm.Freeze1= &Pauze | Alt+Z
+
+ChessForm.GameInfo1= &Partij Info... | Alt+G
+
+ChessForm.Options1= &Instellingen... | Alt+O
+
+ChessForm.MoveMenu1= &Zet
+
+ChessForm.Undo1= &Ongedaan maken | Alt+U
+
+ChessForm.Redo1= &Opnieuw | Alt+R
+
+ChessForm.UndoAll1= &Alles ongedaan maken | Alt+D
+
+ChessForm.RedoAll1= Alles o&pnieuw | Alt+L
+
+ChessForm.Hint1= Snelle h&int | Alt+I
+
+ChessForm.EnterMove1= &Voer zet in... | Enter
+
+ChessForm.ComputerMove1= &Computerzet | Alt+C
+
+ChessForm.Stop1= &Stoppen met denken | Alt+S
+
+ChessForm.Replay1= &Toon laatste zet | Alt+Y
+
+ChessForm.Resign1= Op&geven | Alt+N
+
+ChessForm.OfferDraw1= Remise voor&stellen
+
+ChessForm.Comment1= Comm&entaar | Alt+E
+
+ChessForm.HelpMenu1= &Help
+
+ChessForm.HelpHelp1= &Help
+
+ChessForm.HelpUsing1= Help &gebruiken
+
+ChessForm.HelpIndex1= Help &Index
+
+ChessForm.SearchHelpfor1= &Zoek Help voor...
+
+ChessForm.BeginnersInfo1= &Beginners Info
+
+ChessForm.Rules1= Schaak&regels
+
+ChessForm.TipoftheDay1= &Tip van de Dag...
+
+ChessForm.KChessWebSite1= KChess web site
+
+ChessForm.HelpAbout1= &Over KChess...
+
+ChessForm.NewButton= Nieuwe partij
+
+ChessForm.OpenButton= Partij openen
+
+ChessForm.SaveButton= Partij opslaan
+
+ChessForm.PrintButton= Partij afdrukken
+
+ChessForm.SetupButton= Bord bewerken
+
+ChessForm.AutoplayButton= Automatisch spelen
+
+ChessForm.PlayWhiteButton= Speel wit
+
+ChessForm.PlayBlackButton= Speel zwart
+
+ChessForm.TwoPlayerButton= Twee spelers
+
+ChessForm.AnalyseButton= Analyseer positie
+
+ChessForm.RotateButton= Roteer bord
+
+ChessForm.CopyButton= Kopiëer partij
+
+ChessForm.PasteButton= Plak partij
+
+ChessForm.VariationButton= Klonen
+
+ChessForm.FreezeButton= Pauze
+
+ChessForm.OptionsButton= Instellingen
+
+ChessForm.UndoAllButton= Alles ongedaan maken
+
+ChessForm.UndoButton= Zet ongedaan maken
+
+ChessForm.RedoButton= Zet opnieuw
+
+ChessForm.RedoAllButton= Alles opnieuw
+
+ChessForm.HintButton= Snelle hint
+
+ChessForm.ComputerButton= Computerzet
+
+ChessForm.StopButton= Stoppen met denken
+
+ChessForm.ReplayButton= Toon laatste zet
+
+ChessForm.HelpButton= Help
+
+EnterMoveDlg.OkBtn= &OK
+
+EnterMoveDlg.CancelBtn= &Annuleren
+
+EnterMoveDlg.HelpBtn= &Help
+
+InfoDlg= Partij en speler informatie
+
+InfoDlg.Heading= Voer informatie over deze partij en de spelers in:
+
+InfoDlg.EventLabel= Gebeurtenis:
+
+InfoDlg.SiteLabel= Locatie:
+
+InfoDlg.DateLabel= Datum (jjjj.mm.dd):
+
+InfoDlg.TimeLabel= Tijd (uu:mm:ss):
+
+InfoDlg.RoundLabel= Ronde:
+
+InfoDlg.WhiteLabel= Witte speler:
+
+InfoDlg.BlackLabel= Zwarte speler:
+
+InfoDlg.EventDateLabel= Gebeurtenisdatum:
+
+InfoDlg.OpeningLabel= Opening:
+
+InfoDlg.TitleLabel= Titel:
+
+InfoDlg.PlayerLabel= Naam:
+
+InfoDlg.CtryLabel= Land:
+
+InfoDlg.AnnotatorLabel= Annotator:
+
+InfoDlg.OkBtn= &OK
+
+InfoDlg.CancelBtn= &Annuleren
+
+InfoDlg.HelpBtn= &Help
+
+OpeningsDlg= Bibliotheek van Openingen
+
+OpeningsDlg.Heading= Kies de opening die u wilt spelen:
+
+OpeningsDlg.ColumnHeader= Code | Naam | Zetten
+
+OpeningsDlg.OkBtn= &OK
+
+OpeningsDlg.CancelBtn= &Annuleren
+
+OpeningsDlg.SortBtn= &Sorteren
+
+OpeningsDlg.HelpBtn= &Help
+
+OptionsDlg= Instellingen
+
+OptionsDlg.OptionsTab= Sterkte | Weergave | Stukken | Bord | Tekst | Geluid | Print
+
+OptionsDlg.LimitTypeGroup= Tijdmaximum Type | &Geen tijdmaximum | Partijtijd per speler | Zettijd per speler | Aantal zetten per uur | Computer denkt evenveel als gebruiker | &Zandloper
+
+OptionsDlg.LengthGroup= Maximumtijd
+
+OptionsDlg.UserLimitGroup= &Als maximumtijd overschreden wordt | Geen gevolgen | Computer zet voor gebruiker | Gebruiker verliest
+
+OptionsDlg.MiscGroup= &Partijopties
+
+OptionsDlg.ThinkAheadBox= Laat computer vooruit denken
+
+OptionsDlg.FreezeCoversBox= Bord afdekken tijdens pauze
+
+OptionsDlg.OpeningLibBox= Gebruik openingsbibliotheek
+
+OptionsDlg.ResignBox= Computer opgeven toestaan
+
+OptionsDlg.DrawBox= Remise bij onvoldoende sterkte toestaan
+
+OptionsDlg.PromoteBox= Promoveer altijd tot dame
+
+OptionsDlg.PressBox= Druk automatisch op de klok na zet
+
+OptionsDlg.FreezeMinimizeBox= Automatisch Pauze bij minimaliseren
+
+OptionsDlg.ValidateBoardBox= Controle na bordbewerking
+
+OptionsDlg.SearchGroup= Zoek&diepte
+
+OptionsDlg.WeakestLabel= Zwak
+
+OptionsDlg.StrongestLabel= Sterk
+
+OptionsDlg.NoviceBtn= Beginner | Gemakkelijkst
+
+OptionsDlg.AverageBtn= Gevorderde | Tussenliggend
+
+OptionsDlg.ExpertBtn= Expert | Moeilijkst
+
+OptionsDlg.ButtonsGroup= &Button Regel | Geen | Links | Boven
+
+OptionsDlg.TakenGroup= Geslagen stukken
+
+OptionsDlg.ShowTakenBox= &Toon geslagen stukken
+
+OptionsDlg.SortTakenBox= &Sorteer geslagen stukken op waarde
+
+OptionsDlg.EdgeGroup= Bordrant
+
+OptionsDlg.LabelsBox= Toon &veldnamen
+
+OptionsDlg.PlayersBox= Toon &spelernamen
+
+OptionsDlg.EdgeSizeGroup= &Randdikte
+
+OptionsDlg.NarrowestLabel= Smal
+
+OptionsDlg.WidestLabel= Wijd
+
+OptionsDlg.StatusGroup= Status paneel
+
+OptionsDlg.CommentBox= Toon c&ommentaar
+
+OptionsDlg.WorkingBox= Toon &gedachten
+
+OptionsDlg.ShowStatusBox= Toon &status paneel
+
+OptionsDlg.AnalogueBox= Toon &analoge klokken
+
+OptionsDlg.DigitalBox= Toon &digitale klokken
+
+OptionsDlg.HundredthsBox= Toon 1/100 s&econden
+
+OptionsDlg.NarrationBox= Toon &situaties
+
+OptionsDlg.EcoBox= Toon &ECO namen
+
+OptionsDlg.RefreshGroup= Vernieuwingsinterval
+
+OptionsDlg.HighestLabel= Vloeiend
+
+OptionsDlg.LowestLabel= Schokkend
+
+OptionsDlg.PiecesGroup= &Stukken
+
+OptionsDlg.DisplayGroup= Stukweergaveopties
+
+OptionsDlg.ScaleBox= Stukgrootte afhankelijk van bordgrootte
+
+OptionsDlg.CaptionsBox= Toon stuknamen
+
+OptionsDlg.SpeedGroup= Zetsnelheid
+
+OptionsDlg.FastestLabel= Snel
+
+OptionsDlg.SlowestLabel= Langzaam
+
+OptionsDlg.MovingGroup= Zetopties
+
+OptionsDlg.FastOpenBox= Bestanden snel openen
+
+OptionsDlg.FastUndoBox= Zet snel ongedaan maken
+
+OptionsDlg.FastRedoBox= Zet snel opnieuw
+
+OptionsDlg.OpenToEndBox= Open bestanden tot &einde
+
+OptionsDlg.DragPiecesBox= Stukken met muis meeslepen
+
+OptionsDlg.TwoClickBox= 2x klikken inschakelen
+
+OptionsDlg.MoveCursorBox= Spatie inschakelen
+
+OptionsDlg.ReduceFlickerBox= Reduce flicker on redraw
+
+OptionsDlg.DelayGroup= Vertraging tussen zetten
+
+OptionsDlg.ShortestLabel= Kort
+
+OptionsDlg.LongestLabel= Lang
+
+OptionsDlg.HintsGroup= Bord Hints
+
+OptionsDlg.AttacksBox= Toon aanvallen
+
+OptionsDlg.JeopardiesBox= Toon gevaren
+
+OptionsDlg.PieceHintsBox= Toon hints voor stukken
+
+OptionsDlg.SquareHintsBox= Toon hints voor velden
+
+OptionsDlg.MoveMarkerBox= Toon markering van zetten
+
+OptionsDlg.SquareSizeGroup= Veldgrootte
+
+OptionsDlg.SmallestLabel= Klein
+
+OptionsDlg.LargestLabel= Groot
+
+OptionsDlg.BorderSizeGroup= Aanval/Gevaar Border Gr&ootte
+
+OptionsDlg.ThinnestLabel= Dun
+
+OptionsDlg.ThickestLabel= Dik
+
+OptionsDlg.TextureGroup= Bord&patroon
+
+OptionsDlg.ColourGroup= Kleuren
+
+OptionsDlg.WhiteSquareBtn= &Witte velden
+
+OptionsDlg.BlackSquareBtn= &Zwarte velden
+
+OptionsDlg.AttackBtn= &Aanvallen
+
+OptionsDlg.JeopardyBtn= &Gevaren
+
+OptionsDlg.MoveMarkerBtn= Zetmarkering
+
+OptionsDlg.FontGroup= &Schermlettertype
+
+OptionsDlg.FontLabel= Voorbeeldtekst
+
+OptionsDlg.FixedLabel= Voorbeeldtekst
+
+OptionsDlg.FixedBox= Gefixeerde letterbreedte voor zettenlijst
+
+OptionsDlg.NotationGroup= &Notatie | Korte notatie (vb Be3) | Lange notatie (vb Bc1-e3) | Computer (vb c1e3)
+
+OptionsDlg.LanguageGroup= &Taal (Language)
+
+OptionsDlg.TextTypeGroup= &Schaakstukletters | Standaard Engels | Anders
+
+OptionsDlg.CustomTextGroup= &Voorkeurletters
+
+OptionsDlg.AudioGroup= &Geluid | Geen | Alleen geluidseffecten | Geluid en status | Geluid en zetten
+
+OptionsDlg.WhiteVoiceGroup= &Stem voor wit | Man | Vrouw
+
+OptionsDlg.BlackVoiceGroup= &Stem voor zwart | Man | Vrouw
+
+OptionsDlg.PrintGroup= &Printerlettertype
+
+OptionsDlg.PrintLabel= Voorbeeldtekst
+
+OptionsDlg.PrintBoldBox= &Vet
+
+OptionsDlg.PrintItalicBox= &Cursief
+
+OptionsDlg.PrintFixedBox= Gefixeerde letterbreedte voor zettenlijst in kolomformaat
+
+OptionsDlg.FigureGroup= &Figuurlettertype
+
+OptionsDlg.FigureCharLabel= Figuur tekenset
+
+OptionsDlg.PrintSetupBtn= Afdruk&inst.
+
+OptionsDlg.OkBtn= &OK
+
+OptionsDlg.CancelBtn= &Annuleren
+
+OptionsDlg.PreviewBtn= &Toepassen
+
+OptionsDlg.DefaultsBtn= S&tandaardinst.
+
+OptionsDlg.HelpBtn= &Help
+
+OrderDlg= Registratie/Order Form
+
+OrderDlg.Heading= Enter your name, address en payment details, en send as follows:
+
+OrderDlg.NameLabel= Name:
+
+OrderDlg.CompanyLabel= Company:
+
+OrderDlg.AddressLabel= Address:
+
+OrderDlg.CountryLabel= Country:
+
+OrderDlg.PhoneLabel= Phone:
+
+OrderDlg.FaxLabel= Fax:
+
+OrderDlg.EmailLabel= Email:
+
+OrderDlg.SourceLabel= Where software seen or obtained:
+
+OrderDlg.ProductLabel= Product:
+
+OrderDlg.AmountLabel= Currency en Amount paid:
+
+OrderDlg.CommentLabel= Comment:
+
+OrderDlg.PaymentGroup= Payment Type:
+
+OrderDlg.CardLabel= Card No:
+
+OrderDlg.ExpiryLabel= Expires:
+
+OrderDlg.HolderLabel= Cardholder Name:
+
+OrderDlg.CloseBtn= Sluiten
+
+OrderDlg.PrintBtn= &Afdrukken
+
+OrderDlg.FileBtn= &Bestand
+
+OrderDlg.CopyBtn= &Kopiëer
+
+OrderDlg.EmailBtn= &Email
+
+OrderDlg.HelpBtn= &Help
+
+PromoteDlg= Promotie
+
+PromoteDlg.QueenBtn= &Dame
+
+PromoteDlg.RookBtn= &Toren
+
+PromoteDlg.BishopBtn= &Loper
+
+PromoteDlg.KnightBtn= &Paard
+
+PromoteDlg.HelpBtn= &Help
+
+SelectDlg= Kies partij
+
+SelectDlg.Heading= Dit bestand bevat partijen. Kies de partij die u wilt openen:
+
+SelectDlg.KeepBox= Laat de partijen in het geheugen
+
+SelectDlg.OkBtn= &OK
+
+SelectDlg.CancelBtn= &Annuleren
+
+SelectDlg.HelpBtn= &Help
+
+TipsDlg= Tip van de Dag
+
+TipsDlg.TipLabel= Wist u dat...
+
+TipsDlg.ShowTipsBox= Toon tips bij opstarten
+
+TipsDlg.TipTypesGroup= Tip soorten | KChess programma | Schaken | Wetenswaardigheden | Alle
+
+TipsDlg.PrevBtn= < &Vorige tip
+
+TipsDlg.NextBtn= V&olgende tip >
+
+TipsDlg.CloseBtn= &Sluiten
+
+UnlockDlg= Unlock Program
+
+UnlockDlg.Heading= Voer uw registratiegegevens hieronder in voor toegang tot alle functies van dit programma:
+
+UnlockDlg.NameLabel= Uw naam:
+
+UnlockDlg.SerialLabel= Serial Number:
+
+UnlockDlg.UnlockLabel= Unlock Code:
+
+UnlockDlg.OkBtn= &OK
+
+UnlockDlg.CancelBtn= &Annuleren
+
+UnlockDlg.HelpBtn= &Help
+
+[Messages]
+
+1000= Foutmelding %d niet gevonden.
+
+1001= Ongeldige bordsituatie.
+
+1002= Ongeldig en passant veld.
+
+1003= Invalid number of moves since last capture or pawn move.
+
+1004= Een interne verwerkingsfout deed zich voor. Probeer andere actieve programma's (zoals virusscanners) uit te schakelen. Blijft het probleem zich voor doen, maak dan een notitie van de volgende foutmelding en maak contact met ARK ANGLES (arkangles@arkangles.com).
+
+1005= Verkeerd bestandsformaat.
+
+1006= Ongeldige gegevens.
+
+1007= Ongeldige zet in bestand.
+
+1008= Het statuspaneel is te klein voor commentaar.
+
+1009= Ongeldige Naam, Serial Number of Unlock Code.
+
+1011= Kan de zet %s niet terugtrekken.
+
+1012= Kan het stuk op %s niet verplaatsen.
+
+1013= %s is een ongeldige zet.
+
+1014= %s is niet een geldige zet.
+
+1015= Kan de zet niet uitvoeren, %s is niet geldig.
+
+1016= Het bestand %s kan niet gevonden worden of is corrupt. Voer de installatie van KChess Elite opnieuw uit.
+
+1017= Het bestand %s bestaat niet.
+
+1018= %s bestaat reeds. Wilt u het overschrijven?
+
+1019= %s bestaat reeds. Wilt u het toevoegen of overschrijven?
+
+1020= Wilt u deze partij beëindigen zonder het te bewaren?
+
+1021= U heeft nog een minuut te gaan in dit programma.
+
+1022= De tijd om dit programma te gebruiken is voorbij.
+
+1023= Opslaan is uitgeschakeld in de evaluatie-periode. Registreer voor de volledige versie. Zie [Menu -> Help -> Over...] voor details.
+
+1024= Het remise-aanbod wordt niet geaccepteerd.
+
+1025= Kan het bestand %s niet lezen. KChess Elite 16 kan niet meer dan 32000 lijnen lezen. Gebruik hiervoor KChess Elite 32.
+
+1026= Deze beta testversie kan niet worden ge'unlocked'. Hiervoor heeft u de laatste geregistreerde of proefversie nodig.
+
+1027= Sommige instellingen zijn veranderd sinds de huidige partij geladen was. Wilt u de vorige instellingen gebruiken?
+
+1031= Voer zet in
+
+1032= Voor uw zet in in ondubbelzinnig formaat (zoals e2e4, Le4 of e4):
+
+1033= Voer positie in
+
+1034= Voer een positie in in FEN formaat:
+
+1035= Sla dit op in opgeslagen partijen
+
+1041= minutes per player
+
+1042= seconds per turn
+
+1043= moves per hour
+
+1045= seconds in sandclock
+
+1051= ply
+
+1052= steps
+
+1053= pixels
+
+1054= seconden
+
+1101= Proefversie
+
+1102= Ongeregistreerde proefversie
+
+1103= Geregistreerde versie
+
+1104= U heeft KChess Elite %d van de 30 dagen gebruikt.
+
+1105= De 30-dagen proefperiode is afgelopen.
+
+1106= Geregistreerd door %0:s. Serienummer %1:s.
+
+1107= U kunt dit programma gratis gebruiken voor 30 dagen. Hierna moet u registreren voor de volledige versie of stoppen met gebuiken.
+
+1108= Deze versie is geregistreerd voor één computer.
+
+1109= Deze versie is geregistreerd voor meerdere computers in een klaslokaal of kantoor.
+
+2001= Wit
+
+2002= Zwart
+
+2003= leeg
+
+2004= koning
+
+2005= dame
+
+2006= toren
+
+2007= loper
+
+2008= paard
+
+2009= pion
+
+2011= En passant.
+
+2012= Rocheren aan de koningsvleugel
+
+2013= Rocheren aan de damevleugel
+
+2014= Pionpromotie tot %s.
+
+2015= wordt aangevallen
+
+2016= staat in gevaar
+
+2017= geslagen
+
+2018= Opgeven
+
+2019= Remise
+
+2021= Commentaar
+
+2022= Klonen
+
+2031= Schaak!
+
+2032= Mat! %s wint.
+
+2033= Pat! %s staat niet schaak, maar mag niet zetten.
+
+2034= %0:s geeft op! %1:s wint.
+
+2035= Remise! Er is niets geslagen tijdens de laatste 50 zetten.
+
+2036= Remise! 3 keer dezelfde situatie op het bord.
+
+2037= Remise! Er kan geen resultaat worden geboekt met deze stukken.
+
+2038= Beide spelers accepteren remise.
+
+2039= Mat gevonden in %d zet(ten).
+
+2041= Speeltijdmaximum overschreden. %s wint.
+
+2042= Zettijd overschreden. %s wint.
+
+2043= Aantal zetten per uur niet gehaald. %s wint.
+
+2044= Senclock time has run out. %s wins.
+
+2052= Mat
+
+2053= Pat
+
+2054= Opgeven
+
+2055= Remise (50 zetten)
+
+2056= Remise (3 herhalingen)
+
+2057= Remise (geen kansen)
+
+2058= Remise (aanbod geaccepteerd)
+
+2059= Buiten de tijd
+
+2061= Laden...
+
+2062= Running...
+
+2063= Spelen...
+
+2064= Bord bewerken
+
+2065= Gereed
+
+2066= Analyse...
+
+2067= Partij voorbij
+
+2071= Programma denkt
+
+2072= Programma denkt vooruit
+
+2073= Programma wacht
+
+2074= Programma denkt
+
+2075= Programma wacht
+
+2076= Zet nr. %d
+
+2077= %s is aan zet.
+
+2081= Automatisch
+
+2082= Wit spelen
+
+2083= Zwart spelen
+
+2084= Twee spelers
+
+2091= Waarde: %d
+
+2092= Knooppt.: %dK
+
+2093= Best Line: %s
+
+2094= FEN bordsituatie: %s
+
+2095= Naamloos
+
+2096= Onbekend
+
+2101= een pion
+
+2102= twee pionnen
+
+2103= een paard/loper, of drie pionnen
+
+2104= een paard/loper en een pion
+
+2105= een toren, of een paard/loper en twee pionnen
+
+2106= een toren en een pion, of twee paarden/lopers
+
+2107= een toren en twee pionnen, of twee paarden/lopers en een pion
+
+2108= een toren en een paard/loper, of twee paarden/lopers en twee pionnen
+
+2109= een dame, of een toren en een paard/loper, of een toren en een paard/loper en een pion
+
+2110= een dame en een pion, of twee torens
+
+2111= een dame en twee pionnen, of twee torens en een pion
+
+2112= een dame en een paard/loper, of twee torens en twee pionnen
+
+2113= een dame en een paard/loper en een pion, of twee torens en een paard/loper
+
+2114= een dame en een toren, of twee torens en een paart/loper en een pion
+
+2115= een dame en een toren en een pion, of twee torens en een paard/loper en een pion
+
+2116= een dame en een toren en twee pionnen, of twee torens en twee paarden/lopers
+
+2117= een dame en een toren en een paard/loper, of twee torens en twee paarden/lopers en een pion
+
+2118= een dame en een toren en een paard/loper en een pion, of twee torens en twee paarden/lopers en twee pionnen
+
+2119= een dame en twee torens, of twee torens en drie paarden/lopers
+
+2120= een dame, twee torens en een pion
+
+2121= een dame, twee torens en twee pionnen
+
+2122= een dame, twee torens en een paard/loper
+
+2123= een dame, twee torens, een paard/loper en een pion
+
+2124= een dame, twee torens, een paard/loper en twee pionnen
+
+2125= een dame, twee torens en twee paarden/lopers
+
+2126= een dame, twee torens, twee paarden/lopers en een pion
+
+2127= een dame, twee torens, twee paarden/lopers en twee pionnen
+
+2128= een dame, twee torens en drie paarden/lopers
+
+2129= een dame, twee torens, drie paarden/lopers en een pion
+
+2130= een dame, twee torens, drie paarden/lopers en twee pionnen
+
+2131= een dame, twee torens en vier paarden/lopers
+
+2132= een dame, twee torens, vier paarden/lopers en een pion
+
+2133= een dame, twee torens, vier paarden/lopers en twee pionnen
+
+2134= een dame, twee torens, vier paarden/lopers en drie pionnen
+
+2135= een dame, twee torens, vier paarden/lopers en vier pionnen
+
+2136= een dame, twee torens, vier paarden/lopers en vijf pionnen
+
+2137= een dame, twee torens, vier paarden/lopers en zes pionnen
+
+2138= een dame, twee torens, vier paarden/lopers en zeven pionnen
+
+2139= een dame, twee torens, vier paarden/lopers en acht pionnen
+
+2140= meer dan een volledige set van stukken
+
+2201= Dit is de beginsituatie.
+
+2202= Deze partij is afgelopen.
+
+2203= Beide spelers zijn even sterk met %d punten.
+
+2204= %0:s heeft %1:d punten meer dan %2:s. %0:s heeft een voordeel van %3:s.
+
+2205= De mobiliteit is voor beide spelers gelijk, beide kunnen in totaal %1:d zetten doen.
+
+2206= %0:s heeft met %1:d mogelijke zetten een grotere mobiliteit, %2:s heeft er %3:d.
+
+2207= Beide spelers vallen evenveel velden aan (%0:s valt %1:d velden aan, %2:s %3:d).
+
+2208= %0:s valt meer velden aan. %0:s valt %1:d velden aan, %2:s slechts %3:d.
+
+2209= Beide spelers hebben een even grote macht over het centrum.
+
+2210= %s heeft een sterkere macht over het centrum.
+
+2211= %s mag aan beide vleugels rocheren.
+
+2212= %s mag alleen aan de koningsvleugel rocheren
+
+2213= %s mag alleen aan de damevleugel rocheren
+
+2214= %0:s mag en passant slaan op %1:s.
+
+2301= Gebeurtenis
+
+2302= Site
+
+2303= Ronde
+
+2304= Datum
+
+2305= Tijd
+
+2306= Opening
+
+2307= Titel
+
+2308= Land
+
+2309= Notitiemaker
+
+[Program Tips]
+
+1= Welkom bij KChess Elite. Als u hulp nodig heeft of een probleemoplosser wilt raadplegen, klik dan op Help in het menu Help.
+
+2= U kunt zwart of wit spelen door de gewenste functie te selecteren uit het menu Spelen.
+
+3= Als u tijdens het spelen een fout maakte kunt u deze zet ongedaan maken in het menu Spelen.
+
+4= Als u zich tijdens het spelen geen raad meer weet kiest u uit het menu Zet de optie Snelle Hint. U krijgt dan een suggestie.
+
+5= Als u uw partijen te gemakkelijk of te moeilijk vindt, ga dan naar Menu -> Spelen -> Instellingen -> Sterkte. Klik dan rechtsonder op Beginner, Gevorderde of Expert.
+
+6= U kunt het bord op ieder moment omdraaien door Menu -> Spelen -> Roteer bord.
+
+7= Veelgebruikte functies uit de menu's kunnen sneller via de Button regel (onder de menubalk) opgeroepen worden.
+
+8= Om het uiterlijk van het bord en stukken te veranderen ga dan naar Menu -> Spelen -> Instellingen en kies het tabblad Bord.
+
+9= Als u de computer tegen de computer wil laten spelen, kies dan Automatisch Spelen uit het menu Spelen.
+
+10= Als u de partij niet nu maar later wilt afmaken kunt u de partij opslaan. Zie het menu Bestand.
+
+11= U kunt opgeslagen bestanden weer oproepen door Menu -> Bestand -> Openen... Kies dan de naam van het bestand.
+
+12= Als u de linker muisknop indrukt en vasthoud op een stuk dan worden alle velden gemarkeerd waar het stuk naar toe kan.
+
+13= Als u de rechter muisknop indrukt en vasthoud op een stuk of een veld dan worden alle stukken die dat stuk of veld aanvallen gemarkeerd.
+
+14= U kunt meerdere bestandsformaten gebuiken. Kies bij het opslaan of openen het bestandstype.
+
+15= Als u enkele zetten wilt uitproberen of een positie wilt analyseren kunt u nog een bord creëren met dezelfde opstelling: Menu -> Spelen -> Klonen.
+
+[Game Tips]
+
+1= Voor een goede opening zet u één van de centrumpionnen (d- of e-lijn) 2 velden vooruit. Zo heeft u direct een stuk in het centrum van het bord staan en andere stukken kunnen dan beter bewegen.
+
+2= In het begin van de partij is het aan te raden om de stukken zo snel mogelijk te ontwikkelen.
+
+3= Als één van uw pionnen de overkant bereikt, wordt het direct een dame, toren, loper of paard (naar uw keuze). Dit noemt men promoveren.
+
+4= Probeer meerdere malen zetten met hetzelfde stuk in het begin van de partij te voorkomen voor een zo snel mogelijke ontwikkeling.
+
+5= Het is handig om ieder stuk een waarde te geven: de pion krijgt 1 punt, de loper en het paard 3 punten, de toren 5 en de dame 9.
+
+6= A pion can take an enemy pion that has advanced 2 squares on its first move as if it had only advanced one square. This special move is called "en passant".
+
+7= U kunt de koning beter beschermen door er pionnen voor te laten staan.
+
+8= Het is aan te raden om de dame niet vroeg actief te zetten.
+
+9= U moet altijd aannemen dat de tegenstander zijn/haar beste zet doet. Neem nooit aan dat de tegenstander niet weet wat u met uw zet wilt bereiken.
+
+10= De 4 centrumvelden (d4, d5, e4 en e5) zijn het meest cruciaal op het bord. Probeer uw stukken daarop te zetten.
+
+11= Als uw koning noch één van uw torens nog geen zet heeft gedaan en de velden daartussen zijn leeg, dan kunt u de koning twee velden naar links of naar rechts zetten, waarna de toren over de koning heen springt. Dit wordt ook wel "rocheren" genoemd.
+
+12= Stukken hebben een grotere mobiliteit als ze in het centrum van het bord staan. Ze kunnen dan naar meer velden kijken.
+
+13= Als u er beter voor staat dan uw tegenstander, is het een goed idee om stukken te ruilen. Zo wordt uw relatieve sterkte verhoogd.
+
+14= U moet de minst waardige stukken gebruiken om andere stukken te dekken (beschermen). Gebruik nooit stukken die meer waard zijn dan de stukken die gedekt worden.
+
+[Chess Trivia]
+
+1= Waarschijnlijk is het schaakspel ontstaan in India omstreeks 550-600 n.Chr. Het verspreidde zich zeer snel door Azië, dan door Arabische gebieden en later door Europa.
+
+2= De langste schaakpartij die ooit gespeeld werd door schaakmeesters bestond uit 269 zetten. De partij werd gespeeld door Ivan Nikolic en Goran Arsovic in Belgrado in 1989. De partij duurde meer dan 20 uren en resulteerde in remise.
+
+3= Er wordt beweerd dat er meer literatuur bestaat over schaken dan over alle andere spelen samen.
+
+4= Er zijn 318.979.564.000 verschillende manieren om de eerste 4 zetten door beide spelers te doen.
+
+5= Het woord "Schaakmat" komt van het Persische "sjah mat". Dit betekent "de koning is dood".
+
+6= Het eerste schaakbord van lichte en donkere velden verscheen in Europa in 1090.
+
+7= In 1851 was A. Anderssen wereldkampioen schaken én dammen.
+
+8= Niaz Murshed (Bangladesh) is de jongste persoon die een nationaal kampioenschap won. Hij won de kampionschap van Bangladesh op 12-jarige leeftijd. Later werd hij de eerste (en enige) grootmeester van Bangladesh toen hij 20 was.
+
+9= In de T.V.-serie "Star Trek" speelden Captain Kirk en Mr. Spock drie keer schaak. Kirk won ze alle drie.
+
+10= Het eerste zakschaakspel is in 1845 gemaakt door Peter Mark Roget, schrijver van Roget's Thesaurus.
+
+11= In 1939 schreef Weaver Adams een boek getiteld "Wit speelt en wint". Bij zijn volgende tournooi verloor hij alle partijen als witspeler en hij won alle partijen als zwartspeler.
+
+12= De leidende Britse schaakmeesters van de Tweede Wereldoorlog werden later allemaal codebrekers voor Britse intelligentie.
+
+13= Er zijn meer dan 200 miljoen inwoners van China die van schaken houden. Dat is ongeveer het vijfde deel van de totale bevolking van China.
+
+14= Er zijn 169,518,829,100,544,000,000,000,000,000 (1,695e29) verschillende manieren om de eerste tien zetten te doen.
+
+15= De eerste telefoonschaakpartij was gespeeld door twee mannen in Derbyshire (Engeland) in 1878.
+
+16= Het eerste computerprogramma waarmee je redelijk goed kon schaken is geschreven bij MIT door Alex Bernstein in 1958-59.
+
+17= Het eerste tournooi was gehouden in Madrid in 1575. Giulio Polerio en Giovanni Leonardo versloegen Ruy Lopez en Alfonse Ceron in een serie van partijen die door koning Phillip II geregeld werd.
+
+18= Ex-wereldkampioen Jose Capablance begon op 4-jarige leeftijd al te schaken en versloeg in zijn eerste partij zijn vader op dezelfde leeftijd.
+
+19= De langste zet die ooit gespeeld is is gedaan door Francisco R. Torres Trois. Het duurde 2 uren en 20 minuten om één zet te doen tegen Luis M.C.P. Santos, in Vigo, Spanje in 1980. Trois had bij die zet slechts twee mogelijkheden.
+
+20= "De Schaakspelers" - in 1490 geschilderd - was het eerste schilderij met het schaakspel als thema.
+
+21= De jongste wereldkampioen van alles was Maya Chiburdanidze. Ze was 17 jaar oud toen ze de titel won in 1978.
+
+22= Garry Kasparov (voormalig Rusland) was 22 jaar oud toen hij Anatoly Karpov versloeg tijdens het wereldkampioenschap in 1985. Hij werd de jongste kampioen mannen in de geschiedenis.
+
+23= Automaten zijn apparaten die kunnen schaken. De eerste was "The Turk" in 1769, gevolgd door "Ajeeb" in 1868 en "Mephisto" in 1878.
+
+24= Dammen is een ouder spel dan schaken.
+
+25= Judit Polgar (Hongarije) was de jongste vrouw die de Internationaal Meester werd. Dit was in 1989 toen ze 12 was. In 1991 (met een leeftijd van 15 jaar) won ze de titel van Internationaal Grootmeester.
+
+26= De eerste verschijning van en schaakspel in een film was in "The Wishing Ring" in 1914.
+
+27= In 1974 hield Stockholm het eerste wereldkampioenschap computerschaak. Het Russische programma "Kaissa" won.
