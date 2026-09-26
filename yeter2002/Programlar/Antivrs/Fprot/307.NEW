@@ -1,0 +1,24 @@
+Changes in version 3.07
+
+We have made a number of minor improvements and changes to F-PROT since the
+release of the previous version.
+
+Most of those changes only affect the speed of the program, or the
+detection/disinfection of a handful of viruses, but there were a few
+changes to the program functionality:
+
+    The program can now be run from two diskettes, which can be necessary
+    when the hard disk MBR is corrupted.  You can now put F-PROT.EXE and
+    ENGLISH.TX0 on the first diskette and the three .DEF files (SIGN.DEF,
+    SIGN2.DEF and MACRO.DEF) on the second.
+
+    F-PROT can now sacn and disinfect Microsoft Project98 files.
+
+    Improved scanning of self-extracting archives.
+
+The total mumber of viruses and Trojans that are now detected by the
+program is now above 45200.
+
+We would also like to remind anyone reading this that the Windows version
+of F-PROT is now finally available world-wide.  If you have not yet taken
+a look at the trial version of FP-WIN, you might want to do so.
