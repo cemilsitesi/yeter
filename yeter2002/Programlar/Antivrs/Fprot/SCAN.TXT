@@ -1,0 +1,137 @@
+                               Virus scanning
+
+The primary scanner in the F-PROT shareware package is a the F-PROT.EXE
+DOS program.  We know that many people would prefer a Windows application,
+finding it easier to use than an "old-fashioned" DOS program.
+
+However, there is one reason why a DOS application is necessary: Consider
+what happens if Windows itself gets infected.  In order to run a Windows
+anti-virus program, you have to run Windows itself, which means that the
+virus would be active in the system, possibly interfering with the scanning
+or removal.  If you boot from a clean diskette, the virus will not be
+active, but then you have no Windows, so you can only use a DOS application
+in that case.
+
+                      Scanning with the F-PROT program
+
+When you select "Scan" from the main screen, you go to the menu on the
+right where you can select where to scan and what to do if a virus is
+found.
+
+At the top is a large "START" button.  When it is selected, a scan will
+start, using the current setup.
+
+To change the setup you simply use the arrow keys to move to the option you
+want to change and press <ENTER>.  A window will then appear showing the
+available possibilities, and you select one of them.
+
+The first option, "Search" is used to select where F-PROT should search for
+viruses.  The default is "Hard disk", meaning that the entire hard disk(s)
+will be scanned for viruses.  The other choice is "User-specified".  You
+need to use that if you only want to scan a single directory, or perhaps
+just a single file - in that case, just type in the path of what you want
+to scan.
+
+The second option, "Action" is used to specify what action should be taken
+when a virus is found.  The default operation is just to list the names of
+any infected files, but F-PROT can also disinfect almost all viruses.  If
+you want disinfection, it can either be fully automatic, or F-PROT can
+prompt you before it attempts to disinfect any given file. Sometimes
+an infection cannot be removed, for example if the virus just overwrites
+and destroys any file it infects, or in the case of a "first-generation"
+sample.
+
+A "first-generation" sample is the author's original copy of the virus,
+and can only exist if the file has been obtained directly or indirectly
+from him.  Such samples are generally not found in the "real world", only
+in large virus collections.
+
+In those cases the only effective disinfection is to delete the file.  It
+is always safer to delete infected programs than to disinfect, so F-PROT
+offers deletion as well - any infected file will first be overwritten
+several times (just to make sure) and then deleted.  You can select
+automatic deletion or have F-PROT prompt you before it deletes a file. 
+Finally, an infected COM/EXE file can be renamed, and given the extension
+.VOM or .VXE, so it will not be executed by accident, but you will still have
+it around to study.  Infected Word or Excel documents are not renamed as
+doing so would not make the viruses any less infectious.
+
+The third option, "Files" is used to select which files F-PROT should
+scan for viruses. The default is to scan only files with certain
+"executable" extensions, such as EXE, COM, SYS, 386, SCR and so on.  In
+addition, Word and Excel files having extensions that match DO? and XL?
+are scanned as well.
+
+If you use Word/Excel and your documents have non-standard extensions, you
+need to select "Ignore document extensions".  This will slow the scan
+significantly, as every file now has to be checked to see whether it is a
+Word/Excel file.
+
+Finally, you can select "dumb" scan of all files.  We do not recommend
+this except under very special circumstances, such as when scanning a
+virus collection where .COM files have been renamed to .VOM.  In general,
+selecting this choice will do nothing but waste significant amount of
+time.
+
+If any of the options are changed from their default values, F-PROT will
+ask if the changed values should be saved when you exit from the program.
+If so, a file named F-PROT.INI will be created.
+
+
+                         Starting the virus scan
+
+When you have selected the correct options, you may start the scanning by
+selecting "Start" at the top of the menu.
+
+The scanning can be aborted at any time simply by pressing the ESC key.
+
+When the scanning is finished, a summary is displayed.  If no viruses or
+suspicious programs were found, it simply says so, but otherwise a
+detailed listing is produced when ENTER is pressed.  This listing can be
+saved to a disk or sent to the printer.
+
+
+                          A note on disinfection
+
+When a file has been disinfected it has usually been restored to its
+original state before infection.  In many cases the disinfected program
+will have 1-16 additional garbage bytes at the end.  Those bytes are added
+by viruses, in order to make the length of the program a multiple of 16
+bytes, before infection.  As the number of those extra bytes cannot be
+determined, they cannot be removed.  Normally they will not have any effect,
+unless the program checks its current length.  In those cases it will
+report an incorrect length after disinfection, and will have to be restored
+from a backup.
+
+                        Skipping the memory scan
+
+Normally F-PROT will search the memory for viruses, and refuse to operate
+if any virus is found in memory.  However, a false alarm is possible, for
+example if an infected file has just been copied, and portions of it are in
+an unused disk buffer.  To skip the memory scan, run the program with the
+/NOMEM command-line switch.
+
+                          Testing the scanner
+
+The correct operation of F-PROT can be tested with a special test 
+file. This is a dummy file which is detected by F-PROT exactly like 
+if it were a virus. This file is known as EICAR Standard Anti-virus
+Test file, and it is also detected by several other anti-virus products 
+in a similar manner.  (EICAR is the European Institute of Computer
+Anti-virus Research).  
+
+Naturally, the file is not a virus. When executed, EICAR.COM will
+display the text 'EICAR-STANDARD-ANTIVIRUS-TEST-FILE' and exit.
+ 
+We do not include the EICAR test file with the package to avoid alarming
+anyone running F-PROT (or any other scanner) on the package, but to create
+the EICAR test file, use any text editor to create a file with the
+following single line in it:
+ 
+X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
+ 
+Save the file to any name with COM extension, for example EICAR.COM.
+Make sure you save the file in standard MS-DOS ASCII format.  The file
+should be 68 bytes long, but might be 70 bytes if the editor puts a
+CR/LF at the end.  Now you can use this file to test what happens
+when F-PROT encounters a "real" virus.
