@@ -1,0 +1,50 @@
+SOFTWARE INFORMATIONS:
+----------------------
+NAME: THE KORAN
+VERSION: 6.01
+AUTHOR(COMPANY): SAMIR ALICEHAJIC
+
+SHORT DESCRIPTION:
+------------------
+Read The Koran(Qur'an) holy muslim book on your PC.
+
+LONG DESCRIPTION:
+-----------------
+The Koran 2 dimensional software for Windows 95/98/NT.
+Program features
+- The Koran sound in MP3 sound format
+- Available on 20-21 The Qur'an translations
+- 2 dimensional animations
+- changing text Font and text color.
+- custom page images
+- advanced printing options
+- using various system Fonts
+- search engine, 
+- opening and saving underlined text.
+- jumping on specific surra's.
+- Program have install and uninstall program.
+The Koran is beautifull software and it is FREE for use.
+
+DIRECT DOWNLOADING:
+-------------------
+http://www.yildun.com/quran.zip
+http://www2.domaindlx.com/yildun/quran.zip
+ftp://ftp.simtel.net/pub/simtelnet/win95/religion/quran6ds.zip
+
+PAD FILE
+--------
+http://www.yildun.com/quranpad.xml
+
+
+AUTHOR & OWNER:
+---------------
+Samir Alicehajic
+Padovceva 9
+10000 ZAGREB
+CROATIA, EUROPE
+
+email: samir@yildun.com
+site:  http://www.yildun.com
+site2: http://www.geocities.com/saliceha/
+site3: http://www2.domaindlx.com/yildun/
+
