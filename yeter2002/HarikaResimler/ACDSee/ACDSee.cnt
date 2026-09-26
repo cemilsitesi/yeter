@@ -1,0 +1,80 @@
+:Base ACDSee.hlp
+:Title ACDSee On-line Documentation
+1 Introduction
+2 Overview of features=INTRO_FEATURES>DefWin
+2 Image formats supported=INTRO_FORMATS>DefWin
+2 What's new in this release?=INTRO_WHATS_NEW>DefWin
+2 Year 2000 compliance=INTRO_Y2K>DefWin
+1 User interface
+2 Summary=IDH_UI>DefWin
+2 Browse mode=IDH_UI_BROWSEMODE>DefWin
+2 View mode=IDH_UI_VIEWMODE>DefWin
+2 Photo enhancer=IDH_UI_PHOTOENHANCER>DefWin
+1 Using ACDSee
+2 Starting the program=USING_STARTING>DefWin
+2 Viewing
+3 Image sequences=IDH_IMAGESEQUENCES>DefWin
+3 Zooming=IDH_ZOOM>DefWin
+3 Panning/scrolling=IDH_PAN>DefWin
+3 Selection=IDH_SELECTION>DefWin
+3 Slide show=IDH_SLIDESHOW>DefWin
+3 Folder synchronization=IDH_SYNCTOFOLDER>DefWin
+2 Browsing
+3 Copy to / Move to=FMF_COPYMOVETO>DefWin
+3 Copy/Paste Files=FMF_COPYPASTE>DefWin
+3 Drag and drop=FMF_DRAGDROP>DefWin
+3 Renaming files=FMF_RENAME>DefWin
+3 Deleting files=FMF_DELETE>DefWin
+3 File descriptions=FMF_DESCRIBE>DefWin
+3 Thumbnails=FMF_THUMBNAILS>DefWin
+2 Acquire and print
+3 Acquire=IDH_ACQUIRE>DefWin
+3 Digital camera=IDH_DCSUPPORT>DefWin
+3 Print=IDH_PRINT>DefWin
+2 Tools
+3 Photo enhancer=IDH_UI_PHOTOENHANCER>DefWin
+3 Wallpaper=IDH_WALLPAPER>DefWin
+3 Convert=IDH_CONVERT>DefWin
+3 Find images=IDH_FINDIMAGES>DefWin
+3 Shell commands=IDH_SHELLCOMMANDS>DefWin
+3 Generate file listing=IDH_GENERATEFILELISTING>DefWin
+3 Rename series=IDH_RENAMESERIES>DefWin
+3 Timestamp=IDH_TIMESTAMP>DefWin
+2 Plug-ins
+3 Introduction=PI_INTRO>DefWin
+3 Settings=PI_SETTINGS>DefWin
+2 Keyboard shortcuts
+3 Browser shortcuts=IDH_BROWSERKEYS>DefWin
+3 Viewer shortcuts=IDH_VIEWERKEYS>DefWin
+;3 Photo enhancer shortcuts=IDH_PHOTOENHANCERKEYS>DefWin
+2 Programmatic usage of ACDSee
+3 DDE Interface=PU_DDEINTERFACE>DefWin
+3 System administrator options=PU_SYSADMINOPTIONS>DefWin
+1 How To...
+2 Run a slide show=HOWTO_SLIDE_SHOW>DefWin
+2 View an image full-screen=HOWTO_FULL_SCREEN>DefWin
+2 Print images=IDH_PRINT>DefWin
+2 Customize ACDSee=HOWTO_SET_OPTIONS>DefWin
+2 Run ACDSee automatically from other programs=HOWTO_RUN_FROM_PROGRAMS>DefWin
+2 Control the size and position of the viewing window=HOWTO_CONTROL_VIEW_WINDOW>DefWin
+2 Change the way files are sorted=HOWTO_SORT>DefWin
+2 Show/hide file list columns=HOWTO_SHOWHIDE>DefWin
+2 Change the order of columns=HOWTO_COLUMNORDER>DefWin
+2 Launch document files=HOWTO_LAUNCH>DefWin
+2 Convert images to another format=HOWTO_CONVERT>DefWin
+1 Tips and tricks
+2 Viewing multiple images simultaneously=TIPS_VIEWING_MULTIPLE_IMAGES>DefWin
+2 Optimizing image display quality=TIPS_IMPROVE_IMAGE_QUALITY>DefWin
+2 Using a single window when used as a helper application=TIPS_SINGLE_INSTANCE_MODE>DefWin
+1 Purchasing and licensing
+2 Purchasing=IDH_ORDERING>DefWin
+2 How to order=ORDERING_HOW>DefWin
+2 Site licensing=ORDERING_SITE_LICENSE>DefWin
+2 Order form=ORDERING_FORM>DefWin
+2 Trial Version license=LICENSE>DefWin
+1 About ACDSee
+2 Getting program updates=ABOUT_UPDATES>DefWin
+2 Getting technical support and contributing feedback=ABOUT_SUPPORT>DefWin
+2 Contacting ACD Systems=ABOUT_CONTACT>DefWin
+2 Acknowledgments=ABOUT_ACKNOWLEDGMENTS>DefWin
+2 Frequently asked questions=ABOUT_FAQ>DefWin
