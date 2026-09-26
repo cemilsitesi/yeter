@@ -1,0 +1,30 @@
+
+Register bolumune ebd0b001905f5e5b8be55dc3 yazilacak
+ 
+
+
+Universal 'Offline Explorer Pro' Patcher !
+
+This pacht works excellent with OEP versions from 1.4.x to 1.8.x
+and probably with future versions too, since the same kind of 
+protection has been used.
+
+Attention !!!!
+This pach MUST BE applied to unpacked version of oe.exe, otherwise the 
+process fail. Use enclosed UnASPack.exe to unpack the oe.exe .
+
+This patch simply cheats verification procedures, so you can work 
+without time restrictions. Although after patching, you are unable to 
+successfully register this application, because of changes made in 
+code.
+
+If you want to see the difference, here it goes: 
+Replace 'ebd08a45ff5f5e5b8be55dc3' with 'ebd0b001905f5e5b8be55dc3'.
+         ....^^^^^^..............        ....^^^^^^.............. 
+
+The only goal of this patch is to extend the evaluation period. So if 
+you are satisfied with this EXCELLENT application, please pay for it.
+
+[Luc]
+
+ps. Patch made with 'PatchFX Generator' (www.perfx.net)
