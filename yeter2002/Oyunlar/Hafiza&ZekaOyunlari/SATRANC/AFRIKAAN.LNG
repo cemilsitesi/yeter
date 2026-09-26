@@ -1,0 +1,1077 @@
+[Objects]
+
+AboutDlg= Oor KChess Elite
+
+AboutDlg.RegoLabel= Deur te registreer kan u alle funksies van hierdie program gebruik. Daar sal dan geen waarskuwings en 'n maksimum tyd vir gebruik wees nie. U kom ook in aanmerking vir toekomstige opgraderings teen laer pryse of gratis.
+
+AboutDlg.ClickLabel= Kliek op "Help" vir meer inligting oor hierdie program en om te registreer. Kliek op "Registreer" as u die volledige weergawe wil aanskaf. As u reeds geregistreer het, kliek op "Ontsluit" om die registrasiegegewens in te voer.
+
+AboutDlg.OkBtn= &GV
+
+AboutDlg.RegoBtn= &Registreer
+
+AboutDlg.UnlockBtn= &Ontsluit
+
+AboutDlg.HelpBtn= &Help
+
+BoardSetDlg= Aanvanklike Boardverstellings
+
+BoardSetDlg.Heading= Voer die aanvangstand van die bord in:
+
+BoardSetDlg.EnPassantLabel= En passant teiken:
+
+BoardSetDlg.FirstMoveLabel= Eerste skuifnommer:
+
+BoardSetDlg.FiftyMoveLabel= Skuiwe sedert stuk geneem of pionskuif:
+
+BoardSetDlg.CastleGroup= Rokering toelaatbaar
+
+BoardSetDlg.BlackQueenBox= Swart dameskant
+
+BoardSetDlg.BlackKingBox= koningskant
+
+BoardSetDlg.WhiteQueenBox= Wit dameskant
+
+BoardSetDlg.WhiteKingBox= koningskant
+
+BoardSetDlg.FirstGroup= Eerste speler
+
+BoardSetDlg.StatusGroup= Spelstatus | Normaal | gelykop | Oorgegee
+
+BoardSetDlg.OkBtn= &GV
+
+BoardSetDlg.CancelBtn= &Kanselleer
+
+BoardSetDlg.HelpBtn= &Help
+
+ChessForm.FreezePanel= Pouse
+
+ChessForm.FileMenu1= &Lêer
+
+ChessForm.FileNew1= &Nuwe | Ctrl+N
+
+ChessForm.FileOpen1= Maak &Oop... | Ctrl+O
+
+ChessForm.FileReopen1= he&ropen | Ctrl+R
+
+ChessForm.FileSave1= &Stoor | Ctrl+S
+
+ChessForm.FileSaveAs1= Stoor &As... | Ctrl+A
+
+ChessForm.PrintMoves1= &Druk Skuiwe... | Ctrl+P
+
+ChessForm.BoardPrint1= Druk &Bord... | Ctrl+B
+
+ChessForm.PrintSetup1= Druk&verstellings...
+
+ChessForm.FileExit1= &Eindig Program
+
+ChessForm.PlayMenu1= S&pel
+
+ChessForm.BoardSetup1= Bord op&stelling
+
+ChessForm.Clear1= &Maak bord skoon
+
+ChessForm.EnterPosition1= Voer &posisie in...
+
+ChessForm.SetBoardState1= Bordverst&ellings...
+
+ChessForm.Opening1= Openin&g... | Ctrl+G
+
+ChessForm.AutoPlay1= &Outomatiese spel | Alt+A
+
+ChessForm.PlayWhite1= Speel &Wit | Alt+W
+
+ChessForm.PlayBlack1= Speel &Swart | Alt+S
+
+ChessForm.TwoPlayer1= &Twee Spelers | Alt+T
+
+ChessForm.Analyse1= O&ntleed
+
+ChessForm.Rotate1= &Roteer Bord | Alt+Q
+
+ChessForm.Speak1= Spraa&k
+
+ChessForm.SpeakMove1= &Skuif | Alt+0
+
+ChessForm.SpeakRank11= Ry &1 | Alt+1
+
+ChessForm.SpeakRank21= Ry &2 | Alt+2
+
+ChessForm.SpeakRank31= Ry &3 | Alt+3
+
+ChessForm.SpeakRank41= Ry &4 | Alt+4
+
+ChessForm.SpeakRank51= Ry &5 | Alt+5
+
+ChessForm.SpeakRank61= Ry &6 | Alt+6
+
+ChessForm.SpeakRank71= Ry &7 | Alt+7
+
+ChessForm.SpeakRank81= Ry &8 | Alt+8
+
+ChessForm.SpeakFilea1= Lyn &a | Ctrl+1
+
+ChessForm.SpeakFileb1= Lyn &b | Ctrl+2
+
+ChessForm.SpeakFilec1= Lyn &c | Ctrl+3
+
+ChessForm.SpeakFiled1= Lyn &d | Ctrl+4
+
+ChessForm.SpeakFilee1= Lyn &e | Ctrl+5
+
+ChessForm.SpeakFilef1= Lyn &f | Ctrl+6
+
+ChessForm.SpeakFileg1= Lyn &g | Ctrl+7
+
+ChessForm.SpeakFileh1= Lyn &h | Ctrl+8
+
+ChessForm.SpeakStatus1= &Stand | Alt+9
+
+ChessForm.CopyGame1= &Kopieer spel | Ctrl+C
+
+ChessForm.PasteGame1= &Plak spel | Ctrl+V
+
+ChessForm.Variation1= &Variasie | Alt+V
+
+ChessForm.Freeze1= &Pouse | Alt+Z
+
+ChessForm.GameInfo1= Spelinli&gting... | Alt+G
+
+ChessForm.Options1= &Opsies... | Alt+O
+
+ChessForm.MoveMenu1= S&kuif
+
+ChessForm.Undo1= Maak &Ongedaan | Alt+U
+
+ChessForm.Redo1= Doen Wee&r | Alt+R
+
+ChessForm.UndoAll1= Maak Alles Onge&daan | Alt+D
+
+ChessForm.RedoAll1= Doen A&lles Weer
+
+ChessForm.Hint1= K&itswenk | Alt+I
+
+ChessForm.EnterMove1= &Voer Skuif In... | Enter
+
+ChessForm.ComputerMove1= &Rekenaarskuif | Alt+C
+
+ChessForm.Stop1= &Hou Op Dink
+
+ChessForm.Replay1= &Skuif Oor | Alt+Y
+
+ChessForm.Resign1= &Gee Oor | Alt+N
+
+ChessForm.OfferDraw1= Bied Gel&ykopspel Aan
+
+ChessForm.Comment1= Komm&entaar | Alt+E
+
+ChessForm.HelpMenu1= &Help
+
+ChessForm.HelpHelp1= &Help
+
+ChessForm.HelpUsing1= Gebr&uik Van Help
+
+ChessForm.HelpIndex1= Help &Indeks
+
+ChessForm.SearchHelpfor1= &Soek Help vir...
+
+ChessForm.BeginnersInfo1= &Beginnersinligting
+
+ChessForm.Rules1= Skaak&reëls
+
+ChessForm.TipoftheDay1= &Wenk van die Dag...
+
+ChessForm.KChessWebSite1= KChess Webruimte
+
+ChessForm.HelpAbout1= &Oor KChess...
+
+ChessForm.NewButton= Nuwe spel
+
+ChessForm.OpenButton= Maak spel oop
+
+ChessForm.SaveButton= Stoor spel
+
+ChessForm.PrintButton= Druk spel
+
+ChessForm.SetupButton= Bordopstelling
+
+ChessForm.AutoplayButton= Outomatiese spel
+
+ChessForm.PlayWhiteButton= Speel wit
+
+ChessForm.PlayBlackButton= Speel swart
+
+ChessForm.TwoPlayerButton= Twee spelers
+
+ChessForm.AnalyseButton= Ontleed posisie
+
+ChessForm.RotateButton= Roteer bord
+
+ChessForm.CopyButton= Kopieer spel
+
+ChessForm.PasteButton= Plak spel
+
+ChessForm.VariationButton= Variasie
+
+ChessForm.FreezeButton= Pouse
+
+ChessForm.OptionsButton= Opsies
+
+ChessForm.UndoAllButton= Alles ongedaanmaak
+
+ChessForm.UndoButton= Skuif ongedaanmaak
+
+ChessForm.RedoButton= Skuif oor
+
+ChessForm.RedoAllButton= Doen alles oor
+
+ChessForm.HintButton= Kitswenk
+
+ChessForm.ComputerButton= Rekenaar skuif
+
+ChessForm.StopButton= Hou op dink
+
+ChessForm.ReplayButton= Skuif oor
+
+ChessForm.HelpButton= Help
+
+EnterMoveDlg.OkBtn= &GV
+
+EnterMoveDlg.CancelBtn= &Kanselleer
+
+EnterMoveDlg.HelpBtn= &Help
+
+InfoDlg= Spel- en spelerinligting
+
+InfoDlg.Heading= Voer inligting oor hierdie spel en die spelers in:
+
+InfoDlg.EventLabel= Geleentheid:
+
+InfoDlg.SiteLabel= Plek:
+
+InfoDlg.DateLabel= Datum (jjjj.mm.dd):
+
+InfoDlg.TimeLabel= Tyd (uu:mm:ss):
+
+InfoDlg.RoundLabel= Rondte:
+
+InfoDlg.WhiteLabel= Wit speler:
+
+InfoDlg.BlackLabel= Swart speler:
+
+InfoDlg.EventDateLabel= Datum van geleentheid:
+
+InfoDlg.OpeningLabel= Opening:
+
+InfoDlg.TitleLabel= Titel:
+
+InfoDlg.PlayerLabel= Naam:
+
+InfoDlg.CtryLabel= Land:
+
+InfoDlg.AnnotatorLabel= Annoteerder:
+
+InfoDlg.OkBtn= &GV
+
+InfoDlg.CancelBtn= &Kanselleer
+
+InfoDlg.HelpBtn= &Help
+
+OpeningsDlg= Biblioteek van Openinge
+
+OpeningsDlg.Heading= Kies die opening wat u wil speel:
+
+OpeningsDlg.ColumnHeader= Kode | Naam | Skuiwe
+
+OpeningsDlg.OkBtn= &GV
+
+OpeningsDlg.CancelBtn= &Kanselleer
+
+OpeningsDlg.SortBtn= &Sorteer
+
+OpeningsDlg.HelpBtn= &Help
+
+OptionsDlg= Opsies
+
+OptionsDlg.OptionsTab= Sterkte | Vertoon | Stukke | Bord | Teks | Oudio | Druk
+
+OptionsDlg.LimitTypeGroup= Tydbeperkingstype | &Geen tydbeperking | Speltyd per speler | Skuiftyd per speler | Aantal skuiwe per uur | Rekenaar en speler dink e&ve lank | &Uurglas tydhouer
+
+OptionsDlg.LengthGroup= Maksimum tyd toegelaat
+
+OptionsDlg.UserLimitGroup= &As tydbeperking oorskry word | Nie van toepassing op gebruiker  | Rekenaar skuif vir gebruiker | Gebruiker verloor
+
+OptionsDlg.MiscGroup= S&pelopsies
+
+OptionsDlg.ThinkAheadBox= Laat rekenaar vooruit dink
+
+OptionsDlg.FreezeCoversBox= Bedek bord gedurende pouse
+
+OptionsDlg.OpeningLibBox= Gebruik openingsbiblioteek
+
+OptionsDlg.ResignBox= Rekenaaroorgawe toelaatbaar
+
+OptionsDlg.DrawBox= Onvoldoende magte gelykopspel toelaatbaar
+
+OptionsDlg.PromoteBox= Promoveer altyd tot dame
+
+OptionsDlg.PressBox= Druk horlosie outomaties na skuif
+
+OptionsDlg.FreezeMinimizeBox= Pouse tydens minimalisering
+
+OptionsDlg.ValidateBoardBox= Kontrolleer bord tydens opstelling
+
+OptionsDlg.SearchGroup= Soek&diepte
+
+OptionsDlg.WeakestLabel= Swakste
+
+OptionsDlg.StrongestLabel= Sterkste
+
+OptionsDlg.NoviceBtn= Beginner | Stel opsies op eenvoudigste vlak
+
+OptionsDlg.AverageBtn= Gemiddeld | Stel opsies op intermediêre vlak
+
+OptionsDlg.ExpertBtn= Deskundige | Stel opsies op moeilikste vlak
+
+OptionsDlg.ButtonsGroup= &Knoppiesbalk | Geen | Links | Bo
+
+OptionsDlg.TakenGroup= Geneemde stukke
+
+OptionsDlg.ShowTakenBox= &Toon geneemde stukke
+
+OptionsDlg.SortTakenBox= &Sorteer volgens waarde
+
+OptionsDlg.EdgeGroup= Bordrand
+
+OptionsDlg.LabelsBox= Toon vierkantname
+
+OptionsDlg.PlayersBox= Toon s&pelername
+
+OptionsDlg.EdgeSizeGroup= Bord- en r&andgrootte
+
+OptionsDlg.NarrowestLabel= Smalste
+
+OptionsDlg.WidestLabel= Wydste
+
+OptionsDlg.StatusGroup= Statuspaneel
+
+OptionsDlg.CommentBox= Toon ko&mmentaar
+
+OptionsDlg.WorkingBox= Toon &denkproses
+
+OptionsDlg.ShowStatusBox= Toon &statuspaneel
+
+OptionsDlg.AnalogueBox= Toon &analooghorlosies
+
+OptionsDlg.DigitalBox= Toon &digitale horlosies
+
+OptionsDlg.HundredthsBox= Toon 1/100 s&ekondes
+
+OptionsDlg.NarrationBox= Toon posisiebeskrywi&ng
+
+OptionsDlg.EcoBox= Toon &ECO-name
+
+OptionsDlg.RefreshGroup= &Vernuwingsfrekwensie
+
+OptionsDlg.HighestLabel= Hoogste
+
+OptionsDlg.LowestLabel= Laagste
+
+OptionsDlg.PiecesGroup= &Stukke
+
+OptionsDlg.DisplayGroup= Stukvertoonopsies
+
+OptionsDlg.ScaleBox= Skaa&l stukke volgens bordgrootte
+
+OptionsDlg.CaptionsBox= Toon stukname
+
+OptionsDlg.SpeedGroup= Skuifsnel&heid
+
+OptionsDlg.FastestLabel= Vinnigste
+
+OptionsDlg.SlowestLabel= Stadigste
+
+OptionsDlg.MovingGroup= Skuifopsies
+
+OptionsDlg.FastOpenBox= Kits &lêeroopmaak
+
+OptionsDlg.FastUndoBox= Kits skuif &ongedaanmaak
+
+OptionsDlg.FastRedoBox= Kits oo&r skuif
+
+OptionsDlg.OpenToEndBox= Open lêers tot &einde
+
+OptionsDlg.DragPiecesBox= Sleep stukke met muis
+
+OptionsDlg.TwoClickBox= Laat twee-kliek-skuiwe toe
+
+OptionsDlg.MoveCursorBox= Laat skuiwe met spasiebalk toe
+
+OptionsDlg.ReduceFlickerBox= Verminder flikker tydens herteken
+
+OptionsDlg.DelayGroup= Vertraging tussen skui&we
+
+OptionsDlg.ShortestLabel= Kortste
+
+OptionsDlg.LongestLabel= Langste
+
+OptionsDlg.HintsGroup= Bordwenke
+
+OptionsDlg.AttacksBox= Toon aanvalle
+
+OptionsDlg.JeopardiesBox= Toon gevare
+
+OptionsDlg.PieceHintsBox= Toon wenke vir stukke
+
+OptionsDlg.SquareHintsBox= Toon wenke vir vierkante
+
+OptionsDlg.MoveMarkerBox= Toon skuif&merker
+
+OptionsDlg.SquareSizeGroup= Bord- en Vierkantgrootte
+
+OptionsDlg.SmallestLabel= Kleinste
+
+OptionsDlg.LargestLabel= Grootste
+
+OptionsDlg.BorderSizeGroup= Aanval/Gevaar Randgr&ootte
+
+OptionsDlg.ThinnestLabel= Dunste
+
+OptionsDlg.ThickestLabel= Dikste
+
+OptionsDlg.TextureGroup= Bord&patroon
+
+OptionsDlg.ColourGroup= Kleure
+
+OptionsDlg.WhiteSquareBtn= &Wit vierkante
+
+OptionsDlg.BlackSquareBtn= &Swart vierkante
+
+OptionsDlg.AttackBtn= &Aanvalle
+
+OptionsDlg.JeopardyBtn= &Gevare
+
+OptionsDlg.MoveMarkerBtn= Skuifmerker
+
+OptionsDlg.FontGroup= &Skermlettertipe
+
+OptionsDlg.FontLabel= Voorbeeldteks
+
+OptionsDlg.FixedLabel= Voorbeeldteks
+
+OptionsDlg.FixedBox= eweredige letterbreedte vir skuiwelys
+
+OptionsDlg.NotationGroup= &Notasie | Standaard Algebraïes (bv Be3) | Lang Algebraïes (bv Bc1-e3) | Rekenaar (bv c1e3)
+
+OptionsDlg.LanguageGroup= &Taal
+
+OptionsDlg.TextTypeGroup= &Skaakstukletters | Standaard Engels | Taalaangepas
+
+OptionsDlg.CustomTextGroup= &Aangepaste teks
+
+OptionsDlg.AudioGroup= &Klank | Geen | Slegs klankeffekte | Klank en gesproke status | Klank en gesproke skuiwe
+
+OptionsDlg.WhiteVoiceGroup= &Stem vir wit | Man | Vrou
+
+OptionsDlg.BlackVoiceGroup= &Stem vir swart | Man | Vrou
+
+OptionsDlg.PrintGroup= &Drukkerlettertipe
+
+OptionsDlg.PrintLabel= Voorbeeldteks
+
+OptionsDlg.PrintBoldBox= &Vetgedruk
+
+OptionsDlg.PrintItalicBox= &Kursief
+
+OptionsDlg.PrintFixedBox= Eweredige letterbreedte vir skuiwelys in kolomformaat
+
+OptionsDlg.FigureGroup= &Figuurlettertipe
+
+OptionsDlg.FigureCharLabel= Figuurlettertekens
+
+OptionsDlg.PrintSetupBtn= D&rukverstellings
+
+OptionsDlg.OkBtn= &GV
+
+OptionsDlg.CancelBtn= &Kanselleer
+
+OptionsDlg.PreviewBtn= &Voorskou
+
+OptionsDlg.DefaultsBtn= &Verstek
+
+OptionsDlg.HelpBtn= &Help
+
+OrderDlg= Registrasie/Bestelvorm
+
+OrderDlg.Heading= Verskaf u naam, adres en betaalbesonderhede, en stuur as volg:
+
+OrderDlg.NameLabel= Naam:
+
+OrderDlg.CompanyLabel= Maatskappy:
+
+OrderDlg.AddressLabel= Adres:
+
+OrderDlg.CountryLabel= Land:
+
+OrderDlg.PhoneLabel= Telefoon:
+
+OrderDlg.FaxLabel= Faks:
+
+OrderDlg.EmailLabel= E-pos:
+
+OrderDlg.SourceLabel= Waar program gesien of verkry:
+
+OrderDlg.ProductLabel= Produk:
+
+OrderDlg.AmountLabel= Munteenheid en Bedrag Betaal:
+
+OrderDlg.CommentLabel= Kommentaar:
+
+OrderDlg.PaymentGroup= BetaalTipe:
+
+OrderDlg.CardLabel= Kaartnommer:
+
+OrderDlg.ExpiryLabel= Verval:
+
+OrderDlg.HolderLabel= Kaarthouernaam:
+
+OrderDlg.CloseBtn= Sluit
+
+OrderDlg.PrintBtn= &Druk
+
+OrderDlg.FileBtn= &Lêer
+
+OrderDlg.CopyBtn= &Kopieer
+
+OrderDlg.EmailBtn= &E-pos
+
+OrderDlg.HelpBtn= &Help
+
+PromoteDlg= Promovering
+
+PromoteDlg.QueenBtn= &Dame
+
+PromoteDlg.RookBtn= &Toring
+
+PromoteDlg.BishopBtn= &Loper
+
+PromoteDlg.KnightBtn= &Ruiter
+
+PromoteDlg.HelpBtn= &Help
+
+SelectDlg= Kies spel
+
+SelectDlg.Heading= Hierdie lêer is 'n biblioteek van spelle. Kies die spel wat u wil oopmaak:
+
+SelectDlg.KeepBox= Hou biblioteek in geheue
+
+SelectDlg.OkBtn= &GV
+
+SelectDlg.CancelBtn= &Kanselleer
+
+SelectDlg.HelpBtn= &Help
+
+TipsDlg= Wenk van die Dag
+
+TipsDlg.TipLabel= Het u geweet...
+
+TipsDlg.ShowTipsBox= Toon Wenke as program begin
+
+TipsDlg.TipTypesGroup= Toon soorte wenke | KChess-program | Skaakspeel | Skaakwetenswaardighede | Alle soorte wenke
+
+TipsDlg.PrevBtn= < &Vorige wenk
+
+TipsDlg.NextBtn= V&olgende wenk
+
+TipsDlg.CloseBtn= &Sluit
+
+UnlockDlg= Ontsluit Program
+
+UnlockDlg.Heading= Voer u registrasiegegewens hieronder in vir toegang tot alle funksies van hierdie program:
+
+UnlockDlg.NameLabel= U naam:
+
+UnlockDlg.SerialLabel= Serienommer:
+
+UnlockDlg.UnlockLabel= Ontsluitkode:
+
+UnlockDlg.OkBtn= &GV
+
+UnlockDlg.CancelBtn= &Kanselleer
+
+UnlockDlg.HelpBtn= &Help
+
+[Messages]
+
+1000= Foutboodskap %d nie gevind nie.
+
+1001= Ongeldige bordposisie.
+
+1002= Ongeldig en passant vierkant.
+
+1003= Ongeldige aantal skuiwe sederd laaste stuk geneem of pionskuif.
+
+1004= 'n Interne verwerkingsfout is bespeur. Probeer ander aktiewe programme (soos virusprogramme) uit te skakel. Kom die probleem steeds voo, maak dan 'n aantekening van die volgende foutboodskap en tree in verbinding met ARK ANGLES (arkangles@arkangles.com).
+
+1005= Onbekende lêerformaat.
+
+1006= Ongeldige gegewens.
+
+1007= Ongeldige skuif in spellêer.
+
+1008= Die statuspaneel is te klein vir kommentaar. Om kommentaar in te voer moet u eers die bordgrootte vergroot of moenie die horlosies vertoon nie.
+
+1009= Ongeldige Naam, Serienommer of Ontsluitkode.
+
+1011= Kan nie skuif %s terugtrek nie.
+
+1012= Kan nie stuk op %s skuif nie.
+
+1013= %s is 'n ongeldige skuif.
+
+1014= %s is nie 'n geldige skuif nie.
+
+1015= Kan nie die skuif uitvoer nie, %s is nie geldig nie.
+
+1016= Die lêer %s kan nie gevind word nie of is korrup. Installeer KChess Elite weer oor.
+
+1017= Die lêer %s bestaan nie.
+
+1018= %s bestaan reeds. Wil u dit oorskryf?
+
+1019= %s bestaan reeds. Wil u daarby aanheg of dit oorskryf?
+
+1020= Wil u hierdie spel beëindig sonder om dit te stoor?
+
+1021= U het nog net een minuut oor in hierdie program.
+
+1022= Die tyd om hierdie program te gebruik is verby.
+
+1023= U kan nie spelle stoor tydens die evaluasieperiode nie. Registreer vir die volledige pakket. Sien [Kieslys -> Help -> Oor...] vir besonderhede.
+
+1024= Die aanbod vir 'n gelykopspel word van die hand gewys.
+
+1025= Kan nie lêer %s lees nie. KChess Elite 16 kan nie meer as 32000 lyne lees nie. Gebruik hiervoor KChess Elite 32.
+
+1026= Hierdie beta toetsweergawe kan nie ontsluit word nie. Hiervoor het u die nuutste geregistreerde of proefweergawe nodig.
+
+1027= Sommige verstellings het verander sedert die huidige spel gelai is. Wil u die vorige verstellings gebruik?
+
+1031= Voer skuif in
+
+1032= Voer u skuif in in ondubbelsinnige formaat (soos e2e4, Le4 of slegs e4):
+
+1033= Voer posisie in
+
+1034= Voer 'n posisie in standaard FEN-formaat in:
+
+1035= Stoor opsies met gestoorde lêers
+
+1041= minute per speler
+
+1042= sekondes per beurt
+
+1043= skuiwe per uur
+
+1045= sekondes in uurglas
+
+1051= lae
+
+1052= stappe
+
+1053= pixels
+
+1054= sekondes
+
+1101= Toetsweergawe
+
+1102= Ongeregistreerde evaluasieweergawe
+
+1103= Geregistreerde weergawe
+
+1104= U het KChess Elite %d van die 30 dae gebruik.
+
+1105= Die 30-dae proefperiode het nou verstryk.
+
+1106= Geregistreer deur %0:s. Serienommer %1:s.
+
+1107= U kan hierdie program gratis gebruik vir 30 dae. Hierna moet u registreer vir die volledige weergawe of ophou om dit te gebruik.
+
+1108= Hierdie weergawe is geregistreer vir een rekenaar.
+
+1109= Hierdie weergawe is geregistreer vir meerdere rekenaars in 'n klaskamer of kantoor.
+
+2001= Wit
+
+2002= Swart
+
+2003= leeg
+
+2004= koning
+
+2005= dame
+
+2006= toring
+
+2007= loper
+
+2008= ruiter
+
+2009= pion
+
+2011= En passant.
+
+2012= Rokeer aan die koningskant
+
+2013= Rokeer aan die dameskant
+
+2014= Pionpromovering tot %s.
+
+2015= word bedreig
+
+2016= staan in gevaar
+
+2017= geneem
+
+2018= Gee oor
+
+2019= Gelykopspel
+
+2021= Kommentaar
+
+2022= Variasie
+
+2031= Skaak!
+
+2032= Mat! %s wen.
+
+2033= Pat! %s is nie in skaak nie, maar mag nie skuif nie.
+
+2034= %0:s gee oor! %1:s wen.
+
+2035= Gelykopspel! Daar is geen stuk geneem tydens die laaste 50 skuiwe nie.
+
+2036= Gelykopspel! Dieselfde bordposisie is 3 maal herhaal.
+
+2037= Gelykopspel! Geen uitslag kan met hierdie stukke afgedwing word nie.
+
+2038= Beide spelers aanvaar 'n gelykopspel.
+
+2039= Mat in %d skuif/skuiwe bespeur.
+
+2041= Spel tydbeperking oorskry. %s wen.
+
+2042= Skuif tydbeperking oorskry. %s wen.
+
+2043= Aantal skuiwe per uur nie behaal nie. %s wen.
+
+2044= Uurglashorlosie  se tyd is verstreke. %s wen.
+
+2052= Mat
+
+2053= Pat
+
+2054= Gee oor
+
+2055= Gelykopspel (50 skuiwe)
+
+2056= Gelykopspel (3 herhalings)
+
+2057= Gelykopspel (onvoldoende magte)
+
+2058= Gelykopspel (aanbod aanvaar)
+
+2059= Buite die tyd
+
+2061= Laai...
+
+2062= Besig...
+
+2063= Speel...
+
+2064= Bordopstelmodus
+
+2065= Gereed
+
+2066= Ontleed...
+
+2067= Spel verby
+
+2071= Program dink
+
+2072= Program dink vooruit
+
+2073= Program wag
+
+2074= Dink...
+
+2075= Wag...
+
+2076= Skuif %d
+
+2077= %s moet skuif.
+
+2081= Outomatiese speelmodus
+
+2082= Wit speelmodus
+
+2083= Swart speelmodus
+
+2084= Twee-spelermodus
+
+2091= Waarde: %d
+
+2092= Knooppunte: %dK
+
+2093= Beste Lyn: %s
+
+2094= FEN bordposisie: %s
+
+2095= Naamloos
+
+2096= Onbekend
+
+2101= 'n pion
+
+2102= twee pionne
+
+2103= 'n ruiter/loper, of drie pionne
+
+2104= 'n ruiter/loper en 'n pion
+
+2105= 'n toring, of 'n ruiter/loper en twee pionne
+
+2106= 'n toring en 'n pion, of twee ruiters/lopers
+
+2107= 'n toring en twee pionne, of twee ruiters/lopers en 'n pion
+
+2108= 'n toring en 'n ruiter/loper, of twee ruiters/lopers en twee pionnen
+
+2109= 'n dame, of 'n toring en 'n ruiter/loper, of 'n toring en 'n ruiter/loper en 'n pion
+
+2110= 'n dame en 'n pion, of twee torings
+
+2111= 'n dame en twee pionne, of twee torings en 'n pion
+
+2112= 'n dame en 'n ruiter/loper, of twee torings en twee pionne
+
+2113= 'n dame en 'n ruiter/loper en 'n pion, of twee torings en 'n ruiter/loper
+
+2114= 'n dame en 'n toring, of twee torings en 'n ruiter/loper en 'n pion
+
+2115= 'n dame en 'n toring en 'n pion, of twee torings en 'n ruiter/loper en 'n pion
+
+2116= 'n dame en 'n toring en twee pionne, of twee torings en twee ruiters/lopers
+
+2117= 'n dame en 'n toring en 'n ruiter/loper, of twee torings en twee ruiters/lopers en 'n pion
+
+2118= 'n dame en 'n toring en 'n ruiter/loper en 'n pion, of twee torings en twee ruiters/lopers en twee pionne
+
+2119= 'n dame en twee torings, of twee torings en drie ruiters/lopers
+
+2120= 'n dame, twee torings en 'n pion
+
+2121= 'n dame, twee torings en twee pionne
+
+2122= 'n dame, twee torings en 'n ruiter/loper
+
+2123= 'n dame, twee torings, 'nn ruiter/loper en 'n pion
+
+2124= 'n dame, twee torings, 'n ruiter/loper en twee pionne
+
+2125= 'n dame, twee torings en twee ruiters/lopers
+
+2126= 'n dame, twee torings, twee ruiters/lopers en 'n pion
+
+2127= 'n dame, twee torings, twee ruiters/lopers en twee pionne
+
+2128= 'n dame, twee torings en drie ruiters/lopers
+
+2129= 'n dame, twee torings, drie ruiters/lopers en een pion
+
+2130= 'n dame, twee torings, drie ruiters/lopers en twee pionne
+
+2131= 'n dame, twee torings en vier ruiters/lopers
+
+2132= 'n dame, twee torings, vier ruiters/lopers en een pion
+
+2133= 'n dame, twee torings, vier ruiters/lopers en twee pionne
+
+2134= 'n dame, twee torings, vier ruiters/lopers en drie pionne
+
+2135= 'n dame, twee torings, vier ruiters/lopers en vier pionne
+
+2136= 'n dame, twee torings, vier ruiters/lopers en vyf pionne
+
+2137= 'n dame, twee torings, vier ruiters/lopers en ses pionne
+
+2138= 'n dame, twee torings, vier ruiters/lopers en sewe pionne
+
+2139= 'n dame, twee torings, vier ruiters/lopers en agt pionne
+
+2140= meer as 'n volledige stel stukke
+
+2201= Dit is die beginposisie.
+
+2202= Ddie spel is verby.
+
+2203= Beide spelers is ewe sterk met %d punte.
+
+2204= %0:s het %1:d punte meer as %2:s. %0:s het 'n voordeel van %3:s.
+
+2205= Beweeglikheid is vir beide spelers dieselfde, elk met 'n soortgelyke aantal beskikbare skuiwe (%0:s kan %1:d skuiwe maak, %2:s kan %3:d maak).
+
+2206= %0:s het met %1:d moontlike skuiwe groter beweeglikheid as %2:s met slegs %3:d.
+
+2207= Beide spelers het soortgelyke dekking van die bord en val eweveel vierkante aan (%0:s val %1:d vierkante aan, %2:s val %3:d aan).
+
+2208= %0:s val meer vierkante aan. %0:s val %1:d vierkante aan, %2:s slegs %3:d.
+
+2209= Beide spelers het soortgelyke beheer oor die middel van die bord.
+
+2210= %s het groter beheer oor die middel van die bord.
+
+2211= %s mag aan beide kante rokeer.
+
+2212= %s mag aan die koningskant rokeer.
+
+2213= %s mag aan die dameskant rokeer.
+
+2214= %0:s mag en passant neem  op %1:s.
+
+2301= Geleentheid
+
+2302= Plek
+
+2303= Ronde
+
+2304= Datum
+
+2305= Tyd
+
+2306= Opening
+
+2307= Titel
+
+2308= Land
+
+2309= Annoteerder
+
+[Program Tips]
+
+1= Welkom by KChess Elite. As u hulp nodig het of 'n probleemoplosser wil raadpleeg, kliek dan op Help in die Help-kieslys.
+
+2= U kan swart of wit speel deur die gewenste funksie te selekteer uit die Spel-kieslys.
+
+3= As u tydens die spel 'n fout maak kan u daardie skuif ongedaan maak in die Skuif-kieslys.
+
+4= As u tydens die spel geen raad meer weet nie kies u uit die Skuif-kieslys die opsie Kitswenk. U kry dan 'n voorstel.
+
+5= As u u spelle te maklik of te moeilik vind, gaan dan na kieslys-> Spel -> Opsies -> Sterkte. Kliek dan regsonder op Beginner, Gemiddeld of Deskundige.
+
+6= U kan die bord op enige stadium omdraai deur kieslys -> Spel -> Roteer bord.
+
+7= Dikwels gebruikte funksies uit die kieslyste kan vinnig via die knoppiesbalk (onder die kieslysbalk) uitgevoer word.
+
+8= Om die voorkoms van die bordkleur, -patroon en stukke te verander, gaan dan na kieslys -> Spel -> Opsies en kies die Bord-blad.
+
+9= As u wil terugsit en dophou hoe KChess teen homself spel, kies dan Outomatiese Spel van die Spel-kieslys.
+
+10= As u vereers genoeg gespeel het, maar die spel later wil hervat, kan u die spel stoor deur Stoor van die Lêer-kieslys te kies.
+
+11= U kan gestoorde lêers weer oproep deur kieslys -> Lêer -> Oopmaak... Kies dan die naam van die lêer.
+
+12= As u die linker muisknoppie indruk en vashou op 'n stuk, word alle vierkante gemerk waarheen die stuk kan skuif.
+
+13= As u die regter muisknoppie indruk en vashou op 'n stuk of 'n vierkant, word alle stukke wat daardie stuk of vierkant aanval gemerk.
+
+14= U kan 'n reeks standaard Skaaklêerformate gebruik. Wanneer u 'n spel stoor of oopmaak, kies die lêerformaat uit die lêertipelys.
+
+15= As u 'n aantal  skuiwe wil oefen of 'n posisie wil ontleed, kan u nog 'n bord skep met dieselfde posisie: kieslys -> Spel -> Variasie.
+
+[Game Tips]
+
+1= Vir 'n goeie opening skuif u een van die middelpionne (d- of e-lyn) 2 vierkante vorentoe. Dit beset die middel van die bord en open 'n kanaal om van u ander stukke te beweeg.
+
+2= Aan die begin van die spel moet u daarop konsentreer om u stukke so vinnig as moontlik te ontwikkel.
+
+3= As een van u pionne die oorkant bereik, word dit gepromoveer na u keuse van 'n dame, toring, loper of ruiter.
+
+4= Dit is die beste om dieselfde stuk nie meer as een maal te skuif aan die begin van 'n spel nie, aangesien dit die ontwikkeling van ander stukke sal vertraag.
+
+5= Dit is behulpsaam om elke stuk 'n relatiewe waarde te gee: 1 vir pionne, 3 vir ruiters en lopers, 5 vir torings en 9 vir dames.
+
+6= 'n Pion kan 'n vyandige pion neem wat 2 vierkante vorentoe geskuif het met sy eerste skuif, as of dit net een vierkant geskuif het. Hierdie spesiale skuif word "en passant" genoem.
+
+7= U kan die koning beter beskerm deur pionne voor hom te laat staan.
+
+8= Dit is die beste om die dame nie te vroeg in die spel uit te bring nie.
+
+9= U moet altyd veronderstel dat u opponent die beste skuif sal maak. Moet nooit veronderstel dat hulle nie weet wat u met u skuiwe beplan nie.
+
+10= Die 4 sentrale vierkante is die mees kritiese op die bord. Probeer om u eie stukke daarop te plaas.
+
+11= As u koning en een van u torings nog nie geskuif het nie en die vierkante tussen hulle leeg is, kan u die koning twee vierkante na links of na regs skuif, waarna die toring oor die koning spring. Dit word "rokering" genoem.
+
+12= Stukke het groter beweeglikheid as hulle in die middel van die bord staan en hulle beheer meer vierkante.
+
+13= As u 'n sterker mag as u opponent het, is dit 'n goeie idee om stukke te ruil. Dit sal u relatiewe sterkte verbeter.
+
+14= U behoort 'n stuk met die minste moontlike waarde te gebruik om ander stukke te dek. Gebruik nooit stukke wat meer waarde het as die stukke wat gedek word nie.
+
+[Chess Trivia]
+
+1= Waarskynlik het die skaakspel in Indië ontstaan omstreeks 550-600 n.Chr. Dit het baie vinnig versprei deur Asië, toe deur Arabiese gebiede en later deur Europa.
+
+2= Die langste skaakspel wat ooit door skaakmeesters gespeel is, het uit 269 skuiwe bestaan. Die spel is gespeel deur Ivan Nikolic en Goran Arsovic in Belgrado in 1989. Die spel het meer as 20 ure geduur en het op 'n gelykopspel uitgeloop.
+
+3= Daar word beweer dat daar meer literatuur bestaan oor skaak as oor alle ander spele saam.
+
+4= Daar bestaan 318.979.564.000 verskillende maniere om die eerste 4 skuiwe deur beide spelers te maak.
+
+5= Die woord "Skaakmat" kom van die Persiese "sjah mat". Dit beteken "die koning is dood".
+
+6= Die eerste skaakbord met ligte en donker vierkante het in 1090 in Europa verskyn.
+
+7= In 1851 was A. Anderssen wêreldkampioen in skaak en dambord.
+
+8= Niaz Murshed (Bangladesh) is die jongste persoon wat 'n nasionale kampioenskap gewen het. Hy het die kampioenskap van Bangladesh op 12-jarige leeftyd gewen. Later word hy die eerste (en enigste) grootmeester van Bangladesh toe hy 20 was.
+
+9= In die TV-reeks "Star Trek" het Captain Kirk en Mr. Spock drie keer skaak gespeel. Kirk het hulle al drie gewen.
+
+10= Die eerste sakskaakstel is in 1845 gemaak deur Peter Mark Roget, skrywer van Roget's Thesaurus.
+
+11= In 1939 het Weaver Adams 'n boek geskryf getiteld "White to Play and Win". By sy volgende toernooi verloor hy al sy spelle met wit en wen al sy spelle met swart.
+
+12= Die leidende Britse skaakmeesters van die Tweede Wêreldoorlog word later almal kodebrekers vir Britse intelligensie.
+
+13= Daar is meer as 200 miljoen inwoners van China wat geesdriftige skaakspelers is.
+
+14= Daar is 169 518 829 100 544 000 000 000 000 000 (1,695e29) verskillende maniere vir beide spelers om die eerste tien skuiwe in 'n skaakspel te speel.
+
+15= Die eerste telefoonskaakspel was deur twee mans in Derbyshire (Engeland) gespeel in 1878.
+
+16= Die eerste rekenaarprogram wat behoorlik skaak kon speel is in 1958-59 by MIT deur Alex Bernstein geskryf.
+
+17= Die eerste skaaktoernooi op rekord is in Madrid in 1575 gehou. Giulio Polerio en Giovanni Leonardo het Ruy Lopez en Alfonse Ceron verslaan in 'n reeks spelle wat deur koning Phillip II gereël is.
+
+18= Voormalige wêreldkampioen Jose Capablanca het op 4-jarige leeftyd al begin skaak speel en verslaan in sy eerste spel sy vader ook op 4-jarige leeftyd.
+
+19= Die langste skuif wat ooit gespeel is is gemaak deur Francisco R. Torres Trois. Dit het 2 uur en 20 minute geneem om een skuif te maak teen Luis M.C.P. Santos, in Vigo, Spanje in 1980. Trois het by hierdie skuif slegs twee moontlikhede gehad.
+
+20= "Die Skaakspelers" - in 1490 geskilder - was die eerste skildery met die skaakspel as tema.
+
+21= Die jongste wêreldkampioen van almal was Maya Chiburdanidze van die voormalige USSR. Sy was 17 jaar oud toe sy in 1978 die vrouetitel verower het.
+
+22= Garry Kasparov van die voormalige USSR was 22 jaar oud toe hy Anatoly Karpov verslaan het tydens die wêreldkampioenskap in 1985. Hy word die jongste manlike kampioen in die geskiedenis.
+
+23= Outomate is apparate wat die indruk kon skep dat hulle skaak kan speel. Die eerste was "The Turk" in 1769, gevolg deur "Ajeeb" in 1868 en "Mephisto" in 1878.
+
+24= Dambord is 'n ouer spel as skaak.
+
+25= Judit Polgar (Hongarye) was die jongste vrou wat die Internasionale Meester geword het. Dit was in 1989 toe sy 12 was. In 1991 (op ouderdom 15 jaar) wen sy die titel van Internasionale Grootmeester.
+
+26= Die eerste verskyning van 'n skaakspel in 'n fliek was in "The Wishing Ring" in 1914.
+
+27= In 1974 het Stockholm die eerste wêreldkampioenskap in rekenaarskaak gehou. Die Russiese program "Kaissa" het gewen.
