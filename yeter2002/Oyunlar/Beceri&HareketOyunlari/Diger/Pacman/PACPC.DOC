@@ -1,0 +1,98 @@
+PAC PC
+======
+
+1. Game Instructions
+--------------------
+
+Eat the dots and avoid the ghosts, eat a flashing power pill then
+chase and eat the ghosts, eat fruit for extra points. That's
+about all there is too it really.
+Extra lives at 10000pts, 30000pts, 50000pts, 80000 pts
+then every 30000 after that.
+
+
+2. Controls
+-----------
+
+Arrow keys, or  'A' - Up 'Z' - Down '<' - Left '>' - Right
+
+
+
+3. General Stuff
+----------------
+
+Sound - To allow sound in the game you need to set the DOS 'blaster'
+variable. If you have a soundblaster Pro, or better, this should be
+done already in your autoexec.bat. If you don't set the blaster 
+variable but have a SB-Pro compatible card, eg. Zeos integrated
+business audio ( is that an obscure soundcard or what?) you need to 
+do the following at the DOS command prompt...
+
+set blaster=A220 I5 D1 
+
+Where A220 is the port your card uses, usually port 220, I is the
+interrupt the card uses ( usually 5 but it could be 7 ), and
+D is the DMA channel to use ( usually 1 could be 3 ).
+
+
+4. About the Game & Author
+--------------------------
+
+This game was written over about 4 weeks, I started it after playing
+Ms.PacMan in a local arcade and remembering how good the original game
+was, so... I began to code one, this ended up in me actually buying a full 
+size Ms.PacMan and converting to a PacMan machine ( special thanks must go 
+to Dock Cutlip for all his help there ). All I need now is a choplifter
+and my life is complete, well probably not but it'd be a start.
+Well the result is very similar to Pac Man, I haven't duplicated the exact 
+ghost movement patterns but a lot of the other stuff is the same, even if 
+it does look a little squashed ( the original has a vertically mounted 
+monitor so has a higher vertical resolution than the PC's 200 pixels, 
+probably about 320 pixels vertically on the arcade machine ).
+
+The games written in 'C', "yuk" I hear assembler programmers shout,
+with assembly routine for sound, sprite graphics, joystick, drawing 
+characters on the screen, that sort of thing, and was coded on, in
+turn, a Zeos pentium 90, a Zeos pentium 100 ( 90 clocked at 100 ) and
+a DEC 486-dx2-66. One thing is that you'll need a card with a decent
+video bandwidth, just about anything VLB/PCI will do, a regular old
+ISA card probably won't hack it.
+
+This game is complete freeware, you don't have to register/pay/contribute
+or whatever, it's free !! Now who said "There ain't no such thing
+as a free lunch...". This game is 'as is' and comes with no warranty
+either specific or implied, you are quite free to distribute it,
+copy it or eat it, whatever you want to do. You should not, however,
+charge for it. Selling this game for profit, rather than a duplication
+fee, will result in really bad Karma, and depending on your
+religious persuasion may result in eternal damnation, or at least
+a couple of centuries in purgatory.
+
+If you have any comments you can reach me via internet e-mail at
+rowan@mhd2.moorhead.msus.edu
+
+Check out the pycho mode, real fun..
+
+5. Thanks
+---------
+
+Thanks must go to, K.Voegele various stuff and testing, K.Chueng
+& N.Akhtar for Beta testing, Dock Cutlip for invaluable help in 
+converting my Ms.PacMan to Pac Man.
+
+Also to Matt Cooley, for his 'Game World' web pages with audio samples
+and video game related stuff plus Marshall Stowe for his excellent Pac 
+Page ( an inspiration to all Pac maniacs ),
+
+
+6. Interesting Web Sites to visit.
+----------------------------------
+
+The St. Louis Coin-Op and Video Game Museum
+http://cognitrn.psych.indiana.edu:8001/rynersw/coinop.html
+
+The Pac Page.
+http://www4.ncsu.edu/eos/users/m/msstowe/WWW/Pac-Man/pac-man.html
+
+Matt Cooley's Game World
+http://www4.ncsu.edu/unity/users/m/mvcooley/index.html
