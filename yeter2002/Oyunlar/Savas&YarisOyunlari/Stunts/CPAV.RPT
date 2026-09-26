@@ -1,0 +1,26 @@
+Central Point Anti-Virus.
+Virus search report for date: 05/06/93, Time 21:22:44.
+
+Virus Keypress 1 E was found in file:
+ A:\LOAD.EXE
+
+Virus Keypress 1 E was found in file:
+ A:\SETUP.EXE
+
+Virus Keypress 1 E was found in file:
+ A:\STUNTS.COM
+
+Virus Keypress 1 E was found in file:
+ A:\THEJET.EXE
+
+
+
+Total boot sector viruses   FOUND  : 0
+Total boot sector viruses   REMOVED: 0
+
+Total Files                 CHECKED: 150
+Total File viruses          FOUND  : 4
+Total File viruses          REMOVED: 0
+
+
+END OF REPORT.
