@@ -1,0 +1,6 @@
+[K-Chess Game]
+[Moves]
+COMMENT Fool's Mate.
+  1   f2-f3   e7-e5
+  2   g2-g4  Qd8-h4*
+[EndGame]
