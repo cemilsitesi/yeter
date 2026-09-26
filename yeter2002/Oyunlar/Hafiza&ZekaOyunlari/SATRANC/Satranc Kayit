@@ -1,0 +1,10 @@
+[KChess Game]
+WhiteTime: 0
+BlackTime: 0
+Rotated: N
+[Settings]
+Version: 35
+AudioType: 2
+WhiteVoice: 1
+BlackVoice: 0
+[EndGame]
