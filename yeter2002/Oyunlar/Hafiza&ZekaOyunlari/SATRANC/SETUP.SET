@@ -1,0 +1,69 @@
+TITLE KChess Elite 3.5
+HEADFONT 48
+FOOTER Copyright (c) 1992-2000 by ARK ANGLES
+ICON 1,0,40,50,0
+COLS $c00080,$080000,$ffffff,0,3,$ffff40,$ffff40
+DIR C:\KCHESS
+DELETEFROMSFX
+INSTALL SETUP1.EXE,SETUP.EXE,4,284,,,Setup program
+INSTALL SETUP1.SET,SETUP.SET,4,4,,,Setup program
+INSTALL KCH32.EXE,,4,628,,,Main program
+INSTALL PIECES*.BMP,,4,188,,,Piece bitmap files
+INSTALL TEXTURE*.BMP,,4,44,,,Board texture files
+INSTALL ECO.DAT,,4,184,,,Encyclopaedia of Chess Openings
+INSTALL KCH.HLP,,4,220,,,Help file
+INSTALL *.LNG,,4,360,,,Language files
+INSTALL CLICK.WAV,,4,4,,,Sound files
+INSTALL DING.WAV,,4,12,,,Sound files
+INSTALL F*.WAV,,4,420,,,Sound files
+INSTALL M*.WAV,,4,380,,,Sound files
+INSTALL PLACE.WAV,,4,4,,,Sound files
+INSTALL *.PGN,~MAIN\SAMPLES\,4,52,,,Sample games
+INSTALL *.KCH,~MAIN\SAMPLES\,4,324,,,Sample games
+INSTALL KCHESS.SCR,~WIN\,4,4,,,Screen Saver
+INSTALL *.TTF,~FONTS\,2,920,,,Chess figurine fonts
+FONT Chess (TrueType),CHEQ_TT.TTF
+FONT Chess Adventurer (TrueType),AVENFONT.TTF
+FONT Chess Alfonso-X (TrueType),ALFOCHES.TTF
+FONT Chess Condal (TrueType),CONDFONT.TTF
+FONT Chess Harlequin (TrueType),HARLFONT.TTF
+FONT Chess Kingdom (TrueType),KINGFONT.TTF
+FONT Chess Leipzig (TrueType),LEIPFONT.TTF
+FONT Chess Line (TrueType),LINEFONT.TTF
+FONT Chess Lucena (TrueType),LUCEFONT.TTF
+FONT Chess Magnetic (TrueType),MAGNFONT.TTF
+FONT Chess Mark (TrueType),MARKFONT.TTF
+FONT Chess Marroquin (TrueType),MARRFONT.TTF
+FONT Chess Maya (TrueType),MAYAFONT.TTF
+FONT Chess Mediaeval (TrueType),MVALFONT.TTF
+FONT Chess Merida (TrueType),MERIFONT.TTF
+FONT Chess Millennia-D (TrueType),MILDFONT.TTF
+FONT Chess Millennia-L (TrueType),MILLFONT.TTF
+FONT Chess Montreal (TrueType),CHS020.TTF
+FONT Chess Motif (TrueType),MOTIFONT.TTF
+FONT Chess Usual (TrueType),TT_USUAL.TTF
+
+GROUP KChess Elite
+ITEM ~MAIN\KCH32.EXE,KChess Elite 3.5
+ITEM ~MAIN\KCH.HLP,KChess Elite Help
+ITEM ~MAIN\SETUP.EXE,Uninstall KChess Elite,,1
+
+ASK 11,Do you want KChess Elite to be the default viewer for EPD/FEN and PGN files?
+ISECT Ark Angles
+INI KEVS
+ISECT Extensions
+INI kch=~MAIN\KCH32.EXE ^.kch
+IF ~11
+INI epd=~MAIN\KCH32.EXE ^.epd
+INI fen=~MAIN\KCH32.EXE ^.fen
+INI pgn=~MAIN\KCH32.EXE ^.pgn
+ENDIF
+
+FUNCTION IX
+RESTART 0
+REMOVE ~MAIN\KCH.GID
+REMOVE ~MAIN\KCH16.INI
+REMOVE ~MAIN\KCH32.INI
+REMOVE ~MAIN\DEFAULT.INI
+REMOVE ~WIN\K-CHESS.SCR
+LOG KCH.LOG
