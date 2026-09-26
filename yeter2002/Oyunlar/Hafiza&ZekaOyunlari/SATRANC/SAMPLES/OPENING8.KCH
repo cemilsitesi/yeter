@@ -1,0 +1,6 @@
+[K-Chess Game]
+[Moves]
+COMMENT Queen's Gambit
+  1   d2-d4   d7-d5
+  2   c2-c4   d5xc4
+[EndGame]
