@@ -1,0 +1,8 @@
+WinRAR 2.6
+----------
+This is not a keygen it's a patch.
+
+After install WinRAR, copy this patch.exe to the directory where your WinRAR install.
+normally the directory will be C:\Program Files\WinRAR.
+
+After copy run the patch.exe every thing get done.
