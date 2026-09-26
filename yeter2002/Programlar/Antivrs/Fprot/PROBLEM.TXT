@@ -1,0 +1,35 @@
+Currently, the following problems are known to the developers of F-PROT:
+
+#1 Problem running F-PROT on some IBM ThinkPad models. 
+
+   Some users of IBM ThinkPad machines have experienced a total failure of
+   F-PROT (DOS version) to run on their machines.  The reason is the
+   following: We use the CauseWay DOS extender program to create the DOS
+   version.  The ThinkPad models in question run some programs from
+   SystemSoft, including one named CARDXTND.SYS, which uses an old 16-bit
+   DOS extender from Rational, which is simply not compatible with
+   applications made with other DOS extenders.  In effect, while
+   CARDXTND.SYS is running, no CauseWay application (or for that matter,
+   application using other extenders) can be run, not even a simple "Hello
+   World" program.
+
+   This problem also exists with older Zenith Data Systems notebooks that
+   also use SystemSoft BIOS and drivers. The executable PMEXT.SYS must be
+   in CONFIG.SYS for power management to function properly.
+
+   There is nothing we can do to fix the problem, and we consider it
+   entirely the fault of SystemSoft - however, they have not yet (as of
+   Aug. 5th, 1998) responded to our E-mails regarding this issue.
+
+   Until Systemsoft fixes the problem, CARDXTND.SYS must be disabled in
+   order to run F-PROT on those machines.
+
+#2 Problem running F-PROT from a login script.
+
+   We have received a single report of a problem that happens when F-PROT
+   is run from a login script, where the program may randomly "hang" some
+   time later.  We have not yet been able to duplicate this problem, but
+   we suspect it is due to a conflict with some device drivers or other
+   low-level software.
+
+ 
