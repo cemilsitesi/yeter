@@ -1,0 +1,58 @@
+EditPad is copyright (C) 1996-2000, by Jan Goyvaerts.
+
+The software (EditPad Classic) is provided "as is". In no event shall 
+I, the author, be liable for any consequential, special, incidental or 
+indirect damages of any kind arising out of the delivery, performance 
+or use of this software. This software has been written with great care 
+but I do not warrant that the software is error free.
+You may not attempt to reverse compile, modify, translate or 
+disassemble the software in whole or in part.
+
+You may freely give copies of EditPad Classic to others, as long as the 
+software is unmodified. You may not change a single bit, you may not 
+exclude any files or add any to the package and you may not make 
+EditPad Classic part of another package.
+You may not charge any money for the copying and/or distribution of 
+EditPad Classic, also not for EditPad itself.
+
+EditPad Classic is postcardware. You are allowed to install EditPad and 
+to try it out for a short while (a week or two), but if you want to 
+continue using it you are kindly requested to "pay" by sending the 
+author a nice postcard to the address shown below.
+A postcard is a piece of thick paper with a pretty picture on one side 
+(showing something about where you live, what you do, what you like, 
+etc.) and some nice words written by the sender on the other side.
+I collect postcards. Only real ones, not the electronic/virtual 
+version.
+Used phone cards are also welcome, as my sister collects them.
+
+After your postcard has arrived, you are allowed to use EditPad Classic 
+for as long and as much as you want, without any other cost. You also 
+have the right then to update your copy of EditPad Classicwhen new 
+versions come out.
+If you mention your email address very clearly on the postcard, I will 
+send you a message when I receive your postcard.
+
+Please note that this "payment" is strictly personal. Everyone who uses 
+EditPad Classic has to register, even if someone else installed it on 
+your computer or if you found it on some CD-ROM you bought. (You paid 
+for the CD, not for EditPad Classic.)
+
+Even if EditPad Classic seems to be a simple application, writing it 
+was not a very easy task. So if you like it, send me a nice postcard. 
+If everyone would say "thank you" when someone else did or said 
+something nice, this world would be a much better place.
+
+If you feel that EditPad Classic is definitively worth some money, feel 
+free to put your postcard in an envelope and include a few dollars (or 
+your local currency). This will surely encourage me to go on with the 
+development of new EditPad versions.
+You may also consider buying a license to EditPad Pro at 
+http://www.editpadpro.com
+
+Send your postcards to this address:
+
+   Jan Goyvaerts
+   Lerrekensstraat 5
+   2220 Heist-op-den-Berg
+      Belgium
