@@ -1,0 +1,56 @@
+COSMO DRAGON v1.1 (c) 1997 by Steven Don
+========================================
+
+READ THIS
+=========
+If you notice any bugs or have good suggestions on improving the game,
+please e-mail me. If a new version of the game is released, it can be obtained
+from my web site.
+
+Thank you,
+  Steven Don
+  shd@earthling.net
+  http://shd.cjb.net
+
+THE *PLOT*
+==========
+Cosmo Dragon decided not to join the Halloween party this year. He had gotten
+fed up with it. His "friends" didn't take no for an answer. They did take
+something else however. Cosmo Jr, the cute baby dragon, Cosmo's son. This,
+Cosmo couldn't handle. Something snapped in his mind. The once friendly dragon
+went crazy. He would stop at nothing to get back his son.
+
+WHY OH WHY
+==========
+Why I wrote this game? >>Yes, I'd like to know why you bothered<< Well,
+actually, I didn't. It just happened, >>That sounds scary<< it was almost
+finished when I realised what I was doing. >>Making game players' lives
+generally miserable?<< Indeed! Anyway, I had drawn the animation of a flying
+dragon. I tested it, but felt something was missing. Therefore, I added the
+starry background and the asteroids. Keyboard controls followed and I already
+had a small game. As usual it got completely out of hand >>I'll say!<< and
+this is the result.
+
+SYSTEM REQUIREMENTS
+===================
+- 386 or better.
+- 2MB of RAM.
+- SoundBlaster version 1.5 or better required for music and sound effects.
+
+INSTRUCTIONS
+============
+Use the cursor keys to change Cosmo's direction. Press the spacebar to make
+him shoot a fireball. When Cosmo's run out of lives, the game over message
+appears. Press enter to start all over again. To quit the game, press escape.
+
+BONUSES
+=======
+There are several bonuses Cosmo can pick up. They look like shiny orbs with
+a letter on them. The letters mean the followin:
+  A - Auto fire
+  F - Fly faster
+  L - Extra life
+  M - 1000 bonus points
+  P - Protective shield
+  W - Weapon upgrade
+  ? - Random selection
