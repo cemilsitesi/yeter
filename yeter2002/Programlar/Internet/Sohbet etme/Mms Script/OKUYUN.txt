@@ -1,0 +1,28 @@
+	###    ###  ###    ###  ########
+	####  ####  ####  ####  ##	  
+	## #### ##  ## #### ##  ########
+	##  ##  ##  ##  ##  ##        ##
+	##      ##  ##      ##  ########
+	--------------------------------
+	® M.M.S ScriPT by M.M.S © 2001
+	Http://www.hazne.com
+	--------------------------------
+	PROGRAMI NASIL ÇALIÞTIRACAKSINIZ ?
+	----------------------------------
+	Ýnternetten indirdiðiniz mms.zip doyasýný winrar benzeri bir program ile açtýnýz.
+	1- Zip dosyasýndan çýkan mms klasörünü bilgisayarýnýzda herhangi bir yere kopyalayýn
+	2- mms klasörünün içindeki MMS scriPT yazan dosyayý kopyalayýn
+	3- Bilgisayarýnýzýn masaüstüne yapýþtýrýn
+	4- Ýnternete baðlandýktan sonra bu dosyaya çift týklayýp programý çalýþtýrýn
+	----------------------------------
+	M E R H A B A L A R :
+	# - M.M.S scriPT'i seçtiðiniz için teþekkür ederiz
+	# - Dünyanýn en çok kullanýlan chat programý olan mIRC32 üzerinde yapýlandýrýlan M.M.S scriPT bir nev'i mIRC'ýn Türçeleþtirilmiþ hali gibidir. 
+	# - Bunun yanýsýra kullanýcýsýna son derece kolaylýk saðlayan bir çok yeniliðide beraberinde getirmektedir.
+	# - Ýlk açýlýþtan itibaren chat yapmak için en kolay yoldan programý kullanabilmek mümkündür. Tüm menüleri Türkçe olan M.M.S scriPT kýsayol tuþlarý ve güncel arabirimi sayesinde menülere bile dokunmadan irc nin imkanlarýndan kolayca yararlanmanýzý saðlýyor.
+	# - Gereksiz her türlü zýmbýrtýdan temizlenmiþ ve sadece size keyifli bir muhabbet vaad eden M.M.S scriPT v1.1 kendini yenilemeye devam edecek.
+	# - M.M.S script hakkýnda her türlü güncellemeden haberdar olmak ve programý download etmek için www.hazne.com sitesini ziyaret etmeniz yeterlidir...
+---------------------------------
+HAYIRLI MUHABBETLER TEMENNÝ EDERÝZ
+M.M.S WEB TEAM © 2001
+www.HAZNE.com
