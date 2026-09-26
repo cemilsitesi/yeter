@@ -1,0 +1,22 @@
+ 
+	Sokoban Oyununun Oynanisi
+
+Ilk cikan ekranda Bilgisayar turu `C` ile isaretlenecek.
+
+Ardindan klavye secenegi icin `K` isaretlenecek.
+
+Daha sonra Enter`e basilarak oyuna girilecek.
+
+Oyunda Isci 53 katta tugla yerlestirebiliyor.
+
+`Esc` tusuyla asansor ile gidilecek kat secenegi sunuluyor.
+
+Asansor salonunda sayi ile gidilecek kat ve oyunun zorluk derecesi isaretlenecek.
+
+Ardindan katlara cikmak icin `Accept` (Kabul) secenegi icin `A` isaretlenecek.
+
+Yanlis bir sayi girilirse `Clear` (Temizle) icin `C` isaretlenecek.
+
+Oyundan cikmak icin Asansor salonundan `L` tusuna basilacak ve ardindan `Exit` isaretlenerek cikilacak.   
+
+					Hazirlayan: Hasan Serhat YETER
