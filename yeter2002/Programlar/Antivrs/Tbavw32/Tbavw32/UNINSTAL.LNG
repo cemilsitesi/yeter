@@ -1,0 +1,17 @@
+; Program title
+TBAV Uninstaller
+; Question wether or not to uninstall TBAV for Windows 95
+Are you sure you want to remove TBAV for Windows 95 ?
+; Name of the Program-Manager group containing TBAV for Windows 95
+TBAV for Windows 95
+; Message 1
+The TBAV for Windows 95 Uninstaller is now removing all registry information.
+; Message 2
+TBAV for Windows 95 probably created some files (called Anti-Vir.Dat) that store checksum information of certain executables. These Anti-Vir.Dat files are now being removed from:
+; Message 3
+All TBAV for Windows 95 files are being removed at this moment.
+; Message saying the uninstall process has completed.
+TBAV for Windows 95 has been succesfully removed from your system.
+; Error message
+WARNING!\n\nAn instance of TBAV for Windows 95 is currently active.\n\nPlease quit TBAV for Windows 95 (you can switch to TBAV for Windows 95 using the Alt+TAB key, and close it using Alt-F4). Then, press the OK button to continue or press CANCEL to quit the uninstall program.
+
