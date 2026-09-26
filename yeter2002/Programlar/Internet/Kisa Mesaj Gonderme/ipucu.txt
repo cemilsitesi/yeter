@@ -1,0 +1,9 @@
+Servisleriniz çalýþmýyorsa yeni bir güncelleme aramasý yapýn. Belki çalýþan bir servis eklenmiþtir! ->SERVÝSLER
+Jet SMS'i birden fazla kiþi ile paylaþýyorsanýz Kullanýcý Profilleri Seçeneðini, "GENEL" isimli kullanýcý ile giriþ yaparak etkin hale getirin! -> SEÇENEKLER'DE
+Jet SMS'den çeþitli olaylar sonunda sesli uyarýlarda alabilirsiniz. -> SEÇENEKLER'DE
+Jet SMS'i açar açmaz hemen kullanmak için sað üst köþede bulunan "-" iþaretine týklayýp Çevrim Ýçi moduna geçin.
+Jet SMS, çevrim dýþý modundayken Kiþiye göndermek istediðiniz SMS'leri SMS Deposunda saklayabilir ve bunlarý Çevrim Ýçi moduna geçildiðinde otomatik gönderir! -> SEÇENEKLER'DE
+Servis güncellemesi yapýlýrkende SMS vs. gönderebileceðinizi biliyor muydunuz?
+Lütfen PiramitSoft 'un sizlere verdiði bu ücretsiz hizmete destek olmak için Servisler'den Reklamlar bölümünde bulunan sponsor linklerine týklayýnýz.
+Eðer programda bir sorun ile karþýlaþýyorsanýz Yardým'dan Bize Ýletin bölüne gelin ve iletmek istetiklerinizi oraya yazýp Gönder tuþuna týklayýn!
+Eðer logo servisi varsa ve bu logolarý görmek istiyorsanýz, Logo Gönder bölümünde bulunan kýrmýzý renkteki "Logo Seç" yazýsýna týklayýnýz.
