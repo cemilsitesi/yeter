@@ -1,0 +1,87 @@
+A:VISITED {
+	color : #2C618C;
+	text-decoration: none;
+}
+A:HOVER {
+	color : Red;
+	text-decoration : underline;
+}
+A:LINK {
+	color : #2C61A0; text-decoration: none;
+}
+BODY 
+{ scrollbar-face-color: #000087; scrollbar-shadow-color: #2A314C; 
+scrollbar-highlight-color: #B7B7FF; scrollbar-3dlight-color: #9AB6C4; 
+scrollbar-darkshadow-color: #6262FF; scrollbar-track-color: #B7B7FF;
+scrollbar-arrow-color: #EAEAEA}
+
+A.extra{color : #FF6300;text-decoration: none;}
+A:link.extra{color : #FF6300;text-decoration: none;}
+A:visited.extra{color : #FF6300;text-decoration: none;}
+A:hover.extra{color:red;text-decoration: underline;}
+
+A.anasayfa{	color : Black;	text-decoration: none;}
+A:link.anasayfa{
+	color : #282828;
+	text-decoration: none;
+}
+A:visited.anasayfa{	color : Black;	text-decoration: none;}
+A:hover.anasayfa{
+	color: Black;
+	text-decoration: underline;
+}
+
+
+.buton 
+{
+	BACKGROUND-COLOR:#0099ff;
+	BORDER-BOTTOM:#003399 solid thin;
+	BORDER-LEFT:#99ccff solid thin;
+	BORDER-RIGHT:#003399 solid thin;
+	BORDER-TOP:#99ccff solid thin;
+	COLOR:white;
+	font-family:verdana;
+	CURSOR:hand;
+	FONT-SIZE:11px;
+	FONT-WEIGHT:bold;
+	LETTER-SPACING:-0.5pt;
+	HEIGHT:19px;
+	MARGIN:1px;
+	width : 60px;
+}
+
+
+.textbox1
+{
+font-family: Verdana, Arial, Helvetica; 
+font-size: 8pt; 
+border-style: solid; 
+border-color: #66B1CC	
+}
+
+
+.uyebox
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 8pt;
+	border : 1px solid #B988E3;
+}
+
+.textbox2
+{
+font-family: Verdana, Arial, Helvetica; 
+font-size: 8pt; 
+border-style: solid; 
+border-color: #FFB15A	
+}
+
+.combo1
+{
+	font-family: Arial;
+	font-size: 8pt;
+	background-color: #006699;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-style: solid solid solid solid;
+	border-color: #FF6600
+}
