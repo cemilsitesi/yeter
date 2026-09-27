@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>frameorta</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1254">
+<META content="Microsoft FrontPage 4.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<STYLE type=text/css media=screen>A {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+A:link {
+	CURSOR: hand; COLOR: navy; TEXT-DECORATION: none
+}
+A:visited {
+	CURSOR: hand; COLOR: navy; TEXT-DECORATION: none
+}
+A:hover {
+	CURSOR: hand; COLOR: blue; TEXT-DECORATION: none
+}
+TH {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+DD {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+DL {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+B {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+TEXTAREA {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana,tahoma,arial
+}
+INPUT {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana,tahoma,arial
+}
+</STYLE>
+<style>
+
+BODY 
+{scrollbar-face-color: #ffffff; scrollbar-shadow-color: #000000; 
+scrollbar-highlight-color: #ffffff; scrollbar-3dlight-color: #000000; 
+scrollbar-darkshadow-color: #ffffff; scrollbar-track-color: #ffffff; 
+scrollbar-arrow-color: #000080}
+</style>
+<STYLE>.skin0 {
+	BACKGROUND-COLOR: menu; BORDER-BOTTOM: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; CURSOR: default; FONT-FAMILY: Verdana; LINE-HEIGHT: 20px; POSITION: absolute; VISIBILITY: hidden; WIDTH: 130px
+}
+.skin1 {
+	BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; CURSOR: hand; POSITION: absolute; VISIBILITY: hidden; WIDTH: 120px
+}
+.menuitems {
+	PADDING-LEFT: 17px; PADDING-RIGHT: 10px
+}
+</STYLE>
+
+<SCRIPT language=JavaScript1.2>
+var menuskin=1
+var display_url=0
+function showmenuie5(){
+var rightedge=document.body.clientWidth-event.clientX
+var bottomedge=document.body.clientHeight-event.clientY
+if (rightedge<ie5menu.offsetWidth)
+ie5menu.style.left=document.body.scrollLeft+event.clientX-ie5menu.offsetWidth
+else
+ie5menu.style.left=document.body.scrollLeft+event.clientX
+if (bottomedge<ie5menu.offsetHeight)
+ie5menu.style.top=document.body.scrollTop+event.clientY-ie5menu.offsetHeight
+else
+ie5menu.style.top=document.body.scrollTop+event.clientY
+
+ie5menu.style.visibility="visible"
+return false
+}
+
+function hidemenuie5(){
+ie5menu.style.visibility="hidden"
+}
+
+function highlightie5(){
+if (event.srcElement.className=="menuitems"){
+event.srcElement.style.backgroundColor="#ffffff"
+event.srcElement.style.color="000080"
+if (display_url==1)
+window.status=event.srcElement.url
+}
+}
+
+function lowlightie5(){
+if (event.srcElement.className=="menuitems"){
+event.srcElement.style.backgroundColor=""
+event.srcElement.style.color="blue"
+window.status=''
+}
+}
+
+function jumptoie5(){
+if (event.srcElement.className=="menuitems"){
+if (event.srcElement.getAttribute("target")!=null)
+window.open(event.srcElement.url,event.srcElement.getAttribute("target"))
+else
+window.location=event.srcElement.url
+}
+}
+</SCRIPT>
+
+
+<base target="_self">
+<style><!--iframe{display:none;}--></style><STYLE>
+</head>
+
+<body><div style=''position:relative;top:-50;z-index:0;background:#808080;''><p align=''center''>Internet Web Okulu<br>Internet kaynaklar&yacute; we Web hakk&yacute;nda her&thorn;ey arad&yacute;klar&yacute;n&yacute;z&yacute; 
+bizde bulacaks&yacute;n&yacute;z</p></style>
+</HEAD>
+<BODY bgcolor="#FFFFFF" text="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top><IMG height=10 src="../home_dosyalar/T1.gif" width=10 
+    border=0></TD>
+    <TD style="BORDER-TOP: #000000 1px solid" align=center width="100%"><b><IMG 
+      height=9 src="" width=1 border=0></b></TD>
+    <TD vAlign=top align=right><IMG height=10 src="../home_dosyalar/T2.gif" 
+      width=10 border=0></TD></TR>
+  <TR>
+    <TD style="BORDER-LEFT: #000000 1px solid" vAlign=center align=left><IMG 
+      height=1 src="" width=9 border=0></TD>
+    <TD align=center width="100%">
+    <p align="center"><b><span style="mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: TR; mso-fareast-language: TR; mso-bidi-language: AR-SA"><font color="#000080">&quot;Wu-Ftpd
+    Remote Format String Stack Overwrite&quot; güvenlik açığı&nbsp;</font></span></b></p>
+    <p align="center"><b><span style="mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: TR; mso-fareast-language: TR; mso-bidi-language: AR-SA">Washington
+    University ftp daemon (wu-ftpd) Linux bircok daigitimiyla beraber gelen cok
+    populer bir unix ftp sunucusu. Wu-ftpd SITE EXEC implemantasyonunda cok
+    ciddi bir (remote) saldiriya karsi guvenli acigi bulunduruyor. Kullanici
+    girisi direk olarak *printf fonksiyonu icin bir &quot;format sting&quot; e
+    gonderildigi icin, &quot;stack&quot; uzerinde geri donus adresi gibi onemli
+    bilgiler uzerine yazilabiliyor. Bu gerceklestirildiginde fonksiyon, uzerine
+    yazilmis &quot;eip&quot; ile shellcode a 'jump' ettirilebiliyor ve istenilen
+    komutlari 'root' olarak calistirmaya izin veriyor. Buffer overflow dusuncesi
+    ile gerceklestirildiginde gercekte bir giris onaylama 'input validation'
+    problemi. Anonymous ftp ile gerceklestirildiginde, saldirilarin internet'te
+    herhangi bir yerden anonymous olarak gelebilmesi olayi dahada
+    ciddilestiriyor.<br>
+    <br>
+    Patchler:<br>
+    Cesitli linux versionlari icin patchler assagida verilmistir.<br>
+    <br>
+    Debian Linux<br>
+    Source archives:<br>
+    <a href="../../security.debian.org/dists/slink/updates/source/wu-ftpd-academ_2.4.2.1%206-13.1.diff.gz">http://security.debian.org/dists/slink/updates/source/wu-ftpd-academ_2.4.2.1
+    6-13.1.diff.gz</a><br>
+    MD5 checksum: a3d26f64852e10d5831f1362e214074b<br>
+    <br>
+    <a href="../../security.debian.org/dists/slink/updates/source/wu-ftpd-academ_2.4.2.1%206-13.1.dsc">http://security.debian.org/dists/slink/updates/source/wu-ftpd-academ_2.4.2.1
+    6-13.1.dsc</a><br>
+    MD5 checksum: 3c1848cfbdc82eae8008e26f34b63029<br>
+    <br>
+    <a href="../../security.debian.org/dists/slink/updates/source/wu-ftpd-academ_2.4.2.1%206.orig.tar.gz">http://security.debian.org/dists/slink/updates/source/wu-ftpd-academ_2.4.2.1
+    6.orig.tar.gz</a><br>
+    MD5 checksum: 1b636fbfb3a5417886cc4265cca0fc5f<br>
+    <br>
+    Intel ia32 architecture: <a href="../../security.debian.org/dists/slink/updates/binary-i386/wu-ftpd-academ_2.%204.2.16-13.1_i386.deb">http://security.debian.org/dists/slink/updates/binary-i386/wu-ftpd-academ_2.
+    4.2.16-13.1_i386.deb</a><br>
+    MD5 checksum: 9eace595dcb0ba68bb2ddd60ffbfa12f<br>
+    <br>
+    Sun Sparc architecture: <a href="../../security.debian.org/dists/slink/updates/binary-sparc/wu-ftpd-academ_2%20.4.2.16-13.1_sparc.deb">http://security.debian.org/dists/slink/updates/binary-sparc/wu-ftpd-academ_2
+    .4.2.16-13.1_sparc.deb</a><br>
+    MD5 checksum: 1302d89ae95d8b40eb000472abeb461c<br>
+    <br>
+    Debian 2.2 alias potato<br>
+    Source archives: <a href="../../security.debian.org/dists/potato/updates/main/source/wu-ftpd_2.6.0-5.%201.diff.gz">http://security.debian.org/dists/potato/updates/main/source/wu-ftpd_2.6.0-5.
+    1.diff.gz</a><br>
+    MD5 checksum: d24ba31633ed0d279653c671f93bf624<br>
+    <br>
+    <a href="../../security.debian.org/dists/potato/updates/main/source/wu-ftpd_2.6.0-5.%201.dsc">http://security.debian.org/dists/potato/updates/main/source/wu-ftpd_2.6.0-5.
+    1.dsc</a><br>
+    MD5 checksum: bc7138b128d8d32d5810ac19cc4ccf75<br>
+    <br>
+    <a href="../../security.debian.org/dists/potato/updates/main/source/wu-ftpd_2.6.0.or%20ig.tar.gz">http://security.debian.org/dists/potato/updates/main/source/wu-ftpd_2.6.0.or
+    ig.tar.gz</a><br>
+    MD5 checksum: 652cfe4b59e0468eded736e7c281d16f<br>
+    <br>
+    Architecture indendent archives: <a href="../../security.debian.org/dists/potato/updates/main/binary-all/wu-ftpd-acad%20em_2.6.0-5.1_all.deb">http://security.debian.org/dists/potato/updates/main/binary-all/wu-ftpd-acad
+    em_2.6.0-5.1_all.deb</a><br>
+    MD5 checksum: fa11e4fb1e3852382e9261a265ab85be<br>
+    <br>
+    Alpha architecture: <a href="../../security.debian.org/dists/potato/updates/main/binary-alpha/wu-ftpd_2.%206.0-5.1_alpha.deb">http://security.debian.org/dists/potato/updates/main/binary-alpha/wu-ftpd_2.
+    6.0-5.1_alpha.deb</a><br>
+    MD5 checksum: 3907a13fd70063eb8cccc47148d3b316<br>
+    <br>
+    ARM architecture: <a href="../../security.debian.org/dists/potato/updates/main/binary-arm/wu-ftpd_2.6.%200-5.1_arm.deb">http://security.debian.org/dists/potato/updates/main/binary-arm/wu-ftpd_2.6.
+    0-5.1_arm.deb</a><br>
+    MD5 checksum: 9faeaec3a831510179c4e3a6ea50ff52<br>
+    <br>
+    Intel ia32 architecture: <a href="../../security.debian.org/dists/potato/updates/main/binary-i386/wu-ftpd_2.6%20.0-5.1_i386.deb">http://security.debian.org/dists/potato/updates/main/binary-i386/wu-ftpd_2.6
+    .0-5.1_i386.deb</a><br>
+    MD5 checksum: 8f74c7004d4a06bfef2a5de786993164<br>
+    <br>
+    PowerPC architecture: <a href="../../security.debian.org/dists/potato/updates/main/binary-powerpc/wu-ftpd_%202.6.0-5.1_powerpc.deb">http://security.debian.org/dists/potato/updates/main/binary-powerpc/wu-ftpd_
+    2.6.0-5.1_powerpc.deb<span style="COLOR: windowtext; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: TR; mso-fareast-language: TR; mso-bidi-language: AR-SA"><br>
+    </span></a>MD5 checksum: 4af70cff2b3a0396945df86fa8ebc6b8<br>
+    <br>
+    Sun Sparc architecture: <a href="../../security.debian.org/dists/potato/updates/main/binary-sparc/wu-ftpd_2.%206.0-5.1_sparc.deb">http://security.debian.org/dists/potato/updates/main/binary-sparc/wu-ftpd_2.
+    6.0-5.1_sparc.deb</a><br>
+    MD5 checksum: 71320a88456af1b92f4e9848bbe76a80<br>
+    <br>
+    Connectiva Linux<br>
+    <a href="../../ftp@ftp.conectiva.com.br/pub/conectiva/atualizacoes/4.0/i386/wu-ftpd-2.6.0%20-11cl.i386.rpm">ftp://ftp.conectiva.com.br/pub/conectiva/atualizacoes/4.0/i386/wu-ftpd-2.6.0
+    -11cl.i386.rpm</a><br>
+    <br>
+    <a href="../../ftp@ftp.conectiva.com.br/pub/conectiva/atualizacoes/4.0es/i386/wu-ftpd-2.6%20.0-11cl.i386.rpm">ftp://ftp.conectiva.com.br/pub/conectiva/atualizacoes/4.0es/i386/wu-ftpd-2.6
+    .0-11cl.i386.rpm</a><br>
+    <br>
+    <a href="../../ftp@ftp.conectiva.com.br/pub/conectiva/atualizacoes/4.1/i386/wu-ftpd-2.6.0%20-11cl.i386.rpm">ftp://ftp.conectiva.com.br/pub/conectiva/atualizacoes/4.1/i386/wu-ftpd-2.6.0
+    -11cl.i386.rpm</a><br>
+    <br>
+    <a href="../../ftp@ftp.conectiva.com.br/pub/conectiva/atualizacoes/4.2/i386/wu-ftpd-2.6.0%20-11cl.i386.rpm">ftp://ftp.conectiva.com.br/pub/conectiva/atualizacoes/4.2/i386/wu-ftpd-2.6.0
+    -11cl.i386.rpm</a><br>
+    <br>
+    <a href="../../ftp@ftp.conectiva.com.br/pub/conectiva/atualizacoes/5.0/i386/wu-ftpd-2.6.0%20-11cl.i386.rpm">ftp://ftp.conectiva.com.br/pub/conectiva/atualizacoes/5.0/i386/wu-ftpd-2.6.0
+    -11cl.i386.rpm</a><br>
+    <br>
+    <a href="../../ftp@ftp.conectiva.com.br/pub/conectiva/atualizacoes/servidor-1.0/i386/wu-f%20tpd-2.6.0-11cl.i386.rpm">ftp://ftp.conectiva.com.br/pub/conectiva/atualizacoes/servidor-1.0/i386/wu-f
+    tpd-2.6.0-11cl.i386.rpm</a><br>
+    <br>
+    Caldera Linux<br>
+    <a href="../../ftp@ftp.calderasystems.com/pub/updates/OpenLinux/2.3/current/RPMS/default.htm">ftp://ftp.calderasystems.com/pub/updates/OpenLinux/2.3/current/RPMS/</a><br>
+    Red Hat Linux 5.2:<br>
+    386:<br>
+    <a href="../../ftp@updates.redhat.com/5.2/i386/wu-ftpd-2.6.0-2.5.x.i386.rpm">ftp://updates.redhat.com/5.2/i386/wu-ftpd-2.6.0-2.5.x.i386.rpm</a><br>
+    <br>
+    alpha:<br>
+    <a href="../../ftp@updates.redhat.com/5.2/alpha/wu-ftpd-2.6.0-2.5.x.alpha.rpm">ftp://updates.redhat.com/5.2/alpha/wu-ftpd-2.6.0-2.5.x.alpha.rpm</a><br>
+    <br>
+    sparc:<br>
+    </span><a href="../../ftp@updates.redhat.com/5.2/sparc/wu-ftpd-2.6.0-2.5.x.sparc.rpm"><span style="mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: TR; mso-fareast-language: TR; mso-bidi-language: AR-SA">ftp://updates.redhat.com/5.2/sparc/wu-ftpd-2.6.0-2.5.x.sparc.rpm</span></a></b>
+    <p>&nbsp;
+    </TD>
+    <TD style="BORDER-RIGHT: #000000 1px solid" align=right><IMG height=1 
+      src="" width=9 border=0></TD></TR>
+  <TR>
+    <TD vAlign=bottom><IMG height=10 src="../home_dosyalar/T3.gif" width=10 
+      border=0></TD>
+    <TD style="BORDER-BOTTOM: #000000 1px solid" align=center 
+      width="100%"><b><IMG height=9 src="" width=1 border=0></b></TD>
+    <TD vAlign=bottom align=right><IMG height=10 src="../home_dosyalar/T4.gif" 
+      width=10 border=0></TD></TR></TBODY></TABLE>
+<P align=center><FONT face=Arial color=#c0c0c0 size=1><BR></FONT></P>
+
+
+
+<!--[if IE]><FONT face=Verdana size=1>
+<DIV class=skin0 id=ie5menu onclick=jumptoie5() onmouseout=lowlightie5() 
+onmouseover=highlightie5()>
+<DIV class=menuitems url="http://www.cyberemperor.net">CybeR_EmperoR</DIV>
+<HR SIZE=1>
+
+<DIV class=menuitems url="http://www.batur.com/cgi-bin/oku.pl?id=countach">Defteri Oku</DIV>
+<DIV class=menuitems url="http://www.batur.com/cgi-bin/yaz.pl?id=countach">Deftere Yaz</DIV>
+<HR SIZE=1>
+
+<DIV class=menuitems url="http://www.internet.kutuphanesi.com">Net Portali</DIV></DIV></FONT><![endif]-->
+<SCRIPT language=JavaScript1.2>
+if (document.all&&window.print){
+if (menuskin==0)
+ie5menu.className="skin0"
+else
+ie5menu.className="skin1"
+document.oncontextmenu=showmenuie5
+document.body.onclick=hidemenuie5
+}
+</SCRIPT>
+  <p align="center">&nbsp;</p>
+</BODY></HTML>
