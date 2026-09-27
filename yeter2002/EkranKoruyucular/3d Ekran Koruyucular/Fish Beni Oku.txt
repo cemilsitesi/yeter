@@ -1,0 +1,18 @@
+
+	
+	Fish Marine Aquarium 99H ve 99L Sifreler 
+
+(Calistirmak icin once `DirectX` adli program kurulmalidir)
+
+Sifreleri yazmak icin space tusuna tiklanacak
+
+Asagidaki sifrelerden birisi yazilacak.
+
+
+	Standard: corpse515751 
+
+	Deluxe: corpse498341 
+
+	PublicBasic: basic-126719 
+
+	PublicDeluxe: deluxe205846
