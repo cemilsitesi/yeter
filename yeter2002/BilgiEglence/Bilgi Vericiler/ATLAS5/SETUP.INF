@@ -1,0 +1,142 @@
+[dialog]
+  caption = "World Atlas for Windows Installation"
+  include = "Include anthems and flags (810 kb)"
+
+[startup]
+  line1 = "Installing World Atlas for Windows"
+  line2 = "Setup will install this application into the following directory, which it will create on your hard disk."
+  line3 = "If you want to install this application into a different directory and/or drive, type the name of the directory."
+
+[misc]
+  compress = ".TRC"
+
+[data]
+  defdir = C:\WAW
+
+[disks]
+  1 =.,"World Atlas for Windows, Disk 1 of 7"
+  2 =.,"World Atlas for Windows, Disk 2 of 7"
+  3 =.,"World Atlas for Windows, Disk 3 of 7"
+  4 =.,"World Atlas for Windows, Disk 4 of 7"
+  5 =.,"World Atlas for Windows, Disk 5 of 7"
+  6 =.,"World Atlas for Windows, Disk 6 of 7"
+  7 =.,"World Atlas for Windows, Disk 7 of 7"
+
+[needed.space]
+  minspace = 11151000
+  waspace = 11965000
+
+[app.copy.appstuff]
+  #app.main,	0:
+  #app.icons,   0:icons
+  #app.relief,  0:
+
+[app.copy.appfull]
+  #app.main,    0:
+  #app.icons,   0:icons
+  #app.relief,  0:
+  #app.extra,   0:
+
+[app.main]
+  1:info2.dat,"data"
+  1:info1.dat+
+  2:info1.002
+  2:stat.dat
+  2:statobj.dat
+  2:topic.dat
+  2:currency.dat
+  2:source.dat
+  2:europe.trc,"maps"
+  2:wawlabel.trc
+  3:africa.trc
+  3:america.trc
+  3:lsans.ttf
+  4:asia.trc
+  4:name.dat
+  4:lbrite.ttf
+  4:wahlp.trc,"online help"
+  4:waexe.trc,"program"
+  4:atlasdll.dll
+  4:ctl3d.dll
+  5:accusoft.trc
+  5:commdlg.trc
+  5:twrxedit.trc
+  5:index.dat,"data"
+  5:citymaps.trc,"maps"
+
+[app.icons]
+  5:circle.ico,"icons"        
+  5:diamond.ico        
+  5:flag.ico        
+  5:pin.ico        
+  5:square.ico        
+  5:star.ico        
+  5:triangle.ico        
+  5:pharmacy.ico        
+  5:access.ico        
+  5:agricult.ico        
+  5:animal.ico        
+  5:birth.ico        
+  5:boats.ico        
+  5:calories.ico        
+  5:cars.ico        
+  5:communic.ico        
+  5:crime.ico        
+  5:death.ico        
+  5:deforest.ico        
+  5:dentist.ico        
+  5:doctor.ico        
+  5:dollars.ico        
+  5:drugs.ico        
+  5:economy.ico        
+  5:educate.ico        
+  5:energy.ico        
+  5:equipmnt.ico        
+  5:geograph.ico        
+  5:goods.ico        
+  5:health.ico        
+  5:impexp.ico        
+  5:labor.ico        
+  5:library.ico        
+  5:life.ico        
+  5:literacy.ico        
+  5:marriage.ico        
+  5:metals.ico        
+  5:murder.ico        
+  5:news.ico        
+  5:nurse.ico        
+  5:people.ico        
+  5:phone.ico        
+  5:planes.ico        
+  5:plant.ico        
+  5:radio.ico        
+  5:rawmat.ico        
+  5:sexcrime.ico        
+  5:theft.ico        
+  5:transpor.ico        
+  5:travel.ico        
+  5:tv.ico        
+  5:worker.ico        
+
+[app.extra]
+  6:flags.dat,"flags"
+  7:anthems.dat,"anthems"
+
+[app.relief]
+  5:relief.dat+,"relief maps"
+  6:relief.002
+
+[progman.groups]
+  "World Atlas",WA.GRP
+
+[World Atlas]
+  "World Atlas 5.0.0", 0:wa.exe
+  "World Atlas On-line Manual", "winhelp.exe 0:wa.hlp"
+
+[config.files]
+  #waw.cfg
+
+[waw.cfg]
+  0:
+  0:
+
