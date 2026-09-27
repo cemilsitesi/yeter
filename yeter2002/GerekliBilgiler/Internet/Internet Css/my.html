@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+  <TITLE> INET-TR.CSS Jump Menu </TITLE>
+</HEAD>
+
+<P>Pick an option and press Go
+
+<CENTER>
+<FORM NAME="SelectURL">
+<SELECT NAME="css_main">
+<OPTION SELECTED VALUE="bolum0.html">Bolum 0 : CSS Nedir?
+<OPTION VALUE="bolum1.html">Bolum 1 : Internet Nedir?
+<OPTION VALUE="bolum2.html">Bolum 2 : Internet Nedir? Türkiye'de Ýnternet.
+<OPTION VALUE="bolum3.html">Bolum 3 : Elektronik Posta
+<OPTION VALUE="bolum4.html">Bolum 4 : Haber Gruplarý
+</SELECT>
+<INPUT TYPE=BUTTON VALUE="Seç!" onClick="GotoURL(this.form)">
+</CENTER>
+
+<SCRIPT LANGUAGE="JavaScript">
+function GotoURL(f){
+top.location.href=f.css_main.options[f.css_main.selectedIndex].value;
+}
+</SCRIPT>
+
+</FORM>
+</HTML>
