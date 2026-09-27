@@ -1,0 +1,247 @@
+<html><head><meta http-equiv=Content-Type content="text/html; charset=windows-1254"><meta http-equiv=Content-Type content="text/html; charset=iso-8859-9"><meta name=GENERATOR content="Microsoft FrontPage Express 2.0"><title>Doğum yapacağınız tarihi hesaplayın... gebelik.org</title></head><body bgcolor=#008080>
+
+
+
+
+<SCRIPT FOR=window EVENT=onload LANGUAGE="JScript">
+  initAd();
+</SCRIPT>
+
+<script language="JScript">
+<!--
+
+function initAd() {
+  document.all.AdLayer.style.posTop = -200;
+  document.all.AdLayer.style.visibility = 'visible'
+  MoveLayer('AdLayer');
+}
+
+function MoveLayer(layerName) {
+  var x = 10;
+  var y = 10;
+  var diff = (document.body.scrollTop + y - document.all.AdLayer.style.posTop)*.40;
+  var y = document.body.scrollTop + y - diff;
+  eval("document.all." + layerName + ".style.posTop =  y");
+  eval("document.all." + layerName + ".style.posLeft = x");
+  setTimeout("MoveLayer('AdLayer');", 60);
+}
+
+}
+ //-->
+</script>
+
+<!-- /Spidersoft WebZIP Banner Ad Insert -->
+
+
+<div align=center><center><table border=0 cellpadding=0 cellspacing=0 width=100% bgcolor=#008080> <tr><td valign=top colspan=2><font color=#FFFFFF size=4 face=Arial>Son adet tarihinizin <strong>ilk gününü</strong> girin</font><font color=#FFFFFF size=5> </font></td></tr><tr><td>&nbsp;</td> <td>&nbsp;</td> </tr></table></center></div><table border=0 cellpadding=2 width=100% bgcolor=#008080><tr><td><div align=center><center><table border=0 cellpadding=6 cellspacing=0><tr><td valign=bottom><form name=dates><div align=left><table border=0 cellpadding=2 cellspacing=0><tr><td><p align=left><font color=#FFFFFF size=5 face=Arial,Helvetica><script
+language="JavaScript">
+
+
+
+//general purpose function to see if an input value has been entered at all
+
+function isEmpty(inputStr){if(inputStr==""||inputStr==null){return true
+
+}return false
+
+}//general purpose function to see if a suspected numeric input
+
+//is a positive integer
+
+function isNumber(inputStr){for(var i=0;i<inputStr.length;i++){var oneChar=inputStr.charAt(i)
+
+if(oneChar<"0"||oneChar>"9"){return false
+
+}}return true
+
+}//function to determine if value is in acceptable range for this application
+
+function inRangeDay(inputStr){num=parseInt(inputStr)
+
+if(num<1||num>31){return false
+
+}return true
+
+}//function to determine if value is in acceptable range for this application
+
+function inRangeYear(inputStr){num=parseInt(inputStr)
+
+if(num<1900||num>3000){return false
+
+}return true
+
+}//Master value validator routine for day
+
+function isValidDay(inputStr){if(isEmpty(inputStr)){alert("Lütfen son adet tarihinizin gününü giriniz.")
+
+return false
+
+}else{if(!isNumber(inputStr)){alert("Belirttiğiniz gün sayısal bir değer olmalıdır")
+
+return false
+
+}else{if(!inRangeDay(inputStr)){alert("Lütfen geçerli bir gün belirtiniz.")
+
+return false
+
+}}}return true
+
+}//Master value validator routine for year
+
+function isValidYear(inputStr){if(isEmpty(inputStr)){alert("Lütfen son adet tarihinizin yılını giriniz.")
+
+return false
+
+}else{if(!isNumber(inputStr)){alert("Belirttiğiniz yıl sayısal bir değer olmalıdır.")
+
+return false
+
+}else{if(!inRangeYear(inputStr)){alert("Lütfen geçerli bir yıl belirtiniz.")
+
+return false
+
+}}}return true
+
+}function makeArray(n){this.length=n
+
+for(var i=1;i<=n;i++)
+
+this[i]=null
+
+return this
+
+}var maxday=new makeArray(12)
+
+maxday[1]=31
+
+maxday[2]=28
+
+maxday[3]=31
+
+maxday[4]=30
+
+maxday[5]=31
+
+maxday[6]=30
+
+maxday[7]=31
+
+maxday[8]=31
+
+maxday[9]=30
+
+maxday[10]=31
+
+maxday[11]=30
+
+maxday[12]=31
+
+
+
+var monthname=new makeArray(12)
+
+monthname[1]="Ocak"
+
+monthname[2]="Şubat"
+
+monthname[3]="Mart"
+
+monthname[4]="Nisan"
+
+monthname[5]="Mayıs"
+
+monthname[6]="Haziran"
+
+monthname[7]="Temmuz"
+
+monthname[8]="Ağustos"
+
+monthname[9]="Eylül"
+
+monthname[10]="Ekim"
+
+monthname[11]="Kasım"
+
+monthname[12]="Aralık"
+
+
+
+var adddays=new makeArray(7)
+
+adddays[1]=14
+
+adddays[2]=35
+
+adddays[3]=70
+
+adddays[4]=84
+
+adddays[5]=161
+
+adddays[6]=189
+
+adddays[7]=280
+
+
+
+//Calculate the date string
+
+function calcNewDate(month,day,year,adddays){newday=eval(day)+adddays
+
+newmonth=month+1
+
+newyear=eval(year)
+
+var max
+
+
+
+for(var i=0;i<12;i++){if(newmonth==2&&(newyear%4)==0){max=29
+
+}else
+
+max=maxday[newmonth]
+
+
+
+if(newday>max){newday=newday-max
+
+newmonth=newmonth+1
+
+if(newmonth>12){newyear=newyear+1
+
+newmonth=1
+
+}}else
+
+break
+
+}var datestring=monthname[newmonth]+" "+newday+", "+newyear
+
+return datestring
+
+}//Get the date entered and calculate the rest of the dates
+
+function calc(form){day=form.day.value
+
+year=form.year.value
+
+monthnum=form.month.selectedIndex
+
+
+
+if(isValidDay(day)){if(isValidYear(year)){form.duedate.value=calcNewDate(monthnum,day,year,adddays[7])
+
+}}}</script></font></p> </td></tr><tr><td><p align=left><font color=#FFFFFF size=3 face=Arial,Helvetica>Gün: </font></p> </td><td><p align=left><font color=#FFFFFF size=3 face=Arial,Helvetica><input type=text size=2 name=day></font></p></td><td><p align=left><font color=#FFFFFF size=3 face=Arial,Helvetica>Ay: </font></p> </td><td><p align=left><font color=#FFFFFF size=3 face=Arial,Helvetica><select name=month size=1><option selected>Ocak</option> <option>Şubat</option> <option>Mart</option> <option>Nisan</option> <option>Mayıs</option> <option>Haziran</option> <option>Temmuz</option> <option>Ağustos</option> <option>Eylül</option> <option>Ekim</option> <option>Kasım</option> <option>Aralık</option> </select></font></p></td><td colspan=2><p align=left><font color=#FFFFFF size=3 face=Arial,Helvetica>Yıl: </font></p> </td><td><p align=left><font color=#FFFFFF size=3 face=Arial,Helvetica><input type=text size=4 name=year></font></p></td><td><p align=left><font color=#FFFFFF size=4 face=Arial,Helvetica><input type=button value=Hesapla! onclick=calc(this.form)></font></p></td></tr></table></div><div align=left><table border=0 cellpadding=0 cellspacing=0><tr><td><font color=#FFFFFF></font>&nbsp;</td> </tr><tr><td><font color=#FFFFFF size=3 face="Arial Tur">Bebeğinizin muhtemel doğum tarihi :</font><font color=#FFFFFF size=4 face=Arial,Helvetica><input type=text size=13 name=duedate> </font><a href=javascript:acil3()><font color=#FFFFFF size=2 face=Arial>Dikkat!</font></a><a href=javascript:acil3()><font color=#FFFFFF size=3><script
+language="JavaScript"><!--
+
+
+
+
+function acil3(){window.open('gelisim/gelisim1.html','',
+
+'toolbar=yes,location=yes,directories=yes,status=yes,menubar=yes,resizable=yes,scrollbars=yes,width=600,height=400');}//--></script></font><font color=#FFFFFF size=3 face="Arial Tur"> </font></a></td></tr></table></div></form></td></tr></table></center></div></td></tr><tr><td align=right valign=top><p align=right><script
+language="JavaScript"><!--
+function click(){if(event.button==2){alert('HATALI KOMUT İŞLEMİ!')
+}}document.onmousedown=click
+//--></script><a href=javascript:window.close();><font color=#FFFFFF size=2 face=Arial>Hesaplayıcıyı kapat</font></a></p> <p align=center><font color=#FFFFFF size=1 face="Arial Tur">Copyright © 1999-2000 gebelik.org <br> Tüm hakları saklıdır.</font><font color=#FFFFFF size=2> </font></p></td></tr></table></body></html>
