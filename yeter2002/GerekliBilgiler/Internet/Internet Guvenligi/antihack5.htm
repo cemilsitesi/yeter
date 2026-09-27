@@ -1,0 +1,778 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>frameorta</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1254">
+<META content="Microsoft FrontPage 4.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<STYLE type=text/css media=screen>A {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+A:link {
+	CURSOR: hand; COLOR: navy; TEXT-DECORATION: none
+}
+A:visited {
+	CURSOR: hand; COLOR: navy; TEXT-DECORATION: none
+}
+A:hover {
+	CURSOR: hand; COLOR: blue; TEXT-DECORATION: none
+}
+TH {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+DD {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+DL {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+B {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana,tahoma,arial
+}
+TEXTAREA {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana,tahoma,arial
+}
+INPUT {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana,tahoma,arial
+}
+</STYLE>
+<style>
+
+BODY 
+{scrollbar-face-color: #ffffff; scrollbar-shadow-color: #000000; 
+scrollbar-highlight-color: #ffffff; scrollbar-3dlight-color: #000000; 
+scrollbar-darkshadow-color: #ffffff; scrollbar-track-color: #ffffff; 
+scrollbar-arrow-color: #000080}
+</style>
+<STYLE>.skin0 {
+	BACKGROUND-COLOR: menu; BORDER-BOTTOM: black 2px solid; BORDER-LEFT: black 2px solid; BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; CURSOR: default; FONT-FAMILY: Verdana; LINE-HEIGHT: 20px; POSITION: absolute; VISIBILITY: hidden; WIDTH: 130px
+}
+.skin1 {
+	BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; CURSOR: hand; POSITION: absolute; VISIBILITY: hidden; WIDTH: 120px
+}
+.menuitems {
+	PADDING-LEFT: 17px; PADDING-RIGHT: 10px
+}
+</STYLE>
+
+<SCRIPT language=JavaScript1.2>
+var menuskin=1
+var display_url=0
+function showmenuie5(){
+var rightedge=document.body.clientWidth-event.clientX
+var bottomedge=document.body.clientHeight-event.clientY
+if (rightedge<ie5menu.offsetWidth)
+ie5menu.style.left=document.body.scrollLeft+event.clientX-ie5menu.offsetWidth
+else
+ie5menu.style.left=document.body.scrollLeft+event.clientX
+if (bottomedge<ie5menu.offsetHeight)
+ie5menu.style.top=document.body.scrollTop+event.clientY-ie5menu.offsetHeight
+else
+ie5menu.style.top=document.body.scrollTop+event.clientY
+
+ie5menu.style.visibility="visible"
+return false
+}
+
+function hidemenuie5(){
+ie5menu.style.visibility="hidden"
+}
+
+function highlightie5(){
+if (event.srcElement.className=="menuitems"){
+event.srcElement.style.backgroundColor="#ffffff"
+event.srcElement.style.color="000080"
+if (display_url==1)
+window.status=event.srcElement.url
+}
+}
+
+function lowlightie5(){
+if (event.srcElement.className=="menuitems"){
+event.srcElement.style.backgroundColor=""
+event.srcElement.style.color="blue"
+window.status=''
+}
+}
+
+function jumptoie5(){
+if (event.srcElement.className=="menuitems"){
+if (event.srcElement.getAttribute("target")!=null)
+window.open(event.srcElement.url,event.srcElement.getAttribute("target"))
+else
+window.location=event.srcElement.url
+}
+}
+</SCRIPT>
+
+
+<base target="_self">
+<style><!--iframe{display:none;}--></style><STYLE>
+</head>
+
+<body><div style=''position:relative;top:-50;z-index:0;background:#808080;''><p align=''center''>Internet Web Okulu<br>Internet kaynaklar&yacute; we Web hakk&yacute;nda her&thorn;ey arad&yacute;klar&yacute;n&yacute;z&yacute; 
+bizde bulacaks&yacute;n&yacute;z</p></style>
+</HEAD>
+<BODY bgcolor="#FFFFFF" text="#808080" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top><IMG height=10 src="../home_dosyalar/T1.gif" width=10 
+    border=0></TD>
+    <TD style="BORDER-TOP: #000000 1px solid" align=center width="100%"><b><IMG 
+      height=9 src="" width=1 border=0></b></TD>
+    <TD vAlign=top align=right><IMG height=10 src="../home_dosyalar/T2.gif" 
+      width=10 border=0></TD></TR>
+  <TR>
+    <TD style="BORDER-LEFT: #000000 1px solid" vAlign=center align=left><IMG 
+      height=1 src="" width=9 border=0></TD>
+    <TD align=center width="100%">
+    <p align="center"><b><font color="#000080">Computer Security I<br>
+    (start up &amp; dosya erişimi)</font></b></p>
+    <p align="center"><b>Bu bolum <a href="../../chevalier.iscool.net/default.htm">http://chevalier.iscool.net</a>
+    adresinden alinmistir. (Orjinal)</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Günümüzde
+    İnternet, pek çok insan için vazgeçilmez bir gereklilik ve alışkanlıktır.
+    Dünyayı saran internet ağına çeşitli yollardan erişmek mümkündür.
+    İnternet Cafe'ler, işyerleri, okullar ya da kişisel bilgisayarlar. İnternete
+    ulaştığınız yol ne olursa olsun sizi bekleyen çok çeşitli tehlikeler
+    mevcuttur. Birileri kişisel bilgisayarınız, kullandığınız network ya
+    da size özel accountlarınız üzerinde hakimiyet kurmuş olabilir. Bu
+    durum, kişisel dosyalarınızın tanımadığınız kişilerin ellerine geçmesinden,
+    bulunduğunuz ortamdaki konuşmaların dinlenmesine, kişisel hesaplarınızın
+    sizin adınıza kötü amaçlarla kullanılmasından,&nbsp; sizi mahkeme
+    koridorlarına taşıyabilecek işlemlere kadar çeşitli belalara neden
+    olabilir. Bu satırları okuduğunuz sırada sizin bilgisayarınız aracılığıyla
+    bir banka hesabına illegal müdahaleler yapılıyor olabilir. İnanın bana
+    bu hiç de paranoyakça bir düşünce ya da komplo teorisinin bir parçası
+    değil. Bu yazıda &quot;Computer Security&quot; için gerekli olan üst düzey
+    bilgileri yeni kullanıcıların da anlayabileceği bir şekilde açıklamaya
+    çalışacağım. Buna rağmen anlayamadığınız terimler ya da açıklamalar
+    olursa 42000000 nolu icq uininden bana ulaşabilirsiniz.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Computer
+    Security için ilk şart bilgisayarınızın açılırken ve açıldıktan
+    sonra yaptığı her işlemin şeffaf olması gerekliliğidir. Normal şartlarda
+    işletim sisteminiz açıldığında hiçbir şüphe çekmeksizin bilgisayarınızı
+    başkalarının kötü amaçlarına sunabilir. Gerekli şeffaflığın sağlanması
+    için başlıca üç fonksiyonun gözlemlenebilmesi gerekir.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">1.
+    Start up dosyaları<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Dosya ve register erişimi<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. TCP/IP trafiği</font></b></p>
+    <h4 style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Bu
+    üç fonksiyonun bilinçli bir şekilde gözlemlenmesi bilgisayarınızı
+    tek kelimeyle kusursuz bir güvenliğe eriştirir. Güvenlik için hiçbir
+    zaman antivirüs programlarına tam olarak güvenmemelisiniz. Bu tür
+    programların koruyucu özelliği bazı durumlarda tamamen ortadan
+    kalkabilmektedir. Şu an kullanımda olan trojanların (bilgisayarların dışarıdan
+    yönetilmesini sağlayan casus programlar) bir kısmı&nbsp; hiçbir antivirüs
+    programı tarafından tespit edilememektedir. Güvenlik konusunu Windows işletim
+    sistemi üzerinde anlatmaya çalışacağım. Çünkü windows hem en yaygın
+    kullanılan hem de en zayıf güvenliğe sahip işletim sistemidir. Eğer
+    internete alternatif bir işletim sistemi üzerinden bağlanıyorsanız yazının
+    geri kalan kısmını genel kültür açısından okuyabilirsiniz. Windows
+    kullanıcılarının ise her kelimesini itinayla okumalarını tavsiye
+    ederim.</b></h4>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">1.
+    Start up Dosyaları :</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Start
+    up dosyaları bilgisayarınızın her açılışında sizin onayınız ve
+    haberiniz olmaksızın otomatik olarak çalıştırılan dosyalardır.
+    Antivirüs program paketlerinin shield programları, getright ya da netzip
+    gibi download araçları, printer ya da scanner gibi donanımlarınızı yöneten
+    programlar bu yöntemle çalıştırılmaktadır. Ancak bilgisayarınızda
+    trojan ya da bazı pws (password stealer) programları bir defa bile çalıştırılsa
+    kendilerine autostart özelliği kazandıracak bir dizi işlem yaparlar ve
+    her açılışta aktif hale gelirler. Şimdi programların start up özelliği
+    için sisteminizde ne tür değişiklikler yaptıklarını görelim.
+    Programların kendilerini yazabilecekleri yerleri tanıttıktan sonra zararlı
+    programları nasıl tanıyabileceğimizi açıklamaya çalışacağım.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Start
+    up özelliği için en basit yöntem programın başlangıç (start up) klasörüne
+    kısayolunu kopyalamasıdır. Bu klasör</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">C:\WINDOWS\Profiles\*oturum
+    logininiz*\Start Menu\Programlar\Başlangıç</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>adresinde
+    bulunur. Bu klasöre START menüsünden rahatlıkla ulaşabilirsiniz.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>İkinci
+    yöntem programın kendisini&nbsp;</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">C:\WINDOWS\</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>dizinine
+    kopyalayıp windows un yapılandırma ayarlarını düzenleyen dosyalara
+    kendisini yazmasıdır. Bu dosyalar windows klasörü altında yer alan WIN.INI
+    ve SYSTEM.INI dosyalarıdır. Dosyalar ASCII modda olduklarından herhangi
+    bir editör yardımıyla (notepad gibi) açılıp kolayca düzenlenebilirler.
+    Aşağıda söz konusu iki dosyanın start up fonksiyonu için kullanılan bölümlerini
+    görebilirsiniz.<br>
+    </b></p>
+    <div align="center">
+      <center>
+      <table width="64%" border="1">
+        <tbody>
+          <tr>
+            <td align="middle" width="50%"><b><font color="#000080">[windows]<br>
+              NullPort=None<br>
+              DOSver=3D213E3C6D66<br>
+              StartUp=3F70<br>
+              load=<br>
+              run=</font></b></td>
+            <td align="middle" width="50%"><b><font color="#000080">[boot]<br>
+              oemfonts.fon=vgaoem.fon<br>
+              system.drv=system.drv<br>
+              drivers=mmsystem.dll power.drv<br>
+              shell=Explorer.exe</font></b></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+    </div>
+    <p align="center"><b><font color="#000080">WIN.INI ve SYSTEM.INI dosyalarının
+    ilgili bölümleri&nbsp;</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px"><b>WIN.INI
+    dosyasında run anahtarı, SYSTEM.INI de ise shell anahtarı start up sırasında
+    çalıştırılacak dosya adını saklı tutar. SYSTEM.INI de Explorer.exe
+    default olarak kayıtlı durumdadır. Yeni bir dosya eklendiğinde Explorer.exe'nin
+    sağ tarafına yazılır.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Üçüncü
+    yöntem programın windows dizinine kopyalandıktan sonra register
+    anahtarlarını kullanarak autostart özelliği almasıdır. Windows
+    register'ı işletim sisteminin ve install edilen program kayıtlarının ve
+    bazı yapılandırma ayarlarının saklı tutulduğu bir yapıdır.
+    Bilgisayarın isminden, faks için kullanılan telefon numarasına kadar bütün
+    bilgilere buradan erişip değişiklik yapmak mümkündür. Register'ı düzenlemek
+    için windows dizini altında yer alan REGEDIT.EXE programını
+    kullanabilirsiniz. Programlar autostart özelliği almak için registry'de
+    çoğunlukla</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run]</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices]&nbsp;<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce]&nbsp;<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]&nbsp;<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [HKEY_CURRENT_USER\SOFTWARE\Mirabilis\ICQ\Agent\Apps\ICQ]&nbsp;</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Anahtarlarını
+    kullanırlar.&nbsp;Sisteminizin söz ettiğimiz bölümlerinde birçok
+    program dosyası kayıtlı durumdadır. Bu dosyalar arasından zararlı
+    olanları ayırabilmek biraz dikkat ve birikim&nbsp; ister.&nbsp; Sizlere
+    kolaylık olması açısından normal ve zararlı dosyalar için örnekler
+    vermeye çalışacağım.</b></p>
+    <div align="center">
+      <center>
+      <table width="54%" border="1">
+        <tbody>
+          <tr>
+            <td width="100%">
+              <p align="center"><b><img height="227" src="../belgelerim/website/start.jpg" width="392" border="0"></b></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+    </div>
+    <p align="center"><b><font color="#000080">&nbsp;Örnek Windows Start up
+    dosya listesi</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>&nbsp;Yukarıda
+    gördüğünüz tablo benim çoğunlukla kullandığım windows profiline
+    ait start up dosyalarımın listesidir. Bu liste her makine için farklılık
+    gösterebilir. Kullandığınız donanımların markası ve cinsi, kullandığınız
+    yazılımlar bu tablonun içeriğini değiştirmektedir. Casus programların
+    registry'de aldıkları isimler programı konfigüre eden kişilerin isteğine
+    göre değişebilir bu nedenle standart bir liste vermek mümkün değildir.
+    Fakat yine de Türkiye'de sık kullanılan trojan&nbsp; serverlarının
+    sisteme yerleştikten sonra default olarak aldıkları isimleri açıklamakta
+    fayda görüyorum.<br>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#000080"> - systray.dl<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - systray.exe (system klasöründeki
+    değil)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - msrexe.exe<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - grcframe.exe</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Sisteminizde
+    şüpheli bir dosya bulunuyorsa (şüpheli dosyalar konusunu birazdan açıklamaya
+    çalışacağım) ve o dosyanın ismi de start up dosyalarınız arasında
+    yer almışsa, söz konusu dosya şüpheli olmaktan çıkmış ve bilgisayarınızdaki
+    verileri başkalarının hizmetine sunmaya başlamış demektir.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">2.
+    Dosya Erişimi :</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Bilgisayar
+    sistemleri yazılım olmaksızın çalışmaz. Bu nedenle gerekli yazılımları
+    çeşitli yöntemlerle temin edip bilgisayarımıza yükleriz. Bu işlem
+    bilgisayarımızın güvenliğini tehdit eden faktörlerin başında yer alır.
+    Bu konuda çok yaygın yanılgılar vardır. Özellikle yalnızca executable
+    dosyaların zararlı olabileceği yanılgısı pek çok kişinin başını
+    derde sokmuştur. Sizlere belki çok şaşırtıcı gelebilir ama normal işlevini
+    yapan ve işletim sisteminde hiçbir tuhaf görünüme sahip olmayan bir
+    resim, mp3, midi, txt ya da office dosyası (bu liste hayal gücünüzle sınırlıdır)
+    sistem güvenliğinizi tamamen ortadan kaldırabilir. Dosya ve register erişimini
+    kontrol altında tutabilmek için monitör programlarına ihtiyacınız vardır.
+    Ben FILEMON.EXE ve REGMON.EXE adlarında iki program kullanıyorum. Bu
+    programlar hakkında detaylı bilgileri başka bir yazımda açıklayacağım.
+    Şimdi normal bir dosyayla casus fonksiyonlar taşıyan dosyalar arasındaki
+    görünür farkları incelemeye çalışalım.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">I
+    - Yalın Trojanlar</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Bu
+    dosyalar .exe uzantılı olurlar. boyutları 30Kb ile 1.5Mb arasında değişmektedir.
+    Popüler olanları 8Kb, 122Kb, 136Kb, 261Kb, 314Kb, 321Kb, 372Kb, 389Kb,
+    484Kb ve 610Kb boyutlarında karşınıza çıkabilir. İconları
+    olmayabilir, standart executable iconu (üstte mavi şeritli beyaz dikdörtgen),
+    meşale, satellite anten ya da windows logosu iconları söz konusu
+    trojanların yalın halleridir. Bu dosyalar açıldıklarında ya hiçbir şey
+    olmaz ya da sisteminiz hata mesajı verir. Bu işlem sırasında hard
+    diskinizden yoğun sesler gelir ve sisteminiz yavaşlar. Eğer dosya pws
+    dosyası ise ve bilgisayarınız internetde değilse internet connection'ı
+    sağlamaya çalışır. Aşağıda popüler trojan serverlarının yalın
+    haldeki iconlarını görebilirsiniz.</b></p>
+    <div align="center">
+      <center>
+      <table width="27%" border="1">
+        <tbody>
+          <tr>
+            <td width="100%">
+              <p align="center"><b><img height="130" src="../belgelerim/website/icons2.jpg" width="216" border="0"></b></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+    </div>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="center"><b><font color="#000080">Popüler
+    trojanların default server iconları&nbsp;</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">II
+    - Birleşik Trojanlar</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Bu
+    dosyalar iki programın birleşimidir. Animasyon, e-cart, şaka, utility
+    gibi programlara trojan eklenmesiyle oluşturulur. iconları ya da boyutları
+    standart değildir. Bu dosyalar çalıştırıldığında bir çıktı oluşturmadan
+    önce hard diskinizden yoğun sesler gelir. Eğer dosya pws dosyası ise
+    bilgisayarınız internet connection'ı sağlamaya çalışır.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">III
+    - Süslü Trojanlar</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Bu
+    dosyalar görünürde .exe uzantılı değildir. iconları media file
+    iconlarına (jpg, gif, bmp vb.) benzetilmeye çalışılmıştır. Ancak
+    orijinal icon gibi davranmazlar. görünüm modu değiştirildiğinde
+    boyutuyla beraber şeklinin değişmesi gereken iconun yalnızca boyutu değişir.
+    Ayrıca bazen transparan olması gereken kısımlarda renkli lekeler
+    bulunmaktadır. Aşağıda orijinal ve taklit icon örneklerini
+    inceleyebilirsiniz.<br>
+    </b></p>
+    <div align="center">
+      <center>
+      <table width="18%" border="1">
+        <tbody>
+          <tr>
+            <td width="100%">
+              <p align="center"><b><img height="67" src="../belgelerim/website/icons.jpg" width="172" border="0"></b></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+    </div>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="center"><b><font color="#000080">ACDSee
+    BMP İconları.<br>
+    &nbsp;(soldaki çok kötü bir taklit)</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Dosyalar
+    çalıştırıldıklarında bir şey olmayabilir, hata mesajı verebilir ya
+    da taklit edildikleri media dosyasının fonksiyonlarını tam anlamıyla
+    gerçekleştirebilirler. Ancak her 3 durumda da sistemde yavaşlama, hard
+    diskden gelen yoğun sesler ve/veya internet connection'ı sağlama çabası
+    görülebilir. Bu tür dosyaların güvenirliliğini dosya üzerinde sağ
+    butona basarak anlayabilirsiniz. karşınıza çıkan assist menü normalden
+    3-4 kat daha genişse dosya, windows üzerinde uzantısı farklı görünen
+    bir dosyadır. Ayrıca klasör seçeneklerinin görünüm sekmesinde
+    &quot;Bilinen dosya türlerinin uzantılarını gizle&quot; seçeneğini
+    pasif hale getirirseniz windows un extensionlar konusunda sizi yanıltmasını
+    engellemiş olursunuz.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b><font color="#000080">IV
+    - Gizli Trojanlar</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Bu
+    trojanlar anlaşılması en zor ve en tehlikeli dosyalardır. uzantısı .exe
+    değildir. sisteminizde çalışmayan bir media file olarak aktif hale
+    geleceği zamanı bekler.&nbsp; Bu dosyalar özel hedefler için oluşturulur.
+    uzantısı .exe olmayan dosyayı bulup uzantısını değiştirip çalıştıran
+    ve gerektiğinde silen çok küçük .exe, .com, veya .bat dosyaları ile
+    aktif hale getirilirler. Genellikle program crack dosyaları, key
+    generator'lar 2. parça için çok ideal programlardır. Bu dosyalardan
+    korunmak için sisteminizde işlevini gerçekleştirmeyen dosyaları
+    kesinlikle barındırmayın.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>V
+    - Self extract zip Trojanları</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Bu
+    dosyalar .exe uzantılıdır ve üzerlerinde default olarak aşağıdaki
+    icon bulunur.<br>
+    </b></p>
+    <div align="center">
+      <center>
+      <table width="1%" border="1">
+        <tbody>
+          <tr>
+            <td width="100%">
+              <p align="center"><b><img height="64" src="../belgelerim/website/icon2.jpg" width="61" border="0"></b></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+    </div>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="center"><b><font color="#000080">Self
+    extract zip file iconu&nbsp;</font></b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Zip
+    paketi içerisindeki programları belirli bir sırayla ve otomatik olarak çalıştırmaya
+    yarayan bu dosya türünün içerisine sisteme gizlice yerleşen bir trojan
+    yerleştirmek son derece kolaydır. Bu nedenle bu tür dosyaları açmadan
+    önce sağ butona basıp &quot;Extract to folder...&quot; komutunu vererek içeriğini
+    bir klasöre açmak ve kontrol etmek gerekmektedir.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="left"><b>&nbsp;</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>İnternet
+    erişimi sağlamadan önce kullanacağınız programları (ICQ dahil) önceden
+    açmanız ve connection windowlarını kapatmanız güvenli bir erişime
+    zemin hazırlar. Bilgisayarınızın açıldıktan sonra sizin isteğiniz dışında
+    internete girmeye çalışması şüpheli bir durumdur. Bu isteği onaylamanız
+    halinde verilerinizi tanımadığınız kişilere göndermiş olabilirsiniz.&nbsp;</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Computer
+    Security için en önemli koşul TCP/IP trafiğini kontrol altında tutmaktır.
+    Bu kontrol için iyi bir firewall kullanmalı ve firewall rule 'larını&nbsp;
+    en iyi şekilde düzenlemelisiniz. Bu konuyu detaylı olarak yazımın
+    ikinci bölümünde açıklamaya çalışacağım. Firewall kurulumunun yanı
+    sıra TCP ve UDP portlarının çalışma mantıkları ve işlevleri de
+    gelecek yazımın içeriğinde yer alacak.&nbsp;</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Bu
+    yazıma son verirken değinmek istediğim birkaç konu var. Öncelikle
+    Hacker'lığın güzel, karizmatik ve itibarlı bir sıfat olduğunu asla düşünmeyin.
+    Bir bilgisayar sistemine gizlice girmekle bir eve gizlice girmek arasında
+    ahlaki açıdan hiçbir fark yoktur. Hiç kimse size illegal bir siteyi
+    hacklediğiniz için madalya vermez. Benden hiçbir saldırı amaçlı yardım
+    istemeyin. Bilgisayarınızda yukarıda söz ettiğim belirtiler meydana
+    geldiyse ya da daha açık bir şekilde bilgisayarınız sizinle sesli ya da
+    yazılı iletişim kurmaya başladıysa ve fonksiyonları sizin kontrolünüzden
+    çıkmaya başladıysa 42000000 numaralı uinden bana ulaşın. Bu gibi
+    durumlarda yardım edebilmek için elimden geleni yaparım.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Unutmayın
+    &quot;güvenlik, huzur için zorunlu bir koşuldur&quot;<br>
+    </b></p>
+    <h6 style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 0px" align="center"><b><font color="#000080">Computer
+    Security II<br>
+    (Trojan tespiti ve çözümler)</font><br>
+    </b></h6>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>Bu
+    yazıyı önceki yazımdaki teorik bilgilerin uygulanmasında kolaylık sağlaması
+    amacıyla yayımlıyorum. Sisteminizde trojan olduğundan şüpheleniyorsanız
+    tespit için gerekli bilgileri ve çözüm yollarını bu yazı yardımıyla
+    bulabilirsiniz. Trojanların bilgisayar sistemine nasıl yerleştiklerini
+    anlayabilmek amacıyla hepsini kendi bilgisayarımda denedim. Bu çalışmada
+    Dünya underground yazılım piyasalarında popüler olan 4 trojanın toplam
+    10 versiyonu ve 2 Türk trojanı olmak üzere toplam 12 popüler trojan hakkında
+    bütün detaylı bilgilere yer verilmiştir.&nbsp;Yazı sitemde sürekli
+    olarak güncellenecektir. Eğer listede yer almayan bir trojanın yaygın şekilde
+    kullanıldığını tespit ederseniz server dosyasını bana yollayın.
+    Birkaç gün içinde trojan hakkında detaylı bilgiyi yazıya eklerim.<br>
+    </b></p>
+    <p align="center"><b><font color="#000080">Build Güncelleme Notları</font></b></p>
+    <p style="TEXT-INDENT: 30px" align="justify"><b>BackOrifice1.2 ve 2k UDP
+    portu kullandıkları için portscan yapıldığında farkedilemezler. Deep
+    Throat ve Truva Atı haricindeki trojanların kullandıkları portlar trojanı
+    konfigüre eden kişi tarafından değiştirilebilir. Subseven Trojanı,
+    tecrübeli kullanıcılar tarafından EditServer programı yardımıyla çok
+    geniş bir çeşitlilikte konfigüre edilebilmektedir. Bu trojanın boyutu,
+    iconu, startup yöntemi, sistemde yerleşeceği dizin ve alacağı isim,
+    register anahtarının adı ve kullanacağı port değişiklik göstermektedir.
+    Yukarıdaki tabloda verdiğim bilgiler server'ın default özellikleridir.&nbsp;</b></p>
+    <p style="TEXT-INDENT: 30px" align="justify"><b>SchoolBus serverı çalıştığı
+    bilgisayarın UDP 44767 portunu da açmaktadır. BackOrifice, system klasöründe
+    WINDLL.DLL dosyasını oluşturur. SubSeven'ın 1.9 dan önceki versiyonları
+    SYSTRAY.DL adıyla windows klasörüne yerleşip TCP 1243 portu açarlar.
+    Ayrıca system klasöründe FAVPNMCFEE.DLL dosyasını oluştururlar.</b></p>
+    <p style="TEXT-INDENT: 30px" align="justify"><b>&nbsp;</b></p>
+    <p style="TEXT-INDENT: 30px" align="justify"><b><font color="#000080">Build
+    014 Güncellemesi :&nbsp;</font></b></p>
+    <p style="TEXT-INDENT: 30px" align="justify"><b>InCommand 1.5 Trojanının
+    iconu, sistemde alacağı isim ve kullanacağı port, edit server programı
+    yardımıyla değiştirilebilmektedir.</b></p>
+    <p style="TEXT-INDENT: 30px" align="justify"><b>GIP 110 Programı,
+    register'da özel bir teknik kullanarak registry'de LM (run) ve LM(RunServices)
+    bölgeleri arasında yer değiştirebilir. Bu nedenle, bilgisayarınızı
+    restart yaptıktan sonra mutlaka DOS ortamında açıp program dosyasını
+    silmelisiniz. Eğer bu işlem yapılmazsa Windows yeniden başlatıldığında
+    program tekrar aktif hale gelebilir. GIP programının iconu değişebilir,
+    gönderildiği bilgisayarda windows, system ve temp dizinlerine yerleşebilir,
+    aynı şekilde çalıştırıldıktan sonra alacağı isim de değişebilmektedir.
+    Ayrıca GIP trojanı çalıştırıldığında taşıyıcı dosyayı
+    silebilme fonksiyonuna da sahiptir. Bu trojan bilgisayarınızda çalıştırıldıysa
+    hiç zaman kaybetmeden ICQ ve DialUp passwordleri başta olmak üzere
+    sistemde kullandığınız bütün passwordleri (email, ftp, web-site vb.)
+    değiştirmeniz gerekmektedir.</b></p>
+    <p style="TEXT-INDENT: 30px" align="justify"><b>&nbsp;</b></p>
+    <p align="center"><b><font color="#000080">Çözüm Yöntemleri<br>
+    <br>
+    1.Start up Fonksiyonunun iptali</font></b></p>
+    <p align="left"><b><font color="#000080">1.1. Registrye Yerleşen Trojanlar</font></b></p>
+    <p align="left"><b><font color="#000080">Regedit.exe programıyla</font></b></p>
+    <p align="left"><b><font color="#000080">LM (RunServices) için ;</font></b></p>
+    <p align="left"><b><font color="#000080">[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices]</font></b></p>
+    <p align="left"><b><font color="#000080">LM (run) için ;</font></b></p>
+    <p align="left"><b><font color="#000080">[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run]</font></b></p>
+    <p align="justify"><b>adresine gidip trojan dosyasının oluşturduğu
+    anahtarları sildikten sonra bilgisayarınızı restart etmeniz gereklidir.</b></p>
+    <p align="justify"><b>* Truva Atı trojanını registry'den temizlemek için
+    öncelikle trojan dosyasının bulunduğu klasörün ismini değiştirip
+    bilgisayarınızı restart ettikten sonra programı registry den
+    silmelisiniz.</b></p>
+    <p align="justify"><b>1.2 Yapılandırma Dosyalarına Yerleşen Trojanlar</b></p>
+    <p align="justify"><b>windows dizini altındaki WIN.INI ve SYSTEM.INI
+    dosyalarını notepad'le açıp&nbsp;</b></p>
+    <p align="justify"><b>WIN.INI de run=&nbsp;</b></p>
+    <p align="justify"><b>SYSTEM.INI de ise shell=&nbsp;&nbsp;</b></p>
+    <p align="justify"><b>satırları kontrol edilmelidir. Eşittir işaretinden
+    sonra yazan dosya ismi yukarıdaki listede yazan isimlerden birisi ya da şüphe
+    uyandıran başka bir isimse o bölümü silip yapılandırma dosyasını&nbsp;
+    save ettikten sonra bilgisayarınızı restart edin.</b></p>
+    <p align="center"><b><font color="#000080">2. Executable dosyanın silinmesi</font></b></p>
+    <p style="TEXT-INDENT: 30px" align="justify"><b>Registry erişimi
+    engellenemeyen bir dosyayı windows üzerinde silmeniz olanaksızdır. Bu
+    dosyaları silebilmek için bilgisayarı, low level işletim sistemi olan
+    DOS kipinde açmak gereklidir. Dos ortamında dizin değiştirmek için CD
+    dosya silmek için DEL komutlarını kullanırız.</b></p>
+    <p align="justify"><b>Örnek :</b></p>
+    <p align="justify"><b>msrexe.exe olarak sisteme yerleşmiş bir SubSeven
+    trojanını silmek için.</b></p>
+    <p align="justify"><b><font color="#000080">del c:\windows\msrexe.exe</font></b></p>
+    <p align="justify"><b>komutu verilmelidir. silme işlemi bittikten sonra,
+    dos ortamına shutdown menüsünden girmişsek EXIT boot sırasında girmişsek
+    WIN komutu verilerek windows ortamına dönülür.</b></p>
+    <p align="justify"><b>Eğer Firewall kullanmıyorsanız haftada bir kez
+    windows ve system klasörünüzdeki dosyaların listesini ;</b></p>
+    <p align="justify"><b><font color="#000080">dir *.exe /od &gt; liste.txt</font></b></p>
+    <p align="justify"><b>komutunu vererek liste.txt dosyasına oluşturma
+    tarihi sırasına göre aktarabilirsiniz. Daha sonra bu dosyayı Notepad
+    programıyla açıp incelemeniz haftalık değişimleri farkedebilmenizi sağlar.
+    Hızlı bir portscan yardımıyla bilgisayarınızdaki TCP portlarını
+    haftada bir kez kontrol etmeniz de sistem güvenliğinizi sağlamanıza yardımcı
+    olur.</b></p>
+    <p style="MARGIN-TOP: 5px; MARGIN-LEFT: 0px; TEXT-INDENT: 30px" align="justify"><b>&nbsp;</b></p>
+    <div align="center">
+      <center>
+      <table width="51%" border="1">
+        <tbody>
+          <tr>
+            <td align="middle" width="14%"><b>Dosya İsmi</b></td>
+            <td align="middle" width="14%"><b>Boyut<br>
+              (Kb)</b></td>
+            <td align="middle" width="14%"><b>Icon</b></td>
+            <td align="middle" width="14%"><b>Trojan İsmi</b></td>
+            <td align="middle" width="14%"><b>Start up Yöntemi</b></td>
+            <td align="middle" width="15%"><b>Sistemdeki<br>
+              Yeri</b></td>
+            <td align="middle" width="15%"><b>Port</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>wincfg.exe</b></td>
+            <td align="middle" width="14%"><b>45</b></td>
+            <td align="middle" width="14%"><b>&nbsp;</b></td>
+            <td align="middle" width="14%"><b>GIP 110<br>
+              (Password<br>
+              Stealer)</b></td>
+            <td align="middle" width="14%"><b>LM<br>
+              (Run)</b></td>
+            <td align="middle" width="15%"><b>System<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>Yok</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>info32.exe</b></td>
+            <td align="middle" width="14%"><b>740</b></td>
+            <td align="middle" width="14%"><b>kolaylıkla<br>
+              değişebilir</b></td>
+            <td align="middle" width="14%"><b>InCommand1.5</b></td>
+            <td align="middle" width="14%"><b>win.ini</b></td>
+            <td align="middle" width="15%"><b>Windows<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>TCP<br>
+              9400</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>.exe</b></td>
+            <td align="middle" width="14%"><b>122</b></td>
+            <td align="middle" width="14%"><b><img height="55" src="../belgelerim/website/server4.jpg" width="61" border="0"></b></td>
+            <td align="middle" width="14%"><b>BackOrifice1.2</b></td>
+            <td align="middle" width="14%"><b>LM<br>
+              (RunServices)</b></td>
+            <td align="middle" width="15%"><b>System<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>UDP 31337</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>umgr32.exe</b></td>
+            <td align="middle" width="14%"><b>136</b></td>
+            <td align="middle" width="14%"><b><img height="55" src="../belgelerim/website/server4.jpg" width="61" border="0"></b></td>
+            <td align="middle" width="14%"><b>BO2k</b></td>
+            <td align="middle" width="14%"><b>LM<br>
+              (RunServices)</b></td>
+            <td align="middle" width="15%"><b>System<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>UDP<br>
+              31337</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>systray.exe<br>
+              (windows)</b></td>
+            <td align="middle" width="14%"><b>261</b></td>
+            <td align="middle" width="14%"><b><img height="60" src="../belgelerim/website/server2.jpg" width="65" border="0"></b></td>
+            <td align="middle" width="14%"><b>DeepThroat3.0</b></td>
+            <td align="middle" width="14%"><b>system.ini</b></td>
+            <td align="middle" width="15%"><b>Windows<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>TCP<br>
+              6671</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>mtmtask.dl</b></td>
+            <td align="middle" width="14%"><b>329</b></td>
+            <td align="middle" width="14%"><b><img height="53" src="../belgelerim/website/server1.jpg" width="67" border="0"></b></td>
+            <td align="middle" width="14%"><b>Subseven1.9</b></td>
+            <td align="middle" width="14%"><b>system.ini</b></td>
+            <td align="middle" width="15%"><b>Windows<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>TCP<br>
+              1243</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>kerne1.exe</b></td>
+            <td align="middle" width="14%"><b>329</b></td>
+            <td align="middle" width="14%"><b><img height="53" src="../belgelerim/website/server1.jpg" width="67" border="0"></b></td>
+            <td align="middle" width="14%"><b>Subseven2.0</b></td>
+            <td align="middle" width="14%"><b>win.ini</b></td>
+            <td align="middle" width="15%"><b>Windows<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>TCP<br>
+              1243</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>msrexe.exe</b></td>
+            <td align="middle" width="14%"><b>372</b></td>
+            <td align="middle" width="14%"><b>&nbsp;kolaylıkla<br>
+              değişebilir</b></td>
+            <td align="middle" width="14%"><b>Subseven2.1</b></td>
+            <td align="middle" width="14%"><b>win.ini</b></td>
+            <td align="middle" width="15%"><b>Windows<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>TCP<br>
+              27374</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>msrexe.exe</b></td>
+            <td align="middle" width="14%"><b>389</b></td>
+            <td align="middle" width="14%"><b>&nbsp;&quot;</b></td>
+            <td align="middle" width="14%"><b>Subseven2.1gold</b></td>
+            <td align="middle" width="14%"><b>&nbsp;</b></td>
+            <td align="middle" width="15%"><b>Windows<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>TCP<br>
+              27374</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>qwhqwu.exe<br>
+              (system)</b></td>
+            <td align="middle" width="14%"><b>57</b></td>
+            <td align="middle" width="14%"><b>&nbsp;&quot;</b></td>
+            <td align="middle" width="14%"><b>Subseven2.2</b></td>
+            <td align="middle" width="14%"><b>connection</b></td>
+            <td align="middle" width="15%"><b>System<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>TCP<br>
+              27374</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>grcframe.exe<br>
+              (system)</b></td>
+            <td align="middle" width="14%"><b>562</b></td>
+            <td align="middle" width="14%"><b><img height="58" src="../belgelerim/website/server5.jpg" width="64" border="0"><br>
+              değişebilir</b></td>
+            <td align="middle" width="14%"><b>Schoolbus2.0</b></td>
+            <td align="middle" width="14%"><b>Runonce.exe</b></td>
+            <td align="middle" width="15%"><b>System<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>TCP 54321</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>çalıştırılan dosya</b></td>
+            <td align="middle" width="14%"><b>384</b></td>
+            <td align="middle" width="14%"><b><img height="56" src="../belgelerim/website/server.jpg" width="58" border="0"></b></td>
+            <td align="middle" width="14%"><b>TruvaAtı1.2</b></td>
+            <td align="middle" width="14%"><b>LM<br>
+              (Run)</b></td>
+            <td align="middle" width="15%"><b>Çalıştırılan<br>
+              dizin</b></td>
+            <td align="middle" width="15%"><b>TCP 80<br>
+              Telnet</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>çalıştırılan dosya</b></td>
+            <td align="middle" width="14%"><b>484</b></td>
+            <td align="middle" width="14%"><b><img height="51" src="../belgelerim/website/server3.jpg" width="61" border="0"></b></td>
+            <td align="middle" width="14%"><b>NetBus1.7</b></td>
+            <td align="middle" width="14%"><b>LM<br>
+              (run)</b></td>
+            <td align="middle" width="15%"><b>Windows<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>TCP<br>
+              12345</b></td>
+          </tr>
+          <tr>
+            <td align="middle" width="14%"><b>çalıştırılan dosya</b></td>
+            <td align="middle" width="14%"><b>612</b></td>
+            <td align="middle" width="14%"><b><img height="53" src="../belgelerim/website/server6.jpg" width="60" border="0"></b></td>
+            <td align="middle" width="14%"><b>NetBus2.0</b></td>
+            <td align="middle" width="14%"><b>LM<br>
+              (RunServices)</b></td>
+            <td align="middle" width="15%"><b>Windows<br>
+              dizini</b></td>
+            <td align="middle" width="15%"><b>TCP<br>
+              20034</b></td>
+          </tr>
+        </tbody>
+      </table>
+      </center>
+    </div>
+    <p>&nbsp;
+    </TD>
+    <TD style="BORDER-RIGHT: #000000 1px solid" align=right><IMG height=1 
+      src="" width=9 border=0></TD></TR>
+  <TR>
+    <TD vAlign=bottom><IMG height=10 src="../home_dosyalar/T3.gif" width=10 
+      border=0></TD>
+    <TD style="BORDER-BOTTOM: #000000 1px solid" align=center 
+      width="100%"><b><IMG height=9 src="" width=1 border=0></b></TD>
+    <TD vAlign=bottom align=right><IMG height=10 src="../home_dosyalar/T4.gif" 
+      width=10 border=0></TD></TR></TBODY></TABLE>
+<P align=center><FONT face=Arial color=#c0c0c0 size=1><BR></FONT></P>
+
+
+
+<!--[if IE]><FONT face=Verdana size=1>
+<DIV class=skin0 id=ie5menu onclick=jumptoie5() onmouseout=lowlightie5() 
+onmouseover=highlightie5()>
+<DIV class=menuitems url="http://www.cyberemperor.net">CybeR_EmperoR</DIV>
+<HR SIZE=1>
+
+<DIV class=menuitems url="http://www.batur.com/cgi-bin/oku.pl?id=countach">Defteri Oku</DIV>
+<DIV class=menuitems url="http://www.batur.com/cgi-bin/yaz.pl?id=countach">Deftere Yaz</DIV>
+<HR SIZE=1>
+
+<DIV class=menuitems url="http://www.internet.kutuphanesi.com">Net Portali</DIV></DIV></FONT><![endif]-->
+<SCRIPT language=JavaScript1.2>
+if (document.all&&window.print){
+if (menuskin==0)
+ie5menu.className="skin0"
+else
+ie5menu.className="skin1"
+document.oncontextmenu=showmenuie5
+document.body.onclick=hidemenuie5
+}
+</SCRIPT>
+  <p align="center">&nbsp;</p>
+</BODY></HTML>
