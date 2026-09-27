@@ -1,0 +1,453 @@
+<html>
+
+<head>
+<title>test -2</title>
+<meta NAME="description" CONTENT="coktan seçmeli -2">
+<meta NAME="keyword"
+CONTENT="play, learn, children, kids, kid,child, islam, Islam, Islamic, Muslim, Moslem, muslim, muslims, Moslems, Muslems, games, Shia'ism,  Shi'a, Shia, Shiaism, Shi'ite, Shiite, sunni, Sunni, Sunny, Prophet, Prophets, prophet, prophets, prophethood, Adam, adam, Eve, Hava, Hawa, Habil, Kabil, Abel, Cain, Muhammed, Muhammad, Mohammad, muhammed, muhammad, Nuh, nuh, Noah, noah, Ibrahim, Idris, Enoch, Ayyub, Hud, Lut, Lot, Salih, Saleh, Abraham, Musa, Moses, Isa, Issa, Jesus, Isaac, Ishaq, Ismael, Ishmael, Shuaib, Shuayb, Joseph, Yusuf, Jacob, Imran, Harun, Aaron, Dawood, Dawud, David, Yaqub, Sulaiman, Solomon, Allah, allah, arabic, alphabets, stories, Ahlul Bayt, fasting, roza, rauzah, ramadhan, ramazan, fun, puzzle, entertainment, quiz, Hadith, history, Quran, Qur'an, Koran, Kor'an, Fiqh, religion, crossword, postcards, eid cards, birthday cards, slider, word search, maze, multiple choice, mazelett, anagram, double anagram, cryptogram, Concentration,  Behlool, Imam, imam, Ali, ali, battle, Badr, Uhud, Caves, Khaf">
+<script LANGUAGE="JavaScript">
+
+// This script generates a multiple-choice question on a web page.
+// This script may be freely used for non-commercial use as long as
+// the following copyright notice remains:
+// Copyright &#169; 1997, Play & Learn.
+
+var question1 = '';
+var choice11 = '';
+var choice12 = '';
+var choice13 = '';
+var choice14 = '';
+var correctAnswer1 = 1;
+
+var question2 = '';
+var choice21 = '';
+var choice22 = '';
+var choice23 = '';
+var choice24 = '';
+var correctAnswer2 = 3;
+
+var question3 = '';
+var choice31 = '';
+var choice32 = '';
+var choice33 = '';
+var choice34 = '';
+var correctAnswer3 = 2;
+
+var question4 = '';
+var choice41 = '';
+var choice42 = '';
+var choice43 = '';
+var choice44 = '';
+var correctAnswer4 = 4;
+
+var question5 = '';
+var choice51 = '';
+var choice52 = '';
+var choice53 = '';
+var choice54 = '';
+var correctAnswer5 = 2;
+
+var question6 = '';
+var choice61 = '';
+var choice62 = '';
+var choice63 = '';
+var choice64 = '';
+var correctAnswer6 = 4;
+
+var question7 = '';
+var choice71 = '';
+var choice72 = '';
+var choice73 = '';
+var choice74 = '';
+var correctAnswer7 = 2;
+
+var question8 = '';
+var choice81 = '';
+var choice82 = '';
+var choice83 = '';
+var choice84 = '';
+var correctAnswer8 = 1;
+
+var question9 = '';
+var choice91 = '';
+var choice92 = '';
+var choice93 = '';
+var choice94 = '';
+var correctAnswer9 = 3;
+
+var question10 = '';
+var choice111 = '';
+var choice222 = '';
+var choice233 = '';
+var choice244 = '';
+var correctAnswer10 = 4;
+
+var attempts=0;
+
+function check(input) {
+
+var numcorrect=0;
+var numchoices=0;
+
+attempts=attempts+1;
+
+        if (answer1==0) {
+                numchoices=numchoices+1;
+                input.result1.value="Lütfen Birini seçin.";
+        } else {
+        if (answer1==correctAnswer1) {
+                input.result1.value = "Doðru cevap!";      // Give feedback.
+                numcorrect=numcorrect+1;
+		} else
+			if (attempts==3) {
+                input.result1.value = "özür dilerim doðru cevap "+correctAnswer1;
+                }
+        }
+        
+        if (answer2==0) {
+                numchoices=numchoices+1;
+                input.result2.value="Lütfen Birini seçin.";
+        } else {
+        if (answer2==correctAnswer2) {
+                input.result2.value = "Doðru cevap!";      // Give feedback.
+                numcorrect=numcorrect+1;
+		} else
+			if (attempts==3) {
+                input.result2.value = "özür dilerim doðru cevap "+correctAnswer2;
+                }
+        }
+
+        if (answer3==0) {
+                numchoices=numchoices+1;
+                input.result3.value="Lütfen Birini seçin.";
+        } else {
+        if (answer3==correctAnswer3) {
+                numcorrect=numcorrect+1;
+                input.result3.value = "Doðru cevap!";      // Give feedback.
+		} else
+			if (attempts==3) {
+                input.result3.value = "özür dilerim doðru cevap "+correctAnswer3;
+                }
+        }
+        
+        if (answer4==0) {
+                numchoices=numchoices+1;
+                input.result4.value="Lütfen Birini seçin.";
+        } else {
+        if (answer4==correctAnswer4) {
+                input.result4.value = "Doðru cevap!";      // Give feedback.
+                numcorrect=numcorrect+1;
+		} else
+			if (attempts==3) {
+                input.result4.value = "özür dilerim doðru cevap "+correctAnswer4;
+                }
+        }
+        
+        if (answer5==0) {
+                numchoices=numchoices+1;
+                input.result5.value="Lütfen Birini seçin.";
+        } else {
+        if (answer5==correctAnswer5) {
+                numcorrect=numcorrect+1;
+                input.result5.value = "Doðru cevap!";      // Give feedback.
+		} else
+			if (attempts==3) {
+                input.result5.value = "özür dilerim doðru cevap "+correctAnswer5;
+                }
+        }
+        
+        if (answer6==0) {
+                numchoices=numchoices+1;
+                input.result6.value="Lütfen Birini seçin.";
+        } else {
+        if (answer6==correctAnswer6) {
+                numcorrect=numcorrect+1;
+                input.result6.value = "Doðru cevap!";      // Give feedback.
+		} else
+			if (attempts==3) {
+                input.result6.value = "özür dilerim doðru cevap "+correctAnswer6;
+                }
+        }
+        
+        if (answer7==0) {
+                numchoices=numchoices+1;
+                input.result7.value="Lütfen Birini seçin.";
+        } else {
+        if (answer7==correctAnswer7) {
+                input.result7.value = "Doðru cevap!";      // Give feedback.
+                numcorrect=numcorrect+1;
+		} else
+			if (attempts==3) {
+                input.result7.value = "özür dilerim doðru cevap "+correctAnswer7;
+                }
+        }
+        
+        if (answer8==0) {
+                numchoices=numchoices+1;
+                input.result8.value="Lütfen Birini seçin.";
+        } else {
+        if (answer8==correctAnswer8) {
+                numcorrect=numcorrect+1;
+                input.result8.value = "Doðru cevap!";      // Give feedback.
+		} else
+			if (attempts==3) {
+                input.result8.value = "özür dilerim doðru cevap "+correctAnswer8;
+                }
+        }
+
+        if (answer9==0) {
+                input.result9.value="Lütfen Birini seçin.";
+                numchoices=numchoices+1;
+        } else {
+        if (answer9==correctAnswer9) {
+                numcorrect=numcorrect+1;
+                input.result9.value = "Doðru cevap!";      // Give feedback.
+		} else
+			if (attempts==3) {
+                input.result9.value = "özür dilerim doðru cevap "+correctAnswer9;
+                }
+        }
+        
+        if (answer10==0) {
+                input.result10.value="Lütfen Birini seçin.";
+                numchoices=numchoices+1;
+        } else {
+        if (answer10==correctAnswer10) {
+                numcorrect=numcorrect+1;
+                input.result10.value = "Doðru cevap!";      // Give feedback.
+		} else
+			if (attempts==3) {
+                input.result10.value = "özür dilerim doðru cevap "+correctAnswer10;
+                }
+        }
+
+        if (numchoices<10)      // they didn't pick anything so don't bug them
+        {
+                if (numcorrect==10) {
+                        input.kudos.value="Tebrikler; hepsini doðru bildiniz.";
+                }
+                if (numcorrect==0) {
+                        input.kudos.value="Hepsini yanlýþ yaptýnýz.Tekrar deneyin?";
+                }
+                if (numcorrect<=3 && numcorrect>0) {
+                        input.kudos.value="Siz 10 sorunun "+numcorrect+" tanesini bildiniz";
+                }
+                if (numcorrect>=4 && numcorrect<=6) {
+                        input.kudos.value="Siz 10 sorunun "+numcorrect+" tanesini bildiniz";
+                }
+                if (numcorrect==7) {
+                        input.kudos.value="Siz 10 sorunun "+numcorrect+" tanesini bildiniz";
+                }
+                if (numcorrect==8) {
+                        input.kudos.value="Siz 10 sorunun "+numcorrect+" tanesini bildiniz";
+                }
+                if (numcorrect==9) {
+                        input.kudos.value="Siz 10 sorunun "+numcorrect+" tanesini bildiniz";
+                }
+                if (numcorrect>=8)
+                {
+                        self.location="congrat2.htm";
+                }
+				else
+				if (attempts==3)
+				{ alert("3. kez baþarýsýz oldunuz, dikkatle okuyup tekrar deneyin.");
+					attempts=0;
+				} else
+				{
+					alert("Siz "+attempts+" kez denediniz fakat - 8 veya daha fazla doðru cevapla 2. adýma geçebilirsiniz.");
+				}
+        }
+        else
+        {
+                input.kudos.value="Lütfen önce sorularý cevaplayýnýz.";
+        }
+}
+
+// Initialize answer to 0 to trap no selection.
+answer1=0
+answer2=0
+answer3=0
+answer4=0
+answer5=0
+answer6=0
+answer7=0
+answer8=0
+answer9=0
+answer10=0
+
+
+// Generate the HTML code for the web page.
+// End of script.
+
+</script>
+</head>
+
+<body BGCOLOR="#FFFFFF" LINK="#FF0000" VLINK="#639CCE" ALINK="#639CCE" TEXT="#800000"
+TOPMARGIN="0" LEFTMARGIN="0" background="back_tugra_pembe.gif">
+
+<table BORDER="0" CELLPADDING="0" CELLSPACING="0" BGCOLOR="#4A6C94" WIDTH="100%">
+  <tr>
+    <td BGCOLOR="#FFFFFF" HEIGHT="1"></td>
+  </tr>
+  <tr>
+    <td BGCOLOR="#FFFFFF" HEIGHT="1"></td>
+  </tr>
+</table>
+<!-- END TABLE 2 -->
+<!-- END HEADER -->
+<!-- START TABLE 2 -->
+
+<table>
+  <tr>
+<!-- START NAVIGATION BAR -->
+    <td VALIGN="TOP" ALIGN="LEFT"><!-- THIS IS WHERE YOU PUT THE TEXT --> <table BORDER="0" CELLPADDING="2" CELLSPACING="4"
+    width="100%">
+      <tr>
+        <td><h2 ALIGN="CENTER"><big><font color="#8000FF">Çoktan Seçmeli Test</font></big></h2>
+        <p class="title2" align="center"><font color="#FF0000"><strong>ADIM - 2</strong></font><br>
+        </p>
+        <div class="title3"><p align="center"><font color="#800040">(10 sorunun en az 8ini doðru
+        bilirseniz 3. adýma geçebilirsiniz.<br>
+        cevaplarý iþaretlemeniz yeterlidir.</font></p>
+        </div><hr>
+        </td>
+      </tr>
+    </table>
+    <form NAME="form1">
+      <p CLASS="copy"><font color="#004000"><strong>Soru 1</strong> </font></p>
+      <div class="title3"><p>Aþaðýdaki kutsal kitaplardan hangisi orijinal hali ile
+      kalmýþtýr.?</p>
+      </div><ol>
+        <div class="title2">
+        <li><input type="radio" name="ianswer1" onClick="answer1=1">Zebur </li>
+        <li><input type="radio" name="ianswer1" onClick="answer1=2">Ýncil </li>
+        <li><input type="radio" name="ianswer1" onClick="answer1=3">Kuran </li>
+        <li><input type="radio" name="ianswer1" onClick="answer1=4">Tevrat </li>
+        </div>
+      </ol>
+      <p><input TYPE="text" NAME="result1" SIZE="25"> <br>
+      </p>
+      <p CLASS="copy"><font color="#004040"><strong>Soru 2 </strong></font></p>
+      <div class="title3"><p>Kuran aþaðýdaki peygamberlerden hangisine gelmiþtir.?</p>
+      </div><ol>
+        <div class="title2">
+        <li><input type="radio" name="ianswer2" onClick="answer2=1">Peygamber Ýsa </li>
+        <li><input type="radio" name="ianswer2" onClick="answer2=2">Peygamber Muhammed </li>
+        <li><input type="radio" name="ianswer2" onClick="answer2=3">Peygamber Davud </li>
+        <li><input type="radio" name="ianswer2" onClick="answer2=4">Peygamber Musa </li>
+        </div>
+      </ol>
+      <p><input TYPE="text" NAME="result2" SIZE="25"> <br>
+      </p>
+      <p CLASS="copy"><font color="#004000"><strong>Soru 3 </strong></font></p>
+      <div class="title3"><p>Kuran _________________ ayýnda inmeye baþladý?</p>
+      </div><ol>
+        <div class="title2">
+        <li><input type="radio" name="ianswer3" onClick="answer3=1">Recep </li>
+        <li><input type="radio" name="ianswer3" onClick="answer3=2">Muharrem </li>
+        <li><input type="radio" name="ianswer3" onClick="answer3=3">Zilhicce </li>
+        <li><input type="radio" name="ianswer3" onClick="answer3=4">Ramazan </li>
+        </div>
+      </ol>
+      <p><input TYPE="text" NAME="result3" SIZE="26"> <br>
+      </p>
+      <p CLASS="copy"><font color="#004000"><strong>Soru 4</strong></font> </p>
+      <div class="title3"><p>Ýlk gönderilen peygamber kimdi?</p>
+      </div><ol>
+        <div class="title2">
+        <li><input type="radio" name="ianswer4" onClick="answer4=1">Nuh </li>
+        <li><input type="radio" name="ianswer4" onClick="answer4=2">Adem </li>
+        <li><input type="radio" name="ianswer4" onClick="answer4=3">Salih </li>
+        <li><input type="radio" name="ianswer4" onClick="answer4=4">Ibrahim </li>
+        </div>
+      </ol>
+      <p><input TYPE="text" NAME="result4" SIZE="26"> <br>
+      </p>
+      <p CLASS="copy"><font color="#004000"><strong>Soru 5</strong></font> </p>
+      <div class="title3"><p>Son peygamber kimdi?</p>
+      </div><ol>
+        <div class="title2">
+        <li><input type="radio" name="ianswer5" onClick="answer5=1">Peygamber Muhammed </li>
+        <li><input type="radio" name="ianswer5" onClick="answer5=2">Peygamber Adem </li>
+        <li><input type="radio" name="ianswer5" onClick="answer5=3">Peygamber Isa </li>
+        <li><input type="radio" name="ianswer5" onClick="answer5=4">Peygamber Nuh </li>
+        </div>
+      </ol>
+      <p><input TYPE="text" NAME="result5" SIZE="27"> <br>
+      </p>
+      <p CLASS="copy"><font color="#004000"><strong>Soru 6</strong></font> </p>
+      <div class="title3"><p>Ibrahim Mekkeye______________________ gitti</p>
+      </div><ol>
+        <div class="title2">
+        <li><input type="radio" name="ianswer6" onClick="answer6=1">Kabe'yi inþa etmeye </li>
+        <li><input type="radio" name="ianswer6" onClick="answer6=2">Kabe'yi ziyaret etmeye </li>
+        <li><input type="radio" name="ianswer6" onClick="answer6=3">bir barýþ mesajý getirmeye </li>
+        <li><input type="radio" name="ianswer6" onClick="answer6=4">kalmaya </li>
+        </div>
+      </ol>
+      <p><input TYPE="text" NAME="result6" SIZE="28"> <br>
+      </p>
+      <p CLASS="copy"><font color="#004000"><strong>Soru 7 </strong></font></p>
+      <div class="title3"><p>Peygamber Muhammed'in(SAV) babasý kimdi?</p>
+      </div><ol>
+        <div class="title2">
+        <li><input type="radio" name="ianswer7" onClick="answer7=1">Abdullah </li>
+        <li><input type="radio" name="ianswer7" onClick="answer7=2">Abu Talib </li>
+        <li><input type="radio" name="ianswer7" onClick="answer7=3">Hamza </li>
+        <li><input type="radio" name="ianswer7" onClick="answer7=4">Haþim </li>
+        </div>
+      </ol>
+      <p><input TYPE="text" NAME="result7" SIZE="28"> <br>
+      </p>
+      <p CLASS="copy"><font color="#004000"><strong>Soru 8</strong></font> </p>
+      <div class="title3"><p>Teyemmüm neyle olmaz?</p>
+      </div><ol>
+        <div class="title2">
+        <li><input type="radio" name="ianswer8" onClick="answer8=1">Kum </li>
+        <li><input type="radio" name="ianswer8" onClick="answer8=2">Elmas </li>
+        <li><input type="radio" name="ianswer8" onClick="answer8=3">Toprak </li>
+        <li><input type="radio" name="ianswer8" onClick="answer8=4">Taþ parçalarý </li>
+        </div>
+      </ol>
+      <p><input TYPE="text" NAME="result8" SIZE="29"> <br>
+      </p>
+      <p CLASS="copy"><strong><font color="#004000">Soru 9 </font></strong></p>
+      <div class="title3"><p>Tevrat hangi peygambere gönderildi.?</p>
+      </div><ol>
+        <div class="title2">
+        <li><input type="radio" name="ianswer9" onClick="answer9=1">Musa </li>
+        <li><input type="radio" name="ianswer9" onClick="answer9=2">Davud </li>
+        <li><input type="radio" name="ianswer9" onClick="answer9=3">Isa </li>
+        <li><input type="radio" name="ianswer9" onClick="answer9=4">Muhammed </li>
+        </div>
+      </ol>
+      <p><input TYPE="text" NAME="result9" SIZE="30"> <br>
+      </p>
+      <p CLASS="copy"><font color="#004000"><strong>Soru 10</strong></font> </p>
+      <div class="title3"><p>Allahýn Adl sýfatýnýn manasý nedir?</p>
+      </div><ol>
+        <div class="title2">
+        <li><input type="radio" name="ianswer10" onClick="answer10=1">Allah adildir </li>
+        <li><input type="radio" name="ianswer10" onClick="answer10=2">Allah ebedidir </li>
+        <li><input type="radio" name="ianswer10" onClick="answer10=3">Allah birdir </li>
+        <li><input type="radio" name="ianswer10" onClick="answer10=4">Allah'ýn kudreti sonsuzdur.</li>
+        </div>
+      </ol>
+      <p><input TYPE="text" NAME="result10" SIZE="31"> </p>
+      <p><input TYPE="button" VALUE="Cevap Kontrol" onClick="check(this.form)"> <input
+      TYPE="reset" VALUE="  Sil  "
+      onClick="answer1=0;answer2=0;answer3=0;answer4=0;answer5=0;answer6=0;answer7=0;answer8=0;answer9=0;answer10=0">
+      </p>
+      <p><input TYPE="text" NAME="kudos" SIZE="40"> <!-- THIS IS WHERE IT ENDS --></p>
+    </form>
+    </td>
+  </tr>
+</table>
+<!-- END TABLE 2 -->
+
+<p><small><strong><font color="#0000A0">Not:</font></strong> Bu sayfa <a
+href="../../www.playandlearn.org/default.htm" target="IKINCI">Play &amp; Learn</a> sayfasýndan </small><img
+src="mico_minik.gif" width="29" height="14"><small> tarafýndan düzeltme yapýlarak
+hazýrlanmýþtýr.</small></p>
+</body>
+</html>
