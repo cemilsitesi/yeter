@@ -1,0 +1,206 @@
+<title>Internet/Ftp</title>
+<body bgcolor="#ffffff">
+
+
+
+<!-- Spidersoft WebZIP Banner Ad Insert -->
+<!-- For removal instructions see:  http://www.spidersoft.com/webzip/help/noads.asp  -->
+
+<SCRIPT FOR=window EVENT=onload LANGUAGE="JScript">
+  initAd();
+</SCRIPT>
+
+<script language="JScript">
+<!--
+
+function initAd() {
+  document.all.AdLayer.style.posTop = -200;
+  document.all.AdLayer.style.visibility = 'visible'
+  MoveLayer('AdLayer');
+}
+
+function MoveLayer(layerName) {
+  var x = 10;
+  var y = 10;
+  var diff = (document.body.scrollTop + y - document.all.AdLayer.style.posTop)*.40;
+  var y = document.body.scrollTop + y - diff;
+  eval("document.all." + layerName + ".style.posTop =  y");
+  eval("document.all." + layerName + ".style.posLeft = x");
+  setTimeout("MoveLayer('AdLayer');", 60);
+}
+
+
+}
+ //-->
+</script>
+
+<!-- /Spidersoft WebZIP Banner Ad Insert -->
+
+
+
+
+<font face="times new roman tur" size=+2>FTP</font>
+<br>
+<hr width=98% align="left">
+<font face="arial tur" size=-1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Internet altýnda dosya transfer etmenin ilk yolu <b>FTP</b> (<b>File Transfer Protocol</b>)
+kullanmaktýr. Uzak mesafelerdeki bilgisayarlar arasýnda dosya transferi, bu protokol
+ile oldukça hýzlý biçimde yapýlmaktadýr. Ancak baðlanýlan bilgisayarýn yerel saati
+transfer hýzýný etkilemektedir. Amerika'da bulunan sistemlerden mesai saatleri
+dýþýnda transfer yapýldýðý zaman performans artmaktadýr. Herkese açýk olan FTP
+alanlarýna ulaþmak için kullanýcý adý <b>anonymous</b> veya <b>ftp</b> olarak
+tanýtýlmalýdýr. Böylece sadece karþý tarafýn izin verdiði alanlara ulaþýlýr.
+Eðer sisteme abone olunmuþ ise bu durumda farklý kullanýcý tanýmlarý yapýlabilir.
+Anonymous olarak baðlanýldýðýnda genellikle <b>password</b> sorulmamaktadýr.
+Eðer soruluyorsa password yerine kullanýlan e-mail adresinin verilmesi
+önerilmektedir. Ayrýca bir bilgisayardan FTP aracýlýyla kütük transferi yapýlabilmesi
+için o bilgisayarýn FTP hizmet birimi (<b>FTP server</b>) haline getirilmiþ olmasý
+gerekmektedir. Eðer bu bilgisayar bir PC ise baþka iþ yapýlamaz. Unix veya Mac
+türü ise yapýlabilir. FTP hizmet alanlarýnda her kesime ve zevke hitap eden
+programlarýn veya dokümanlarýn bulunabilmesi olasýdýr. Ancak buralarda yer alan
+programlarýn <b>virüs</b> açýsýndan mutlaka kontrol edilmeleri gerekmektedir.
+Bu hizmet birimlerinin yöneticileri virüs konusunda hiçbir garanti verememektedirler.
+Ayrýca bugün milyonlarca programýn yer aldýðý sistemde her programýn kontrol
+edilmesi mümkün olmadýðýndan kullanýcýlarýn dikkatli olmalarý önerilmektedir.<p>
+
+<font size="+1"> <u>FTP ile Nasýl Baðlantý Saðlanýr</u></font><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Baðlantý, tanýtýcý adý (host name) veya internet numarasý kullanýlarak iki biçimde
+yapýlabilmektedir. Ancak uygulamada daha sýk olarak tanýtýcý adý kullanýlmaktadýr.
+Baðlantýnýn yapýlabilmesi için;<p>
+<i>	ftp  baðlanýlmak istenen tanýtýcý ad </i><p>
+formatý kullanýlmaktadýr. Bir makinayla olan baðlantýyý kapatýp diðer bir makinaya
+baðlanmak için önce <b>close</b> ile baðlantý kesilip, <i>open makina ismi </i> ile
+yeni baðlantý kurulur. FTP ile baðlantý kurulduktan sonra temel Unix komutlarý
+kullanýlarak iþlemler yapýlmaktadýr.<p>
+
+<font size="+1"><b>FTP Sýrasýnda Kullanýlan Bazý Komutlar</b></font><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FTP ile baðlantý saðlandýðý zaman Unix temelli komutlar kullanýlarak çalýþmak
+mümkündür. Ancak günümüzde Windows uygulamalarýnýn yaygýnlaþmasý sonucunda bu
+komutlarýn ezberlenmesine gerek yoktur. Buna raðmen bazý komutlar aþaðýda kýsaca
+listelenmiþtir.<p>
+
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle">
+<font size="+1">dir:</font><blockquote> Dos'dakine benzer olarak bulunulan hizmet
+birimindeki directory listesinin alýnmasý amacý ile kullanýlýr.
+Ornegin;<br>
+		ftp> dir {kütük ismi}<br>
+
+yazýlarak dir sonuçlarýnýn {kütük ismi} ile verilen bir kütükde saklanmasý mümkün
+olmaktadýr. Ýsteðe baðlý olarak kütük adý verilmeyebilir.</blockquote> <p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle">
+<font size="+1">cd veya fcd:</font> <blockquote>FTP baðlantýsý sýrasýnda kullanýcý
+en üst directorydedir. Directory deðiþtirmek cd veya fcd komutu ile saðlanmaktadýr.
+Örneðin pub directory sine geçmek için,<br>
+		ftp> cd pub<br>
+	yazýlmaktadýr. </blockquote><p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle">
+<font size="+1">ls: </font> <blockquote> Temelde Unix komutu olan ls ile o anda
+baðlanýlan bilgisayarda bulunulan yerdeki directory listesinin görülmesi saðlanýr.
+<br>
+		ls -lt {kütük ismi}<br>
+	yazýlarak baðlanýlan makinadaki dosyalarýn listesi tarih sýrasýna göre
+	sýralanarak  {kütük ismi} ile saklanýr. </blockquote><p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle">
+<font size="+1">get ve put: </font> <blockquote> Transfer iþlemleri get ve put
+komutlarý sayesinde yapýlmaktadýr. Baðlanýlan bilgisayardan kütük transfer etmek
+için get, kütük göndermek için put komutlarý kullanýlmaktadýr. Örneðin; <br>
+		ftp >get <kütük ismi> {saklanýlmak istenen isim}<br>
+yazýlarak, alýnmak istenen kütüðün yeni bir isim altýnda saklanýlmasý mümkün
+olmaktadýr. Bu yapý özellikle unix tabanlý kütüklerin alýnmasý sýrasýnda oldukça
+kullanýþlýdýr. Çünkü bu ve benzeri kütüklerde isim verirken daha esnek
+davranýlmaktadýr. Bunun sonucunda da dos veya Windows tabanlý programlardan bu
+dosyalarý çaðrýrken sýkýntýlar doðmaktadýr. Bu amaçla kullanýcý sekiz karakterde
+sýnýrlý olmak üzere istediði yeni bir ismi alacaðý kütüðe verebilmektedir. </blockquote>
+<p>
+
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle"><font size="+1">mget ve mput: </font> <blockquote> Birden fazla kütüðün transfer iþlemini gerçekleþtirir. Ýsteðe baðlý olarak onaylý veya onaysýz transfer yapýlýr. Onaylýda her kütüðün transferinden önce onay beklenir. 
+</blockquote><p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle"><font size="+1">prompt: </font> <blockquote> mget ve mput kullanýlýrken yes/no sormasýný engeller, bulunan tüm kütükleri sorgusuz transfer eder.
+</blockquote><p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle"><font size="+1">pwd veya fpwd: </font> Bulunulan directory ismi. <p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle"><font size="+1">bell: </font> Herbir kütük transferinden sonra "bip" sesi verir. <p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle"><font size="+1">hash: </font> Transfer edilen her bir veri bloðu için # simgesini verir. <p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle"><font size="+1">mkdir: </font> Baðlanýlan bilgisayardan directory yaratma. <p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle"><font size="+1">bye, exit, quit: </font> FTP baðlantýsýný sonlandýrma. <p>
+<font size="+1">Kütük transferi</font><p>
+Internet aracýlýðý ile kütük transferinin yapýlmasý için get,mget, put ve mput komutlarý kullanýlmaktadýr. Ancak transfer edilecek kütük tipine baðlý olarak, transfer tipinin seçilmesi gerekmektedir. Internette iki tür transfer tipi vardýr.<p>
+<font size="+1">Ascii: </font>Bilgisayarlar arasýnda text kütüklerinin transferi için uygundur. <p>
+<font size="+1">Binary: </font>Text içeren veya içermeyen imaj ya da program kütüklerinin transferi için kullanýlýr. Uzantýsý z, Z, exe, zip, tar, com, sys, gz veya ps olan kütükler binary tipinde alýnmalýdýr. Burada z, Z, zip, tar, gz uzantýlarý o
+kütüðün sýkýþtýrýlmýþ olduðunu ps ise o dosyanýn Postcript yapýda olduðunu gösterir.
+Uygun programlar ile bu kütüklerin transfer iþleminden sonra açýlmalarý
+gerekmektedir.<p>
+Bu komutlarýn kullanýmý için iki örnek verilmiþtir.<p>
+ftp> ascii<br>
+200 Type set to A.					Ascii Kütük Transferi<br>
+ftp> get news.txt<br>
+200 PORT command successful.<br>
+150 Opening ASCII mode data connection for news.txt (42390 bytes).<br>
+226 Transfer complete.<br>
+42553 bytes received in 6.9 seconds (6 Kbytes/s).<br>
+<br>
+ftp> binary<br>
+200 Type set to I.					Binary Kütük Transferi<br>
+ftp> get news.zip<br>
+200 PORT command successful.<br>
+150 Opening BINARY mode data connection for news.txt (42390 bytes).<br>
+226 Transfer complete.<br>
+42390 bytes received in 7.2 seconds (5.8 Kbytes/s).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kütük transferi yapýlýrken, "wildcard" denilen
+joker karakterlerin de kullanýmý mümkündür. <br>Örneðin;<p>
+ftp>mget news*<br><p>
+yazýlacak olursa içinde news kelimesinin bulunduðu tüm kütüklerin kopyalanmak istendiði anlaþýlacak ve tek tek bu kütüklerin istenip istenmediði sorgulanarak kopyalama yapýlacaktýr. Eðer bu kütüklerin sorgulama yapýlmadan taþýnmasý isteniyorsa "prompt" ko
+
+
+mutu verilmelidir. Tekrar bu komut verilene kadar yapýlacak tüm kopyalama iþlemleri sorgusuz gerçekleþtirilecektir. <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Veri transferi sýrasýnda sýkýþtýrýlmýþ kütüklerin kullanýmý hem maddi hem de zaman
+açýþýndan 
+dikkate deðer kazançlarýn doðmasýna yol açmaktadýr. Ancak sýkýþtýrýlmýþ kütüklerin hangi anlama 
+geldiði daha doðrusu hangi programla eski haline getireleceðinin bilinmesi gereklidir. Aþaðýda 
+uzantýlarýna baðlý olarak sýkýþtýrýlmýþ kütüklerin açýlmalarýna yönelik bilgiler verilmiþtir.<p>
+
+
+
+
+<font size="+1"><u>Ýstenen FTP Tabanýný Bulma (archie)</u></font><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ýstenen bir dosyayý (veya programý) ve ait olduðu FTP tabanýný bulmanýn en kolay ve çabuk yolu archie komutunu kullanmaktýr. McGill üniversitesinde geliþtirilmiþ olup, kamuya açýk ftp kullanýmýna izin veren arþivlerdeki kütük isimlerini bir veri tabanýnda
+ tutan ve bunun sorgulamasýný yapan bir sistemdir. Veri tabaný periyodik olarak güncellenmekte ve McGill de bulunan ana server yardýmýyla diðer serverlerin uyumlu olmasý saðlanmaktadýr. Archie komutu ile 1000'in üzerindeki anonymous FTP kaynaðý taranarak,
+  100 gigabytes civarýndaki bilgi kontrol edilmektedir. Bu komut ile kullanýcýnýn verdiði isme uyan dosyalarýn bulunduðu kaynaklar seçilip, sýralý biçimde özetlenir. Ýstenirse yapýlan arama iþlemi bir text dosyasýnda saklanabilir. Bilgilerin bulunduðu
+  listeler ayda bir yenilenerek güncelliði saðlanmaktadýr. Kullanýmý için,<p><br>
+
+	archie -paremetreler anahtar kelime<br><p>
+yapýsý kullanýlmaktadýr. Burada kullanýlabilecek parametrelerden bazýlarý aþaðýda kýsaca
+listelenmiþitir. Burada ki parametreler kullanýlan bilgisayarýn türüne ve <b>archie</b>
+ programýnýn özelliklerine baðlý olarak farklýlýklar göstermektedir. Windows ortamýnda
+ çalýþan programlar kullanýldýðý zaman bu parametreler ikonlar halinde yer almaktadýr.<p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle">
+<font size="+1">o:</font> Sorgulama sonuçlarýnýn saklanacaðý dosya adý
+(tüm yazýlýmlarda desteklenmez)<p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle">
+<font size="+1">l: </font> Sorgulama sonuçlarýnýn her bir satýra bir sonuç gelecek biçimde özetlenmesini saðlar. <p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle"><font size="+1">s: </font> Taramada büyük/küçük harf ayýrýmý yapmaz. <p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle"><font size="+1">c: </font> Taramada büyük/küçük harf ayýrýmý yapar. <p>
+<img src="../denizli/bul13.gif" width=13 height=13 border="0" align="middle"><font size="+1">e: </font> Verilen anahtar kelime ile tamamen uyan isimleri tarar. Büyük/küçük harf ayýrýmý yapar. <p>
+Örnek: Aranmak istenilen dosyanýn adý vine.tar.Z olsun,<br>
+<br>
+$ archie vine.tar.Z<br>
+Host athene.uni-paderborn.de<br>
+	Location: /local/X11/more_contrib<br>
+		FILE -rw-r--r--		18854	Nov	15	1990	vine.tar.Z<br>
+Host emx.utexas.edu<br>
+	Location: /lpub/mnt/source/games<br>
+		FILE -rw-r--r--		12019	May	 7	1988	vine.tar.Z<br>
+Host export.lcs.mit.edu<br>
+	Location: /contrib<br>
+		FILE -rw-r--r--		15548	Oct	90	00:29	vine.tar.Z<br><br>
+biçiminde arama sonuçlarý listelenir.
+
+</font>
+<br>
+<br>
+<br>
+</body>
+</html>
