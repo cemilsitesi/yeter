@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+<TITLE> INET-TR.CSS Jump Menu <\TITLE>
+<\HEAD>
+<P>Pick an option and press Go
+
+<P><!-- GOTO FORM (START CUTTING HERE) --><!-- Change the OPTION text and VALUES to the ones for your links! --><FORM NAME="SelectURL"><SELECT NAME="picker"><OPTION SELECTED VALUE="http://www.winmag.com">Windows
+Magazine <OPTION VALUE="http://www.techweb.com">CMP Publications TechWeb <OPTION VALUE="http://www.winmag.com/people/dmethvin">Dave
+Methvin's Page <OPTION VALUE="bolum2.html">Alta Vista Search </SELECT><INPUT TYPE=BUTTON VALUE="Go!" onClick="GotoURL(this.form)"><SCRIPT LANGUAGE="JavaScript"> <!--
+function GotoURL(f) {
+top.location.href = f.picker.options[f.picker.selectedIndex].value;
+}
+<!--end-->
+</SCRIPT>
+</FORM><!-- END GOTO FORM (STOP CUTTING HERE) -->
+
+<\HTML>
