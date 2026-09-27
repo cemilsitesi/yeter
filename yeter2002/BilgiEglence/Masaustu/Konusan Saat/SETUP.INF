@@ -1,0 +1,38 @@
+[Application]
+ApplicationName=Konushan Saat 1.0
+InstallDrive=C
+InstallPaths=1
+Copyright=Copyright © 1997 Erol Fazlioglu +90 (216) 359 34 18
+CopyrightBC=0
+CopyrightFC=16776960
+Path1=KONUSAAT
+Path2=
+Path3=
+Path4=
+Compress=1
+Icon1=X1\        -KONUSAAT.EXE{}[Konushan Saat 1.0]
+Icon2=X1\        -KONUSH.HLP{}[Konushan Saat Yardim Dosyasi]
+AskForGroupName=1
+NumberOfFiles=4
+InstallAllFiles=0
+UnInstallAutoexec=0
+UnInstallConfig=0
+UnInstallINI=0
+UnInstallGroup=1
+AllowUnInstall=1
+NumberOfOptions=0
+Text1=A:
+Text2=Undefined
+Text3=Undefined
+Text4=Undefined
+Heading=Konushan Saat 1.0
+HeadingBC=16711680
+HeadingFC=16777215
+BMPFileName=
+BMPOption=0
+
+[DiskA]
+File1=AX1\        -KONUSAAT.EXE[755712]
+File2=AX1\        -SOUNDS.DLL[598016]
+File3=AX1\        -KONUSH.HLP[59392]
+File4=AX1\        -FILE_ID.DIZ[2048]
