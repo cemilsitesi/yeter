@@ -1,0 +1,777 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./bolum15_dosyalar/filelist.xml">
+<link rel=Edit-Time-Data href="./bolum15_dosyalar/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Bolum 15: UNIX</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Hasan</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Hasan</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2000-05-16T18:53:00Z</o:Created>
+  <o:LastSaved>2000-05-16T18:53:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>2101</o:Words>
+  <o:Characters>11980</o:Characters>
+  <o:Company>Yeter</o:Company>
+  <o:Lines>99</o:Lines>
+  <o:Paragraphs>23</o:Paragraphs>
+  <o:CharactersWithSpaces>14712</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>75</w:Zoom>
+  <w:HyphenationZone>21</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p
+	{font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+pre
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:218326208;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1205015268 -928880932 -2143399012 -493470050 -1253566048 -1884682006 1155568672 869805670 -2070642112 1012668886;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:954947351;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1246175926 -610732520 -1625141726 -268688984 2131288418 533636198 -2004330442 1670003314 -1153369686 -1917529254;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1670256924;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-170621310 -1269292084 -1435723954 -259513190 -1470186432 -2093687408 -1669065054 -1358561154 596388708 -351489984;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:1864510353;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1023602204 1174151800 -677871730 -478129376 1278143380 1367108240 -1488390724 -361037870 -466732048 -189991706;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:2141265704;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-561771454 -1303453286 1519975294 -717577036 330722408 790258948 -508814220 -145430788 -816942660 -755733806;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<meta name=Author content="Orhan Gokcol">
+<meta name=KeyWords content=unix>
+<meta name=Description content="Temel Unix">
+</head>
+
+<body bgcolor=white background=chalk.gif lang=TR link=blue vlink=blue
+style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:18.0pt;color:#800040'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:18.0pt;color:#800040'>BÖLÜM 15</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:18.0pt;color:#800040'>UNIX - Bir Giriş,</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:18.0pt;color:#800040'>Hiç Bilmeyene/Çok az bilene Basit Unix</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='color:#800040'><a href="index.html">[CSS Ana Sayfaya Dön]</a></span></b></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#1">Amaç</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#2">Dosyaların
+     listesini nasıl elde edebilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#3">Bir dosyayı
+     başka bir yere ya da isme nasıl kopyalayabilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#4">Nasıl dizin
+     oluşturabilirim, ve silebilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#5">Dosyaları ya
+     da dizinleri başka bir yere nasıl taşıyabilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#6">Dosyaları
+     nasıl silebilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#7">Sahip olduğum
+     bir işlemi nasıl kesebilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#8">Yerini
+     bilmediğim bir dosyayı nasıl bulurum?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#9">Şifremi nasıl
+     değiştirebilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#10">Şifreler
+     konusunda bir sınırlama var mıdır?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#11">Bir dosyanın
+     izinlerini nasıl değiştirebilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#12">Sahip olduğum
+     dosyaların ne kadar yer kapladığını nasıl oğrenebilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#13">Sistemde
+     kimlerin çalıştığını nasıl ögrenebilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#14">Bir dosyanın
+     içini görmek için hangi programları kullanabilirim?</a></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l4 level1 lfo1;tab-stops:list 36.0pt'><a href="#15">Linux</a></li>
+</ol>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=1></a><span style='font-size:13.5pt;color:purple'>1.</span><span
+style='font-size:13.5pt;color:red'> Amaç</span> </p>
+
+<p>Bu bölumde, temel ve çok karşılaşılan unix komutlarının basit kullanımları anlatılacaktır.
+Internet üzerindeki bilgisayarların önemli bir kısmının işletim sisteminin unix
+ve unix türevleri (ultrix, linux, solaris vb) olduğu düşünülürse, unix
+bilmeyenlerin de yollarını bulabilecek kadar temel bazı bilgilere sahip
+olmaları yararlı olacaktır. Unix ile ilk kez karşılaşanlar her zaman için
+(Unix'te) küçük/büyük harflerin FARKLI olduğunu akıllarında bulundurmalıdırlar.
+</p>
+
+<p>Bu bölümdeki bilgiler aslında daha geniş bir dökumanın ilk bölümünden
+yapılan bir alıntıdır. unix ile ilgili daha ayrıntılı bilgiler içeren orijinal
+dökümana <a href="ftp://ftp.bilkent.edu.tr/pub/INFO/Turkce/css/unix-all.css">ftp://ftp.bilkent.edu.tr/pub/INFO/Turkce/css/unix-all.css</a>
+ile erişilebilir. </p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=2></a><span style='font-size:13.5pt;color:purple'>2.</span><span
+style='font-size:13.5pt;color:red'> Dosyaların listesini nasıl elde edebilirim
+?</span> </p>
+
+<p>ls komutu ile. Aşağıda bu komutun temel kullanımı verilmiştir. </p>
+
+<p>ls (secenekler) (dosya veya dizin...) </p>
+
+<p>Bazı seçenekler: </p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'>-F: Dosya isimleri sonunda
+     * ; dizin isimleri sonunda / işaretleri görüntülenerek birbirinden ayırt
+     edilmelerini sağlar.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'>-R: Belirlenen bir dizin
+     içindeki dosyalar yanısıra varsa tüm alt dizinler içerikleriyle birlikte
+     listeler.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'>-a:&nbsp; . ile başlayan
+     dosyalar dahil dizinin tüm içeriğini listeler. (.login , .rc gibi)</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'>-l: Dosyalar hakkında daha
+     ayrıntılı bilgi verir.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'>-m: Dosya isimleri
+     virgüllerle birbirinden ayrılarak listelenir.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'>-p:Dizinlerin / işaretiyle
+     simgelenmesini sağlar.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'>-s:Blok cinsinden
+     dosyaların boyutunu verir.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo2;tab-stops:list 36.0pt'>-u:Dosyalara en son erişim
+     zamanlarına göre sıralanmasını sağlar.</li>
+</ul>
+
+<p class=MsoNormal>Örnek : </p>
+
+<pre><span style='mso-bidi-font-family:"Courier New"'>ls -l sezen*<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>--w-rw--w-&nbsp;&nbsp; 1 e065247&nbsp; B386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 603 Oct 24 22:14 sezen_aksu_88.html<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>--w-rw--w-&nbsp;&nbsp; 1 e065247&nbsp; B386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 607 Oct 24 22:23 sezen_aksu_soyluyor.html<o:p></o:p></span></pre>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=3></a><span style='font-size:13.5pt;color:purple'>3.</span><span
+style='font-size:13.5pt;color:red'> Bir dosyayı başka bir yere ya da isme nasıl
+kopyalayabilirim?</span> </p>
+
+<pre><span style='mso-bidi-font-family:"Courier New"'>&nbsp;cp komutu ile yapılır. Kullanımı :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;cp -[secenek] dosya başka_bir_dosya_ismi<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Örnek :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;cp sezen.html s.html&nbsp; // sezen.html'i s.html'e kopyalar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;cp s.html ~/tmp&nbsp;&nbsp;&nbsp; // s.html'i HOME dizinimdeki /tmp dizininin altına kopyalar<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;cp -r ~/tmp ~/dump&nbsp;&nbsp; // HOME dizindeki tmp dizinini dump dizininin<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; altına kopyalar.<o:p></o:p></span></pre>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=4></a><span style='font-size:13.5pt;color:purple'>4. </span><span
+style='font-size:13.5pt;color:red'>Nasıl dizin oluşturabilirim, ve silebilirim?</span>
+</p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'>mkdir dizin_ismi --&gt;
+     dizin oluşturur</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo3;tab-stops:list 36.0pt'>rmdir dizin_ismi --&gt; ici
+     boş olan bir dizini siler.</li>
+</ul>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=5></a><span style='font-size:13.5pt;color:purple'>5.</span><span
+style='font-size:13.5pt;color:red'> Dosyaları ya da dizinleri başka bir yere
+nasıl taşıyabilirim?</span> </p>
+
+<p>mv komutu ile dosyaları başka bir dizine, hatta dizinleri başka dizinlere
+taşıyabilirsiniz. Bu işlemin sonunda orjinal dizinin içindeki dosyalarin
+isimlerinde bir değisiklik olmaz. mv komutu DOS'taki rename ve move komutuna
+benzer, ancak onlardan çok daha beceriklidir. </p>
+
+<p>Kullanımı : </p>
+
+<p>mv dosya1 dosya2 </p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=6></a><span style='font-size:13.5pt;color:purple'>6.</span><span
+style='font-size:13.5pt;color:red'> Dosyaları nasıl silebilirim?</span> </p>
+
+<p>Unix'te dosyaları silmek için rm komutu kullanılır. Aslında rm'nin yaptığı
+şey dosyanın sahip olduğu linklerden birini çıkarmaktır. Eger dosyanın sadece
+bir link'i varsa sonuçta dosya silinir. </p>
+
+<p><b><span style='color:#8000FF'>D?KKAT :</span></b> Unix'te DOS'takine benzer
+bir UNDELETE komutu yoktur (mimarilerinin farkli olmasından dolayı) bu sebeple
+dosyalarınızı silerken çok dikkatli olmanız gerekir. Eğer bir dosya'yı
+yanlışlıkla silerseniz, system sorumlunuza başvurun, belki backup'lardan
+dosyanızı geri getirebilir. </p>
+
+<p>Kullanımı : </p>
+
+<pre><span style='mso-bidi-font-family:"Courier New"'>rm -[secenekler] Dosya_ismi_1 Dosya_ismi_2 ...<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Seçenekler :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;-e&nbsp;&nbsp;&nbsp;&nbsp; : Dosyanın silinmesinden sonra ekrana bilgi verir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;-f&nbsp;&nbsp;&nbsp;&nbsp; : Sormadan write-protected&nbsp; dosyaları siler.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;-i&nbsp;&nbsp;&nbsp;&nbsp; : Dosyayı silmeden önce bunun doğruluğunu sorar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;-r&nbsp;&nbsp;&nbsp;&nbsp; : Recursive olarak alt dizinleri siler.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;-R&nbsp;&nbsp;&nbsp;&nbsp; : -r ile aynidir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Örnek :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;rm&nbsp; sezen*&nbsp;&nbsp;&nbsp; // bulunduğumuz dizindeki sezen ile başlayan tüm dosyaları siler<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;rm -rf tmp&nbsp;&nbsp;&nbsp; // tmp dizinini ve alt dizinlerini uyarmadan siler.<o:p></o:p></span></pre>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=7></a><span style='font-size:13.5pt;color:purple'>7.</span><span
+style='font-size:13.5pt;color:red'> Sahip olduğum bir işlemi nasıl kesebilirim?</span>
+</p>
+
+<p>kill (-sinyal) PID </p>
+
+<p>PID numaraları ps komutu ile görünür. Bir çok sinyal tanımlanabilir.
+Bunlardan -9 islemi öldürür. </p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=8></a><span style='font-size:13.5pt;color:purple'>8. </span><span
+style='font-size:13.5pt;color:red'>Yerini bilmediğim bir dosyayı nasıl bulurum?</span>
+</p>
+
+<pre><span style='mso-bidi-font-family:"Courier New"'>Find programı ile bulabilirsiniz.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp; Kullanımı :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp; find &lt;yol tanımı&gt; &lt;seçenekler&gt;<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Seçenekler:<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-name isim:aranılacak dosyanın ismi.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-perm izin:izinleri oktal olarak belirlenmiş dosyaların aranılması.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-links n:linke sahip dosyalar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-user kullanıcı:Belirli bir kullanıcıya ait dosyaların aranması.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-group isim:Belirli bir gruba dahil dosyaların aranması.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-atime n:n gün içinde erişilen dosyalar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-mtime n:n gun içinde işlem gören dosyalar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-ctime n:n gun içinde değiştirilen dosyalar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-print :bulunan dosyaların ekranda görüntülenmesini sağlar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Örnek :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Bulunduğum dizinden itibaren tüm alt-dizinlerdeki &quot;sezen&quot; ile başlayan<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>dosyaları bulmak için<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;find . -name &quot;sezen*&quot; -print<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>./faq/sezen_aksu_88.html<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>./faq/sezen_aksu_soyluyor.html<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>./sezen<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>./sezen/sezen<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>./sezen/sezen.c<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Not 1 : Burada arayacağım dosyada wildcard kullandığım için &quot; &quot; işaretini<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>kullandım. Eğer dosyanın tam ismini biliyorsaniz buna gerek yoktur.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Not 2 : Eğer bir aramayi root'tan ( / ) başlatırsaniz çok büyük<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>olasılıkla bazi dosyaları okumaya izininiz olmadığı için size bunu<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>belirten bir uyarı mesajı verilecektir, ve bu mesajlar arasında aradığınız<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>şey ekrana yazılsa bile bunu gözden kaçırabilirsiniz. Bu sebeple çıktıyı<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>bir dosyaya yöneltip, daha sonra o dosyayı okumanızda fayda vardır.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Örnek :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;find / -name gzip -print &gt; gzip.listesi<o:p></o:p></span></pre>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=9></a><span style='font-size:13.5pt;color:purple'>9.</span><span
+style='font-size:13.5pt;color:red'> Şifremi nasıl değiştirebilirim?</span> </p>
+
+<p>Şifre değiştirmek icin passwd programı kullanılır. Bazı systemlerde yppasswd
+olarak ta geçebilir. Bu komut'u yazdıktan sonra sizden ilk olarak eski şifreniz
+ardından yeni şifreniz sorulacaktır. Daha sonra tekrar yeni şifreniz kontrol
+amacı ile sorulur. Eğer bir hata yapmadiısaniz şifreniz değiştirilir. </p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=10></a><span style='font-size:13.5pt;color:purple'>10.</span><span
+style='font-size:13.5pt;color:red'> Şifreler konusunda bir sınırlama var mıdır?</span>
+</p>
+
+<p>Unix şifreleri genelde 5-8 harf arasında olur. 8 harften uzun bir şifre girseniz
+bile 8 harften sonrası dikkate alınmaz. Şifrelerinizi seçerken güvenlik
+açısından bazı şeyleri gözönünde bulundurmanız gerekir. Örnegin
+isim,soyisim,isim-soyisim kombinasyonları,çok kullanılan sözcükler vs. kötü
+şifrelerdir. Çünkü bazı programlar bu olasılıkları deneyerek kullandığınız
+şifreleri bulabilir. Esasen iyi seçilmiş bir şifrenin bulunabilme olasılığı son
+derece düşüktür. </p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=11></a><span style='font-size:13.5pt;color:purple'>11.</span><span
+style='font-size:13.5pt;color:red'> Bir dosyanın izinlerini nasıl
+değiştirebilirim?</span> </p>
+
+<pre><span style='mso-bidi-font-family:"Courier New"'>chmod izin modu dosya : Bir dosyaya verilen izinlerin değiştirilmesi.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>ls -l [dosya] yazdığınızda en solda görülen bilgiler, o dosyanin<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>izinlerini gosterir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Örnek :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;ls -l sezen*<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>--w-rw-r--&nbsp;&nbsp; 1 e065247&nbsp; B386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 603 Oct 24 22:14 sezen_aksu_88.html<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Görüldüğü gibi en soldaki kısım 10 tane alandan oluşmaktadır. Bunların<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>ilk'i dosyanın niteliğini ( dizin yada dosya ) sonraki 9'u da o dosyanın<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>izinlerini gosterir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Eğer en soldaki alan &quot;d&quot; ile başlarsa bu onun bir dizin oldugunu, &quot;-&quot;<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>ile başlarsa normal bir dosya olduğunu gösterir (bu arada unix'te her dizin<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>özel bir dosyadır ! )<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Bu ilk karakterden sonra gelen 9 karakter de kendi aralarında 3 gruba<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>bölunur.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;?lk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 Alan : Kullanıcı izinlerini<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Sonraki&nbsp;&nbsp;&nbsp; 3 Alan : Grup ile ilgili izinleri<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;En Sağdaki 3 Alan : Diğer kullanıcılarla ilgili izinleri gösterir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Herbir bölüm de 3'e bölünür :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;r&nbsp; : Read ( okuma ) hakkı;<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;w&nbsp; : Write ( yazma ) hakkı;<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;x&nbsp; : Execute ( calistirma ) hakkı.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Örnek :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-rw-r--r--&nbsp;&nbsp; 1 e065247&nbsp; B386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 533 Oct 24 21:35 sen_aglama.html<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>gibi bir dosya bu dosyanın herkes tarafından okunabilir olduğunu, ama<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>sadece o dosyanın sahibi tarafından yazılabilir olduğunu gösterir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>chmod programında kullanılan izin modlari iki türlü belirtilebilir :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;1- Nümerik olarak :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;r'nin değeri : 4<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;w'nin değeri : 2<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;x'in değeri&nbsp; : 1&nbsp; dir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Örnekler :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORANTILI IZIN KODLARI<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>------------------------------------------------<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Orantili kod -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Izin durumu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>------------------------------------------------<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;0400&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp; Dosya sahibi için okuma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;0200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp; Dosya sahibi için yazma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;0100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp; Dosya sahibi için calistirma&nbsp; -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;0040&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp; Gruptakiler icçn okuma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;0020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp; Gruptakiler için yazma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;0010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp; Gruptakiler için calistirma&nbsp;&nbsp; -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;0004&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp; Diğerleri için okuma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;0002&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp; Diğerleri için yazma&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;0001&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp; Diğerleri için calistirma&nbsp;&nbsp;&nbsp;&nbsp; -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>------------------------------------------------<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp; ls -l<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>--w-rw--w-&nbsp;&nbsp; 1 e065247&nbsp; B386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 603 Oct 24 22:14 sezen_aksu_88.html<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>--w-rw--w-&nbsp;&nbsp; 1 e065247&nbsp; B386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 607 Oct 24 22:23 sezen_aksu_soyluyor.html<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>chmod 0220 sezen*&nbsp;&nbsp; // Kullanıcıya ve grub'a yazma hakkı verelim<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;ls -l<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>--w--w----&nbsp;&nbsp; 1 e065247&nbsp; B386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 603 Oct 24 22:14 sezen_aksu_88.html<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>--w--w----&nbsp;&nbsp; 1 e065247&nbsp; B386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 607 Oct 24 22:23 sezen_aksu_soyluyor.html<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp; 2- Karakter olarak :<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>u:Dosyanın sahibi.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>g:Grup<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>o:Diğerleri<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>a:Herkes<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>+:Izin vermek<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-:Izinleri kaldırmak.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>=:Belirli bir izin atamak üzere.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;chmod&nbsp; go+r sezen*&nbsp; // Ek olarak gruba'a ve diğerlerine okuma hakkı verelim<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;ls -l<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>--w-rw-r--&nbsp;&nbsp; 1 e065247&nbsp; B386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 603 Oct 24 22:14 sezen_aksu_88.html<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>--w-rw-r--&nbsp;&nbsp; 1 e065247&nbsp; B386&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 607 Oct 24 22:23 sezen_aksu_soyluyor.html<o:p></o:p></span></pre>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=12></a><span style='font-size:13.5pt;color:purple'>12.</span><span
+style='font-size:13.5pt;color:red'> Sahip olduğum dosyaların ne kadar yer
+kapladığını nasıl oğrenebilirim?</span> </p>
+
+<p>Başlıca 2 yolu vardır; </p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo4;tab-stops:list 36.0pt'>du komutu : du komutu
+     bununduğunuz dizinden itibaren tüm alt dizinleri tarayarak block cinsinden
+     ne kadar yer kapladığını gösterir. Block büyüklükleri genelde 512 byte'tır
+     bu sebeple çıkan sayıyı iki'ye bölerek o dizinin nekadar yer kapladığını
+     görebilirsiniz. En aşağıdada toplam miktar belirtilir.</li>
+</ul>
+
+<p class=MsoNormal>Örnek : </p>
+
+<pre><span style='mso-bidi-font-family:"Courier New"'>/home/e065247/m&gt;du<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>72&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./.m<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./m<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./ch<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>496&nbsp;&nbsp;&nbsp;&nbsp; ./temp<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>632&nbsp;&nbsp;&nbsp;&nbsp; .<o:p></o:p></span></pre>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo5;tab-stops:list 36.0pt'>quota komutu : quota komutu
+     toplam olarak nekadar yer kapladığınızı ve sizin ne kadar yazma hakkınızın
+     olduğunu gosterir. Aynı zamanda eğer geçici disk sınırınızı aştıysanız,
+     kalan gün miktarı vs. gibi bilgileri de gösterir.</li>
+</ul>
+
+<p class=MsoNormal>Örnek : </p>
+
+<pre><span style='mso-bidi-font-family:"Courier New"'>/home/e065247/m&gt;quota<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Disk quotas for user e065247 (uid 517):<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp; Filesystem&nbsp; blocks&nbsp;&nbsp; quota&nbsp;&nbsp; limit&nbsp;&nbsp; grace&nbsp;&nbsp; files&nbsp;&nbsp; quota&nbsp;&nbsp; limit&nbsp;&nbsp; grace<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /home211&nbsp;&nbsp;&nbsp; 2748&nbsp;&nbsp;&nbsp; 3000&nbsp;&nbsp;&nbsp; 5000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 302&nbsp;&nbsp;&nbsp; 1000&nbsp;&nbsp;&nbsp; 1500<o:p></o:p></span></pre>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=13></a><span style='font-size:13.5pt;color:purple'>13.</span><span
+style='font-size:13.5pt;color:red'> Sistemde kimlerin çalıştığını nasıl
+ögrenebilirim?</span> </p>
+
+<p>w [seçenekler] </p>
+
+<p>w komutu sistemin yükü, ve çalışanların faaliyetleri konusunda bazı bilgiler
+verir. Komutu çalıştırdıktan sonra çıkan bilgilerden ilki, sistem hakkındadır :
+sistem saati, o anda kaç kişinin açık olduğu, ve sistemin yükü gibi.. Sistem
+yükü genelde 0 ile 40 arasında değisen bir değer ile gösterilir. Eğer sistemin
+yükü 0-5 arasında ise fazla yüklü olmadığını söyleyebiliriz o anda sistemin.
+Ancak bazı çok kullanıcılı ya da ağır işlerin yapıldığı makinlerde bu sayı 5
+ten çok cok fazla olabilir. </p>
+
+<p>Bu ilk satırın ardından gelen satırlarda sıralar halinde kullanıcılarla
+ilgili bilgiler bulunur. </p>
+
+<p>Örnek : </p>
+
+<pre><span style='mso-bidi-font-family:"Courier New"'>/home/e065247/m&gt;w e065247<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp; 01:09AM&nbsp; up 10 hrs,&nbsp; 40 users,&nbsp; load average: 2.44, 5.04, 5.33<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>User&nbsp;&nbsp;&nbsp;&nbsp; tty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; login@&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; idle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JCPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PCPU what<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>e065247&nbsp; pts/5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:50PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 telnet<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>e065247&nbsp; pts/7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:56PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 w<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>e065247&nbsp; pts/12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:50PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 telnet<o:p></o:p></span></pre>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><a name=14></a><span style='font-size:13.5pt;color:purple'>14.</span><span
+style='font-size:13.5pt;color:red'> Bir dosyanın içini görmek için hangi
+programları kullanabilirim?</span> </p>
+
+<p>cat [dosya_ismi] [dosya_ismi] ... </p>
+
+<p>Bir dosyanın içine bakmaya yarar. Dosyanın içeriği hiç bir şekilde durmadan
+ekrandan akıp geçer. Boyları küçük olan dosyalara bakmak için kullanilabilir, ancak
+büyük dosyalara bakmak için ugun değildir. Ancak başka amaçlar için de
+kullanılabilir örnegin : </p>
+
+<p>cat file1 &gt;&gt; file2 </p>
+
+<p>komutu file1 dosyasının içeriğini file2 dosyasının arkasına kopyalar. Bu
+işlem sonunda file1'in içeriğinde bir değisiklik olmaz. </p>
+
+<p>- o - </p>
+
+<p>pg seçenekler (dosya..) </p>
+
+<pre><span style='mso-bidi-font-family:"Courier New"'>Seçenekler:<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-numara:Her defasında göruntülenecek satırların sayısını gösterir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-p dizgi:Normal olarak sayfanın en alt satirinda (:)işareti oluşarak<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;kullanıcının return a basması beklenir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-c:Her bir sayfa görüntülenmeden önce ekran temizlenir ve imleç baslangıç<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;konumuna döner.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-e:Her dosyanın sonunda kullanıcının return a basması gerekmez.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-n:Normal olarak komutlar yeni satir karakteri ile son bulur.Otomatik<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;olarak komut sonunun belirlenmesine olanak sağlar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>-s:msg lerin görüntülenmesini sağlar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>+satir no:Belirli bir satırdan itibaren dosya görüntülenmek isteniyorsa<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;doğrudan satır numarası yazmak sureti ile bu sağlanır.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>+/kalip/:Belirlenen kalıbı içeren ilk satırı bulmak amacıyla bu tür bir<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;tanım yapılabilir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp; - o -<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;more [dosya_ismi] [dosya_ismi] ...<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Bir dosyanın içeriğini ekranda görmek için kullanılır, ancak cat'ta<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>olduğu gibi dosya'nin iceriği ekrandan kayıp gecmez. Her sayfanın sonunda<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>ekranın sol alt köşesinde --More--(x%) şeklinde bir yazı belirir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Buradaki x' dosyanın yüzde kaçının görüldüğünü gösterir. Bu dosyanın<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>büyüklüğü hakkında size bilgi verebilir. --More--(x%) yazısını gördükten<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>sonra aşağıdaki tuş'ları kullanabilirsiniz.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;SPC : Arka sayfaya geçilmesini sağlar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;K&nbsp;&nbsp; : K herhangi bir tam sayıdır. Bu sayı kadar ileriye gidilmesini sağlar<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Kb&nbsp; : K sayısı kadar geri dönülmesini sağlar.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;Ks&nbsp; : K sayısı kadar ileri gidilir, ancak aradaki satırlar görüntülenmez.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;=&nbsp;&nbsp; : Bulunduğunuz satır numarası verilir.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;/&nbsp;&nbsp; : Dosyada arama yapmak için kullanılır.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;v&nbsp;&nbsp; : vi editörünü çağırır.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>&nbsp;q&nbsp;&nbsp; : programdan çıkar.<o:p></o:p></span></pre>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p class=MsoNormal><br>
+<a name=15></a><span style='font-size:13.5pt;color:#993366'>15.</span><span
+style='font-size:13.5pt;color:red'> Linux</span> </p>
+
+<p>Linux, öncelikle i386 ve üstü işlemcili PC'ler üzerinde çalışması için
+tasarlanmış, ve GNU Public License'a göre bedava dağıtılan bir Unix türevi
+işletim sistemidir. Ancak Linux, DecAlpha, SunSparc ve PowerPC gibi ortamlarda
+da çalışabilmektedir. Linux ana kernel'i, Linus Torvalds tarafından
+yazılmıştır. Daha ayrıntılı bilgi, Türkiye Linux Topluluğu Web Sitesi'nden
+alınabilir. Adresi : <a href="http://www.linux.org.tr">http://www.linux.org.tr</a>
+</p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
