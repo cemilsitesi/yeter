@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+     <TITLE>Goto box using Javascript</TITLE>
+<!--- Begin Header --->
+</HEAD>
+
+<P>By the way, the "classic" way to do this is to use a server-side CGI
+script to generate a redirect. JavaScript sure is a lot easier, but it
+won't work on older browsers.
+
+<FORM NAME="SelectURL"><SELECT NAME="picker">
+<OPTION SELECTED VALUE="http://www.winmag.com">Windows Magazine 
+<OPTION VALUE="http://www.techweb.com">CMP Publications TechWeb 
+<OPTION VALUE="http://www.winmag.com/people/dmethvin">Dave Methvin's Page 
+<OPTION VALUE="bolum2.html">Alta Vista Search 
+</SELECT>
+<INPUT TYPE=BUTTON VALUE="Go!" onClick="GotoURL(this.form)">
+<SCRIPT LANGUAGE="JavaScript">
+function GotoURL(f) {
+  top.location.href = f.picker.options[f.picker.selectedIndex].value;
+}
+</SCRIPT>
+</FORM>
+
+Another box
+
+<FORM NAME="SelectURL"><SELECT NAME="picker">
+<OPTION SELECTED VALUE="http://www.winmag.com">Windows Magazine 
+<OPTION VALUE="http://www.techweb.com">CMP Publications TechWeb 
+<OPTION VALUE="http://www.winmag.com/people/dmethvin">Dave Methvin's Page 
+<OPTION VALUE="bolum2.html">Alta Vista Search 
+</SELECT>
+<INPUT TYPE=BUTTON VALUE="Go!" onClick="GotoURL(this.form)">
+<SCRIPT LANGUAGE="JavaScript">
+function GotoURL(f) {
+  top.location.href = f.picker.options[f.picker.selectedIndex].value;
+}
+</SCRIPT>
+</FORM>
+
+And another
+
+<FORM NAME="SelectURL">
+<SELECT NAME="picker">
+<OPTION SELECTED VALUE="bolum0.html">Bolum 0 : CSS Nedir?
+<OPTION VALUE="bolum1.html">Bolum 1 : Internet Nedir?
+<OPTION VALUE="bolum2.html">Bolum 2 : Internet Nedir? Türkiye'de Ýnternet.
+<OPTION VALUE="bolum3.html">Bolum 3 : Elektronik Posta
+<OPTION VALUE="bolum4.html">Bolum 4 : Haber Gruplarý
+</SELECT>
+<INPUT TYPE=BUTTON VALUE="Seç!" onClick="GotoURL(this.form)">
+<SCRIPT LANGUAGE="JavaScript">
+function GotoURL(f){
+top.location.href=f.picker.options[f.picker.selectedIndex].value;
+}
+</SCRIPT>
+</FORM>
+
+</BODY>
+</HTML>
