@@ -123,6 +123,14 @@ body{background:#fff!important}
 .details-head .detail-col:hover{background:linear-gradient(#fff,#dfe8f6)!important}
 .detail-sort-arrow{display:inline-block;min-width:9px;margin-left:4px;font-size:9px;vertical-align:1px}
 
+
+/* v10: seçim sayısını görünüm satırında göster */
+.view-description{width:100%;min-width:0}
+.toolbar-selection-count{white-space:nowrap;font:700 11px Tahoma,Arial,sans-serif;color:#000;padding:0 5px;margin-left:8px;line-height:22px;display:inline-block;vertical-align:middle}
+.toolbar-selection-count:empty{display:none}
+.toolbar-bulk-actions{display:none;align-items:center;gap:2px;margin-left:2px;white-space:nowrap}.toolbar-bulk-actions.show{display:inline-flex}.toolbar-bulk-actions button{width:auto!important;padding:3px 6px!important;border:1px solid #aca899!important;background:linear-gradient(#fff,#ece9d8)!important;color:#000!important;font:11px Tahoma!important;line-height:16px}.toolbar-bulk-actions button:hover{border-color:#316ac5!important;background:#d8e7ff!important}
+.selection-bar{display:none!important;height:0!important;min-height:0!important;padding:0!important;margin:0!important;border:0!important;overflow:hidden!important}
+@media(max-width:720px){.toolbar-selection-count{font-size:10px;padding-right:2px}.view-description{flex-wrap:wrap}.toolbar-selection-count{margin-left:auto}}
 </style>
 </head>
 <body>
@@ -167,10 +175,10 @@ body{background:#fff!important}
       <label class="search-box"><span aria-hidden="true">⌕</span><input id="file-search" type="search" placeholder="Bu klasörde ara" aria-label="Bu klasörde ara" autocomplete="off"></label>
     </div>
     <div class="view-toolbar">
-      <div class="view-description"><div class="view-controls" aria-label="Görünüm"><button class="view-btn active" data-view="tiles">▦ Döşemeler</button><button class="view-btn" data-view="compact">▦ Kompakt</button><button class="view-btn" data-view="details">☷ Ayrıntılar</button></div><span id="folder-summary"></span></div>
+      <div class="view-description"><div class="view-controls" aria-label="Görünüm"><button class="view-btn active" data-view="tiles">▦ Döşemeler</button><button class="view-btn" data-view="compact">▦ Kompakt</button><button class="view-btn" data-view="details">☷ Ayrıntılar</button></div><span id="folder-summary"></span><strong id="selection-count" class="toolbar-selection-count"></strong><span id="toolbar-bulk-actions" class="toolbar-bulk-actions"><button type="button" id="toolbar-bulk-copy">⧉ Kopyala</button><button type="button" id="toolbar-bulk-move">↪ Taşı</button><button type="button" id="toolbar-clear-selection">× Kaldır</button></span></div>
       <div class="sort-buttons" aria-label="Sıralama"><button class="sort-btn active" data-sort="name">Ad <span class="sort-arrow">↑</span></button><button class="sort-btn" data-sort="date">Tarih <span class="sort-arrow"></span></button><button class="sort-btn" data-sort="size">Boyut <span class="sort-arrow"></span></button></div>
     </div>
-    <div id="selection-bar" class="selection-bar"><label><input type="checkbox" id="select-all"> Tümünü seç</label><strong id="selection-count">0 seçili</strong><span class="spacer"></span><button class="secondary write-action" id="bulk-copy">⧉ Kopyala</button><button class="secondary write-action" id="bulk-move">↪ Taşı</button><button class="secondary" id="clear-selection">Seçimi kaldır</button></div>
+    <div id="selection-bar" class="selection-bar"><label><input type="checkbox" id="select-all"> Tümünü seç</label><span class="spacer"></span><button class="secondary write-action" id="bulk-copy">⧉ Kopyala</button><button class="secondary write-action" id="bulk-move">↪ Taşı</button><button class="secondary" id="clear-selection">Seçimi kaldır</button></div>
     <div id="drop-zone" class="file-space" tabindex="-1">
       <ul id="file-list" class="file-grid" aria-label="Dosyalar ve klasörler"></ul>
       <div id="empty-state" class="empty-state hidden"><div class="empty-icon">📂</div><h2 id="empty-title">Bu klasör boş</h2><p id="empty-description">Dosya veya klasör sürükleyin ya da yükleme düğmesini kullanın.</p><button id="empty-folder-upload" class="secondary write-action">Klasör yükle</button></div>
@@ -411,8 +419,9 @@ function renderBreadcrumbs() {
   el('up-btn').disabled = !state.path; el('back-btn').disabled = state.historyIndex === 0; el('forward-btn').disabled = state.historyIndex === state.history.length - 1;
 }
 function updateSelectionBar(files=[]) {
-  const count=state.selected.size, bar=el('selection-bar');bar.classList.toggle('show',count>0);document.body.classList.toggle('selection-active',count>0);
-  el('selection-count').textContent=`${count} seçili`;
+  const count=state.selected.size;document.body.classList.toggle('selection-active',count>0);
+  el('selection-count').textContent=count?`${count} seçili`:'';
+  const toolbarBulk=el('toolbar-bulk-actions'); if(toolbarBulk) toolbarBulk.classList.toggle('show',count>0);
   const visible=files.map(x=>x.path), selectedVisible=visible.filter(x=>state.selected.has(x)).length;
   el('select-all').checked=visible.length>0&&selectedVisible===visible.length;el('select-all').indeterminate=selectedVisible>0&&selectedVisible<visible.length;
 }
@@ -969,7 +978,7 @@ function init(){
   el('code-menu').onclick=openCodeModal;el('inspect-menu').onclick=()=>el('local-inspect-file').click();el('index-menu').onclick=()=>openTargetFile('index.html');
   el('refresh-menu').onclick=()=>{if(state.busy)return;state.dates.clear();state.dateJobs.clear();load();};
   el('file').onchange=()=>uploadSelection(el('file'));el('folder-file').onchange=()=>uploadSelection(el('folder-file'),true);el('local-inspect-file').onchange=()=>inspectLocalFile(el('local-inspect-file'));
-  el('file-search').oninput=renderFileList;document.querySelectorAll('.view-btn').forEach(btn=>btn.onclick=()=>setView(btn.dataset.view));el('select-all').onchange=()=>{const q=el('file-search').value.toLocaleLowerCase('tr-TR').trim();const pool=q?(state.snapshot?.entries||[]).filter(x=>!hiddenEntry(x)):childrenOf(state.path);for(const x of pool.filter(x=>(!state.foldersOnly||x.type==='tree')&&(!q||(basename(x.path)+' '+x.path).toLocaleLowerCase('tr-TR').includes(q)))){if(el('select-all').checked)state.selected.add(x.path);else state.selected.delete(x.path)}renderFileList()};el('clear-selection').onclick=clearSelection;el('bulk-copy').onclick=()=>openBulkDialog('copy');el('bulk-move').onclick=()=>openBulkDialog('move');el('bulk-submit').onclick=runBulkTransfer;document.querySelectorAll('.sort-btn').forEach(btn=>btn.onclick=()=>setSort(btn.dataset.sort));
+  el('file-search').oninput=renderFileList;document.querySelectorAll('.view-btn').forEach(btn=>btn.onclick=()=>setView(btn.dataset.view));el('select-all').onchange=()=>{const q=el('file-search').value.toLocaleLowerCase('tr-TR').trim();const pool=q?(state.snapshot?.entries||[]).filter(x=>!hiddenEntry(x)):childrenOf(state.path);for(const x of pool.filter(x=>(!state.foldersOnly||x.type==='tree')&&(!q||(basename(x.path)+' '+x.path).toLocaleLowerCase('tr-TR').includes(q)))){if(el('select-all').checked)state.selected.add(x.path);else state.selected.delete(x.path)}renderFileList()};el('clear-selection').onclick=clearSelection;el('bulk-copy').onclick=()=>openBulkDialog('copy');el('bulk-move').onclick=()=>openBulkDialog('move');el('toolbar-bulk-copy').onclick=()=>openBulkDialog('copy');el('toolbar-bulk-move').onclick=()=>openBulkDialog('move');el('toolbar-clear-selection').onclick=clearSelection;el('bulk-submit').onclick=runBulkTransfer;document.querySelectorAll('.sort-btn').forEach(btn=>btn.onclick=()=>setSort(btn.dataset.sort));
   el('back-btn').onclick=()=>{if(state.busy||state.loading)return;if(state.historyIndex>0){state.historyIndex--;let path=state.history[state.historyIndex];while(path&&state.snapshot.byPath.get(path)?.type!=='tree')path=parentPath(path);navigate(path,false);}};
   el('forward-btn').onclick=()=>{if(state.busy||state.loading)return;if(state.historyIndex<state.history.length-1){state.historyIndex++;let path=state.history[state.historyIndex];while(path&&state.snapshot.byPath.get(path)?.type!=='tree')path=parentPath(path);navigate(path,false);}};
   el('up-btn').onclick=()=>navigate(parentPath(state.path));
