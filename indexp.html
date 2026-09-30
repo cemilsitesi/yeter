@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dosyalarım - Windows XP</title>
+<style type="text/css">
+html,body{margin:0;padding:0;background:#ece9d8;color:#000;font:11px Tahoma,Arial,sans-serif;height:100%}button,input{font:11px Tahoma,Arial,sans-serif}.win{margin:6px;border:1px solid #003c74;background:#fff;min-height:560px}.title{height:28px;line-height:28px;padding:0 8px;color:#fff;font-weight:bold;background:#0a246a}.toolbar,.address,.status{background:#ece9d8;border-bottom:1px solid #aca899;padding:4px}.toolbar button{margin-right:3px}.address input{width:70%;height:18px;border:1px solid #7f9db9}.main{position:relative}.left{position:absolute;left:0;top:0;width:170px;background:#6f91d7;min-height:475px}.task{margin:8px;background:#d6e5fa;border:1px solid #fff;padding:7px}.task h3{margin:0 0 6px;font-size:11px;color:#215dc6}.task a{display:block;color:#000080;text-decoration:none;margin:5px 0}.right{margin-left:170px;min-height:475px;background:#fff;padding:8px}.row{height:42px;border-bottom:1px solid #eee;position:relative;cursor:default}.row:hover{background:#e8f0ff}.ico{position:absolute;left:4px;top:7px;font-size:22px}.name{position:absolute;left:42px;top:6px;font-weight:bold;color:#000080;text-decoration:none}.meta{position:absolute;left:42px;top:23px;color:#555}.actions{position:absolute;right:5px;top:10px}.actions a{margin-left:7px;color:#000080}.status{border-top:1px solid #fff;border-bottom:0}.hidden{display:none}.login{padding:8px;background:#ffffe1;border:1px solid #aca899;margin:8px}.err{color:#c00}.ok{color:#080}.small{font-size:10px;color:#555}.loading{padding:30px;text-align:center;color:#555}
+</style>
+<script type="text/javascript">
+/* XP/IE8 sürümü: ES3/ES5 sözdizimi, fetch/Promise/let/const/=>/classList kullanılmaz. */
+var CONFIG={owner:'drsait',repo:'Deneme',pages:'https://drsait.github.io/Deneme/',branch:'',proxy:''};
+var currentPath='',adminToken='',items=[];
+function E(id){return document.getElementById(id)}
+function esc(s){s=String(s);return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function encPath(p){var a=p.split('/'),i;for(i=0;i<a.length;i++)a[i]=encodeURIComponent(a[i]);return a.join('/')}
+function baseName(p){var a=p.split('/');return a[a.length-1]}
+function parentPath(p){var i=p.lastIndexOf('/');return i<0?'':p.substring(0,i)}
+function apiUrl(path){var u='https://api.github.com/repos/'+encodeURIComponent(CONFIG.owner)+'/'+encodeURIComponent(CONFIG.repo)+path;return CONFIG.proxy?CONFIG.proxy+encodeURIComponent(u):u}
+function xhr(method,path,body,cb){var x=null,u=apiUrl(path);try{x=new XMLHttpRequest()}catch(e){try{x=new ActiveXObject('Microsoft.XMLHTTP')}catch(e2){}}
+ if(!x){cb('XMLHTTP kullanılamıyor');return}try{x.open(method,u,true)}catch(e3){cb('Bağlantı açılamadı. XP için HTTP köprüsü/proxy gerekebilir.');return}
+ try{x.setRequestHeader('Accept','application/vnd.github+json')}catch(e4){} if(adminToken){try{x.setRequestHeader('Authorization','Bearer '+adminToken)}catch(e5){}}
+ if(body){try{x.setRequestHeader('Content-Type','application/json')}catch(e6){}}
+ x.onreadystatechange=function(){if(x.readyState==4){if(x.status>=200&&x.status<300){var d=null;try{d=eval('('+x.responseText+')')}catch(e7){cb('JSON okunamadı');return}cb(null,d,x)}else cb('GitHub hata kodu: '+x.status+' '+(x.statusText||''));}};
+ try{x.send(body?jsonString(body):null)}catch(e8){cb('İstek gönderilemedi. Windows XP/IE8 TLS veya CORS engeli olabilir. HTTP köprüsünü kullanın.');}}
+function jsonString(o){if(window.JSON&&JSON.stringify)return JSON.stringify(o);var t=typeof o,i,k,a;if(o===null)return'null';if(t=='string')return'"'+o.replace(/\\/g,'\\\\').replace(/"/g,'\\"').replace(/\r/g,'\\r').replace(/\n/g,'\\n')+'"';if(t=='number'||t=='boolean')return String(o);if(o instanceof Array){a=[];for(i=0;i<o.length;i++)a.push(jsonString(o[i]));return'['+a.join(',')+']'}a=[];for(k in o)if(o.hasOwnProperty(k))a.push(jsonString(k)+':'+jsonString(o[k]));return'{'+a.join(',')+'}'}
+function b64utf8(s){return base64Encode(unescape(encodeURIComponent(s)))}
+function base64Encode(input){var key='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=',out='',i=0,c1,c2,c3,e1,e2,e3,e4;while(i<input.length){c1=input.charCodeAt(i++);c2=input.charCodeAt(i++);c3=input.charCodeAt(i++);e1=c1>>2;e2=((c1&3)<<4)|(c2>>4);e3=((c2&15)<<2)|(c3>>6);e4=c3&63;if(isNaN(c2))e3=e4=64;else if(isNaN(c3))e4=64;out+=key.charAt(e1)+key.charAt(e2)+key.charAt(e3)+key.charAt(e4)}return out}
+function showMsg(s,bad){E('msg').className=bad?'err':'ok';E('msg').innerHTML=esc(s)}
+function init(){E('repo').innerHTML=esc(CONFIG.owner+' / '+CONFIG.repo);loadRepo()}
+function loadRepo(){E('list').innerHTML='<div class="loading">Bağlanıyor...</div>';xhr('GET','',null,function(err,d){if(err){E('list').innerHTML='<div class="login"><b>Bağlantı kurulamadı.</b><br />'+esc(err)+'<br /><br /><span class="small">Not: Windows XP SP3 Internet Explorer 8, güncel GitHub HTTPS/TLS ve CORS bağlantısını doğrudan desteklemeyebilir. Bu durumda CONFIG.proxy alanına kullandığınız yerel HTTP köprüsünün adresini yazın.</span></div>';return}CONFIG.branch=d.default_branch||'main';loadPath('')})}
+function loadPath(p){currentPath=p;E('path').value='/'+p;E('list').innerHTML='<div class="loading">Klasör okunuyor...</div>';var q='/contents/'+encPath(p)+'?ref='+encodeURIComponent(CONFIG.branch);if(!p)q='/contents?ref='+encodeURIComponent(CONFIG.branch);xhr('GET',q,null,function(err,d){if(err){E('list').innerHTML='<div class="err">'+esc(err)+'</div>';return}items=d instanceof Array?d:[d];render()})}
+function render(){var h='',i,it,url;items.sort(function(a,b){if(a.type!=b.type)return a.type=='dir'?-1:1;return a.name.toLowerCase()>b.name.toLowerCase()?1:-1});for(i=0;i<items.length;i++){it=items[i];url=CONFIG.pages.replace(/\/$/,'')+'/'+encPath(it.path);h+='<div class="row"><span class="ico">'+(it.type=='dir'?'&#128193;':'&#128196;')+'</span>';if(it.type=='dir')h+='<a class="name" href="javascript:loadPath(\''+it.path.replace(/'/g,"\\'")+'\')">'+esc(it.name)+'</a>';else h+='<a class="name" target="_blank" href="'+esc(url)+'">'+esc(it.name)+'</a>';h+='<span class="meta">'+(it.type=='dir'?'Klasör':((it.size||0)+' bayt'))+'</span>';if(adminToken)h+='<span class="actions"><a href="javascript:renameItem('+i+')">Yeniden adlandır</a><a href="javascript:deleteItem('+i+')">Sil</a></span>';h+='</div>'}if(!h)h='<div class="loading">Bu klasör boş.</div>';E('list').innerHTML=h;E('up').disabled=!currentPath}
+function goUp(){if(currentPath)loadPath(parentPath(currentPath))}
+function adminLogin(){var t=E('token').value;if(!t){showMsg('GitHub erişim anahtarını girin.',true);return}adminToken=t;xhr('GET','',null,function(err){if(err){adminToken='';showMsg(err,true);return}E('adminbox').className='task';E('loginbox').className='task hidden';showMsg('Yönetici modu açıldı.',false);render()})}
+function adminLogout(){adminToken='';E('token').value='';E('adminbox').className='task hidden';E('loginbox').className='task';showMsg('Yönetici modu kapatıldı.',false);render()}
+function newFolder(){if(!adminToken)return;var n=window.prompt('Yeni klasör adı:','Yeni Klasör');if(!n)return;var p=(currentPath?currentPath+'/':'')+n+'/.gitkeep';putFile(p,'',null,function(err){if(err)alert(err);else loadPath(currentPath)})}
+function newText(){if(!adminToken)return;var n=window.prompt('Dosya adı:','yeni.txt');if(!n)return;var c=window.prompt('İçerik:','');if(c===null)return;var p=(currentPath?currentPath+'/':'')+n;putFile(p,c,null,function(err){if(err)alert(err);else loadPath(currentPath)})}
+function putFile(path,content,sha,cb){var b={message:'XP dosya işlemi: '+path,content:b64utf8(content),branch:CONFIG.branch};if(sha)b.sha=sha;xhr('PUT','/contents/'+encPath(path),b,cb)}
+function deleteItem(i){var it=items[i];if(!window.confirm(it.name+' silinsin mi?'))return;xhr('DELETE','/contents/'+encPath(it.path),{message:'XP sil: '+it.path,sha:it.sha,branch:CONFIG.branch},function(err){if(err)alert(err);else loadPath(currentPath)})}
+function renameItem(i){var it=items[i];if(it.type=='dir'){alert('IE8 sade sürümünde klasör yeniden adlandırma yok. Dosyalar tek tek taşınmalıdır.');return}var n=window.prompt('Yeni ad:',it.name);if(!n||n==it.name)return;xhr('GET','/contents/'+encPath(it.path)+'?ref='+encodeURIComponent(CONFIG.branch),null,function(err,d){if(err){alert(err);return}var np=(currentPath?currentPath+'/':'')+n;var body={message:'XP yeniden adlandır: '+it.path+' -> '+np,content:d.content.replace(/\s/g,''),branch:CONFIG.branch};xhr('PUT','/contents/'+encPath(np),body,function(e){if(e){alert(e);return}xhr('DELETE','/contents/'+encPath(it.path),{message:'XP eski dosyayı sil: '+it.path,sha:it.sha,branch:CONFIG.branch},function(e2){if(e2)alert(e2);loadPath(currentPath)})})})}
+</script>
+</head>
+<body onload="init()">
+<div class="win">
+ <div class="title">&#128193; Dosyalarım - Windows XP Uyumlu</div>
+ <div class="toolbar"><button type="button" id="up" onclick="goUp()">Yukarı</button><button type="button" onclick="loadPath(currentPath)">Yenile</button></div>
+ <div class="address"><b>Adres:</b> <input type="text" id="path" readonly="readonly" /></div>
+ <div class="main">
+  <div class="left">
+   <div class="task"><h3>Depo</h3><div id="repo"></div><div id="msg" class="small">Ziyaretçi modu</div></div>
+   <div class="task" id="loginbox"><h3>Yönetici işlemleri</h3><div class="small">Silme / oluşturma için erişim anahtarı gerekir.</div><input type="password" id="token" style="width:135px" /><br /><button type="button" onclick="adminLogin()">Giriş</button></div>
+   <div class="task hidden" id="adminbox"><h3>Dosya işlemleri</h3><a href="javascript:newFolder()">Yeni klasör</a><a href="javascript:newText()">Yeni metin dosyası</a><a href="javascript:adminLogout()">Yönetici çıkışı</a></div>
+  </div>
+  <div class="right" id="list"></div>
+ </div>
+ <div class="status">Ziyaret: şifresiz &nbsp; | &nbsp; Değişiklik: yönetici erişim anahtarı gerekli</div>
+</div>
+</body>
+</html>
